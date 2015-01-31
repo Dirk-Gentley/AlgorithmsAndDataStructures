@@ -18,7 +18,7 @@ class MainMenu{
 public:
     // Results are returned by the action handler
 	enum MenuResult { Nothing, Exit, SubMenu };
-	
+	// All menu items are public members, hence struct
 	struct MenuItem{
     public:
         sf::Rect<int> rect;

@@ -48,6 +48,7 @@ void MainLoop::RunLoop(){
     while(mainWindow.pollEvent(currentEvent)){
 
         switch(programState){
+            // LinkedListRunning etc
             case MainLoop::Running:{
                 mainWindow.clear(sf::Color(255,127,0));
                 mainWindow.display();
@@ -87,6 +88,7 @@ void MainLoop::RunLoop(){
             }
 
             case MainLoop::Exiting:{
+                // Exit safely.  Free resources here
                 exit(0);
                 break;
             }
@@ -134,6 +136,7 @@ void MainLoop::ShowMenu(){
 	}
 }
 
+// ShowLinkedListSubMent etc
 void MainLoop::ShowSubMenu(){
     SubMenu subMenu;
     SubMenu::SubMenuResult result = subMenu.Show(mainWindow);

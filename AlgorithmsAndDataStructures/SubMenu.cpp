@@ -9,7 +9,6 @@
 #include "SubMenu.h"
 
 SubMenu::SubMenuResult SubMenu::Show(sf::RenderWindow& renderWindow){
-    std::cout << "Showing the sub menu" << std::endl;
     renderWindow.clear(sf::Color(100,200,5));
     
     //Begin menu item coordinates

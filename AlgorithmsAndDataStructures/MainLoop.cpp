@@ -9,16 +9,18 @@
 #include "ResourcePath.hpp"
 
 void MainLoop::Start(void){
+    // Should never happen
     if(programState != Uninitialized)
         return;
-    
+    // This main window will remain throughout the application
     mainWindow.create(sf::VideoMode(1024,768,32),"Window");
+    // The initial program state, should only happen once
     programState = MainLoop::ShowingSplash;
     
+    // Enter the main program loop
     while(!IsExiting()){
-        GameLoop();
+        RunLoop();
     }
-    
     mainWindow.close();
 }
 
@@ -28,8 +30,20 @@ bool MainLoop::IsExiting(){
     else
         return false;
 }
-
-void MainLoop::GameLoop(){
+/*
+ 
+ THIS IS THE MAIN PROGRAM LOOP
+ 
+ This switch() statement will grow as the application grows.
+ The program states will appear here as enumerated types, or "states",
+ hence state driven design.
+ 
+ PLEASE KEEP THE SWITCH STATEMENT NEAT AND TIDY
+ 
+ Everything that happens goes here
+ 
+ */
+void MainLoop::RunLoop(){
     sf::Event currentEvent;
     while(mainWindow.pollEvent(currentEvent)){
 
@@ -38,9 +52,11 @@ void MainLoop::GameLoop(){
                 mainWindow.clear(sf::Color(255,127,0));
                 mainWindow.display();
 
+                // Needs to stay in order to maintain regular window function i.e. close
                 if(currentEvent.type == sf::Event::Closed){
                     programState = MainLoop::Exiting;
                 }
+                // Could potentially move to action handler.  Preferential
                 if(currentEvent.type == sf::Event::KeyPressed){
                     if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowMenu();
                 }
@@ -87,6 +103,20 @@ void MainLoop::ShowSplashScreen(){
 	programState = MainLoop::ShowingMenu;
 }
 
+/*
+ 
+ THE MENUS AND SUB MENUS APPEAR HERE
+ 
+ Each has their own .cpp and .h file in order that they can be dynamic
+ and themed.
+ 
+ NO GENERIC BUILD MENU CLASS
+ 
+ It is important that the project remain as collaborative and modular as possible,
+ this way it is far easier to combine other, smaller applications into this one
+ 
+ */
+
 void MainLoop::ShowMenu(){
 	MainMenu mainMenu;
 	MainMenu::MenuResult result = mainMenu.Show(mainWindow);
@@ -98,6 +128,7 @@ void MainLoop::ShowMenu(){
             programState = MainLoop::ShowingSubMenu;
             break;
         case MainMenu::Nothing:
+            // Vitally important
             ShowMenu();
             break;
 	}
@@ -113,8 +144,9 @@ void MainLoop::ShowSubMenu(){
         case SubMenu::Begin:
             programState = MainLoop::Running;
             break;
-        case MainMenu::Nothing:
-            ShowMenu();
+        case SubMenu::Nothing:
+            // Vitally important
+            ShowSubMenu();
             break;
     }
 }

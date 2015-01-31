@@ -30,8 +30,7 @@
 #import <Foundation/Foundation.h>
 
 ////////////////////////////////////////////////////////////
-std::string resourcePath(void)
-{
+std::string resourcePath(void){
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     
     std::string rpath;
@@ -41,7 +40,8 @@ std::string resourcePath(void)
 #ifdef DEBUG
         NSLog(@"bundle is nil... thus no resources path can be found.");
 #endif
-    } else {
+    }
+    else {
         NSString* path = [bundle resourcePath];
         rpath = [path UTF8String] + std::string("/");
     }

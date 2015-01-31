@@ -30,7 +30,16 @@
 // Headers
 ////////////////////////////////////////////////////////////
 #include <string>
+#include <list>
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
+#include <vector>
+#include <iostream>
 
+#include "MainLoop.h"
+#include "SplashScreen.h"
+#include "MainMenu.h"
+#include "SubMenu.h"
 ////////////////////////////////////////////////////////////
 /// \brief Return the path to the resource folder.
 ///

@@ -18,7 +18,7 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
 	beginButton.rect.height = 80;
 	beginButton.rect.left = 312;
 	beginButton.rect.width = 400;
-    beginButton.action = SubMenu;
+    beginButton.action = DrawingSubMenu;
     
     //Begin clickable button
     sf::RectangleShape beginBox;
@@ -55,7 +55,7 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     menuText.setPosition(400, 50);
     menuText.setColor(sf::Color::White);
     
-    sf::Text beginText("Open Sub Menu", font, 40);
+    sf::Text beginText("Drawing", font, 40);
     beginText.setPosition(400, 200);
     beginText.setColor(sf::Color::Red);
     
@@ -97,6 +97,9 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
 			if(menuEvent.type == sf::Event::Closed){
 				return Exit;
 			}
+            if(menuEvent.type == sf::Event::KeyPressed){
+                return Exit;
+            }
 		}
 	}
 }

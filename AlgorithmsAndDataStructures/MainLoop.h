@@ -8,24 +8,21 @@
 
 #include "ResourcePath.hpp"
 
-#ifndef SFML_test_game_h
-#define SFML_test_game_h
+#ifndef SFML_Algorithms_And_Data_Structures_h
+#define SFML_Algorithms_And_Data_Structures_h
 
 class MainLoop{
     
 public:
-    // The applications themselves.  Start() will eventually become
-    // StartLinkedList, StartBinaryTree() and so on
     static void Start();
     // Each of the menus/sub menus will appear here
     static void ShowMenu();
-    static void ShowSubMenu();
+    static void ShowDrawingSubMenu();
     
 private:
     // Safely shut down
     static bool IsExiting();
-    // The main loop will itterate though the enumerated states hence
-    // being a state driven system
+    // The main loop will itterate though the enumerated states
     static void RunLoop();
     // More a demonstration than anything else, but will most likely be kept
     static void ShowSplashScreen();
@@ -36,8 +33,8 @@ private:
                         ShowingSplash,
                         Paused,
                         ShowingMenu,
-                        ShowingSubMenu,
-                        Running,
+                        ShowingDrawingSubMenu,
+                        RunningDrawing,
                         Exiting };
     
     static ProgramState programState;

@@ -8,6 +8,9 @@
 
 #include "ResourcePath.hpp"
 
+MainLoop::ProgramState MainLoop::programState = Uninitialized;
+sf::RenderWindow MainLoop::mainWindow;
+
 void MainLoop::Start(void){
     // Should never happen
     if(programState != Uninitialized)
@@ -48,19 +51,8 @@ void MainLoop::RunLoop(){
     while(mainWindow.pollEvent(currentEvent)){
 
         switch(programState){
-            // LinkedListRunning etc
-            case MainLoop::Running:{
-                mainWindow.clear(sf::Color(255,127,0));
-                mainWindow.display();
-
-                // Needs to stay in order to maintain regular window function i.e. close
-                if(currentEvent.type == sf::Event::Closed){
-                    programState = MainLoop::Exiting;
-                }
-                // Could potentially move to action handler.  Preferential
-                if(currentEvent.type == sf::Event::KeyPressed){
-                    if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowMenu();
-                }
+                
+            case MainLoop::Uninitialized:{
                 break;
             }
 
@@ -68,22 +60,30 @@ void MainLoop::RunLoop(){
                 ShowSplashScreen();
                 break;
             }
-
-            case MainLoop::Uninitialized:{
-                break;
-            }
-
-            case MainLoop::Paused:{
-                break;
-            }
-
+                
             case MainLoop::ShowingMenu:{
                 ShowMenu();
                 break;
             }
                 
-            case MainLoop::ShowingSubMenu:{
-                ShowSubMenu();
+            case MainLoop::ShowingDrawingSubMenu:{
+                ShowDrawingSubMenu();
+                break;
+            }
+
+            case MainLoop::RunningDrawing:{
+                mainWindow.clear(sf::Color(255,127,0));
+                mainWindow.display();
+                if(currentEvent.type == sf::Event::Closed){
+                    programState = MainLoop::Exiting;
+                }
+                if(currentEvent.type == sf::Event::KeyPressed){
+                    if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowDrawingSubMenu();
+                }
+                break;
+            }
+                
+            case MainLoop::Paused:{
                 break;
             }
 
@@ -95,9 +95,6 @@ void MainLoop::RunLoop(){
         }
     }
 }
-
-MainLoop::ProgramState MainLoop::programState = Uninitialized;
-sf::RenderWindow MainLoop::mainWindow;
 
 void MainLoop::ShowSplashScreen(){
 	SplashScreen splashScreen;
@@ -117,7 +114,7 @@ void MainLoop::ShowSplashScreen(){
  It is important that the project remain as collaborative and modular as possible,
  this way it is far easier to combine other, smaller applications into this one
  
- */
+*/
 
 void MainLoop::ShowMenu(){
 	MainMenu mainMenu;
@@ -126,8 +123,8 @@ void MainLoop::ShowMenu(){
         case MainMenu::Exit:
 			programState = MainLoop::Exiting;
 			break;
-        case MainMenu::SubMenu:
-            programState = MainLoop::ShowingSubMenu;
+        case MainMenu::DrawingSubMenu:
+            programState = MainLoop::ShowingDrawingSubMenu;
             break;
         case MainMenu::Nothing:
             // Vitally important
@@ -137,19 +134,19 @@ void MainLoop::ShowMenu(){
 }
 
 // ShowLinkedListSubMent etc
-void MainLoop::ShowSubMenu(){
-    SubMenu subMenu;
-    SubMenu::SubMenuResult result = subMenu.Show(mainWindow);
+void MainLoop::ShowDrawingSubMenu(){
+    DrawingSubMenu drawingSubMenu;
+    DrawingSubMenu::DrawingSubMenuResult result = drawingSubMenu.Show(mainWindow);
     switch(result){
-        case SubMenu::Back:
+        case DrawingSubMenu::Back:
             programState = MainLoop::ShowingMenu;
             break;
-        case SubMenu::Begin:
-            programState = MainLoop::Running;
+        case DrawingSubMenu::Begin:
+            programState = MainLoop::RunningDrawing;
             break;
-        case SubMenu::Nothing:
+        case DrawingSubMenu::Nothing:
             // Vitally important
-            ShowSubMenu();
+            ShowDrawingSubMenu();
             break;
     }
 }

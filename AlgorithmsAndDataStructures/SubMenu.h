@@ -11,22 +11,22 @@
 
 #include "ResourcePath.hpp"
 
-class SubMenu{
+class DrawingSubMenu{
 public:
-    enum SubMenuResult { Nothing, Back, Begin };
+    enum DrawingSubMenuResult { Nothing, Back, Begin };
     
-    struct SubMenuItem{
+    struct DrawingSubMenuItem{
     public:
         sf::Rect<int> rect;
-        SubMenuResult action;
+        DrawingSubMenuResult action;
     };
     
-    SubMenuResult Show(sf::RenderWindow& window);
+    DrawingSubMenuResult Show(sf::RenderWindow& window);
     
 private:
-    SubMenuResult GetSubMenuResponse(sf::RenderWindow& window);
-    SubMenuResult HandleClick(int x, int y);
-    std::list<SubMenuItem> menuItems;
+    DrawingSubMenuResult GetDrawingSubMenuResponse(sf::RenderWindow& window);
+    DrawingSubMenuResult HandleClick(int x, int y);
+    std::list<DrawingSubMenuItem> menuItems;
 };
 
 #endif /* defined(__AlgorithmsAndDataStructures__SubMenu__) */

@@ -33,11 +33,14 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <iostream>
+#include <cmath>
+#include <cstdlib>
 
 #include "MainLoop.h"
 #include "SplashScreen.h"
 #include "MainMenu.h"
 #include "SubMenu.h"
+#include "Algorithms.h"
 ////////////////////////////////////////////////////////////
 /// \brief Return the path to the resource folder.
 ///

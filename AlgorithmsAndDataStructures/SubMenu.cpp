@@ -8,11 +8,17 @@
 
 #include "SubMenu.h"
 
-SubMenu::SubMenuResult SubMenu::Show(sf::RenderWindow& renderWindow){
+/*****************************************************
+ 
+ DRAWING SUB MENU AND ACTION HANDLERS / LISTENERS
+ 
+*****************************************************/
+
+DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::Show(sf::RenderWindow& renderWindow){
     renderWindow.clear(sf::Color(100,200,5));
     
     //Begin menu item coordinates
-    SubMenuItem beginButton;
+    DrawingSubMenuItem beginButton;
     beginButton.rect.top= 200;
     beginButton.rect.height = 80;
     beginButton.rect.left = 312;
@@ -28,7 +34,7 @@ SubMenu::SubMenuResult SubMenu::Show(sf::RenderWindow& renderWindow){
     renderWindow.draw(beginBox);
     
     //Exit menu item coordinates
-    SubMenuItem backButton;
+    DrawingSubMenuItem backButton;
     backButton.rect.top = 600;
     backButton.rect.height = 80;
     backButton.rect.left = 312;
@@ -50,11 +56,11 @@ SubMenu::SubMenuResult SubMenu::Show(sf::RenderWindow& renderWindow){
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         exit(1);
     }
-    sf::Text menuText("Sub Menu", font, 80);
+    sf::Text menuText("Drawing Menu", font, 80);
     menuText.setPosition(400, 50);
     menuText.setColor(sf::Color::White);
     
-    sf::Text beginText("Begin", font, 40);
+    sf::Text beginText("Bresenhams!", font, 40);
     beginText.setPosition(400, 200);
     beginText.setColor(sf::Color::Red);
     
@@ -67,11 +73,11 @@ SubMenu::SubMenuResult SubMenu::Show(sf::RenderWindow& renderWindow){
     renderWindow.draw(backText);
     
     renderWindow.display();
-    return GetSubMenuResponse(renderWindow);
+    return GetDrawingSubMenuResponse(renderWindow);
 }
 
-SubMenu::SubMenuResult SubMenu::HandleClick(int x, int y){
-    std::list<SubMenuItem>::iterator it;
+DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::HandleClick(int x, int y){
+    std::list<DrawingSubMenuItem>::iterator it;
     
     for ( it = menuItems.begin(); it != menuItems.end(); it++){
         sf::Rect<int> menuItemRect = (*it).rect;
@@ -85,7 +91,7 @@ SubMenu::SubMenuResult SubMenu::HandleClick(int x, int y){
     return Nothing;
 }
 
-SubMenu::SubMenuResult SubMenu::GetSubMenuResponse(sf::RenderWindow& window){
+DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::GetDrawingSubMenuResponse(sf::RenderWindow& window){
     sf::Event menuEvent;
     
     for(;;){
@@ -94,6 +100,9 @@ SubMenu::SubMenuResult SubMenu::GetSubMenuResponse(sf::RenderWindow& window){
                 return HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
             }
             if(menuEvent.type == sf::Event::Closed){
+                return Back;
+            }
+            if(menuEvent.type == sf::Event::KeyPressed){
                 return Back;
             }
         }

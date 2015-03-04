@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		437651DA1AA6C7820013572B /* Algorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 437651D91AA6C7820013572B /* Algorithms.cpp */; };
 		438CC97E1A7CBE4D00B41E4F /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 438CC97D1A7CBE4D00B41E4F /* sansation.ttf */; };
 		438CC9911A7CBE9F00B41E4F /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC9861A7CBE9F00B41E4F /* Main.cpp */; };
 		438CC9921A7CBE9F00B41E4F /* MainLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC9871A7CBE9F00B41E4F /* MainLoop.cpp */; };
@@ -17,8 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437651D31AA6C4E70013572B /* Algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
+		437651D91AA6C7820013572B /* Algorithms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Algorithms.cpp; sourceTree = "<group>"; };
 		438CC96E1A7CBE4D00B41E4F /* AlgorithmsAndDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmsAndDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		438CC9721A7CBE4D00B41E4F /* AlgorithmsAndDataStructures-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlgorithmsAndDataStructures-Info.plist"; sourceTree = "<group>"; };
 		438CC97D1A7CBE4D00B41E4F /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		438CC9861A7CBE9F00B41E4F /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		438CC9871A7CBE9F00B41E4F /* MainLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainLoop.cpp; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		438CC9701A7CBE4D00B41E4F /* AlgorithmsAndDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				437651D91AA6C7820013572B /* Algorithms.cpp */,
+				437651D31AA6C4E70013572B /* Algorithms.h */,
 				438CC9861A7CBE9F00B41E4F /* Main.cpp */,
 				438CC9871A7CBE9F00B41E4F /* MainLoop.cpp */,
 				438CC9881A7CBE9F00B41E4F /* MainLoop.h */,
@@ -75,17 +79,8 @@
 				438CC98F1A7CBE9F00B41E4F /* SubMenu.cpp */,
 				438CC9901A7CBE9F00B41E4F /* SubMenu.h */,
 				438CC9781A7CBE4D00B41E4F /* Resources */,
-				438CC9711A7CBE4D00B41E4F /* Supporting Files */,
 			);
 			path = AlgorithmsAndDataStructures;
-			sourceTree = "<group>";
-		};
-		438CC9711A7CBE4D00B41E4F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				438CC9721A7CBE4D00B41E4F /* AlgorithmsAndDataStructures-Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		438CC9781A7CBE4D00B41E4F /* Resources */ = {
@@ -186,6 +181,7 @@
 				438CC9961A7CBE9F00B41E4F /* SubMenu.cpp in Sources */,
 				438CC9931A7CBE9F00B41E4F /* MainMenu.cpp in Sources */,
 				438CC9911A7CBE9F00B41E4F /* Main.cpp in Sources */,
+				437651DA1AA6C7820013572B /* Algorithms.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +327,7 @@
 				438CC9851A7CBE4D00B41E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,7 +20,8 @@
 #jumbo1 h1 {
    color: #fff;
   font-size: 48px;  
-  font-family: 'Shift', sans-serif;
+  font-family: 'PWchalk'
+  src: url("/fonts/PWchalk.ttf");;
   font-weight: bold;
   text-align: center;
 }

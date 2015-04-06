@@ -1,3 +1,8 @@
+@font-face { 
+  font-family: PWchalk; src: url('/fonts/PWchalk.ttf'); 
+  font-family: EraserDust; src: url('/fonts/EraserDust.ttf'); 
+  font-family: EraserRegular; src: url('/fonts/EraserRegular.ttf'); 
+} 
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -20,14 +25,14 @@
 #jumbo1 h1 {
    color: #fff;
   font-size: 48px;  
-  font-family: 'PWchalk'
-  src: url("/fonts/PWchalk.ttf");;
+  font-family: "EraserRegular";
   font-weight: bold;
   text-align: center;
 }
 
 #jumbo1 p {
   font-size: 20px;
+  font-family: "EraserRegular";
   color: #fff;
   text-align: center;
 }

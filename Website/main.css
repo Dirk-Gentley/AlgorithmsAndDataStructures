@@ -1,7 +1,7 @@
 @font-face { 
-  font-family: PWchalk; src: url('@{plChildRoot}/fonts/PWchalk.ttf'); 
-  font-family: EraserDust; src: url('@{plChildRoot}/fonts/EraserDust.ttf'); 
-  font-family: EraserRegular; src: url('@{plChildRoot}/fonts/EraserRegular.ttf'); 
+  font-family: PWchalk; src: url('/fonts/PWchalk.ttf'); 
+  font-family: EraserDust; src: url('/fonts/EraserDust.ttf'); 
+  font-family: EraserRegular; src: url('/fonts/EraserRegular.ttf'); 
 } 
 .nav a {
   color: #5a5a5a;

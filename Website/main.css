@@ -89,3 +89,7 @@ body {
 #feed img {
 	display: block;
 }
+ul { 
+	display:table; 
+	margin:0 auto;
+}

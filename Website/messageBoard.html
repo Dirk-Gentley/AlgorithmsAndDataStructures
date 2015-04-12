@@ -29,24 +29,15 @@
 	</nav>
 	<div id = "messageBoard">
 		Impplement once i have a digital ocean server set up to allow the use of sql/php
-		<?php
-
-	// Open the text file
-	$f = fopen("textfile.txt", "w");
-
-	// Write text line
-	fwrite($f, "PHP is fun!"); 
-
-	// Close the text file
-	fclose($f);
-
-	// Open file for reading, and read the line
-	$f = fopen("textfile.txt", "r");
-	echo fgets($f); 
-
-	fclose($f);
-
-	?>
+<script>
+function createDoc()
+{
+var doc=document.open("answer.txt","replace");
+var txt="<html><body>You clicked Allow</body></html>";
+doc.write(txt);
+doc.close();
+}
+</script>
 	</div>
 
 	<div class="container">
@@ -59,7 +50,7 @@
 				<label for="comment">Comment:</label>
 				<textarea class="form-control" rows="5" id="comment"></textarea>
 			</div>
-			<button type="submit" class="btn btn-default" data-target="Post">Submit</button>
+			<button type="submit" class="btn btn-default" onclick="createDoc()">Submit</button>
 		</form>
 	</div>
 

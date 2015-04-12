@@ -16,6 +16,11 @@ body {
   overflow-y: auto;
 }
 
+#listgroup {
+
+    list-style-type: none;
+}
+
 .nav a {
 	color: #5a5a5a;
 	font-size: 11px;

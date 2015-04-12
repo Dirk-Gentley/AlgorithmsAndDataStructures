@@ -92,4 +92,5 @@ body {
 ul { 
 	display:table; 
 	margin:0 auto;
+	list-style-type:none
 }

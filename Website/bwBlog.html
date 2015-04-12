@@ -38,14 +38,7 @@
 					</div>
 				</div>
 			</nav>
-				<div id = "feed">
-		<div style = "padding-left:50px; padding-right:50px;" >
-		<div class="row" style = "padding-top: 50px;">
-			<div class="col-md-6">
-				<ul id = "listgroup"></ul>
-			</div>
-		</div>
-	</div>
+				<div id = "feed"></div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>
@@ -59,8 +52,8 @@
 					uniqueIndex++;
 					var uniqueID = "basicModal" + uniqueIndex;
 					var button='<button class="btn btn-primary" data-toggle="modal" data-target="#' + uniqueID + '">'+e.title+'</button>&nbsp;';
-					document.getElementById("listgroup").innerHTML += '<li>' + button + '</li>' ;
-					document.getElementById("listgroup").innerHTML += e.description ;
+					document.getElementById("feed").innerHTML += '<ul class="list-group">' + '<li>' + button + '</li>' ;
+					document.getElementById("feed").innerHTML += '</ul>';
 					document.getElementById("feed").innerHTML += 																							'<div class="modal fade" id="' + uniqueID + '" tabindex="-1" role="dialog" aria-labelledby=basicModal" aria-hidden="true">'+
 					'<div class="modal-dialog">' +
 					'<div class="modal-content">'+

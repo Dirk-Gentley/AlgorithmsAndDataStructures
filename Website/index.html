@@ -64,8 +64,12 @@
 						2. Algorithms and data structures are essential knowledge for computer science students so through our product we hope to educate and entertain. Our main goal is to take a subject that can be seen as relatively boring and add a twist of fun.
 					</p>
 				</div>
-
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<script>
+				var clock = document.getElementById("countbox1"), targetDate = new Date(2015, 03, 20);
+				clock.innerHTML = countdown(targetDate).toString();
+				setInterval(function(){clock.innerHTML = countdown(targetDate).toString()}, 1000) 
+				</script>
 			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 			</body>
 			</html>

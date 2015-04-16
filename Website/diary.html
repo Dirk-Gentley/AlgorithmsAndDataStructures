@@ -36,13 +36,13 @@
 				</div>
 			</nav>
 			<div>
-				<h1>Group Meeting Minuets</h1>
+				<h1>Group Meeting Diary</h1>
 				<div id = "feed"></div>
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script>
 			$.ajax({
-				url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/group-meetings-minuets/feed/'),
+				url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/group-meetings-diary/feed/'),
 				dataType : 'json',
 				success  : function (data) {
 					if (data.responseData.feed && data.responseData.feed.entries) {

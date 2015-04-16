@@ -20,11 +20,12 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="minutes.html">Meeting Minutes</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Diaries
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="diary.html">Group Meetings</a></li>
+								<li><a href="diary.html">Group Diary</a></li>
 								<li><a href="bwBlog.html">Ben Waters Blog</a></li>
 								<li><a href="jgBlog.html">Jim Gollops Blog</a></li> 
 								<li><a href="njBlog.html">Nicholas Judds Blog</a></li> 
@@ -54,7 +55,7 @@
 					var button='<button class="btn btn-primary" data-toggle="modal" data-target="#' + uniqueID + '">'+e.title+'</button>&nbsp;';
 					document.getElementById("feed").innerHTML += '<ul class="list-group">' + '<li>' + button + '</li>' ;
 					document.getElementById("feed").innerHTML += '</ul>';
-					document.getElementById("feed").innerHTML += 																							'<div class="modal fade" id="' + uniqueID + '" tabindex="-1" role="dialog" aria-labelledby=basicModal" aria-hidden="true">'+
+					document.getElementById("feed").innerHTML += 																							'<div class="modal fade" id="' + uniqueID + '" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">'+
 					'<div class="modal-dialog">' +
 					'<div class="modal-content">'+
 					'<div class="modal-header">'+

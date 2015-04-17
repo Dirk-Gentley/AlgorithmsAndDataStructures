@@ -57,7 +57,7 @@
 	<div ng-controller="TabsDemoCtrl" style = "width: 100%; height: 100%; ">
 		<tabset>
 			<tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled" >
-      			<object data={{tabs.content}} type="application/pdf" style = "width: 100%; height: 100%;">
+      			<object data={{tab.content}} type="application/pdf" style = "width: 100%; height: 100%;">
     		</tab>
 		</tabset>
 	</div>

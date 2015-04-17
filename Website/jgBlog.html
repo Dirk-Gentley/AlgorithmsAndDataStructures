@@ -45,7 +45,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>
 	$.ajax({
-		url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/jim-gollops-blog/feed/'),
+		url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/jim-gollops-blog/atom/'),
 		dataType : 'json',
 		success  : function (data) {
 			if (data.responseData.feed && data.responseData.feed.entries) {

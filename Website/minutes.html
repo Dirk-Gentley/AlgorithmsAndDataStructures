@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html ng-app="ui.bootstrap.demo">
+<html ng-app="ui.bootstrap.demo"style = "width: 100%; height: 100%;">
 
 <head>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
     <script src="minutes.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="main.css"/>
+	<style>
+	body > div > div > div > div.tab-pane.ng-scope.active{
+		height: 100%;
+	}
+
+	body > div > div > div > div.tab-pane.ng-scope.active > object{
+		height:100%;
+	}
+	body > div > div > div{
+		height: 100%;
+	}
+	body > div > div{
+		height: 100%;
+	}
+	</style>
 </head>
 
-<body>
+<body style = "width: 100%; height: 100%;">
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -41,12 +54,15 @@
 			</div>
 		</div>
 	</nav> 
-	<div ng-controller="minuets" ng-model="oneAtATime" width="100%" height="100%">
-		<accordion close-others="oneAtATime">
-			<accordion-group heading="{{group.title}}" ng-repeat="group in groups" is-open="status.isFirstOpen" width="100%" height="100%">
-				<object data={{group.content}} type="application/pdf" width="100%" height="100%">
-			</accordion-group>
-		</accordion>
+	<div ng-controller="TabsDemoCtrl" style = "width: 100%; height: 100%;">
+		<tabset>
+			<tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled" >
+      			<object data={{tab.content}} type="application/pdf" style = "width: 100%; height: 100%;">
+    		</tab>
+		</tabset>
 	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>

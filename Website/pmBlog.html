@@ -39,10 +39,15 @@
 						</div>
 					</div>
 				</nav>
-				<div>
-					<h1>Pete Marvidis Blog</h1>
-					<div id = "feed"></div>
-				</div>
+				<div style = "text-align: center;">
+				<h1></h1>
+				<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Pete Mavridis Blog</h3>
+		</div>
+		<div class="panel-body">
+				<div id = "feed" style = "text-align: left;"></div>
+			</div>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 					<script>
 					$.ajax({
@@ -54,9 +59,8 @@
 								$.each(data.responseData.feed.entries, function (i, e) {
 									uniqueIndex++;
 									var uniqueID = "basicModal" + uniqueIndex;
-									var button='<button class="btn btn-primary" data-toggle="modal" data-target="#' + uniqueID + '">'+e.title+'</button>&nbsp;';
-									document.getElementById("feed").innerHTML += '<ul class="list-group">' + '<li>' + button + '</li>' ;
-									document.getElementById("feed").innerHTML += '</ul>';
+									var button='<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#' + uniqueID + '">'+e.title+'</button>';
+									document.getElementById("feed").innerHTML += button;
 									document.getElementById("feed").innerHTML += 																							'<div class="modal fade" id="' + uniqueID + '" tabindex="-1" role="dialog" aria-labelledby=basicModal" aria-hidden="true">'+
 									'<div class="modal-dialog">' +
 									'<div class="modal-content">'+

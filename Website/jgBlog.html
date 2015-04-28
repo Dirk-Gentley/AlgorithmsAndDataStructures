@@ -40,7 +40,7 @@
 			</nav>
 			<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title"style = "text-align: left;">Jim Gollops Blog</h3>
+						<h3 class="panel-title"style = "text-align: center;">Jim Gollops Blog</h3>
 					</div>
 					<div class="panel-body">
 						<div id = "feed" style = "text-align: left;"></div>
@@ -57,8 +57,7 @@
 					uniqueIndex++;
 					var uniqueID = "basicModal" + uniqueIndex;
 					var button='<button class="btn btn-primary" data-toggle="modal" data-target="#' + uniqueID + '">'+e.title+'</button>&nbsp;';
-					document.getElementById("feed").innerHTML += '<ul class="list-group">' + '<li>' + button + '</li>' ;
-					document.getElementById("feed").innerHTML += '</ul>';
+					document.getElementById("feed").innerHTML += button;
 					document.getElementById("feed").innerHTML += 																							'<div class="modal fade" id="' + uniqueID + '" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">'+
 					'<div class="modal-dialog">' +
 					'<div class="modal-content">'+

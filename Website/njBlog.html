@@ -43,16 +43,47 @@
 					</div>
 				</div>
 			</nav>
-			<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title" style = "text-align: center;">Nicholas Judds Blog</h3>
-					</div>
-					<div class="panel-body">
-						<div id = "feed" style = "text-align: left;"></div>
-					</div>
+			<!--<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title" style = "text-align: center;">Nicholas Judds Blog</h3>
+				</div>
+				<div class="panel-body">
+					<div id = "feed" style = "text-align: left;"></div>
+				</div>
+			</div>-->
+			<div class="accordion" id="accordion2">
+			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script>
 			$.ajax({
+				url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/nicholas-judd-blog/atom/'),
+				dataType : 'json',
+				success  : function (data) {
+					if (data.responseData.feed && data.responseData.feed.entries) {
+						var uniqueIndex = 0;
+						$.each(data.responseData.feed.entries, function (i, e) {
+							uniqueIndex++;
+							document.getElementById("accordion2").innerHTML += '<div class="accordion-heading">'
+							+ '<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#' + uniqueIndex + '">'
+							+ e.title + '</a></div>'
+							+ '<div id="' + uniqueIndex + '" class="accordion-body collapse">'
+      						+ '<div class="accordion-inner">'
+      						+ e.content
+      						+ '</div></div>';
+						});
+}
+}
+});
+</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+<!--
+
+	$.ajax({
 				url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/nicholas-judd-blog/atom/'),
 				dataType : 'json',
 				success  : function (data) {
@@ -83,6 +114,5 @@
 }
 }
 });
-</script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</body>
+
+-->

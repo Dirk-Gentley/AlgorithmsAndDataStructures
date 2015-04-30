@@ -43,15 +43,7 @@
 					</div>
 				</div>
 			</nav>
-			<!--<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h3 class="panel-title" style = "text-align: center;">Nicholas Judds Blog</h3>
-				</div>
-				<div class="panel-body">
-					<div id = "feed" style = "text-align: left;"></div>
-				</div>
-			</div>-->
-			<div class="accordion" id="accordion2">
+			<div class="panel-group" id="accordion">
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script>
@@ -63,13 +55,22 @@
 						var uniqueIndex = 0;
 						$.each(data.responseData.feed.entries, function (i, e) {
 							uniqueIndex++;
-							document.getElementById("accordion2").innerHTML += '<div class="accordion-heading">'
-							+ '<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#' + uniqueIndex + '">'
-							+ e.title + '</a></div>'
-							+ '<div id="' + uniqueIndex + '" class="accordion-body collapse">'
-      						+ '<div class="accordion-inner">'
-      						+ e.content
-      						+ '</div></div>';
+							var uniqueID = "accordian" + uniqueIndex;
+							document.getElementById("accordion").innerHTML += 
+								'<div class = "panel panel-default">'
+							+ 		'<div class = "panel-heading">'
+							+ 			'<h4 class = "panel-title">'
+							+ 				'<a data-toggle="collapse" data-parent="#accordion" href="#'+ uniqueID +'">'
+							+ 					e.title
+							+ 				'</a>'
+							+ 			'</h4>'
+							+ 		'</div>'
+							+ 		'<div id="' + uniqueID + '" class="panel-collapse collapse">'
+							+ 			'<div class="panel-body">'
+							+ 				e.content
+							+ 			'</div>'
+							+ 		'</div>'
+							+	'</div>';
 						});
 }
 }
@@ -77,42 +78,3 @@
 </script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
-
-
-
-
-<!--
-
-	$.ajax({
-				url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/nicholas-judd-blog/atom/'),
-				dataType : 'json',
-				success  : function (data) {
-					if (data.responseData.feed && data.responseData.feed.entries) {
-						var uniqueIndex = 0;
-						$.each(data.responseData.feed.entries, function (i, e) {
-							uniqueIndex++;
-							var uniqueID = "basicModal" + uniqueIndex;
-							var button='<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#' + uniqueID + '">'+e.title+'</button>&nbsp;';
-							document.getElementById("feed").innerHTML += button;
-							document.getElementById("feed").innerHTML += 																							'<div class="modal fade modal-wide" id="' + uniqueID + '" tabindex="-1" role="dialog" aria-labelledby=basicModal" aria-hidden="true">'+
-							'<div class="modal-dialog">' +
-							'<div class="modal-content">'+
-							'<div class="modal-header">'+
-							'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>'+
-							'<h4 class="modal-title" id="myModalLabel">'+e.title+'</h4>'+
-							'</div>'+
-							'<div class="modal-body">'+
-							'<p>'+e.content+'</p>'+
-							'</div>'+
-							'<div class="modal-footer">'+
-							'<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'+
-							'</div>'+
-							'</div>'+
-							'</div>'+
-							'</div>';
-						});
-}
-}
-});
-
--->

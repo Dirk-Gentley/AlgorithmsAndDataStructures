@@ -4,7 +4,7 @@ html {
 
 @font-face { 
 	font-family: 'EraserRegular'; 
-	src: url('fonts/EraserRegular.ttf'); 
+	src: url('../fonts/EraserRegular.ttf'); 
 	font-weight: normal;
 	font-style: normal;
 } 
@@ -40,7 +40,7 @@ body {
 }
 
 #jumbo1{
-	background-image: url('img/BlackBoard.jpg');
+	background-image: url('../img/BlackBoard.jpg');
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;

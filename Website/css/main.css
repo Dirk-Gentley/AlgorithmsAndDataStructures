@@ -74,17 +74,21 @@ body {
 	text-align: center;
 }
 
-#aboutUsTable h1 {
+#aboutus h1 {
 	font-style: italic;
 	color: Gray;
 }
 
-#aboutUsTable h2 {
+#aboutus h2 {
 	font-style: italic;
 	color: Gray;
 }
-#aboutUsTable h4 {
+#aboutus h4 {
 	font-style: italic;
+}
+
+#aboutus {
+	height: 400px;
 }
 
 #feed h1 {

@@ -51,38 +51,35 @@
 					</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script>
-	$.ajax({
-		url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/ben-waters-blog/atom/'),
-		dataType : 'json',
-		success  : function (data) {
-			if (data.responseData.feed && data.responseData.feed.entries) {
-				var uniqueIndex = 0;
-				$.each(data.responseData.feed.entries, function (i, e) {
-					uniqueIndex++;
-					var uniqueID = "basicModal" + uniqueIndex;
-					var button='<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#' + uniqueID + '">'+e.title+'</button>&nbsp;';
-					document.getElementById("feed").innerHTML += button;
-					document.getElementById("feed").innerHTML += 																							'<div class="modal fade modal-wide" id="' + uniqueID + '" tabindex="-1" role="dialog" aria-labelledby=basicModal" aria-hidden="true">'+
-					'<div class="modal-dialog">' +
-					'<div class="modal-content">'+
-					'<div class="modal-header">'+
-					'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>'+
-					'<h4 class="modal-title" id="myModalLabel">'+e.title+'</h4>'+
-					'</div>'+
-					'<div class="modal-body">'+
-					'<p>'+e.content+'</p>'+
-					'</div>'+
-					'<div class="modal-footer">'+
-					'<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'+
-					'</div>'+
-					'</div>'+
-					'</div>'+
-					'</div>';
-				});
+			<script>
+			$.ajax({
+				url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://algorithmsdatastructurestoolga1.wordpress.com/category/ben-waters-blog/atom/'),
+				dataType : 'json',
+				success  : function (data) {
+					if (data.responseData.feed && data.responseData.feed.entries) {
+						var uniqueIndex = 0;
+						$.each(data.responseData.feed.entries, function (i, e) {
+							uniqueIndex++;
+							var uniqueID = "accordian" + uniqueIndex;
+							document.getElementById("accordion").innerHTML += 
+								'<div class = "panel panel-default">'
+							+ 		'<div class = "panel-heading">'
+							+ 			'<h4 class = "panel-title">'
+							+ 				'<a data-toggle="collapse" data-parent="#accordion" href="#'+ uniqueID +'">'
+							+ 					e.title
+							+ 				'</a>'
+							+ 			'</h4>'
+							+ 		'</div>'
+							+ 		'<div id="' + uniqueID + '" class="panel-collapse collapse">'
+							+ 			'<div class="panel-body">'
+							+ 				e.content
+							+ 			'</div>'
+							+ 		'</div>'
+							+	'</div>';
+						});
 }
 }
 });
-	</script>
+</script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>

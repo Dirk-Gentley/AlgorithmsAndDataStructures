@@ -17,7 +17,13 @@ class MainMenu{
     
 public:
     // Results are returned by the action handler
-	enum MenuResult { Nothing, Exit, DrawingSubMenu };
+	enum MenuResult {   Nothing,
+                        Exit,
+                        SortingAndSearchingMenu,
+                        PuzzlesAndGamesMenu,
+                        TreesAndStructuresMenu,
+                        SchoolOfImplementationsMenu };
+    
 	// All menu items are public members, hence struct
 	struct MenuItem{
     public:

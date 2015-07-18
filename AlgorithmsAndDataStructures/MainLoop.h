@@ -17,7 +17,10 @@ public:
     static void Start();
     // Each of the menus/sub menus will appear here
     static void ShowMenu();
-    static void ShowDrawingSubMenu();
+    static void ShowTreesAndStructuresMenu();
+    static void ShowSortingAndSearchingMenu();
+    static void ShowPuzzlesAndGamesMenu();
+    static void ShowSchoolOfImplementationsMenu();
     
 private:
     // Safely shut down
@@ -33,13 +36,19 @@ private:
                         ShowingSplash,
                         Paused,
                         ShowingMenu,
-                        ShowingDrawingSubMenu,
-                        RunningDrawing,
+                        ShowingTreesAndStructuresMenu,
+                        ShowingSortingAndSearchingMenu,
+                        ShowingPuzzlesAndGamesMenu,
+                        ShowingSchoolOfImplementationsMenu,
+                        RunningTreesAndStructures,
+                        RunningSortingAndSearching,
+                        RunningPuzzlesAndGames,
+                        RunningSchoolOfImplementations,
                         Exiting };
     
     static ProgramState programState;
     // The render window will be passed to any class that needs it
-    static sf::RenderWindow mainWindow;
+    static sf::RenderWindow MainWindow;
 };
 
 #endif

@@ -3,8 +3,8 @@ html {
 }
 
 @font-face { 
-	font-family: 'EraserRegular'; 
-	src: url('../fonts/EraserRegular.ttf'); 
+	font-family: 'PressStart2P'; 
+	src: url('../fonts/PressStart2P.ttf'); 
 	font-weight: normal;
 	font-style: normal;
 } 
@@ -40,24 +40,24 @@ body {
 }
 
 #jumbo1{
-	background-image: url('../img/BlackBoard.jpg');
+	
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #jumbo1 h1 {
-	color: #fff;
+	color: white;
 	font-size: 48px;  
-	font-family: "EraserRegular";
+	font-family: "PressStart2P";
 	font-weight: bold;
 	text-align: center;
 }
 
 #jumbo1 p {
 	font-size: 20px;
-	font-family: "EraserRegular";
-	color: #fff;
+	font-family: "PressStart2P";
+	color: white;
 	text-align: center;
 }
 
@@ -66,24 +66,74 @@ body {
 	top: 100px;
 }
 
-#MainPage h1 {
+#jumbo2{
+	background-image: url('../img/Space.jpg');
+	height: 400px;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+#jumbo2 h1 {
+	color: #fff;
+	font-size: 48px;  
+	font-family: "PressStart2P";
+	font-weight: bold;
 	text-align: center;
 }
 
-#MainPage p {
+#jumbo2 p {
+	font-size: 20px;
+	font-family: "PressStart2P";
+	color: #fff;
+	text-align: center;
+}
+
+#jumbo2 .container {
+	position: relative;
+	top: 100px;
+}
+
+#MainPage {
+	background-image: url('../img/Space.jpg');
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+#MainPageBody h1 {
+	color: white;
+	font-size: 30px;  
+	font-family: "PressStart2P";
+	font-weight: bold;
+	text-align: center;
+}
+
+#MainPageBody p {
+	font-size: 20px;
+	font-family: "PressStart2P";
+	color: black;
 	text-align: center;
 }
 
 #aboutus h1 {
+	color: #fff;
+	font-size: 30px;  
+	font-family: "PressStart2P";
+	font-weight: bold;
+	text-align: center;
 	font-style: italic;
-	color: Gray;
+	color: White;
 }
 
 #aboutus h2 {
+	
 	font-style: italic;
-	color: Gray;
+	color: Grey;
 }
 #aboutus h4 {
+	font-size: 20px;
+	font-family: "PressStart2P";
+	color: #fff;
+	text-align: center;
 	font-style: italic;
 }
 

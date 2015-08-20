@@ -39,7 +39,10 @@
 #include "MainLoop.h"
 #include "SplashScreen.h"
 #include "MainMenu.h"
-#include "SubMenu.h"
+#include "TreesAndStructuresMenu.h"
+#include "PuzzlesAndGamesMenu.h"
+#include "SortingAndSearchingMenu.h"
+#include "SchoolOfImplementationsMenu.h"
 #include "Algorithms.h"
 ////////////////////////////////////////////////////////////
 /// \brief Return the path to the resource folder.

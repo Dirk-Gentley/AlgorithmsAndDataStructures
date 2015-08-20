@@ -1,24 +1,24 @@
 //
-//  SubMenu.cpp
+//  SchoolOfImplementations.cpp
 //  AlgorithmsAndDataStructures
 //
-//  Created by Benjamin Waters on 31/01/2015.
+//  Created by Benjamin Waters on 16/07/2015.
 //  Copyright (c) 2015 Benjamin. All rights reserved.
 //
 
-#include "SubMenu.h"
+#include "ResourcePath.hpp"
 
 /*****************************************************
  
- DRAWING SUB MENU AND ACTION HANDLERS / LISTENERS
+ SCHOOL OF IMPLEMENTATIONS MENU AND ACTION HANDLERS / LISTENERS
  
-*****************************************************/
+ *****************************************************/
 
-DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::Show(sf::RenderWindow& renderWindow){
-    renderWindow.clear(sf::Color(100,200,5));
+SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplementationsMenu::Show(sf::RenderWindow& renderWindow){
+    renderWindow.clear(sf::Color(200,200,100));
     
     //Begin menu item coordinates
-    DrawingSubMenuItem beginButton;
+    SchoolOfImplementationsMenuItem beginButton;
     beginButton.rect.top= 200;
     beginButton.rect.height = 80;
     beginButton.rect.left = 312;
@@ -34,7 +34,7 @@ DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::Show(sf::RenderWindow& rend
     renderWindow.draw(beginBox);
     
     //Exit menu item coordinates
-    DrawingSubMenuItem backButton;
+    SchoolOfImplementationsMenuItem backButton;
     backButton.rect.top = 600;
     backButton.rect.height = 80;
     backButton.rect.left = 312;
@@ -56,11 +56,11 @@ DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::Show(sf::RenderWindow& rend
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         exit(1);
     }
-    sf::Text menuText("Drawing Menu", font, 80);
+    sf::Text menuText("School of Implementations Menu", font, 80);
     menuText.setPosition(400, 50);
     menuText.setColor(sf::Color::White);
     
-    sf::Text beginText("Bresenhams!", font, 40);
+    sf::Text beginText("But where would I use that?", font, 40);
     beginText.setPosition(400, 200);
     beginText.setColor(sf::Color::Red);
     
@@ -73,11 +73,11 @@ DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::Show(sf::RenderWindow& rend
     renderWindow.draw(backText);
     
     renderWindow.display();
-    return GetDrawingSubMenuResponse(renderWindow);
+    return GetSchoolOfImplementationsMenuResponse(renderWindow);
 }
 
-DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::HandleClick(int x, int y){
-    std::list<DrawingSubMenuItem>::iterator it;
+SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplementationsMenu::HandleClick(int x, int y){
+    std::list<SchoolOfImplementationsMenuItem>::iterator it;
     
     for ( it = menuItems.begin(); it != menuItems.end(); it++){
         sf::Rect<int> menuItemRect = (*it).rect;
@@ -91,7 +91,7 @@ DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::HandleClick(int x, int y){
     return Nothing;
 }
 
-DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::GetDrawingSubMenuResponse(sf::RenderWindow& window){
+SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplementationsMenu::GetSchoolOfImplementationsMenuResponse(sf::RenderWindow& window){
     sf::Event menuEvent;
     
     for(;;){
@@ -108,4 +108,3 @@ DrawingSubMenu::DrawingSubMenuResult DrawingSubMenu::GetDrawingSubMenuResponse(s
         }
     }
 }
-

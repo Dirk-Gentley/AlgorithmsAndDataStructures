@@ -98,7 +98,27 @@ body {
 	background-repeat: repeat;
 	background-size: cover;
 }
+	.panel-transparent {
+        background: rgba(46, 51, 56, 0.5)!important;;
+    }
 
+    .panel-transparent .panel-heading{
+        background: rgba(122, 130, 136, 0.5)!important;
+    }
+
+    .panel-transparent .panel-body{
+        background: rgba(46, 51, 56, 0.5)!important;
+    }
+#MainPage p {
+	color: White;
+	text-align: left;
+	font-style: italic;
+}
+#MainPage h1{
+	color: White;
+	text-align: left;
+	font-style: italic;
+}
 #MainPageBody h1 {
 	color: white;
 	font-size: 30px;  
@@ -115,7 +135,6 @@ body {
 }
 
 #aboutus h1 {
-	color: #fff;
 	font-size: 30px;  
 	font-family: "PressStart2P";
 	font-weight: bold;
@@ -127,12 +146,22 @@ body {
 #aboutus h2 {
 	
 	font-style: italic;
-	color: Grey;
+	color: White;
 }
 #aboutus h4 {
 	font-size: 20px;
 	font-family: "PressStart2P";
-	color: #fff;
+	color: White;
+	text-align: center;
+	font-style: italic;
+}
+#aboutus p {
+	color: White;
+	text-align: center;
+	font-style: italic;
+}
+#aboutus li {
+	color: White;
 	text-align: center;
 	font-style: italic;
 }

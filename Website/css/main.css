@@ -97,6 +97,7 @@ body {
 	background-image: url('../img/Space.jpg');
 	background-repeat: repeat;
 	background-size: cover;
+	
 }
 	.panel-transparent {
         background: rgba(46, 51, 56, 0.5)!important;;
@@ -109,6 +110,7 @@ body {
     .panel-transparent .panel-body{
         background: rgba(46, 51, 56, 0.5)!important;
     }
+
 #MainPage p {
 	color: White;
 	text-align: left;

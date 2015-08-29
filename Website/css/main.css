@@ -94,6 +94,18 @@ body {
 	position: relative;
 	top: 100px;
 }
+#Correspondence {
+	background-image: url('../img/Space.jpg');
+	background-repeat: repeat;
+	background-size: cover;	
+}
+
+#Meetings {
+	background-image: url('../img/Space.jpg');
+	background-repeat: repeat;
+	background-size: cover;
+	
+}
 #Diary {
 	background-image: url('../img/Space.jpg');
 	background-repeat: repeat;

@@ -106,24 +106,13 @@ body {
 
 #Diary .panel-transparent .panel-heading{
 	background: rgba(0, 0, 0, 0.8)!important;
-	font-size: 20px;
-	line-height: 30px;
-	font-family: "PressStart2P";
 	color: White;
-	text-align: center;
 }
 
 #Diary .panel-transparent .panel-body{
 	background: rgba(0, 0, 0, 0.8)!important;
 }
 
-#Diary p{
-	font-size: 20px;
-	line-height: 30px;
-	font-family: "PressStart2P";
-	color: White;
-	text-align: center;
-}	
 
 #MainPage {
 	background-image: url('../img/Space.jpg');

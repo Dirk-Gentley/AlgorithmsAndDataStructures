@@ -104,7 +104,16 @@ body {
 	background: rgba(0, 0, 0, 0.8)!important;
 }
 
+#Correspondence h3 {
+	color: White;
+}
 #Correspondence p {
+	color: White;
+}
+#Correspondence ul {
+	color: White;
+}
+#Correspondence li {
 	color: White;
 }
 

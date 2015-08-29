@@ -52,6 +52,7 @@ body {
 	font-family: "PressStart2P";
 	font-weight: bold;
 	text-align: center;
+	padding-left: 100px;
 }
 
 #jumbo1 p {
@@ -59,6 +60,7 @@ body {
 	font-family: "PressStart2P";
 	color: white;
 	text-align: center;
+	padding-left: 100px;
 }
 
 #jumbo1 .container {
@@ -127,13 +129,19 @@ body {
 	font-family: "PressStart2P";
 	font-weight: bold;
 	text-align: center;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 #MainPageBody p {
 	font-size: 20px;
+	line-height: 30px;
 	font-family: "PressStart2P";
-	color: black;
-	text-align: center;
+	color: White;
+	text-align: justify;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 #aboutus h1 {

@@ -16,15 +16,15 @@ body {
 
 
 .modal.modal-wide .modal-dialog {
-  width: 90%;
+	width: 90%;
 }
 .modal-wide .modal-body {
-  overflow-y: auto;
+	overflow-y: auto;
 }
 
 #listgroup {
 
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .nav a {
@@ -100,17 +100,25 @@ body {
 	background-size: cover;
 	
 }
-	.panel-transparent {
-        background: rgba(46, 51, 56, 0.5)!important;;
-    }
+#Diary .panel-transparent {
+	background: rgba(0, 0, 0, 0.8)!important;;
+}
 
-    .panel-transparent .panel-heading{
-        background: rgba(122, 130, 136, 0.5)!important;
-    }
+#Diary .panel-transparent .panel-heading{
+	background: rgba(0, 0, 0, 0.8)!important;
+}
 
-    .panel-transparent .panel-body{
-        background: rgba(46, 51, 56, 0.5)!important;
-    }	
+#Diary .panel-transparent .panel-body{
+	background: rgba(0, 0, 0, 0.8)!important;
+}
+
+#Diary p{
+	font-size: 20px;
+	line-height: 30px;
+	font-family: "PressStart2P";
+	color: White;
+	text-align: center;
+}	
 
 #MainPage {
 	background-image: url('../img/Space.jpg');
@@ -118,17 +126,17 @@ body {
 	background-size: cover;
 	
 }
-	.panel-transparent {
-        background: rgba(46, 51, 56, 0.5)!important;;
-    }
+.panel-transparent {
+	background: rgba(46, 51, 56, 0.5)!important;;
+}
 
-    .panel-transparent .panel-heading{
-        background: rgba(122, 130, 136, 0.5)!important;
-    }
+.panel-transparent .panel-heading{
+	background: rgba(122, 130, 136, 0.5)!important;
+}
 
-    .panel-transparent .panel-body{
-        background: rgba(46, 51, 56, 0.5)!important;
-    }
+.panel-transparent .panel-body{
+	background: rgba(46, 51, 56, 0.5)!important;
+}
 
 #MainPage p {
 	color: White;

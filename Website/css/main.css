@@ -104,7 +104,7 @@ body {
 	background: rgba(0, 0, 0, 0.8)!important;
 	color: White;
 }
-#Correspondence .nav .nav-tabs{
+#Correspondence .nav .nav-tabs li{
 	color: White;
 }
 #Correspondence h3 {

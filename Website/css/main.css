@@ -94,6 +94,24 @@ body {
 	position: relative;
 	top: 100px;
 }
+#Diary {
+	background-image: url('../img/Space.jpg');
+	background-repeat: repeat;
+	background-size: cover;
+	
+}
+	.panel-transparent {
+        background: rgba(46, 51, 56, 0.5)!important;;
+    }
+
+    .panel-transparent .panel-heading{
+        background: rgba(122, 130, 136, 0.5)!important;
+    }
+
+    .panel-transparent .panel-body{
+        background: rgba(46, 51, 56, 0.5)!important;
+    }	
+}
 
 #MainPage {
 	background-image: url('../img/Space.jpg');

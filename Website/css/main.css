@@ -100,11 +100,18 @@ body {
 	background-size: cover;	
 }
 
+#Correspondence .tab-content {
+	background: rgba(0, 0, 0, 0.8)!important;
+}
+
+#Correspondence p {
+	color: White;
+}
+
 #Meetings {
 	background-image: url('../img/Space.jpg');
 	background-repeat: repeat;
 	background-size: cover;
-	
 }
 #Diary {
 	background-image: url('../img/Space.jpg');
@@ -113,7 +120,7 @@ body {
 	
 }
 #Diary .panel-transparent {
-	background: rgba(0, 0, 0, 0.8)!important;;
+	background: rgba(0, 0, 0, 0.8)!important;
 }
 
 #Diary .panel-transparent .panel-heading{

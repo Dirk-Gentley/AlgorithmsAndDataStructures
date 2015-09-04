@@ -8,6 +8,9 @@ angular.module('ui.bootstrap.demo').controller('TabsDemoCtrl', function ($scope,
     { title:'Group Meeting 5', content:'minutes/27-03-15.pdf' },
     { title:'Group Meeting 6', content:'minutes/10-04-2015.pdf'},
     { title:'Group Meeting 7', content:'minutes/17-04-15.pdf'},
-    { title:'Group Meeting 8', content:'minutes/27-04-15.pdf'}
+    { title:'Group Meeting 8', content:'minutes/27-04-15.pdf'},
+    { title:'Group Meeting 9', content:'minutes/11-05-2015.pdf'},
+    { title:'Group Meeting 10', content:'minutes/10-07-2015.pdf'},
+    { title:'Group Meeting 11', content:'minutes/04-09-2015.pdf'}
   ];
 });

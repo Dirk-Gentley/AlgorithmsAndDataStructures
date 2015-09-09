@@ -16,11 +16,26 @@ void SplashScreen::Show(sf::RenderWindow &renderWindow){
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         exit(1);
     }
-    sf::Text text("This is the Splash Screen", font, 50);
-    text.setPosition(220, 50);
-    text.setColor(sf::Color::White);
+    sf::Text SplashText("This is the Splash Screen", font, 50);
+    SplashText.setPosition(220, 50);
+
+    sf::Text PeterText("Peter Mavridis", font, 30);
+    PeterText.setPosition(500, 200);
     
-    renderWindow.draw(text);
+    sf::Text BenText("Benjamin  Waters", font, 30);
+    BenText.setPosition(500, 240);
+    
+    sf::Text NickText("Nicholas Judd", font, 30);
+    NickText.setPosition(500, 280);
+    
+    sf::Text JimText("Jim Gollop", font, 30);
+    JimText.setPosition(500, 320);
+    
+    renderWindow.draw(SplashText);
+    renderWindow.draw(PeterText);
+    renderWindow.draw(BenText);
+    renderWindow.draw(NickText);
+    renderWindow.draw(JimText);
 
     renderWindow.display();
     sf::Event event;

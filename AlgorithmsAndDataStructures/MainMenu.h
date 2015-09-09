@@ -37,7 +37,7 @@ private:
     // Action listener
 	MenuResult GetMenuResponse(sf::RenderWindow& window);
     // Action handler
-	MenuResult HandleClick(int x, int y);
+    MenuResult HandleClick(int x, int y);
 	std::list<MenuItem> menuItems;
 };
 

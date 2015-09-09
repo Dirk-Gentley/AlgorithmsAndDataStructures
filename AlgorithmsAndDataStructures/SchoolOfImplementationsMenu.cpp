@@ -15,7 +15,7 @@
  *****************************************************/
 
 SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplementationsMenu::Show(sf::RenderWindow& renderWindow){
-    renderWindow.clear(sf::Color(200,200,100));
+    renderWindow.clear(sf::Color(sf::Color::Black));
     
     //Begin menu item coordinates
     SchoolOfImplementationsMenuItem beginButton;
@@ -28,7 +28,8 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     //Begin clickable button
     sf::RectangleShape beginBox;
     beginBox.setSize(sf::Vector2f(400, 80));
-    beginBox.setOutlineColor(sf::Color::Red);
+    beginBox.setOutlineColor(sf::Color::Blue);
+    beginBox.setFillColor(sf::Color::Blue);
     beginBox.setOutlineThickness(5);
     beginBox.setPosition(312, 200);
     renderWindow.draw(beginBox);
@@ -44,7 +45,8 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     //Exit clickable button
     sf::RectangleShape exitBox;
     exitBox.setSize(sf::Vector2f(400, 80));
-    exitBox.setOutlineColor(sf::Color::Red);
+    exitBox.setOutlineColor(sf::Color::Blue);
+    exitBox.setFillColor(sf::Color::Blue);
     exitBox.setOutlineThickness(5);
     exitBox.setPosition(312, 600);
     renderWindow.draw(exitBox);
@@ -56,17 +58,17 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         exit(1);
     }
-    sf::Text menuText("School of Implementations Menu", font, 80);
+    sf::Text menuText("School", font, 80);
     menuText.setPosition(400, 50);
     menuText.setColor(sf::Color::White);
     
-    sf::Text beginText("But where would I use that?", font, 40);
-    beginText.setPosition(400, 200);
-    beginText.setColor(sf::Color::Red);
+    sf::Text beginText("Placeholder Text", font, 40);
+    beginText.setPosition(360, 200);
+    beginText.setColor(sf::Color::White);
     
     sf::Text backText("Back", font, 40);
-    backText.setPosition(400, 600);
-    backText.setColor(sf::Color::Red);
+    backText.setPosition(460, 600);
+    backText.setColor(sf::Color::White);
     
     renderWindow.draw(menuText);
     renderWindow.draw(beginText);

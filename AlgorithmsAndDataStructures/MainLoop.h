@@ -21,8 +21,12 @@ public:
     static void ShowSortingAndSearchingMenu();
     static void ShowPuzzlesAndGamesMenu();
     static void ShowSchoolOfImplementationsMenu();
+    //
+    static void RunSortingDemonstration();
+    //
+    static void RunBinaryTreeDungeon();
     
-private:
+//private:
     // Safely shut down
     static bool IsExiting();
     // The main loop will itterate though the enumerated states
@@ -40,15 +44,19 @@ private:
                         ShowingSortingAndSearchingMenu,
                         ShowingPuzzlesAndGamesMenu,
                         ShowingSchoolOfImplementationsMenu,
-                        RunningTreesAndStructures,
-                        RunningSortingAndSearching,
+                        RunningStacksLesson,
+                        RunningStackAttack,
+                        RunningSortingAndSearchingLesson,
+                        RunningSortingAndSearchingDemo,
                         RunningPuzzlesAndGames,
                         RunningSchoolOfImplementations,
+                        RunningBinaryTreeDungeon,
                         Exiting };
     
     static ProgramState programState;
-    // The render window will be passed to any class that needs it
     static sf::RenderWindow MainWindow;
+    static sf::View MainView;
+    static sf::Music MainMusic;
 };
 
 #endif

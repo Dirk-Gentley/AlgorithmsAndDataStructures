@@ -13,7 +13,7 @@
 
 class TreesAndStructuresMenu{
 public:
-    enum TreesAndStructuresMenuResult { Nothing, Back, Begin };
+    enum TreesAndStructuresMenuResult { Nothing, Back, BeginStacksLesson, BeginStackAttack, BeginTreeDungeon };
     
     struct TreesAndStructuresMenuItem{
     public:

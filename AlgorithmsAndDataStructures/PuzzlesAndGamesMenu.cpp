@@ -15,7 +15,7 @@
  *****************************************************/
 
 PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::RenderWindow& renderWindow){
-    renderWindow.clear(sf::Color(100,200,5));
+    renderWindow.clear(sf::Color(sf::Color::Black));
     
     //Begin menu item coordinates
     PuzzlesAndGamesMenuItem beginButton;
@@ -28,7 +28,8 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     //Begin clickable button
     sf::RectangleShape beginBox;
     beginBox.setSize(sf::Vector2f(400, 80));
-    beginBox.setOutlineColor(sf::Color::Red);
+    beginBox.setOutlineColor(sf::Color::Blue);
+    beginBox.setFillColor(sf::Color::Blue);
     beginBox.setOutlineThickness(5);
     beginBox.setPosition(312, 200);
     renderWindow.draw(beginBox);
@@ -44,7 +45,8 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     //Exit clickable button
     sf::RectangleShape exitBox;
     exitBox.setSize(sf::Vector2f(400, 80));
-    exitBox.setOutlineColor(sf::Color::Red);
+    exitBox.setOutlineColor(sf::Color::Blue);
+    exitBox.setFillColor(sf::Color::Blue);
     exitBox.setOutlineThickness(5);
     exitBox.setPosition(312, 600);
     renderWindow.draw(exitBox);
@@ -57,20 +59,24 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
         exit(1);
     }
     sf::Text menuText("Puzzles and Games", font, 80);
-    menuText.setPosition(400, 50);
+    menuText.setPosition(160, 50);
     menuText.setColor(sf::Color::White);
     
-    sf::Text beginText("Homer", font, 40);
-    beginText.setPosition(400, 200);
-    beginText.setColor(sf::Color::Red);
+    sf::Text beginText("Goats and Cabbages", font, 40);
+    beginText.setPosition(320, 200);
+    beginText.setColor(sf::Color::White);
     
     sf::Text backText("Back", font, 40);
-    backText.setPosition(400, 600);
-    backText.setColor(sf::Color::Red);
+    backText.setPosition(460, 600);
+    backText.setColor(sf::Color::White);
     
     renderWindow.draw(menuText);
     renderWindow.draw(beginText);
     renderWindow.draw(backText);
+    
+    //sf::Music music;
+    //music.openFromFile(resourcePath() + "StackAttack.ogg");
+    //music.play();
     
     renderWindow.display();
     return GetPuzzlesAndGamesMenuResponse(renderWindow);
@@ -98,9 +104,6 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::GetPuzzlesAn
         while(window.pollEvent(menuEvent)){
             if(menuEvent.type == sf::Event::MouseButtonPressed){
                 return HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
-            }
-            if(menuEvent.type == sf::Event::Closed){
-                return Back;
             }
             if(menuEvent.type == sf::Event::KeyPressed){
                 return Back;

@@ -10,13 +10,20 @@
 
 MainLoop::ProgramState MainLoop::programState = Uninitialized;
 sf::RenderWindow MainLoop::MainWindow;
+sf::View MainLoop::MainView;
+sf::Music MainLoop::MainMusic;//openFromFile(resourcePath() + "MenuMusic.ogg");
 
 void MainLoop::Start(void){
+    MainMusic.openFromFile(resourcePath() + "MenuMusic.ogg");
+    MainMusic.setLoop(true);
+    MainMusic.play();
     // Should never happen
     if(programState != Uninitialized)
         return;
     // This main window will remain throughout the application
-    MainWindow.create(sf::VideoMode(1024,768,32),"Window");
+    //MainWindow.create(sf::VideoMode(1024,768,32),"Window", sf::Style::Fullscreen);
+    MainWindow.create(sf::VideoMode(1024,768,32),"Professor Albertons Algorithmic Adventures", sf::Style::Titlebar);
+    //MainWindow.create(sf::VideoMode(1024,768,32),"Window");
     // The initial program state, should only happen once
     programState = MainLoop::ShowingSplash;
     
@@ -71,13 +78,25 @@ void MainLoop::RunLoop(){
             // Trees and Data Structures
                 
             case MainLoop::ShowingTreesAndStructuresMenu:{
-                std::cout << "Trees" << std::endl;
                 ShowTreesAndStructuresMenu();
                 break;
             }
 
-            case MainLoop::RunningTreesAndStructures:{
-                MainWindow.clear(sf::Color(255,127,0));
+            case MainLoop::RunningStacksLesson:{
+                
+                /*
+                 
+                 THIS IS WHERE TREES AND STRUCTRES HAPPENS
+                 
+                 */
+                MainWindow.clear(sf::Color::Black);
+                sf::Font font;
+                if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+                    exit(1);
+                }
+                sf::Text LessonText("Placeholder text.  ESC to go back", font, 30);
+                MainWindow.draw(LessonText);
+                
                 MainWindow.display();
                 if(currentEvent.type == sf::Event::Closed){
                     programState = MainLoop::Exiting;
@@ -88,27 +107,57 @@ void MainLoop::RunLoop(){
                 break;
             }
                 
-            // Sorting and Searching
+            case MainLoop::RunningStackAttack:{
                 
-            case MainLoop::ShowingSortingAndSearchingMenu:{
-                std::cout << "Sorting" << std::endl;
-                ShowSortingAndSearchingMenu();
-                break;
-            }
+                MainMusic.openFromFile(resourcePath() + "StackAttack.ogg");
+                MainMusic.play();
                 
-            case MainLoop::RunningSortingAndSearching:{
-                MainWindow.clear(sf::Color(127,127,0));
-                MainWindow.display();
+                MainWindow.clear(sf::Color::Black);
+                stackAttack(MainWindow);
                 if(currentEvent.type == sf::Event::Closed){
                     programState = MainLoop::Exiting;
                 }
+                if(currentEvent.type == sf::Event::KeyPressed){
+                    MainMusic.openFromFile(resourcePath() + "MenuMusic.ogg");
+                    MainMusic.play();
+                    if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowTreesAndStructuresMenu();
+                }
+                break;
+            }
+                
+            case MainLoop::RunningBinaryTreeDungeon:{
+                RunBinaryTreeDungeon();
+                break;
+            }
+                
+            // Sorting and Searching
+                
+            case MainLoop::ShowingSortingAndSearchingMenu:{
+                ShowSortingAndSearchingMenu();
+                break;
+            }
+            case MainLoop::RunningSortingAndSearchingLesson:{
+                MainWindow.clear(sf::Color(sf::Color::Black));
+                
+                sf::Font font;
+                if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+                    exit(1);
+                }
+                sf::Text LessonText("Placeholder text.  ESC to go back", font, 30);
+                MainWindow.draw(LessonText);
+                
+                MainWindow.display();
+
                 if(currentEvent.type == sf::Event::KeyPressed){
                     if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowSortingAndSearchingMenu();
                 }
                 break;
             }
                 
-            // Puzzles and Games
+            case MainLoop::RunningSortingAndSearchingDemo:{
+                RunSortingDemonstration();
+                break;
+            }
                 
             case MainLoop::ShowingPuzzlesAndGamesMenu:{
                 ShowPuzzlesAndGamesMenu();
@@ -116,7 +165,21 @@ void MainLoop::RunLoop(){
             }
                 
             case MainLoop::RunningPuzzlesAndGames:{
-                MainWindow.clear(sf::Color(255,127,0));
+                /*
+                 
+                 THIS IS PUZZLES AND GAMES
+                 
+                 */
+                
+                MainWindow.clear(sf::Color::Black);
+                
+                sf::Font font;
+                if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+                    exit(1);
+                }
+                sf::Text LessonText("Placeholder text.  ESC to go back", font, 30);
+                MainWindow.draw(LessonText);
+                
                 MainWindow.display();
                 if(currentEvent.type == sf::Event::Closed){
                     programState = MainLoop::Exiting;
@@ -135,7 +198,22 @@ void MainLoop::RunLoop(){
             }
                 
             case MainLoop::RunningSchoolOfImplementations:{
-                MainWindow.clear(sf::Color(255,127,0));
+                /*
+                 
+                 THIS IS WHERE SCHOOL OF IMPLEMENTATIONS
+                 
+                 */
+    
+                
+                MainWindow.clear(sf::Color::Black);
+                
+                sf::Font font;
+                if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+                    exit(1);
+                }
+                sf::Text LessonText("Placeholder text.  ESC to go back", font, 30);
+                MainWindow.draw(LessonText);
+                
                 MainWindow.display();
                 if(currentEvent.type == sf::Event::Closed){
                     programState = MainLoop::Exiting;
@@ -212,14 +290,24 @@ void MainLoop::ShowSortingAndSearchingMenu(){
         case SortingAndSearchingMenu::Back:
             programState = MainLoop::ShowingMenu;
             break;
-        case SortingAndSearchingMenu::Begin:
-            programState = MainLoop::RunningSortingAndSearching;
+        case SortingAndSearchingMenu::BeginLesson:
+            programState = MainLoop::RunningSortingAndSearchingLesson;
+            break;
+        case SortingAndSearchingMenu::BeginDemo:
+            programState = MainLoop::RunningSortingAndSearchingDemo;
             break;
         case SortingAndSearchingMenu::Nothing:
             // Vitally important
             ShowSortingAndSearchingMenu();
             break;
     }
+}
+
+void MainLoop::RunSortingDemonstration(){
+    programState = MainLoop::RunningSortingAndSearchingLesson;
+    sortingModule sort;
+    sort.startModule(MainWindow, sort);
+    programState = MainLoop::ShowingSortingAndSearchingMenu;
 }
 
 void MainLoop::ShowTreesAndStructuresMenu(){
@@ -229,14 +317,26 @@ void MainLoop::ShowTreesAndStructuresMenu(){
         case TreesAndStructuresMenu::Back:
             programState = MainLoop::ShowingMenu;
             break;
-        case TreesAndStructuresMenu::Begin:
-            programState = MainLoop::RunningTreesAndStructures;
+        case TreesAndStructuresMenu::BeginStacksLesson:
+            programState = MainLoop::RunningStacksLesson;
+            break;
+        case TreesAndStructuresMenu::BeginStackAttack:
+            programState = MainLoop::RunningStackAttack;
+            break;
+        case TreesAndStructuresMenu::BeginTreeDungeon:
+            programState = MainLoop::RunningBinaryTreeDungeon;
             break;
         case TreesAndStructuresMenu::Nothing:
             // Vitally important
             ShowTreesAndStructuresMenu();
             break;
     }
+}
+
+void MainLoop::RunBinaryTreeDungeon(){
+    programState = MainLoop::RunningBinaryTreeDungeon;
+    beginBinaryTreeDungeon(MainWindow);
+    programState = MainLoop::ShowingTreesAndStructuresMenu;
 }
 
 void MainLoop::ShowPuzzlesAndGamesMenu(){
@@ -272,4 +372,3 @@ void MainLoop::ShowSchoolOfImplementationsMenu(){
             break;
     }
 }
-

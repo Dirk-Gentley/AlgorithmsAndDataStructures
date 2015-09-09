@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		437651DA1AA6C7820013572B /* Algorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 437651D91AA6C7820013572B /* Algorithms.cpp */; };
+		430EC3A51B7765470050B76F /* MMbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 430EC3A41B7765470050B76F /* MMbackground.png */; };
+		433B39741B6F374400700E95 /* SortingDemonstration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433B39721B6F374400700E95 /* SortingDemonstration.cpp */; };
+		43537BE21B731F0F006AD7FE /* BinaryTreeDungeonScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 43537BE11B731F0F006AD7FE /* BinaryTreeDungeonScreen.png */; };
 		438CC97E1A7CBE4D00B41E4F /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 438CC97D1A7CBE4D00B41E4F /* sansation.ttf */; };
 		438CC9911A7CBE9F00B41E4F /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC9861A7CBE9F00B41E4F /* Main.cpp */; };
 		438CC9921A7CBE9F00B41E4F /* MainLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC9871A7CBE9F00B41E4F /* MainLoop.cpp */; };
@@ -15,14 +17,42 @@
 		438CC9941A7CBE9F00B41E4F /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 438CC98C1A7CBE9F00B41E4F /* ResourcePath.mm */; };
 		438CC9951A7CBE9F00B41E4F /* SpalshScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC98D1A7CBE9F00B41E4F /* SpalshScreen.cpp */; };
 		438CC9961A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC98F1A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp */; };
+		43AAA3921B7048D900AF799F /* StackAttackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA3911B7048D900AF799F /* StackAttackBackground.png */; };
+		43AAA3951B7048F600AF799F /* StackAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43AAA3931B7048F600AF799F /* StackAttack.cpp */; };
+		43C9965E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C9964E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp */; };
+		43C9965F1BA04B7000F37F5F /* TreeDungeonCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */; };
+		43C996601BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996521BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp */; };
+		43C996611BA04B7000F37F5F /* TreeDungeonGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996541BA04B7000F37F5F /* TreeDungeonGraphics.cpp */; };
+		43C996621BA04B7000F37F5F /* TreeDungeonInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996561BA04B7000F37F5F /* TreeDungeonInput.cpp */; };
+		43C996631BA04B7000F37F5F /* TreeDungeonLineofsight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996581BA04B7000F37F5F /* TreeDungeonLineofsight.cpp */; };
+		43C996651BA04B7000F37F5F /* TreeDungeonMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C9965B1BA04B7000F37F5F /* TreeDungeonMaps.cpp */; };
+		43C996721BA04BC100F37F5F /* DungeonTiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C996661BA04BC100F37F5F /* DungeonTiles.png */; };
+		43C996731BA04BC100F37F5F /* map_corridor0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C996671BA04BC100F37F5F /* map_corridor0.txt */; };
+		43C996741BA04BC100F37F5F /* map_corridor1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C996681BA04BC100F37F5F /* map_corridor1.txt */; };
+		43C996751BA04BC100F37F5F /* map_corridor2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C996691BA04BC100F37F5F /* map_corridor2.txt */; };
+		43C996761BA04BC100F37F5F /* map_fork0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C9966A1BA04BC100F37F5F /* map_fork0.txt */; };
+		43C996771BA04BC100F37F5F /* map_fork1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C9966B1BA04BC100F37F5F /* map_fork1.txt */; };
+		43C996781BA04BC100F37F5F /* map_fork2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C9966C1BA04BC100F37F5F /* map_fork2.txt */; };
+		43C996791BA04BC100F37F5F /* map_leaf0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C9966D1BA04BC100F37F5F /* map_leaf0.txt */; };
+		43C9967A1BA04BC100F37F5F /* map_leaf1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C9966E1BA04BC100F37F5F /* map_leaf1.txt */; };
+		43C9967B1BA04BC100F37F5F /* map_leaf2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C9966F1BA04BC100F37F5F /* map_leaf2.txt */; };
+		43C9967C1BA04BC100F37F5F /* map_root.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C996701BA04BC100F37F5F /* map_root.txt */; };
+		43C9967D1BA04BC100F37F5F /* TreeDungeonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */; };
 		43D6C8CC1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D6C8CA1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp */; };
 		43D6C8CF1B57387D00E147F0 /* SortingAndSearchingMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D6C8CD1B57387D00E147F0 /* SortingAndSearchingMenu.cpp */; };
 		43D6C8D21B57389800E147F0 /* SchoolOfImplementationsMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D6C8D01B57389800E147F0 /* SchoolOfImplementationsMenu.cpp */; };
+		43FCC7401B9408C5003682E7 /* SortBuildScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC73C1B9408C5003682E7 /* SortBuildScreen.cpp */; };
+		43FCC7411B9408C5003682E7 /* SortScreenRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC73D1B9408C5003682E7 /* SortScreenRender.cpp */; };
+		43FCC7421B9408C5003682E7 /* SortShuffle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC73E1B9408C5003682E7 /* SortShuffle.cpp */; };
+		43FCC7431B9408C5003682E7 /* SortSorts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC73F1B9408C5003682E7 /* SortSorts.cpp */; };
+		43FCC7471B940D22003682E7 /* SortingBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FCC7461B940D22003682E7 /* SortingBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		437651D31AA6C4E70013572B /* Algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
-		437651D91AA6C7820013572B /* Algorithms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Algorithms.cpp; sourceTree = "<group>"; };
+		430EC3A41B7765470050B76F /* MMbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMbackground.png; sourceTree = "<group>"; };
+		433B39721B6F374400700E95 /* SortingDemonstration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortingDemonstration.cpp; sourceTree = "<group>"; };
+		433B39731B6F374400700E95 /* SortingDemonstration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingDemonstration.h; sourceTree = "<group>"; };
+		43537BE11B731F0F006AD7FE /* BinaryTreeDungeonScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BinaryTreeDungeonScreen.png; sourceTree = "<group>"; };
 		438CC96E1A7CBE4D00B41E4F /* AlgorithmsAndDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmsAndDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438CC97D1A7CBE4D00B41E4F /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		438CC9861A7CBE9F00B41E4F /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
@@ -36,12 +66,49 @@
 		438CC98E1A7CBE9F00B41E4F /* SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreen.h; sourceTree = "<group>"; };
 		438CC98F1A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreesAndStructuresMenu.cpp; sourceTree = "<group>"; };
 		438CC9901A7CBE9F00B41E4F /* TreesAndStructuresMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreesAndStructuresMenu.h; sourceTree = "<group>"; };
+		43AAA3911B7048D900AF799F /* StackAttackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StackAttackBackground.png; sourceTree = "<group>"; };
+		43AAA3931B7048F600AF799F /* StackAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StackAttack.cpp; sourceTree = "<group>"; };
+		43AAA3941B7048F600AF799F /* StackAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackAttack.h; sourceTree = "<group>"; };
+		43C9964E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RunBinaryTreeDungeon.cpp; sourceTree = "<group>"; };
+		43C9964F1BA04B7000F37F5F /* RunBinaryTreeDungeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunBinaryTreeDungeon.h; sourceTree = "<group>"; };
+		43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonCharacter.cpp; sourceTree = "<group>"; };
+		43C996511BA04B7000F37F5F /* TreeDungeonCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeDungeonCharacter.h; sourceTree = "<group>"; };
+		43C996521BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonGameFunctions.cpp; sourceTree = "<group>"; };
+		43C996531BA04B7000F37F5F /* TreeDungeonGameFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeDungeonGameFunctions.h; sourceTree = "<group>"; };
+		43C996541BA04B7000F37F5F /* TreeDungeonGraphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonGraphics.cpp; sourceTree = "<group>"; };
+		43C996551BA04B7000F37F5F /* TreeDungeonGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeDungeonGraphics.h; sourceTree = "<group>"; };
+		43C996561BA04B7000F37F5F /* TreeDungeonInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonInput.cpp; sourceTree = "<group>"; };
+		43C996571BA04B7000F37F5F /* TreeDungeonInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeDungeonInput.h; sourceTree = "<group>"; };
+		43C996581BA04B7000F37F5F /* TreeDungeonLineofsight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonLineofsight.cpp; sourceTree = "<group>"; };
+		43C996591BA04B7000F37F5F /* TreeDungeonLineofsight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeDungeonLineofsight.h; sourceTree = "<group>"; };
+		43C9965B1BA04B7000F37F5F /* TreeDungeonMaps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonMaps.cpp; sourceTree = "<group>"; };
+		43C9965C1BA04B7000F37F5F /* TreeDungeonMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeDungeonMaps.h; sourceTree = "<group>"; };
+		43C996661BA04BC100F37F5F /* DungeonTiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DungeonTiles.png; sourceTree = "<group>"; };
+		43C996671BA04BC100F37F5F /* map_corridor0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_corridor0.txt; sourceTree = "<group>"; };
+		43C996681BA04BC100F37F5F /* map_corridor1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_corridor1.txt; sourceTree = "<group>"; };
+		43C996691BA04BC100F37F5F /* map_corridor2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_corridor2.txt; sourceTree = "<group>"; };
+		43C9966A1BA04BC100F37F5F /* map_fork0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_fork0.txt; sourceTree = "<group>"; };
+		43C9966B1BA04BC100F37F5F /* map_fork1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_fork1.txt; sourceTree = "<group>"; };
+		43C9966C1BA04BC100F37F5F /* map_fork2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_fork2.txt; sourceTree = "<group>"; };
+		43C9966D1BA04BC100F37F5F /* map_leaf0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_leaf0.txt; sourceTree = "<group>"; };
+		43C9966E1BA04BC100F37F5F /* map_leaf1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_leaf1.txt; sourceTree = "<group>"; };
+		43C9966F1BA04BC100F37F5F /* map_leaf2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_leaf2.txt; sourceTree = "<group>"; };
+		43C996701BA04BC100F37F5F /* map_root.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_root.txt; sourceTree = "<group>"; };
+		43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeDungeonBackground.png; sourceTree = "<group>"; };
 		43D6C8CA1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PuzzlesAndGamesMenu.cpp; sourceTree = "<group>"; };
 		43D6C8CB1B57351C00E147F0 /* PuzzlesAndGamesMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzlesAndGamesMenu.h; sourceTree = "<group>"; };
 		43D6C8CD1B57387D00E147F0 /* SortingAndSearchingMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortingAndSearchingMenu.cpp; sourceTree = "<group>"; };
 		43D6C8CE1B57387D00E147F0 /* SortingAndSearchingMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingAndSearchingMenu.h; sourceTree = "<group>"; };
 		43D6C8D01B57389800E147F0 /* SchoolOfImplementationsMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SchoolOfImplementationsMenu.cpp; sourceTree = "<group>"; };
 		43D6C8D11B57389800E147F0 /* SchoolOfImplementationsMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolOfImplementationsMenu.h; sourceTree = "<group>"; };
+		43FCC73C1B9408C5003682E7 /* SortBuildScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortBuildScreen.cpp; sourceTree = "<group>"; };
+		43FCC73D1B9408C5003682E7 /* SortScreenRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortScreenRender.cpp; sourceTree = "<group>"; };
+		43FCC73E1B9408C5003682E7 /* SortShuffle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortShuffle.cpp; sourceTree = "<group>"; };
+		43FCC73F1B9408C5003682E7 /* SortSorts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortSorts.cpp; sourceTree = "<group>"; };
+		43FCC7461B940D22003682E7 /* SortingBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SortingBackground.png; sourceTree = "<group>"; };
+		43FD15D11B77373400590A46 /* MenuMusic.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuMusic.ogg; sourceTree = "<group>"; };
+		43FD15D31B773FFF00590A46 /* DungeonMusic.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = DungeonMusic.ogg; sourceTree = "<group>"; };
+		43FD15D41B77400B00590A46 /* StackAttack.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = StackAttack.ogg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +141,6 @@
 		438CC9701A7CBE4D00B41E4F /* AlgorithmsAndDataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				437651D91AA6C7820013572B /* Algorithms.cpp */,
-				437651D31AA6C4E70013572B /* Algorithms.h */,
 				438CC9861A7CBE9F00B41E4F /* Main.cpp */,
 				438CC9871A7CBE9F00B41E4F /* MainLoop.cpp */,
 				438CC9881A7CBE9F00B41E4F /* MainLoop.h */,
@@ -83,14 +148,34 @@
 				438CC98A1A7CBE9F00B41E4F /* MainMenu.h */,
 				43D6C8CA1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp */,
 				43D6C8CB1B57351C00E147F0 /* PuzzlesAndGamesMenu.h */,
-				438CC98B1A7CBE9F00B41E4F /* ResourcePath.hpp */,
-				438CC98C1A7CBE9F00B41E4F /* ResourcePath.mm */,
+				43C9964E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp */,
+				43C9964F1BA04B7000F37F5F /* RunBinaryTreeDungeon.h */,
+				43FCC73C1B9408C5003682E7 /* SortBuildScreen.cpp */,
+				43FCC73D1B9408C5003682E7 /* SortScreenRender.cpp */,
+				43FCC73E1B9408C5003682E7 /* SortShuffle.cpp */,
+				43FCC73F1B9408C5003682E7 /* SortSorts.cpp */,
 				43D6C8D01B57389800E147F0 /* SchoolOfImplementationsMenu.cpp */,
 				43D6C8D11B57389800E147F0 /* SchoolOfImplementationsMenu.h */,
 				43D6C8CD1B57387D00E147F0 /* SortingAndSearchingMenu.cpp */,
 				43D6C8CE1B57387D00E147F0 /* SortingAndSearchingMenu.h */,
+				433B39721B6F374400700E95 /* SortingDemonstration.cpp */,
+				433B39731B6F374400700E95 /* SortingDemonstration.h */,
 				438CC98D1A7CBE9F00B41E4F /* SpalshScreen.cpp */,
 				438CC98E1A7CBE9F00B41E4F /* SplashScreen.h */,
+				43AAA3931B7048F600AF799F /* StackAttack.cpp */,
+				43AAA3941B7048F600AF799F /* StackAttack.h */,
+				43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */,
+				43C996511BA04B7000F37F5F /* TreeDungeonCharacter.h */,
+				43C996521BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp */,
+				43C996531BA04B7000F37F5F /* TreeDungeonGameFunctions.h */,
+				43C996541BA04B7000F37F5F /* TreeDungeonGraphics.cpp */,
+				43C996551BA04B7000F37F5F /* TreeDungeonGraphics.h */,
+				43C996561BA04B7000F37F5F /* TreeDungeonInput.cpp */,
+				43C996571BA04B7000F37F5F /* TreeDungeonInput.h */,
+				43C996581BA04B7000F37F5F /* TreeDungeonLineofsight.cpp */,
+				43C996591BA04B7000F37F5F /* TreeDungeonLineofsight.h */,
+				43C9965B1BA04B7000F37F5F /* TreeDungeonMaps.cpp */,
+				43C9965C1BA04B7000F37F5F /* TreeDungeonMaps.h */,
 				438CC98F1A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp */,
 				438CC9901A7CBE9F00B41E4F /* TreesAndStructuresMenu.h */,
 				438CC9781A7CBE4D00B41E4F /* Resources */,
@@ -101,6 +186,27 @@
 		438CC9781A7CBE4D00B41E4F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				438CC98B1A7CBE9F00B41E4F /* ResourcePath.hpp */,
+				438CC98C1A7CBE9F00B41E4F /* ResourcePath.mm */,
+				43C996671BA04BC100F37F5F /* map_corridor0.txt */,
+				43C996681BA04BC100F37F5F /* map_corridor1.txt */,
+				43C996691BA04BC100F37F5F /* map_corridor2.txt */,
+				43C9966A1BA04BC100F37F5F /* map_fork0.txt */,
+				43C9966B1BA04BC100F37F5F /* map_fork1.txt */,
+				43C9966C1BA04BC100F37F5F /* map_fork2.txt */,
+				43C9966D1BA04BC100F37F5F /* map_leaf0.txt */,
+				43C9966E1BA04BC100F37F5F /* map_leaf1.txt */,
+				43C9966F1BA04BC100F37F5F /* map_leaf2.txt */,
+				43C996701BA04BC100F37F5F /* map_root.txt */,
+				43C996661BA04BC100F37F5F /* DungeonTiles.png */,
+				43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */,
+				43FCC7461B940D22003682E7 /* SortingBackground.png */,
+				430EC3A41B7765470050B76F /* MMbackground.png */,
+				43537BE11B731F0F006AD7FE /* BinaryTreeDungeonScreen.png */,
+				43AAA3911B7048D900AF799F /* StackAttackBackground.png */,
+				43FD15D41B77400B00590A46 /* StackAttack.ogg */,
+				43FD15D31B773FFF00590A46 /* DungeonMusic.ogg */,
+				43FD15D11B77373400590A46 /* MenuMusic.ogg */,
 				438CC97D1A7CBE4D00B41E4F /* sansation.ttf */,
 			);
 			name = Resources;
@@ -133,7 +239,7 @@
 		438CC9651A7CBE4D00B41E4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Benjamin;
 				TargetAttributes = {
 					438CC96D1A7CBE4D00B41E4F = {
@@ -163,7 +269,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43AAA3921B7048D900AF799F /* StackAttackBackground.png in Resources */,
+				43FCC7471B940D22003682E7 /* SortingBackground.png in Resources */,
+				43C996771BA04BC100F37F5F /* map_fork1.txt in Resources */,
+				430EC3A51B7765470050B76F /* MMbackground.png in Resources */,
+				43C996751BA04BC100F37F5F /* map_corridor2.txt in Resources */,
+				43C9967D1BA04BC100F37F5F /* TreeDungeonBackground.png in Resources */,
+				43C9967B1BA04BC100F37F5F /* map_leaf2.txt in Resources */,
 				438CC97E1A7CBE4D00B41E4F /* sansation.ttf in Resources */,
+				43C996721BA04BC100F37F5F /* DungeonTiles.png in Resources */,
+				43C996741BA04BC100F37F5F /* map_corridor1.txt in Resources */,
+				43C996791BA04BC100F37F5F /* map_leaf0.txt in Resources */,
+				43C996781BA04BC100F37F5F /* map_fork2.txt in Resources */,
+				43537BE21B731F0F006AD7FE /* BinaryTreeDungeonScreen.png in Resources */,
+				43C996761BA04BC100F37F5F /* map_fork0.txt in Resources */,
+				43C996731BA04BC100F37F5F /* map_corridor0.txt in Resources */,
+				43C9967A1BA04BC100F37F5F /* map_leaf1.txt in Resources */,
+				43C9967C1BA04BC100F37F5F /* map_root.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,16 +312,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FCC7401B9408C5003682E7 /* SortBuildScreen.cpp in Sources */,
 				438CC9941A7CBE9F00B41E4F /* ResourcePath.mm in Sources */,
 				438CC9921A7CBE9F00B41E4F /* MainLoop.cpp in Sources */,
 				43D6C8D21B57389800E147F0 /* SchoolOfImplementationsMenu.cpp in Sources */,
+				43FCC7421B9408C5003682E7 /* SortShuffle.cpp in Sources */,
 				43D6C8CC1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp in Sources */,
+				43C996651BA04B7000F37F5F /* TreeDungeonMaps.cpp in Sources */,
+				43C996631BA04B7000F37F5F /* TreeDungeonLineofsight.cpp in Sources */,
 				438CC9951A7CBE9F00B41E4F /* SpalshScreen.cpp in Sources */,
 				438CC9961A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp in Sources */,
+				43C996601BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp in Sources */,
+				433B39741B6F374400700E95 /* SortingDemonstration.cpp in Sources */,
+				43C9965F1BA04B7000F37F5F /* TreeDungeonCharacter.cpp in Sources */,
 				438CC9931A7CBE9F00B41E4F /* MainMenu.cpp in Sources */,
+				43C996621BA04B7000F37F5F /* TreeDungeonInput.cpp in Sources */,
 				438CC9911A7CBE9F00B41E4F /* Main.cpp in Sources */,
-				437651DA1AA6C7820013572B /* Algorithms.cpp in Sources */,
+				43FCC7411B9408C5003682E7 /* SortScreenRender.cpp in Sources */,
+				43C9965E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp in Sources */,
+				43C996611BA04B7000F37F5F /* TreeDungeonGraphics.cpp in Sources */,
+				43AAA3951B7048F600AF799F /* StackAttack.cpp in Sources */,
 				43D6C8CF1B57387D00E147F0 /* SortingAndSearchingMenu.cpp in Sources */,
+				43FCC7431B9408C5003682E7 /* SortSorts.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +357,7 @@
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -286,6 +421,7 @@
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

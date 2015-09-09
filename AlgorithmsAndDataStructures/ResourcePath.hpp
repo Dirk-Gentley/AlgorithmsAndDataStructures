@@ -35,6 +35,9 @@
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
+#include <algorithm>
+#include <ctime>
+#include <fstream>
 
 #include "MainLoop.h"
 #include "SplashScreen.h"
@@ -43,7 +46,15 @@
 #include "PuzzlesAndGamesMenu.h"
 #include "SortingAndSearchingMenu.h"
 #include "SchoolOfImplementationsMenu.h"
-#include "Algorithms.h"
+#include "SortingDemonstration.h"
+#include "StackAttack.h"
+#include "TreeDungeonMaps.h"
+#include "TreeDungeonGraphics.h"
+#include "TreeDungeonInput.h"
+#include "TreeDungeonLineOfSight.h"
+#include "TreeDungeonCharacter.h"
+#include "TreeDungeonGameFunctions.h"
+#include "RunBinaryTreeDungeon.h"
 ////////////////////////////////////////////////////////////
 /// \brief Return the path to the resource folder.
 ///

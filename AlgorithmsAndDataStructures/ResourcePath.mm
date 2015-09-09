@@ -27,8 +27,8 @@
 // Headers
 ////////////////////////////////////////////////////////////
 #include "ResourcePath.hpp"
-#import <Foundation/Foundation.h>
 
+#import <Foundation/Foundation.h>
 ////////////////////////////////////////////////////////////
 std::string resourcePath(void){
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];

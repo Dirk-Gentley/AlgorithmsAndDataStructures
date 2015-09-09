@@ -15,23 +15,41 @@ SORTING AND SEARCHING MENU AND ACTION HANDLERS / LISTENERS
  *****************************************************/
 
 SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::Show(sf::RenderWindow& renderWindow){
-    renderWindow.clear(sf::Color(100,200,5));
+    renderWindow.clear(sf::Color(sf::Color::Black));
     
-    //Begin menu item coordinates
-    SortingAndSearchingMenuItem beginButton;
-    beginButton.rect.top= 200;
-    beginButton.rect.height = 80;
-    beginButton.rect.left = 312;
-    beginButton.rect.width = 400;
-    beginButton.action = Begin;
+    //Begin lesson menu item coordinates
+    SortingAndSearchingMenuItem beginLessonButton;
+    beginLessonButton.rect.top = 200;
+    beginLessonButton.rect.height = 80;
+    beginLessonButton.rect.left = 312;
+    beginLessonButton.rect.width = 400;
+    beginLessonButton.action = BeginLesson;
     
-    //Begin clickable button
-    sf::RectangleShape beginBox;
-    beginBox.setSize(sf::Vector2f(400, 80));
-    beginBox.setOutlineColor(sf::Color::Red);
-    beginBox.setOutlineThickness(5);
-    beginBox.setPosition(312, 200);
-    renderWindow.draw(beginBox);
+    //Begin lesson clickable button
+    sf::RectangleShape beginLessonBox;
+    beginLessonBox.setSize(sf::Vector2f(400, 80));
+    beginLessonBox.setOutlineColor(sf::Color::Blue);
+    beginLessonBox.setFillColor(sf::Color::Blue);
+    beginLessonBox.setOutlineThickness(5);
+    beginLessonBox.setPosition(312, 200);
+    renderWindow.draw(beginLessonBox);
+    
+    //Begin demo menu item coordinates
+    SortingAndSearchingMenuItem beginDemoButton;
+    beginDemoButton.rect.top = 300;
+    beginDemoButton.rect.height = 80;
+    beginDemoButton.rect.left = 312;
+    beginDemoButton.rect.width = 400;
+    beginDemoButton.action = BeginDemo;
+    
+    //Begin demo clickable button
+    sf::RectangleShape beginDemoBox;
+    beginDemoBox.setSize(sf::Vector2f(400, 80));
+    beginDemoBox.setOutlineColor(sf::Color::Blue);
+    beginDemoBox.setFillColor(sf::Color::Blue);
+    beginDemoBox.setOutlineThickness(5);
+    beginDemoBox.setPosition(312, 300);
+    renderWindow.draw(beginDemoBox);
     
     //Exit menu item coordinates
     SortingAndSearchingMenuItem backButton;
@@ -44,32 +62,40 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     //Exit clickable button
     sf::RectangleShape exitBox;
     exitBox.setSize(sf::Vector2f(400, 80));
-    exitBox.setOutlineColor(sf::Color::Red);
+    exitBox.setOutlineColor(sf::Color::Blue);
+    exitBox.setFillColor(sf::Color::Blue);
     exitBox.setOutlineThickness(5);
     exitBox.setPosition(312, 600);
     renderWindow.draw(exitBox);
     
-    menuItems.push_back(beginButton);
+    menuItems.push_back(beginLessonButton);
+    menuItems.push_back(beginDemoButton);
     menuItems.push_back(backButton);
     
     sf::Font font;
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         exit(1);
     }
-    sf::Text menuText("Sorting and Searching Menu", font, 80);
-    menuText.setPosition(400, 50);
+    
+    sf::Text menuText("Sorting", font, 80);
+    menuText.setPosition(380, 50);
     menuText.setColor(sf::Color::White);
     
-    sf::Text beginText("Teach me Sorting", font, 40);
-    beginText.setPosition(400, 200);
-    beginText.setColor(sf::Color::Red);
+    sf::Text beginLessonText("A Lesson on Sorting", font, 40);
+    beginLessonText.setPosition(330, 200);
+    beginLessonText.setColor(sf::Color::White);
+    
+    sf::Text beginDemoText("Demonstration", font, 40);
+    beginDemoText.setPosition(380, 300);
+    beginDemoText.setColor(sf::Color::White);
     
     sf::Text backText("Back", font, 40);
-    backText.setPosition(400, 600);
-    backText.setColor(sf::Color::Red);
+    backText.setPosition(460, 600);
+    backText.setColor(sf::Color::White);
     
     renderWindow.draw(menuText);
-    renderWindow.draw(beginText);
+    renderWindow.draw(beginLessonText);
+    renderWindow.draw(beginDemoText);
     renderWindow.draw(backText);
     
     renderWindow.display();
@@ -93,14 +119,10 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
 
 SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::GetSortingAndSearchingMenuResponse(sf::RenderWindow& window){
     sf::Event menuEvent;
-    
     for(;;){
         while(window.pollEvent(menuEvent)){
             if(menuEvent.type == sf::Event::MouseButtonPressed){
                 return HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
-            }
-            if(menuEvent.type == sf::Event::Closed){
-                return Back;
             }
             if(menuEvent.type == sf::Event::KeyPressed){
                 return Back;

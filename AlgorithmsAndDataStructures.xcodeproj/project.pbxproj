@@ -7,9 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430488551BA3E25A0038C2A4 /* sortcomp_b_pause.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304884D1BA3E25A0038C2A4 /* sortcomp_b_pause.gif */; };
+		430488561BA3E25A0038C2A4 /* sortcomp_b_play.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304884E1BA3E25A0038C2A4 /* sortcomp_b_play.gif */; };
+		430488571BA3E25A0038C2A4 /* sortcomp_b_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4304884F1BA3E25A0038C2A4 /* sortcomp_b_selected.png */; };
+		430488581BA3E25A0038C2A4 /* sortcomp_icon_reverse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 430488501BA3E25A0038C2A4 /* sortcomp_icon_reverse.gif */; };
+		430488591BA3E25A0038C2A4 /* sortcomp_icon_shuffle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 430488511BA3E25A0038C2A4 /* sortcomp_icon_shuffle.gif */; };
+		4304885A1BA3E25A0038C2A4 /* sortcomp_icon_sorted.gif in Resources */ = {isa = PBXBuildFile; fileRef = 430488521BA3E25A0038C2A4 /* sortcomp_icon_sorted.gif */; };
+		4304885B1BA3E25A0038C2A4 /* SortCompBackground04.png in Resources */ = {isa = PBXBuildFile; fileRef = 430488531BA3E25A0038C2A4 /* SortCompBackground04.png */; };
+		4304885C1BA3E25A0038C2A4 /* SORTING.png in Resources */ = {isa = PBXBuildFile; fileRef = 430488541BA3E25A0038C2A4 /* SORTING.png */; };
+		430488631BA3E2740038C2A4 /* CompareBuildScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4304885E1BA3E2740038C2A4 /* CompareBuildScreen.cpp */; };
+		430488641BA3E2740038C2A4 /* CompareMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4304885F1BA3E2740038C2A4 /* CompareMain.cpp */; };
+		430488651BA3E2740038C2A4 /* CompareScreenRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430488601BA3E2740038C2A4 /* CompareScreenRender.cpp */; };
+		430488661BA3E2740038C2A4 /* CompareShuffle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430488611BA3E2740038C2A4 /* CompareShuffle.cpp */; };
+		430488671BA3E2740038C2A4 /* CompareSorts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430488621BA3E2740038C2A4 /* CompareSorts.cpp */; };
 		430EC3A51B7765470050B76F /* MMbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 430EC3A41B7765470050B76F /* MMbackground.png */; };
 		433B39741B6F374400700E95 /* SortingDemonstration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433B39721B6F374400700E95 /* SortingDemonstration.cpp */; };
 		43537BE21B731F0F006AD7FE /* BinaryTreeDungeonScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 43537BE11B731F0F006AD7FE /* BinaryTreeDungeonScreen.png */; };
+		435B36511BA3FBBF00B7EF68 /* StackAttackMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 435B36501BA3FBBF00B7EF68 /* StackAttackMain.cpp */; };
+		435B36531BA3FC5D00B7EF68 /* stackAttackBack1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 435B36521BA3FC5D00B7EF68 /* stackAttackBack1024.png */; };
+		435B36561BA3FE6A00B7EF68 /* StackAttack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 435B36551BA3FE6A00B7EF68 /* StackAttack.txt */; };
+		435B36581BA4004100B7EF68 /* ConwaysMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 435B36571BA4004100B7EF68 /* ConwaysMain.cpp */; };
+		435B365F1BA4005800B7EF68 /* gol_playMode.gif in Resources */ = {isa = PBXBuildFile; fileRef = 435B36591BA4005800B7EF68 /* gol_playMode.gif */; };
+		435B36601BA4005800B7EF68 /* gol_b_pause.gif in Resources */ = {isa = PBXBuildFile; fileRef = 435B365A1BA4005800B7EF68 /* gol_b_pause.gif */; };
+		435B36611BA4005800B7EF68 /* ConwaysBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 435B365B1BA4005800B7EF68 /* ConwaysBackground.jpg */; };
+		435B36621BA4005800B7EF68 /* gol_b_play.gif in Resources */ = {isa = PBXBuildFile; fileRef = 435B365C1BA4005800B7EF68 /* gol_b_play.gif */; };
+		435B36631BA4005800B7EF68 /* ConwaysBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 435B365D1BA4005800B7EF68 /* ConwaysBackground.png */; };
+		435B36641BA4005800B7EF68 /* gol_editMode.gif in Resources */ = {isa = PBXBuildFile; fileRef = 435B365E1BA4005800B7EF68 /* gol_editMode.gif */; };
+		435B36671BA4043800B7EF68 /* ConwaysGameOfLife.txt in Resources */ = {isa = PBXBuildFile; fileRef = 435B36661BA4043800B7EF68 /* ConwaysGameOfLife.txt */; };
 		438CC97E1A7CBE4D00B41E4F /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 438CC97D1A7CBE4D00B41E4F /* sansation.ttf */; };
 		438CC9911A7CBE9F00B41E4F /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC9861A7CBE9F00B41E4F /* Main.cpp */; };
 		438CC9921A7CBE9F00B41E4F /* MainLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC9871A7CBE9F00B41E4F /* MainLoop.cpp */; };
@@ -18,7 +42,6 @@
 		438CC9951A7CBE9F00B41E4F /* SpalshScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC98D1A7CBE9F00B41E4F /* SpalshScreen.cpp */; };
 		438CC9961A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438CC98F1A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp */; };
 		43AAA3921B7048D900AF799F /* StackAttackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 43AAA3911B7048D900AF799F /* StackAttackBackground.png */; };
-		43AAA3951B7048F600AF799F /* StackAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43AAA3931B7048F600AF799F /* StackAttack.cpp */; };
 		43C9965E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C9964E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp */; };
 		43C9965F1BA04B7000F37F5F /* TreeDungeonCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */; };
 		43C996601BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996521BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp */; };
@@ -38,6 +61,13 @@
 		43C9967B1BA04BC100F37F5F /* map_leaf2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C9966F1BA04BC100F37F5F /* map_leaf2.txt */; };
 		43C9967C1BA04BC100F37F5F /* map_root.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C996701BA04BC100F37F5F /* map_root.txt */; };
 		43C9967D1BA04BC100F37F5F /* TreeDungeonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */; };
+		43CD40591BA3F2800098168E /* LessonCharacters.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CD40581BA3F27F0098168E /* LessonCharacters.png */; };
+		43CD405B1BA3F2870098168E /* BinaryTreeDungeon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43CD405A1BA3F2870098168E /* BinaryTreeDungeon.txt */; };
+		43CD405D1BA3F2920098168E /* AlbertonLessonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CD405C1BA3F2920098168E /* AlbertonLessonBackground.png */; };
+		43CD40611BA3F2AD0098168E /* AlbertonsLessonBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43CD405E1BA3F2AD0098168E /* AlbertonsLessonBuilder.cpp */; };
+		43CD40621BA3F2AD0098168E /* AlbertonsLessonBuilderMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43CD40601BA3F2AD0098168E /* AlbertonsLessonBuilderMain.cpp */; };
+		43CD40641BA3F88D0098168E /* SortingDemo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43CD40631BA3F88D0098168E /* SortingDemo.txt */; };
+		43CD40661BA3FAAD0098168E /* AlbertonLessonBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43CD40651BA3FAAD0098168E /* AlbertonLessonBackground.gif */; };
 		43D6C8CC1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D6C8CA1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp */; };
 		43D6C8CF1B57387D00E147F0 /* SortingAndSearchingMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D6C8CD1B57387D00E147F0 /* SortingAndSearchingMenu.cpp */; };
 		43D6C8D21B57389800E147F0 /* SchoolOfImplementationsMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D6C8D01B57389800E147F0 /* SchoolOfImplementationsMenu.cpp */; };
@@ -49,10 +79,37 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4304884D1BA3E25A0038C2A4 /* sortcomp_b_pause.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sortcomp_b_pause.gif; sourceTree = "<group>"; };
+		4304884E1BA3E25A0038C2A4 /* sortcomp_b_play.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sortcomp_b_play.gif; sourceTree = "<group>"; };
+		4304884F1BA3E25A0038C2A4 /* sortcomp_b_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sortcomp_b_selected.png; sourceTree = "<group>"; };
+		430488501BA3E25A0038C2A4 /* sortcomp_icon_reverse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sortcomp_icon_reverse.gif; sourceTree = "<group>"; };
+		430488511BA3E25A0038C2A4 /* sortcomp_icon_shuffle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sortcomp_icon_shuffle.gif; sourceTree = "<group>"; };
+		430488521BA3E25A0038C2A4 /* sortcomp_icon_sorted.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sortcomp_icon_sorted.gif; sourceTree = "<group>"; };
+		430488531BA3E25A0038C2A4 /* SortCompBackground04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SortCompBackground04.png; sourceTree = "<group>"; };
+		430488541BA3E25A0038C2A4 /* SORTING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SORTING.png; sourceTree = "<group>"; };
+		4304885D1BA3E2740038C2A4 /* Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compare.h; sourceTree = "<group>"; };
+		4304885E1BA3E2740038C2A4 /* CompareBuildScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareBuildScreen.cpp; sourceTree = "<group>"; };
+		4304885F1BA3E2740038C2A4 /* CompareMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareMain.cpp; sourceTree = "<group>"; };
+		430488601BA3E2740038C2A4 /* CompareScreenRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareScreenRender.cpp; sourceTree = "<group>"; };
+		430488611BA3E2740038C2A4 /* CompareShuffle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareShuffle.cpp; sourceTree = "<group>"; };
+		430488621BA3E2740038C2A4 /* CompareSorts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareSorts.cpp; sourceTree = "<group>"; };
 		430EC3A41B7765470050B76F /* MMbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMbackground.png; sourceTree = "<group>"; };
 		433B39721B6F374400700E95 /* SortingDemonstration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortingDemonstration.cpp; sourceTree = "<group>"; };
 		433B39731B6F374400700E95 /* SortingDemonstration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingDemonstration.h; sourceTree = "<group>"; };
 		43537BE11B731F0F006AD7FE /* BinaryTreeDungeonScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BinaryTreeDungeonScreen.png; sourceTree = "<group>"; };
+		435B36501BA3FBBF00B7EF68 /* StackAttackMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StackAttackMain.cpp; sourceTree = "<group>"; };
+		435B36521BA3FC5D00B7EF68 /* stackAttackBack1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stackAttackBack1024.png; sourceTree = "<group>"; };
+		435B36541BA3FCDD00B7EF68 /* StackAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackAttack.h; sourceTree = "<group>"; };
+		435B36551BA3FE6A00B7EF68 /* StackAttack.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StackAttack.txt; sourceTree = "<group>"; };
+		435B36571BA4004100B7EF68 /* ConwaysMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConwaysMain.cpp; sourceTree = "<group>"; };
+		435B36591BA4005800B7EF68 /* gol_playMode.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gol_playMode.gif; sourceTree = "<group>"; };
+		435B365A1BA4005800B7EF68 /* gol_b_pause.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gol_b_pause.gif; sourceTree = "<group>"; };
+		435B365B1BA4005800B7EF68 /* ConwaysBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ConwaysBackground.jpg; sourceTree = "<group>"; };
+		435B365C1BA4005800B7EF68 /* gol_b_play.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gol_b_play.gif; sourceTree = "<group>"; };
+		435B365D1BA4005800B7EF68 /* ConwaysBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConwaysBackground.png; sourceTree = "<group>"; };
+		435B365E1BA4005800B7EF68 /* gol_editMode.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gol_editMode.gif; sourceTree = "<group>"; };
+		435B36651BA4008A00B7EF68 /* ConwaysMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConwaysMain.h; sourceTree = "<group>"; };
+		435B36661BA4043800B7EF68 /* ConwaysGameOfLife.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConwaysGameOfLife.txt; sourceTree = "<group>"; };
 		438CC96E1A7CBE4D00B41E4F /* AlgorithmsAndDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmsAndDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438CC97D1A7CBE4D00B41E4F /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		438CC9861A7CBE9F00B41E4F /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
@@ -67,8 +124,6 @@
 		438CC98F1A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreesAndStructuresMenu.cpp; sourceTree = "<group>"; };
 		438CC9901A7CBE9F00B41E4F /* TreesAndStructuresMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreesAndStructuresMenu.h; sourceTree = "<group>"; };
 		43AAA3911B7048D900AF799F /* StackAttackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StackAttackBackground.png; sourceTree = "<group>"; };
-		43AAA3931B7048F600AF799F /* StackAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StackAttack.cpp; sourceTree = "<group>"; };
-		43AAA3941B7048F600AF799F /* StackAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackAttack.h; sourceTree = "<group>"; };
 		43C9964E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RunBinaryTreeDungeon.cpp; sourceTree = "<group>"; };
 		43C9964F1BA04B7000F37F5F /* RunBinaryTreeDungeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunBinaryTreeDungeon.h; sourceTree = "<group>"; };
 		43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonCharacter.cpp; sourceTree = "<group>"; };
@@ -95,6 +150,14 @@
 		43C9966F1BA04BC100F37F5F /* map_leaf2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_leaf2.txt; sourceTree = "<group>"; };
 		43C996701BA04BC100F37F5F /* map_root.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_root.txt; sourceTree = "<group>"; };
 		43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeDungeonBackground.png; sourceTree = "<group>"; };
+		43CD40581BA3F27F0098168E /* LessonCharacters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LessonCharacters.png; sourceTree = "<group>"; };
+		43CD405A1BA3F2870098168E /* BinaryTreeDungeon.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BinaryTreeDungeon.txt; sourceTree = "<group>"; };
+		43CD405C1BA3F2920098168E /* AlbertonLessonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlbertonLessonBackground.png; sourceTree = "<group>"; };
+		43CD405E1BA3F2AD0098168E /* AlbertonsLessonBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlbertonsLessonBuilder.cpp; sourceTree = "<group>"; };
+		43CD405F1BA3F2AD0098168E /* AlbertonsLessonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbertonsLessonBuilder.h; sourceTree = "<group>"; };
+		43CD40601BA3F2AD0098168E /* AlbertonsLessonBuilderMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlbertonsLessonBuilderMain.cpp; sourceTree = "<group>"; };
+		43CD40631BA3F88D0098168E /* SortingDemo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SortingDemo.txt; sourceTree = "<group>"; };
+		43CD40651BA3FAAD0098168E /* AlbertonLessonBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AlbertonLessonBackground.gif; sourceTree = "<group>"; };
 		43D6C8CA1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PuzzlesAndGamesMenu.cpp; sourceTree = "<group>"; };
 		43D6C8CB1B57351C00E147F0 /* PuzzlesAndGamesMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzlesAndGamesMenu.h; sourceTree = "<group>"; };
 		43D6C8CD1B57387D00E147F0 /* SortingAndSearchingMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortingAndSearchingMenu.cpp; sourceTree = "<group>"; };
@@ -141,6 +204,17 @@
 		438CC9701A7CBE4D00B41E4F /* AlgorithmsAndDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				43CD405E1BA3F2AD0098168E /* AlbertonsLessonBuilder.cpp */,
+				43CD405F1BA3F2AD0098168E /* AlbertonsLessonBuilder.h */,
+				43CD40601BA3F2AD0098168E /* AlbertonsLessonBuilderMain.cpp */,
+				435B36571BA4004100B7EF68 /* ConwaysMain.cpp */,
+				435B36651BA4008A00B7EF68 /* ConwaysMain.h */,
+				4304885D1BA3E2740038C2A4 /* Compare.h */,
+				4304885E1BA3E2740038C2A4 /* CompareBuildScreen.cpp */,
+				4304885F1BA3E2740038C2A4 /* CompareMain.cpp */,
+				430488601BA3E2740038C2A4 /* CompareScreenRender.cpp */,
+				430488611BA3E2740038C2A4 /* CompareShuffle.cpp */,
+				430488621BA3E2740038C2A4 /* CompareSorts.cpp */,
 				438CC9861A7CBE9F00B41E4F /* Main.cpp */,
 				438CC9871A7CBE9F00B41E4F /* MainLoop.cpp */,
 				438CC9881A7CBE9F00B41E4F /* MainLoop.h */,
@@ -162,8 +236,8 @@
 				433B39731B6F374400700E95 /* SortingDemonstration.h */,
 				438CC98D1A7CBE9F00B41E4F /* SpalshScreen.cpp */,
 				438CC98E1A7CBE9F00B41E4F /* SplashScreen.h */,
-				43AAA3931B7048F600AF799F /* StackAttack.cpp */,
-				43AAA3941B7048F600AF799F /* StackAttack.h */,
+				435B36501BA3FBBF00B7EF68 /* StackAttackMain.cpp */,
+				435B36541BA3FCDD00B7EF68 /* StackAttack.h */,
 				43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */,
 				43C996511BA04B7000F37F5F /* TreeDungeonCharacter.h */,
 				43C996521BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp */,
@@ -188,7 +262,11 @@
 			children = (
 				438CC98B1A7CBE9F00B41E4F /* ResourcePath.hpp */,
 				438CC98C1A7CBE9F00B41E4F /* ResourcePath.mm */,
+				43CD405A1BA3F2870098168E /* BinaryTreeDungeon.txt */,
+				435B36661BA4043800B7EF68 /* ConwaysGameOfLife.txt */,
+				435B36551BA3FE6A00B7EF68 /* StackAttack.txt */,
 				43C996671BA04BC100F37F5F /* map_corridor0.txt */,
+				43CD40631BA3F88D0098168E /* SortingDemo.txt */,
 				43C996681BA04BC100F37F5F /* map_corridor1.txt */,
 				43C996691BA04BC100F37F5F /* map_corridor2.txt */,
 				43C9966A1BA04BC100F37F5F /* map_fork0.txt */,
@@ -198,12 +276,30 @@
 				43C9966E1BA04BC100F37F5F /* map_leaf1.txt */,
 				43C9966F1BA04BC100F37F5F /* map_leaf2.txt */,
 				43C996701BA04BC100F37F5F /* map_root.txt */,
+				43CD40651BA3FAAD0098168E /* AlbertonLessonBackground.gif */,
+				43CD405C1BA3F2920098168E /* AlbertonLessonBackground.png */,
 				43C996661BA04BC100F37F5F /* DungeonTiles.png */,
+				43CD40581BA3F27F0098168E /* LessonCharacters.png */,
 				43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */,
 				43FCC7461B940D22003682E7 /* SortingBackground.png */,
 				430EC3A41B7765470050B76F /* MMbackground.png */,
 				43537BE11B731F0F006AD7FE /* BinaryTreeDungeonScreen.png */,
 				43AAA3911B7048D900AF799F /* StackAttackBackground.png */,
+				4304884D1BA3E25A0038C2A4 /* sortcomp_b_pause.gif */,
+				4304884E1BA3E25A0038C2A4 /* sortcomp_b_play.gif */,
+				4304884F1BA3E25A0038C2A4 /* sortcomp_b_selected.png */,
+				430488501BA3E25A0038C2A4 /* sortcomp_icon_reverse.gif */,
+				430488511BA3E25A0038C2A4 /* sortcomp_icon_shuffle.gif */,
+				430488521BA3E25A0038C2A4 /* sortcomp_icon_sorted.gif */,
+				430488531BA3E25A0038C2A4 /* SortCompBackground04.png */,
+				430488541BA3E25A0038C2A4 /* SORTING.png */,
+				435B36521BA3FC5D00B7EF68 /* stackAttackBack1024.png */,
+				435B36591BA4005800B7EF68 /* gol_playMode.gif */,
+				435B365A1BA4005800B7EF68 /* gol_b_pause.gif */,
+				435B365B1BA4005800B7EF68 /* ConwaysBackground.jpg */,
+				435B365C1BA4005800B7EF68 /* gol_b_play.gif */,
+				435B365D1BA4005800B7EF68 /* ConwaysBackground.png */,
+				435B365E1BA4005800B7EF68 /* gol_editMode.gif */,
 				43FD15D41B77400B00590A46 /* StackAttack.ogg */,
 				43FD15D31B773FFF00590A46 /* DungeonMusic.ogg */,
 				43FD15D11B77373400590A46 /* MenuMusic.ogg */,
@@ -269,23 +365,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435B36671BA4043800B7EF68 /* ConwaysGameOfLife.txt in Resources */,
 				43AAA3921B7048D900AF799F /* StackAttackBackground.png in Resources */,
+				430488561BA3E25A0038C2A4 /* sortcomp_b_play.gif in Resources */,
+				430488571BA3E25A0038C2A4 /* sortcomp_b_selected.png in Resources */,
 				43FCC7471B940D22003682E7 /* SortingBackground.png in Resources */,
 				43C996771BA04BC100F37F5F /* map_fork1.txt in Resources */,
 				430EC3A51B7765470050B76F /* MMbackground.png in Resources */,
+				435B36531BA3FC5D00B7EF68 /* stackAttackBack1024.png in Resources */,
 				43C996751BA04BC100F37F5F /* map_corridor2.txt in Resources */,
+				435B36641BA4005800B7EF68 /* gol_editMode.gif in Resources */,
+				43CD40591BA3F2800098168E /* LessonCharacters.png in Resources */,
 				43C9967D1BA04BC100F37F5F /* TreeDungeonBackground.png in Resources */,
+				43CD40641BA3F88D0098168E /* SortingDemo.txt in Resources */,
+				435B36561BA3FE6A00B7EF68 /* StackAttack.txt in Resources */,
 				43C9967B1BA04BC100F37F5F /* map_leaf2.txt in Resources */,
+				43CD40661BA3FAAD0098168E /* AlbertonLessonBackground.gif in Resources */,
 				438CC97E1A7CBE4D00B41E4F /* sansation.ttf in Resources */,
 				43C996721BA04BC100F37F5F /* DungeonTiles.png in Resources */,
+				435B36611BA4005800B7EF68 /* ConwaysBackground.jpg in Resources */,
 				43C996741BA04BC100F37F5F /* map_corridor1.txt in Resources */,
+				435B365F1BA4005800B7EF68 /* gol_playMode.gif in Resources */,
 				43C996791BA04BC100F37F5F /* map_leaf0.txt in Resources */,
 				43C996781BA04BC100F37F5F /* map_fork2.txt in Resources */,
+				435B36631BA4005800B7EF68 /* ConwaysBackground.png in Resources */,
 				43537BE21B731F0F006AD7FE /* BinaryTreeDungeonScreen.png in Resources */,
+				435B36601BA4005800B7EF68 /* gol_b_pause.gif in Resources */,
 				43C996761BA04BC100F37F5F /* map_fork0.txt in Resources */,
+				4304885A1BA3E25A0038C2A4 /* sortcomp_icon_sorted.gif in Resources */,
 				43C996731BA04BC100F37F5F /* map_corridor0.txt in Resources */,
+				430488581BA3E25A0038C2A4 /* sortcomp_icon_reverse.gif in Resources */,
+				430488591BA3E25A0038C2A4 /* sortcomp_icon_shuffle.gif in Resources */,
 				43C9967A1BA04BC100F37F5F /* map_leaf1.txt in Resources */,
+				4304885C1BA3E25A0038C2A4 /* SORTING.png in Resources */,
+				435B36621BA4005800B7EF68 /* gol_b_play.gif in Resources */,
 				43C9967C1BA04BC100F37F5F /* map_root.txt in Resources */,
+				4304885B1BA3E25A0038C2A4 /* SortCompBackground04.png in Resources */,
+				430488551BA3E25A0038C2A4 /* sortcomp_b_pause.gif in Resources */,
+				43CD405D1BA3F2920098168E /* AlbertonLessonBackground.png in Resources */,
+				43CD405B1BA3F2870098168E /* BinaryTreeDungeon.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,22 +434,30 @@
 				438CC9941A7CBE9F00B41E4F /* ResourcePath.mm in Sources */,
 				438CC9921A7CBE9F00B41E4F /* MainLoop.cpp in Sources */,
 				43D6C8D21B57389800E147F0 /* SchoolOfImplementationsMenu.cpp in Sources */,
+				430488641BA3E2740038C2A4 /* CompareMain.cpp in Sources */,
+				435B36511BA3FBBF00B7EF68 /* StackAttackMain.cpp in Sources */,
 				43FCC7421B9408C5003682E7 /* SortShuffle.cpp in Sources */,
 				43D6C8CC1B57351C00E147F0 /* PuzzlesAndGamesMenu.cpp in Sources */,
+				43CD40621BA3F2AD0098168E /* AlbertonsLessonBuilderMain.cpp in Sources */,
 				43C996651BA04B7000F37F5F /* TreeDungeonMaps.cpp in Sources */,
 				43C996631BA04B7000F37F5F /* TreeDungeonLineofsight.cpp in Sources */,
+				430488661BA3E2740038C2A4 /* CompareShuffle.cpp in Sources */,
 				438CC9951A7CBE9F00B41E4F /* SpalshScreen.cpp in Sources */,
 				438CC9961A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp in Sources */,
+				430488651BA3E2740038C2A4 /* CompareScreenRender.cpp in Sources */,
 				43C996601BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp in Sources */,
 				433B39741B6F374400700E95 /* SortingDemonstration.cpp in Sources */,
 				43C9965F1BA04B7000F37F5F /* TreeDungeonCharacter.cpp in Sources */,
+				430488631BA3E2740038C2A4 /* CompareBuildScreen.cpp in Sources */,
+				430488671BA3E2740038C2A4 /* CompareSorts.cpp in Sources */,
 				438CC9931A7CBE9F00B41E4F /* MainMenu.cpp in Sources */,
 				43C996621BA04B7000F37F5F /* TreeDungeonInput.cpp in Sources */,
 				438CC9911A7CBE9F00B41E4F /* Main.cpp in Sources */,
 				43FCC7411B9408C5003682E7 /* SortScreenRender.cpp in Sources */,
 				43C9965E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp in Sources */,
+				435B36581BA4004100B7EF68 /* ConwaysMain.cpp in Sources */,
 				43C996611BA04B7000F37F5F /* TreeDungeonGraphics.cpp in Sources */,
-				43AAA3951B7048F600AF799F /* StackAttack.cpp in Sources */,
+				43CD40611BA3F2AD0098168E /* AlbertonsLessonBuilder.cpp in Sources */,
 				43D6C8CF1B57387D00E147F0 /* SortingAndSearchingMenu.cpp in Sources */,
 				43FCC7431B9408C5003682E7 /* SortSorts.cpp in Sources */,
 			);

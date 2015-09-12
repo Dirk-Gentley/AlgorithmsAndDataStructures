@@ -14,45 +14,45 @@ int input(sf::RenderWindow &Window, class Character &Character, Maps &Map, Node*
     while (Window.pollEvent(event)){
         
         if (event.type == sf::Event::KeyPressed){
-            sf::Uint32 keyCode = event.key.code;
+            //sf::Uint32 event.key.code = event.key.code;
             
-            if (keyCode == sf::Keyboard::Left){
+            if (event.key.code == sf::Keyboard::Left){
                 Character.setPlayerX(Character.getPlayerX()-32);
                 if(collisions(Character, Map)){
                     Character.setPlayerX(Character.getPlayerX()+32);
                 }
             }
             
-            if (keyCode == sf::Keyboard::Right){
+            if (event.key.code == sf::Keyboard::Right){
                 Character.setPlayerX(Character.getPlayerX()+32);
                 if(collisions(Character, Map)){
                     Character.setPlayerX(Character.getPlayerX()-32);
                 }
             }
             
-            if (keyCode == sf::Keyboard::Up){
+            if (event.key.code == sf::Keyboard::Up){
                 Character.setPlayerY(Character.getPlayerY()-32);
                 if(collisions(Character, Map)){
                     Character.setPlayerY(Character.getPlayerY()+32);
                 }
             }
             
-            if (keyCode == sf::Keyboard::Down){
+            if (event.key.code == sf::Keyboard::Down){
                 Character.setPlayerY(Character.getPlayerY()+32);
                 if(collisions(Character, Map)){
                     Character.setPlayerY(Character.getPlayerY()-32);
                 }
             }
             
-            if (keyCode == sf::Keyboard::A){
+            if (event.key.code == sf::Keyboard::A){
                 resetGameState(MapTree, CurrentNode, Character, Map, MappedSprites);
                 Character.goal = 1;
             }
-            if (keyCode == sf::Keyboard::B){
+            if (event.key.code == sf::Keyboard::B){
                 resetGameState(MapTree, CurrentNode, Character, Map, MappedSprites);
                 Character.goal = 2;
             }
-            if (keyCode == sf::Keyboard::C){
+            if (event.key.code == sf::Keyboard::C){
                 resetGameState(MapTree, CurrentNode, Character, Map, MappedSprites);
                 Character.goal = 3;
             }

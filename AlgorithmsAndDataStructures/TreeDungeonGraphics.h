@@ -10,7 +10,6 @@
 #define __Trevors_Traversal__graphics__
 
 #include "ResourcePath.hpp"
-//#include "character.h"
 
 
 class TreeDungeonGraphics{
@@ -44,6 +43,7 @@ public:
     const TreeDungeonGraphics initBGSprite(sf::Texture &Texture);
     static const sf::Texture initTextures();
     static const sf::Texture initBackground();
+    
 };
 
 static TreeDungeonGraphics MappedSprites;

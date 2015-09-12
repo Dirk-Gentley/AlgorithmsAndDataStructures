@@ -51,6 +51,23 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     beginDemoBox.setPosition(312, 300);
     renderWindow.draw(beginDemoBox);
     
+    //Begin demo menu item coordinates
+    SortingAndSearchingMenuItem beginComparissonButton;
+    beginComparissonButton.rect.top = 400;
+    beginComparissonButton.rect.height = 80;
+    beginComparissonButton.rect.left = 312;
+    beginComparissonButton.rect.width = 400;
+    beginComparissonButton.action = BeginComparisson;
+    
+    //Begin demo clickable button
+    sf::RectangleShape beginComparissonBox;
+    beginComparissonBox.setSize(sf::Vector2f(400, 80));
+    beginComparissonBox.setOutlineColor(sf::Color::Blue);
+    beginComparissonBox.setFillColor(sf::Color::Blue);
+    beginComparissonBox.setOutlineThickness(5);
+    beginComparissonBox.setPosition(312, 400);
+    renderWindow.draw(beginComparissonBox);
+    
     //Exit menu item coordinates
     SortingAndSearchingMenuItem backButton;
     backButton.rect.top = 600;
@@ -70,6 +87,7 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     
     menuItems.push_back(beginLessonButton);
     menuItems.push_back(beginDemoButton);
+    menuItems.push_back(beginComparissonButton);
     menuItems.push_back(backButton);
     
     sf::Font font;
@@ -89,6 +107,10 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     beginDemoText.setPosition(380, 300);
     beginDemoText.setColor(sf::Color::White);
     
+    sf::Text beginComparissonText("Comparisson", font, 40);
+    beginComparissonText.setPosition(380, 400);
+    beginComparissonText.setColor(sf::Color::White);
+    
     sf::Text backText("Back", font, 40);
     backText.setPosition(460, 600);
     backText.setColor(sf::Color::White);
@@ -96,6 +118,7 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     renderWindow.draw(menuText);
     renderWindow.draw(beginLessonText);
     renderWindow.draw(beginDemoText);
+    renderWindow.draw(beginComparissonText);
     renderWindow.draw(backText);
     
     renderWindow.display();

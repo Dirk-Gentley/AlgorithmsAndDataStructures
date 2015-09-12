@@ -13,7 +13,7 @@
 
 class PuzzlesAndGamesMenu{
 public:
-    enum PuzzlesAndGamesMenuResult { Nothing, Back, Begin };
+    enum PuzzlesAndGamesMenuResult { Nothing, Back, BeginConways };
     
     struct PuzzlesAndGamesMenuItem{
     public:

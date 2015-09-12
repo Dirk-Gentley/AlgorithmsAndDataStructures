@@ -3,13 +3,13 @@ zzzzzzzzzzzzzz
 zzzzzzzzzzzzzz
 zzzxxxxxgxxxxx
 zzzxooooooooox
-zzzxoxxxxxxxox
 zzzxooooooooox
-zzzxxxxxoxxxxx
-zzzxtoooooooox
-zzzxxxxxoxxxxx
 zzzxooooooooox
-zzzxoxoxoxoxox
+zzzxooooxtooox
+zzzxoooxxxooox
+zzzxooooxoooox
+zzzxooooooooox
+zzzxooooooooox
 zzzxooooooooox
 zzzxxxxxdxxxxx
 

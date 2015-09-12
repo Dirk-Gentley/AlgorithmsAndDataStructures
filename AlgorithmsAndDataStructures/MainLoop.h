@@ -24,7 +24,13 @@ public:
     //
     static void RunSortingDemonstration();
     //
+    static void RunSortingComparisson();
+    //
     static void RunBinaryTreeDungeon();
+    //
+    static void RunStackAttack();
+    //
+    static void RunConwaysGameOfLife();
     
 //private:
     // Safely shut down
@@ -48,9 +54,10 @@ public:
                         RunningStackAttack,
                         RunningSortingAndSearchingLesson,
                         RunningSortingAndSearchingDemo,
-                        RunningPuzzlesAndGames,
+                        RunningSortingComparisson,
                         RunningSchoolOfImplementations,
                         RunningBinaryTreeDungeon,
+                        RunningConwaysGameOfLife,
                         Exiting };
     
     static ProgramState programState;

@@ -23,7 +23,7 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     beginButton.rect.height = 80;
     beginButton.rect.left = 312;
     beginButton.rect.width = 400;
-    beginButton.action = Begin;
+    beginButton.action = BeginConways;
     
     //Begin clickable button
     sf::RectangleShape beginBox;
@@ -62,8 +62,8 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     menuText.setPosition(160, 50);
     menuText.setColor(sf::Color::White);
     
-    sf::Text beginText("Goats and Cabbages", font, 40);
-    beginText.setPosition(320, 200);
+    sf::Text beginText("Conways Game of Life", font, 40);
+    beginText.setPosition(310, 200);
     beginText.setColor(sf::Color::White);
     
     sf::Text backText("Back", font, 40);
@@ -73,10 +73,6 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     renderWindow.draw(menuText);
     renderWindow.draw(beginText);
     renderWindow.draw(backText);
-    
-    //sf::Music music;
-    //music.openFromFile(resourcePath() + "StackAttack.ogg");
-    //music.play();
     
     renderWindow.display();
     return GetPuzzlesAndGamesMenuResponse(renderWindow);

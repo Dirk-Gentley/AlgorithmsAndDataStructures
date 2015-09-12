@@ -13,7 +13,7 @@
 
 class SortingAndSearchingMenu{
 public:
-    enum SortingAndSearchingMenuResult { Nothing, Back, BeginLesson, BeginDemo };
+    enum SortingAndSearchingMenuResult { Nothing, Back, BeginLesson, BeginDemo, BeginComparisson };
     
     struct SortingAndSearchingMenuItem{
     public:

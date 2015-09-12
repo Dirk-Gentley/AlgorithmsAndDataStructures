@@ -38,6 +38,11 @@
 #include <algorithm>
 #include <ctime>
 #include <fstream>
+#include <random>
+#include <deque>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
 
 #include "MainLoop.h"
 #include "SplashScreen.h"
@@ -55,6 +60,9 @@
 #include "TreeDungeonCharacter.h"
 #include "TreeDungeonGameFunctions.h"
 #include "RunBinaryTreeDungeon.h"
+#include "Compare.h"
+#include "AlbertonsLessonBuilder.h"
+#include "ConwaysMain.h"
 ////////////////////////////////////////////////////////////
 /// \brief Return the path to the resource folder.
 ///

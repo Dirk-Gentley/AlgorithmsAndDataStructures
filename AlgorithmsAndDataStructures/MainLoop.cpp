@@ -11,7 +11,7 @@
 MainLoop::ProgramState MainLoop::programState = Uninitialized;
 sf::RenderWindow MainLoop::MainWindow;
 sf::View MainLoop::MainView;
-sf::Music MainLoop::MainMusic;//openFromFile(resourcePath() + "MenuMusic.ogg");
+sf::Music MainLoop::MainMusic;
 
 void MainLoop::Start(void){
     MainMusic.openFromFile(resourcePath() + "MenuMusic.ogg");
@@ -22,8 +22,8 @@ void MainLoop::Start(void){
         return;
     // This main window will remain throughout the application
     //MainWindow.create(sf::VideoMode(1024,768,32),"Window", sf::Style::Fullscreen);
-    MainWindow.create(sf::VideoMode(1024,768,32),"Professor Albertons Algorithmic Adventures", sf::Style::Titlebar);
-    //MainWindow.create(sf::VideoMode(1024,768,32),"Window");
+    //MainWindow.create(sf::VideoMode(1024,768,32),"Professor Albertons Algorithmic Adventures", sf::Style::Titlebar);
+    MainWindow.create(sf::VideoMode(1024,768,32),"Window");
     // The initial program state, should only happen once
     programState = MainLoop::ShowingSplash;
     
@@ -108,20 +108,7 @@ void MainLoop::RunLoop(){
             }
                 
             case MainLoop::RunningStackAttack:{
-                
-                MainMusic.openFromFile(resourcePath() + "StackAttack.ogg");
-                MainMusic.play();
-                
-                MainWindow.clear(sf::Color::Black);
-                stackAttack(MainWindow);
-                if(currentEvent.type == sf::Event::Closed){
-                    programState = MainLoop::Exiting;
-                }
-                if(currentEvent.type == sf::Event::KeyPressed){
-                    MainMusic.openFromFile(resourcePath() + "MenuMusic.ogg");
-                    MainMusic.play();
-                    if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowTreesAndStructuresMenu();
-                }
+                RunStackAttack();
                 break;
             }
                 
@@ -159,34 +146,18 @@ void MainLoop::RunLoop(){
                 break;
             }
                 
+            case MainLoop::RunningSortingComparisson:{
+                RunSortingComparisson();
+                break;
+            }
+                
             case MainLoop::ShowingPuzzlesAndGamesMenu:{
                 ShowPuzzlesAndGamesMenu();
                 break;
             }
                 
-            case MainLoop::RunningPuzzlesAndGames:{
-                /*
-                 
-                 THIS IS PUZZLES AND GAMES
-                 
-                 */
-                
-                MainWindow.clear(sf::Color::Black);
-                
-                sf::Font font;
-                if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-                    exit(1);
-                }
-                sf::Text LessonText("Placeholder text.  ESC to go back", font, 30);
-                MainWindow.draw(LessonText);
-                
-                MainWindow.display();
-                if(currentEvent.type == sf::Event::Closed){
-                    programState = MainLoop::Exiting;
-                }
-                if(currentEvent.type == sf::Event::KeyPressed){
-                    if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowPuzzlesAndGamesMenu();
-                }
+            case MainLoop::RunningConwaysGameOfLife:{
+                RunConwaysGameOfLife();
                 break;
             }
                 
@@ -296,6 +267,9 @@ void MainLoop::ShowSortingAndSearchingMenu(){
         case SortingAndSearchingMenu::BeginDemo:
             programState = MainLoop::RunningSortingAndSearchingDemo;
             break;
+        case SortingAndSearchingMenu::BeginComparisson:
+            programState = MainLoop::RunningSortingComparisson;
+            break;
         case SortingAndSearchingMenu::Nothing:
             // Vitally important
             ShowSortingAndSearchingMenu();
@@ -305,8 +279,15 @@ void MainLoop::ShowSortingAndSearchingMenu(){
 
 void MainLoop::RunSortingDemonstration(){
     programState = MainLoop::RunningSortingAndSearchingLesson;
+    runLessonBuilder("SortingDemo.txt", MainWindow);
     sortingModule sort;
     sort.startModule(MainWindow, sort);
+    programState = MainLoop::ShowingSortingAndSearchingMenu;
+}
+
+void MainLoop::RunSortingComparisson(){
+    programState = MainLoop::RunningSortingComparisson;
+    beginSortingComparisson(MainWindow);
     programState = MainLoop::ShowingSortingAndSearchingMenu;
 }
 
@@ -335,7 +316,15 @@ void MainLoop::ShowTreesAndStructuresMenu(){
 
 void MainLoop::RunBinaryTreeDungeon(){
     programState = MainLoop::RunningBinaryTreeDungeon;
+    runLessonBuilder("BinaryTreeDungeon.txt", MainWindow);
     beginBinaryTreeDungeon(MainWindow);
+    programState = MainLoop::ShowingTreesAndStructuresMenu;
+}
+
+void MainLoop::RunStackAttack(){
+    programState = MainLoop::RunningStackAttack;
+    runLessonBuilder("StackAttack.txt", MainWindow);
+    beginStackAttack(MainWindow);
     programState = MainLoop::ShowingTreesAndStructuresMenu;
 }
 
@@ -346,14 +335,20 @@ void MainLoop::ShowPuzzlesAndGamesMenu(){
         case PuzzlesAndGamesMenu::Back:
             programState = MainLoop::ShowingMenu;
             break;
-        case PuzzlesAndGamesMenu::Begin:
-            programState = MainLoop::RunningPuzzlesAndGames;
+        case PuzzlesAndGamesMenu::BeginConways:
+            programState = MainLoop::RunningConwaysGameOfLife;
             break;
         case PuzzlesAndGamesMenu::Nothing:
-            // Vitally important
             ShowPuzzlesAndGamesMenu();
             break;
     }
+}
+
+void MainLoop::RunConwaysGameOfLife(){
+    programState = MainLoop::RunningConwaysGameOfLife;
+    runLessonBuilder("ConwaysGameOfLife.txt", MainWindow);
+    beginConwaysGameOfLife(MainWindow);
+    programState = MainLoop::ShowingPuzzlesAndGamesMenu;
 }
 
 void MainLoop::ShowSchoolOfImplementationsMenu(){

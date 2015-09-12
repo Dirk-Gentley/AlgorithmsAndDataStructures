@@ -21,10 +21,6 @@ void buildLesson(std::string fileName, sf::RenderWindow &window){
     bool skip = false;
     
     while (window.isOpen()) {
-        sf::Event event;
-        if (event.type == sf::Event::KeyPressed) {
-            std::cerr << "Key Pressed" << std::endl;
-        }
         albertonInput(window, skip);
         if(updateGraphics(window, MappedLessonDialogueGraphics, DialogueCommands, clock, skip) == 0){
             return;

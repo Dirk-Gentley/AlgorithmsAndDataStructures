@@ -12,7 +12,6 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
     }
     sf::Sprite background(texture);
     
-    
     // Load menus
     sf::Texture pMenu;
     if (!pMenu.loadFromFile(resourcePath() + "gol_playMode.gif")) {
@@ -332,7 +331,6 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
                 int myY = ((localPosition.y-boardY)/cellHeight);
                 int mySize = sqrt(stamps[currStamp].size());
                 cell.setFillColor(sf::Color::Magenta);
-                //std::cout << "mySize: " << mySize << std::endl;
                 myX -= mySize/2;
                 myY -= mySize/2;
                 for (int j = 0; j < mySize; j++) {
@@ -378,10 +376,6 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
                 window.draw(playMenu_play);
             }
         }
-        
-        
-        
-        // Update the window
         window.display();
     }
     

@@ -23,13 +23,9 @@ public:
     static void ShowSchoolOfImplementationsMenu();
     //
     static void RunSortingDemonstration();
-    //
     static void RunSortingComparisson();
-    //
     static void RunBinaryTreeDungeon();
-    //
     static void RunStackAttack();
-    //
     static void RunConwaysGameOfLife();
     
 //private:

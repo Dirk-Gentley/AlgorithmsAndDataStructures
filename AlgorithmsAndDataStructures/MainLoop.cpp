@@ -21,8 +21,6 @@ void MainLoop::Start(void){
     if(programState != Uninitialized)
         return;
     // This main window will remain throughout the application
-    //MainWindow.create(sf::VideoMode(1024,768,32),"Window", sf::Style::Fullscreen);
-    //MainWindow.create(sf::VideoMode(1024,768,32),"Professor Albertons Algorithmic Adventures", sf::Style::Titlebar);
     MainWindow.create(sf::VideoMode(1024,768,32),"Window");
     // The initial program state, should only happen once
     programState = MainLoop::ShowingSplash;
@@ -60,35 +58,27 @@ void MainLoop::RunLoop(){
     while(MainWindow.pollEvent(currentEvent)){
 
         switch(programState){
-                
             case MainLoop::Uninitialized:{
                 break;
             }
-
             case MainLoop::ShowingSplash:{
                 ShowSplashScreen();
                 break;
             }
-                
             case MainLoop::ShowingMenu:{
                 ShowMenu();
                 break;
             }
-                
-            // Trees and Data Structures
-                
-            case MainLoop::ShowingTreesAndStructuresMenu:{
-                ShowTreesAndStructuresMenu();
-                break;
-            }
-
-            case MainLoop::RunningStacksLesson:{
-                
                 /*
                  
                  THIS IS WHERE TREES AND STRUCTRES HAPPENS
                  
                  */
+            case MainLoop::ShowingTreesAndStructuresMenu:{
+                ShowTreesAndStructuresMenu();
+                break;
+            }
+            case MainLoop::RunningStacksLesson:{
                 MainWindow.clear(sf::Color::Black);
                 sf::Font font;
                 if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
@@ -218,8 +208,7 @@ void MainLoop::ShowSplashScreen(){
  
  THE MENUS AND SUB MENUS APPEAR HERE
  
- Each has their own .cpp and .h file in order that they can be dynamic
- and themed.
+ Each has their own .cpp and .h file in order that they can be dynamic and themed.
  
  NO GENERIC BUILD MENU CLASS
  

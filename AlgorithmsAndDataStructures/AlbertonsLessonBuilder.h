@@ -52,11 +52,6 @@ void albertonInput(sf::RenderWindow &, bool &);
 
 static LessonDialogueGraphics MappedLessonDialogueGraphics;
 
-class LessonMainLoop{
-public:
-    //static void start(std::string);
-};
-
 class Commands{
 public:
     std::pair<int, std::string> Dialogue;

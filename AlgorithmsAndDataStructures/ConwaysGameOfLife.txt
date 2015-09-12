@@ -13,6 +13,6 @@ Professor: The cellular is controlled by the automata.
 Companion:      The automata is the rules?
 Professor: ...and the rules control the cells.
 Professor: Too few, and they starve. Too many and they choke.
-Companion:                             A balance?
+Companion:                       A balance?
 Professor: A balance indeed!
 Professor: Now, place the cells and begin the automata!

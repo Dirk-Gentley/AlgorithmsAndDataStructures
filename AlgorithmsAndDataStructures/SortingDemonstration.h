@@ -2,8 +2,8 @@
 //  SortingDemonstration.h
 //  AlgorithmsAndDataStructures
 //
-//  Created by Benjamin Waters on 3/08/2015.
-//  Copyright (c) 2015 Benjamin. All rights reserved.
+//  Created by Nicholas Judd on 3/08/2015.
+//  Copyright (c) 2015 Nicholas. All rights reserved.
 //
 
 #ifndef __AlgorithmsAndDataStructures__SortingDemonstration__

@@ -1,3 +1,11 @@
+//
+//  Main.cpp
+//  AlgorithmsAndDataStructures
+//
+//  Created by Benjamin Waters on 7/06/2014.
+//  Copyright (c) 2014 _BENJAMIN. All rights reserved.
+//
+
 #include "ResourcePath.hpp"
 
 int main(int argc, const char* argv[]){

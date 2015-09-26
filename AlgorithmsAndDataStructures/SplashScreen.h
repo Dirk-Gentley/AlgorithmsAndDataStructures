@@ -1,6 +1,6 @@
 //
 //  SpalshScreen.h
-//  SFML_test
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 7/06/2014.
 //  Copyright (c) 2014 _BENJAMIN. All rights reserved.

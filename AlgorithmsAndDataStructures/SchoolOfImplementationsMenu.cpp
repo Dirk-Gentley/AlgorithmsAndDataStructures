@@ -30,7 +30,7 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     beginBox.setSize(sf::Vector2f(400, 80));
     beginBox.setOutlineColor(sf::Color::Blue);
     beginBox.setFillColor(sf::Color::Blue);
-    beginBox.setOutlineThickness(5);
+    beginBox.setOutlineThickness(0);
     beginBox.setPosition(312, 200);
     renderWindow.draw(beginBox);
     
@@ -47,7 +47,7 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     exitBox.setSize(sf::Vector2f(400, 80));
     exitBox.setOutlineColor(sf::Color::Blue);
     exitBox.setFillColor(sf::Color::Blue);
-    exitBox.setOutlineThickness(5);
+    exitBox.setOutlineThickness(0);
     exitBox.setPosition(312, 600);
     renderWindow.draw(exitBox);
     
@@ -99,7 +99,8 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     for(;;){
         while(window.pollEvent(menuEvent)){
             if(menuEvent.type == sf::Event::MouseButtonPressed){
-                return HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
+                sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, window);
+                return HandleClick(click.x, click.y);
             }
             if(menuEvent.type == sf::Event::Closed){
                 return Back;

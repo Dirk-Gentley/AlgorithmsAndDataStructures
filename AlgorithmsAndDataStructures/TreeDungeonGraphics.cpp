@@ -1,6 +1,6 @@
 //
-//  graphics.cpp
-//  Trevors_Traversal
+//  TreeDungeonGraphics.cpp
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 9/07/2015.
 //  Copyright (c) 2015 Benjamin. All rights reserved.

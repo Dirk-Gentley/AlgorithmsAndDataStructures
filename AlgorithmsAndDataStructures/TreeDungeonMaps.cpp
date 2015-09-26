@@ -1,5 +1,6 @@
 //
-//  Trevors_Traversal
+//  TreeDungeonMaps.cpp
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 9/07/2015.
 //  Copyright (c) 2015 Benjamin. All rights reserved.
@@ -328,7 +329,7 @@ Node *updateMap(class Character &Character, class Maps &Map, Node* &CurrentNode,
 }
 
 int myrandom(int i){
-    return std::rand()%i;
+    return std::rand() % i;
 }
 
 std::string generateMap(class BTree &MapTree){

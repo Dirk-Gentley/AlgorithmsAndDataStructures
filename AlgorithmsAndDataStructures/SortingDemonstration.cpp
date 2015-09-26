@@ -2,8 +2,8 @@
 //  SortingDemonstration.cpp
 //  AlgorithmsAndDataStructures
 //
-//  Created by Benjamin Waters on 3/08/2015.
-//  Copyright (c) 2015 Benjamin. All rights reserved.
+//  Created by Nicholas Judd on 3/08/2015.
+//  Copyright (c) 2015 Nicholas. All rights reserved.
 //
 
 #include "ResourcePath.hpp"
@@ -28,7 +28,8 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
                 buildArray();
             }
             if(menuEvent.type == sf::Event::MouseButtonPressed){
-                action = HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
+                sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, mainWindow);
+                action = HandleClick(click.x, click.y);
             }
             
             switch (action) {

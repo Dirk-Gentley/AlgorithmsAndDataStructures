@@ -1,6 +1,6 @@
 //
 //  game.h
-//  SFML_test
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 7/06/2014.
 //  Copyright (c) 2014 _BENJAMIN. All rights reserved.
@@ -10,6 +10,8 @@
 
 #ifndef SFML_Algorithms_And_Data_Structures_h
 #define SFML_Algorithms_And_Data_Structures_h
+
+sf::Vector2i handleMouseClick(unsigned int, unsigned int, sf::RenderWindow &);
 
 class MainLoop{
     

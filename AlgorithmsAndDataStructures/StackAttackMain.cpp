@@ -1,3 +1,11 @@
+//
+//  SpalshScreen.h
+//  AlgorithmsAndDataStructures
+//
+//  Created by Jim Gollop on 7/06/2014.
+//  Copyright (c) 2014 Jim. All rights reserved.
+//
+
 #include "ResourcePath.hpp"
 
 void beginStackAttack(sf::RenderWindow &window){

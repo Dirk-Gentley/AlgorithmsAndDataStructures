@@ -1,6 +1,10 @@
-// THIS VERSION STILL REQUESTS DYNAMIC MEMORY
-// Conway's Game of Life
-// CSCI321
+//
+//  ConwaysMain.h
+//  AlgorithmsAndDataStructures
+//
+//  Created by Jim Gollop on 12/09/2015.
+//  Copyright (c) 2015 Jim. All rights reserved.
+//
 
 #include "ResourcePath.hpp"
 
@@ -208,6 +212,9 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
             if (gameMode == EDIT) {
                 if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                     sf::Vector2i localPosition = sf::Mouse::getPosition(window);
+                    //
+                    localPosition = handleMouseClick(localPosition.x, localPosition.y, window);
+                    //
                     if (bb.contains(localPosition)) {
                         
                         int myX = ((localPosition.x-boardX)/cellWidth);
@@ -272,6 +279,8 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
                 if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                     sf::Vector2i localPosition = sf::Mouse::getPosition(window);
                     
+                    localPosition = handleMouseClick(localPosition.x, localPosition.y, window);
+                    
                     if (b_editMode.contains(localPosition)) { // Switch to Edit Mode
                         gameMode = EDIT;
                         playMode = false;
@@ -325,6 +334,8 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
         // Draw the stamp preview
         if (gameMode == EDIT && drawMode == STAMP) {
             sf::Vector2i localPosition = sf::Mouse::getPosition(window);
+            
+            localPosition = handleMouseClick(localPosition.x, localPosition.y, window);
             if (bb.contains(localPosition)) {
                 
                 int myX = ((localPosition.x-boardX)/cellWidth);

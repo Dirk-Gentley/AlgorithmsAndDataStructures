@@ -329,7 +329,7 @@
 		438CC9651A7CBE4D00B41E4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Benjamin;
 				TargetAttributes = {
 					438CC96D1A7CBE4D00B41E4F = {
@@ -471,6 +471,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
@@ -496,6 +497,7 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -555,6 +557,7 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -585,6 +588,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "AlgorithmsAndDataStructures/AlgorithmsAndDataStructures-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "-21.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -594,6 +598,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "AlgorithmsAndDataStructures/AlgorithmsAndDataStructures-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "-21.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

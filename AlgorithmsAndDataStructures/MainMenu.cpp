@@ -1,6 +1,6 @@
 //
 //  MainMenu.cpp
-//  SFML_test
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 7/06/2014.
 //  Copyright (c) 2014 _BENJAMIN. All rights reserved.
@@ -126,18 +126,8 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     sf::Text beginSchoolOfImplementationsText("School", font, 40);
     beginSchoolOfImplementationsText.setPosition(620, 420);
     
-    //sf::Text exitText("Click to Exit", font, 40);
-    //exitText.setPosition(400, 600);
-    //exitText.setColor(sf::Color::Red);
-    
     renderWindow.draw(sprite);
 
-    //renderWindow.draw(menuText);
-    //renderWindow.draw(beginSortingAndSearchingText);
-    //renderWindow.draw(beginPuzzlesAndGamesText);
-    //renderWindow.draw(beginTreesAndStructuresText);
-    //renderWindow.draw(beginSchoolOfImplementationsText);
-    //renderWindow.draw(exitText);
 	renderWindow.display();
     
 	return GetMenuResponse(renderWindow);
@@ -164,7 +154,8 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
     for(;;){
 		while(window.pollEvent(menuEvent)){
 			if(menuEvent.type == sf::Event::MouseButtonPressed){
-				return HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
+                sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, window);
+                return HandleClick(click.x, click.y);
 			}
 			if(menuEvent.type == sf::Event::Closed){
 				return Exit;

@@ -1,6 +1,6 @@
 //
-//  lineofsight.cpp
-//  Trevors_Traversal
+//  TreeDungeonLineofsight.cpp
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 9/07/2015.
 //  Copyright (c) 2015 Benjamin. All rights reserved.
@@ -28,9 +28,6 @@ void lineOfSight(class Maps& Map, class Character& Character){
             int x_inc = (x0 > charX) ? 1 : -1;
             int y_inc = (y0 > charY) ? 1 : -1;
             int error = dx - dy;
-            
-            dx *= 2;
-            dy *= 2;
             
             for (; n > 0; n--){
                 if (error > 0){

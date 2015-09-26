@@ -1,6 +1,6 @@
 //
-//  character.h
-//  Trevors_Traversal
+//  TreeDungeonCharacter.h
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 16/07/2015.
 //  Copyright (c) 2015 Benjamin. All rights reserved.

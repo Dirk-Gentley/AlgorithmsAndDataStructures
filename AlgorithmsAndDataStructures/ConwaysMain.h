@@ -2,8 +2,8 @@
 //  ConwaysMain.h
 //  AlgorithmsAndDataStructures
 //
-//  Created by Benjamin Waters on 12/09/2015.
-//  Copyright (c) 2015 Benjamin. All rights reserved.
+//  Created by Jim Gollop on 12/09/2015.
+//  Copyright (c) 2015 Jim. All rights reserved.
 //
 
 #ifndef AlgorithmsAndDataStructures_ConwaysMain_h

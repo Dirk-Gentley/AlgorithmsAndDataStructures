@@ -8,8 +8,7 @@
 
 #include "ResourcePath.hpp"
 
-sf::Texture const comparisonModule::loadTexture(std::string filename)
-{
+sf::Texture const comparisonModule::loadTexture(std::string filename){
     sf::Texture texture;
     if(!texture.loadFromFile(resourcePath() + filename)){
         exit(1);
@@ -107,7 +106,6 @@ void comparisonModule::buildBackground(sf::RenderWindow& mainWindow, comparisonM
         sizeGraphTime[i].x = 5;
         sizeGraphTime[i].y = 67;
         timeGraph[i].setSize(sizeGraphTime[i]);
-        //timeGraph[i].setFillColor(sf::Color::Transparent);
     }
     for (int i = 0; i < 3; i++){
         swaps[i] = 0;

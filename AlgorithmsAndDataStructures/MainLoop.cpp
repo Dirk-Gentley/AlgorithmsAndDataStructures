@@ -1,6 +1,6 @@
 //
-//  game.cpp
-//  SFML_test
+//  MainLoop.cpp
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 7/06/2014.
 //  Copyright (c) 2014 _BENJAMIN. All rights reserved.
@@ -14,14 +14,48 @@ sf::View MainLoop::MainView;
 sf::Music MainLoop::MainMusic;
 
 void MainLoop::Start(void){
+    
+    std::vector<sf::VideoMode> modes = sf::VideoMode::getFullscreenModes();
+    MainWindow.setVerticalSyncEnabled(true);
+    
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    //
+    //  What follows is probably the ugliest code I have ever written
+    //
+    //  It may, or may not be cleaned up before submission
+    //
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    
+    // modes[0] is the highest possible resolution
+    sf::VideoMode mode = modes[0];
+    
+    unsigned int X = mode.width, Y = mode.height;
+    // XPrime is the width of the view in pixels (inside the letterbox)
+    float L = 1.0f, W, XPrime = Y * 1.33333333333333;
+    // W is the relative width of the view (inside the letterbox)
+    W = ((XPrime / X) * 100) / 100;
+    // L is the "letterbox" panel width
+    L -= W; L = L / 2;
+    
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    //
+    //  Thus ends the ugly code section xx
+    //
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+    
+    MainWindow.create(sf::VideoMode(X, Y), "SFML window", sf::Style::Fullscreen);
+    sf::View MainView(sf::FloatRect(0, 0, 1024, 768));
+    MainView.setViewport(sf::FloatRect(L, 0.0f, W, 1.f));
+    MainWindow.setView(MainView);
+    
     MainMusic.openFromFile(resourcePath() + "MenuMusic.ogg");
     MainMusic.setLoop(true);
     MainMusic.play();
     // Should never happen
-    if(programState != Uninitialized)
+    if(programState != Uninitialized){
         return;
-    // This main window will remain throughout the application
-    MainWindow.create(sf::VideoMode(1024,768,32),"Window");
+    }
+
     // The initial program state, should only happen once
     programState = MainLoop::ShowingSplash;
     
@@ -69,11 +103,6 @@ void MainLoop::RunLoop(){
                 ShowMenu();
                 break;
             }
-                /*
-                 
-                 THIS IS WHERE TREES AND STRUCTRES HAPPENS
-                 
-                 */
             case MainLoop::ShowingTreesAndStructuresMenu:{
                 ShowTreesAndStructuresMenu();
                 break;
@@ -106,9 +135,6 @@ void MainLoop::RunLoop(){
                 RunBinaryTreeDungeon();
                 break;
             }
-                
-            // Sorting and Searching
-                
             case MainLoop::ShowingSortingAndSearchingMenu:{
                 ShowSortingAndSearchingMenu();
                 break;
@@ -150,22 +176,12 @@ void MainLoop::RunLoop(){
                 RunConwaysGameOfLife();
                 break;
             }
-                
-            // School of Implementations
-                
             case MainLoop::ShowingSchoolOfImplementationsMenu:{
                 ShowSchoolOfImplementationsMenu();
                 break;
             }
                 
             case MainLoop::RunningSchoolOfImplementations:{
-                /*
-                 
-                 THIS IS WHERE SCHOOL OF IMPLEMENTATIONS
-                 
-                 */
-    
-                
                 MainWindow.clear(sf::Color::Black);
                 
                 sf::Font font;
@@ -184,13 +200,11 @@ void MainLoop::RunLoop(){
                 }
                 break;
             }
-                
             case MainLoop::Paused:{
                 break;
             }
-
             case MainLoop::Exiting:{
-                // Exit safely.  Free resources here
+                // Exit safely.  SFML should by rights free resources here
                 exit(0);
                 break;
             }
@@ -355,4 +369,10 @@ void MainLoop::ShowSchoolOfImplementationsMenu(){
             SchoolOfImplementationsMenu();
             break;
     }
+}
+
+sf::Vector2i handleMouseClick(unsigned int x, unsigned int y, sf::RenderWindow &window){
+    sf::Vector2i mouse(x, y);
+    sf::Vector2f mouse_world = window.mapPixelToCoords(mouse);
+    return sf::Vector2i(mouse_world.x, mouse_world.y);
 }

@@ -1,5 +1,5 @@
 //
-//  SubMenu.h
+//  TreesAndStructuresMenu.h
 //  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 31/01/2015.

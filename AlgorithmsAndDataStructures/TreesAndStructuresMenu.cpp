@@ -1,5 +1,5 @@
 //
-//  SubMenu.cpp
+//  TreesAndStructuresMenu.cpp
 //  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 31/01/2015.
@@ -30,7 +30,7 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Sho
     beginStacksLessonBox.setSize(sf::Vector2f(400, 80));
     beginStacksLessonBox.setOutlineColor(sf::Color::Blue);
     beginStacksLessonBox.setFillColor(sf::Color::Blue);
-    beginStacksLessonBox.setOutlineThickness(5);
+    beginStacksLessonBox.setOutlineThickness(0);
     beginStacksLessonBox.setPosition(312, 200);
     renderWindow.draw(beginStacksLessonBox);
     
@@ -48,7 +48,7 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Sho
     beginStackAttackBox.setSize(sf::Vector2f(400, 80));
     beginStackAttackBox.setOutlineColor(sf::Color::Blue);
     beginStackAttackBox.setFillColor(sf::Color::Blue);
-    beginStackAttackBox.setOutlineThickness(5);
+    beginStackAttackBox.setOutlineThickness(0);
     beginStackAttackBox.setPosition(312, 300);
     renderWindow.draw(beginStackAttackBox);
     
@@ -65,7 +65,7 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Sho
     beginTreeDungeonBox.setSize(sf::Vector2f(400, 80));
     beginTreeDungeonBox.setOutlineColor(sf::Color::Blue);
     beginTreeDungeonBox.setFillColor(sf::Color::Blue);
-    beginTreeDungeonBox.setOutlineThickness(5);
+    beginTreeDungeonBox.setOutlineThickness(0);
     beginTreeDungeonBox.setPosition(312, 400);
     renderWindow.draw(beginTreeDungeonBox);
     
@@ -82,7 +82,7 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Sho
     exitBox.setSize(sf::Vector2f(400, 80));
     exitBox.setOutlineColor(sf::Color::Blue);
     exitBox.setFillColor(sf::Color::Blue);
-    exitBox.setOutlineThickness(5);
+    exitBox.setOutlineThickness(0);
     exitBox.setPosition(312, 600);
     renderWindow.draw(exitBox);
     
@@ -150,7 +150,8 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Get
     for(;;){
         while(window.pollEvent(menuEvent)){
             if(menuEvent.type == sf::Event::MouseButtonPressed){
-                return HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
+                sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, window);
+                return HandleClick(click.x, click.y);
             }
             if(menuEvent.type == sf::Event::Closed){
                 return Back;

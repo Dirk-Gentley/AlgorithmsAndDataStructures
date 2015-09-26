@@ -29,7 +29,7 @@ void sortingModule::setCompAndSwapValue(){
     }
 }
 void sortingModule::animateBubble(sf::RenderWindow& mainWindow, sf::Sprite backgroundSprite){
-    mainWindow.clear(sf::Color(224, 224, 224, 255));
+    mainWindow.clear(sf::Color::Black);
     std::list<animation>::iterator it;
     it = animate.begin();
     if ((*it).action == 1){

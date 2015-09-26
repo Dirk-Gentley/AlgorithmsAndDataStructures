@@ -30,7 +30,7 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     beginLessonBox.setSize(sf::Vector2f(400, 80));
     beginLessonBox.setOutlineColor(sf::Color::Blue);
     beginLessonBox.setFillColor(sf::Color::Blue);
-    beginLessonBox.setOutlineThickness(5);
+    beginLessonBox.setOutlineThickness(0);
     beginLessonBox.setPosition(312, 200);
     renderWindow.draw(beginLessonBox);
     
@@ -47,7 +47,7 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     beginDemoBox.setSize(sf::Vector2f(400, 80));
     beginDemoBox.setOutlineColor(sf::Color::Blue);
     beginDemoBox.setFillColor(sf::Color::Blue);
-    beginDemoBox.setOutlineThickness(5);
+    beginDemoBox.setOutlineThickness(0);
     beginDemoBox.setPosition(312, 300);
     renderWindow.draw(beginDemoBox);
     
@@ -64,7 +64,7 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     beginComparissonBox.setSize(sf::Vector2f(400, 80));
     beginComparissonBox.setOutlineColor(sf::Color::Blue);
     beginComparissonBox.setFillColor(sf::Color::Blue);
-    beginComparissonBox.setOutlineThickness(5);
+    beginComparissonBox.setOutlineThickness(0);
     beginComparissonBox.setPosition(312, 400);
     renderWindow.draw(beginComparissonBox);
     
@@ -81,7 +81,7 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     exitBox.setSize(sf::Vector2f(400, 80));
     exitBox.setOutlineColor(sf::Color::Blue);
     exitBox.setFillColor(sf::Color::Blue);
-    exitBox.setOutlineThickness(5);
+    exitBox.setOutlineThickness(0);
     exitBox.setPosition(312, 600);
     renderWindow.draw(exitBox);
     
@@ -145,7 +145,8 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     for(;;){
         while(window.pollEvent(menuEvent)){
             if(menuEvent.type == sf::Event::MouseButtonPressed){
-                return HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
+                sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, window);
+                return HandleClick(click.x, click.y);
             }
             if(menuEvent.type == sf::Event::KeyPressed){
                 return Back;

@@ -1,6 +1,6 @@
 //
 //  TreeDungeonGameFunctions.cpp
-//  Trevors_Traversal
+//  AlgorithmsAndDataStructures
 //
 //  Created by Benjamin Waters on 5/09/2015.
 //  Copyright (c) 2015 Benjamin. All rights reserved.

@@ -75,7 +75,7 @@ void albertonInput(sf::RenderWindow &window, bool &skip){
 
 int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLessonDialogueGraphics, std::list<std::pair<int, std::string> > &Dialogue, sf::Clock &clock, bool &skip){
     sf::Event event;
-    if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+    if (sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
         return 0;
     }
     

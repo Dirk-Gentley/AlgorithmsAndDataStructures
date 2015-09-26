@@ -9,7 +9,7 @@
 #include "ResourcePath.hpp"
 
 void comparisonModule::renderScreen(sf::RenderWindow& mainWindow,  sf::Sprite backgroundSprite){
-    mainWindow.clear(sf::Color(224, 224, 224, 255));
+    mainWindow.clear(sf::Color::Black);
     mainWindow.draw(backgroundSprite);
     
     elementNum.setString(std::to_string(size));

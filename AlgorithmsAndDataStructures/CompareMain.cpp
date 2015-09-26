@@ -1,6 +1,11 @@
+//
+//  compareBuildScreen.cpp
+//  compare
+//
+//  Created by Nicholas Judd on 4/09/2015.
+//  Copyright (c) 2015 Nicholas Judd. All rights reserved.
+//
 
-
-// Here is a small helper for you ! Have a look.
 #include "ResourcePath.hpp"
 
 sf::Texture comparisonModule::backgroundTexture;
@@ -62,7 +67,8 @@ void comparisonModule::startModule(sf::RenderWindow& mainWindow, comparisonModul
                 return;
             }
             if(menuEvent.type == sf::Event::MouseButtonPressed){
-                action = HandleClick(menuEvent.mouseButton.x,menuEvent.mouseButton.y);
+                sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, mainWindow);
+                action = HandleClick(click.x, click.y);
             }
             switch (action) {
                 case 0:

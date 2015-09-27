@@ -20,7 +20,7 @@ sf::Texture const sortingModule::loadTexture(std::string filename) {
 void sortingModule::buildArray() {
     double height = windowSize.y;
     double positionX = 20;
-    double positionY = height * (380/height);
+    double positionY = height * (380 / height);
     double rectWidth = (((1024 - (positionX*2))-2*size) / size);
     double rectHeight = (positionY - positionX) / size;
     double heightIncrease = (positionY - positionX) / size;
@@ -41,14 +41,13 @@ void sortingModule::buildArray() {
 }
 
 void sortingModule::buildPsuedo(int action){
-    //1 3 5
     psudeoCode.erase(psudeoCode.begin(),psudeoCode.end());
     std::string forString = "FOR ";
     std::string ifString = "IF ";
     std::string whileString = "WHILE ";
     std::string swapString = "SWAP ";
     std::string empty;
-    if (action == 1){ //Bubble Sort Algorithim
+    if (action == 1){                                                           //Bubble Sort Algorithim
         std::string lineOne = "i from 1 to N";
         std::string lineTwo = "j from 0 to N - i";
         std::string lineThree = "a[j] > a[j + 1]";
@@ -61,7 +60,7 @@ void sortingModule::buildPsuedo(int action){
         psudeoCode.push_back(lineThree);
         psudeoCode.push_back(swapString);
         psudeoCode.push_back(lineFour);
-    }else if (action == 3){ //Selection Sort Algorithim
+    }else if (action == 3){                                                     //Selection Sort Algorithim
         std::string lineOne = "i from 1 to N -1";
         std::string lineTwo = "min = i";
         std::string lineThree = "j from i+1 to N";

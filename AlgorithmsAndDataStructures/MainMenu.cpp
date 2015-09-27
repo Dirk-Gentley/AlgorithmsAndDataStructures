@@ -83,23 +83,7 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     beginSchoolOfImplementationsBox.setOutlineThickness(5);
     beginSchoolOfImplementationsBox.setPosition(528, 420);
     renderWindow.draw(beginSchoolOfImplementationsBox);
-    /*
-	//Exit menu item coordinates
-	MenuItem exitButton;
-    exitButton.rect.top = 650;
-    exitButton.rect.height = 80;
-	exitButton.rect.left = 312;
-	exitButton.rect.width = 400;
-	exitButton.action = Exit;
-    
-    //Exit clickable button
-    sf::RectangleShape exitBox;
-    exitBox.setSize(sf::Vector2f(400, 80));
-    exitBox.setOutlineColor(sf::Color::Red);
-    exitBox.setOutlineThickness(5);
-    exitBox.setPosition(312, 650);
-    renderWindow.draw(exitBox);
-    */
+
 	menuItems.push_back(beginSortingAndSearchingButton);
     menuItems.push_back(beginTreesAndStructuresButton);
     menuItems.push_back(beginPuzzlesAndGamesButton);
@@ -127,7 +111,6 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     beginSchoolOfImplementationsText.setPosition(620, 420);
     
     renderWindow.draw(sprite);
-
 	renderWindow.display();
     
 	return GetMenuResponse(renderWindow);

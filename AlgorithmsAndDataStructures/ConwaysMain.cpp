@@ -45,8 +45,6 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
     sf::Sprite editMenu(eMenu);
     editMenu.setPosition(sf::Vector2f(736, 32));
     
-    
-    // Create a graphical text to display
     sf::Font font;
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         return;
@@ -64,57 +62,55 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
     t_speed.setString(std::to_string(3));
     
     std::srand((unsigned int)time(0));
-    int gridX = 100; int gridY = 100; // Number of cells
-    int gridWidth = 700; int gridHeight = 700; // Number of pixels
-    int boardX = 19; int boardY = 34; // X,Y location of top left corner of board
+    int gridX = 100; int gridY = 100;                                   // Number of cells
+    int gridWidth = 700; int gridHeight = 700;                          // Number of pixels
+    int boardX = 19; int boardY = 34;                                   // X,Y location of top left corner of board
     float cellWidth = gridWidth/gridX;
     float cellHeight = gridHeight/gridY;
-    const int boardSizes[3] = {20, 50, 100}; // Small/Medium/Large
+    const int boardSizes[3] = {20, 50, 100};                            // Small/Medium/Large
     
-    int currSpeed = 2; // Current speed setting (0-4)
-    const float speeds[5] = {0.2, 0.1, 0.075, 0.05, 0.025}; // Game speeds (in seconds)
-    float gameSpeed = speeds[currSpeed]; // Seconds between ticks
+    int currSpeed = 2;                                                  // Current speed setting (0-4)
+    const float speeds[5] = {0.2, 0.1, 0.075, 0.05, 0.025};             // Game speeds (in seconds)
+    float gameSpeed = speeds[currSpeed];                                // Seconds between ticks
     sf::Clock clock;
     
-    sf::RectangleShape cell(sf::Vector2f(cellWidth, cellHeight)); // Used to draw cells
-    sf::IntRect bb(boardX, boardY, gridWidth, gridHeight); // Used to test board boundaries
-    sf::IntRect b_editMode(740, 36, 128, 60); // Edit Mode button
-    sf::IntRect b_playMode(876, 36, 128, 60); // Play Mode button
+    sf::RectangleShape cell(sf::Vector2f(cellWidth, cellHeight));       // Used to draw cells
+    sf::IntRect bb(boardX, boardY, gridWidth, gridHeight);              // Used to test board boundaries
+    sf::IntRect b_editMode(740, 36, 128, 60);                           // Edit Mode button
+    sf::IntRect b_playMode(876, 36, 128, 60);                           // Play Mode button
     
     //---------- EDIT MODE BUTTONS
-    sf::IntRect b_gridSmall(739, 117, 83, 60); // Small Grid button
-    sf::IntRect b_gridMedium(830, 117, 83, 60); // Medium Grid button
-    sf::IntRect b_gridLarge(921, 117, 83, 60); // Large Grid button
+    sf::IntRect b_gridSmall(739, 117, 83, 60);                          // Small Grid button
+    sf::IntRect b_gridMedium(830, 117, 83, 60);                         // Medium Grid button
+    sf::IntRect b_gridLarge(921, 117, 83, 60);                          // Large Grid button
     
-    sf::IntRect b_random(739, 185, 264, 60); // Random button
-    sf::IntRect b_draw(739, 253, 264, 60); // Draw button
-    sf::IntRect b_clear(739, 674, 264, 60); // Clear button
-    sf::IntRect b_stampArea(739, 388, 264, 264); // Box covering all Stamps
+    sf::IntRect b_random(739, 185, 264, 60);                            // Random button
+    sf::IntRect b_draw(739, 253, 264, 60);                              // Draw button
+    sf::IntRect b_clear(739, 674, 264, 60);                             // Clear button
+    sf::IntRect b_stampArea(739, 388, 264, 264);                        // Box covering all Stamps
     
     //---------- PLAY MODE BUTTONS
-    sf::IntRect b_playPause(740, 118, 264, 60); // Play/Pause button
-    sf::IntRect b_step(740, 186, 264, 60); // Step button
-    sf::IntRect b_speedDown(740, 254, 60, 60); // Tortoise button
-    sf::IntRect b_speedUp(944, 254, 60, 60); // Rabbit button
+    sf::IntRect b_playPause(740, 118, 264, 60);                         // Play/Pause button
+    sf::IntRect b_step(740, 186, 264, 60);                              // Step button
+    sf::IntRect b_speedDown(740, 254, 60, 60);                          // Tortoise button
+    sf::IntRect b_speedUp(944, 254, 60, 60);                            // Rabbit button
     
-    enum mode {EDIT, PLAY}; // Main mode switch
+    enum mode {EDIT, PLAY};                                             // Main mode switch
     mode gameMode = EDIT;
-    bool playMode = false; // True = Play, False = Pause;
+    bool playMode = false;                                              // True = Play, False = Pause;
     
-    enum bSize {SMALL, MEDIUM, LARGE}; // Board size
+    enum bSize {SMALL, MEDIUM, LARGE};                                  // Board size
     bSize boardSize = LARGE;
-    enum pen {ON, OFF, NONE}; // Pen state
+    enum pen {ON, OFF, NONE};                                           // Pen state
     pen penMode = NONE;
-    enum draw {DRAW, STAMP}; // Draw/Stamp state
+    enum draw {DRAW, STAMP};                                            // Draw/Stamp state
     draw drawMode = DRAW;
-    int currStamp = 0; // Current/Last used stamp (0-15)
-    //bool stampName = false;
+    int currStamp = 0;                                                  // Current/Last used stamp (0-15)
     
-    bool **board; // Create dynamic 2d bool array
-    bool **calcBoard; // Spare board used for calculating next state
-    bool **swap; // Used to swap boards
+    bool **board;                                                       // Create dynamic 2d bool array
+    bool **calcBoard;                                                   // Spare board used for calculating next state
+    bool **swap;                                                        // Used to swap boards
     
-    //int counter = 0; // Counts number of live neighbouring cells
     board = new bool*[gridX];
     calcBoard = new bool*[gridX];
     for (int i = 0; i < gridX; i++) {
@@ -161,7 +157,6 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
     stampNames[15] = "HeavyWeight SpaceShip";
     
     
-    // Start the game loop
     while (window.isOpen()) {
         // Timer
         if (clock.getElapsedTime().asSeconds() > gameSpeed) {
@@ -212,9 +207,7 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
             if (gameMode == EDIT) {
                 if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                     sf::Vector2i localPosition = sf::Mouse::getPosition(window);
-                    //
                     localPosition = handleMouseClick(localPosition.x, localPosition.y, window);
-                    //
                     if (bb.contains(localPosition)) {
                         
                         int myX = ((localPosition.x-boardX)/cellWidth);

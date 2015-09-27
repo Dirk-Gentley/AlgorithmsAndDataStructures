@@ -27,15 +27,16 @@ void MainLoop::Start(void){
     //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
     
     // modes[0] is the highest possible resolution
+    
     sf::VideoMode mode = modes[0];
     
-    unsigned int X = mode.width, Y = mode.height;
+    unsigned int X = mode.width, Y = mode.height;                                           // Get the window resolution
     // XPrime is the width of the view in pixels (inside the letterbox)
-    float L = 1.0f, W, XPrime = Y * 1.33333333333333;
+    float L = 1.0f, W, XPrime = Y * 1.33333333333333;                                       // Get the width of the view (3 * 4)
     // W is the relative width of the view (inside the letterbox)
-    W = ((XPrime / X) * 100) / 100;
+    W = ((XPrime / X) * 100) / 100;                                                         // Get the with of the view as a ratio
     // L is the "letterbox" panel width
-    L -= W; L = L / 2;
+    L -= W; L = L / 2;                                                                      // Divide above by two for letterbox
     
     //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
     //
@@ -55,7 +56,6 @@ void MainLoop::Start(void){
     if(programState != Uninitialized){
         return;
     }
-
     // The initial program state, should only happen once
     programState = MainLoop::ShowingSplash;
     

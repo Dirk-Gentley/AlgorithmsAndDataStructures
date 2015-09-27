@@ -28,7 +28,6 @@ void beginBinaryTreeDungeon(sf::RenderWindow& window){
     Node *CurrentNode = MapTree.getRoot();
     MapTree.mapTree(CurrentNode);
     resetGameState(MapTree, RootNode, Character, Map, MappedSprites);
-    // Start the binary tree dungeon game loop
     
     while (1){
         Map.setCurrentMap(CurrentNode->NodeMap.currentMap);

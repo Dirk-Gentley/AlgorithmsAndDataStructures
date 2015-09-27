@@ -34,7 +34,6 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Sho
     beginStacksLessonBox.setPosition(312, 200);
     renderWindow.draw(beginStacksLessonBox);
     
-    
     //Begin stack attack menu item coordinates
     TreesAndStructuresMenuItem beginStackAttackButton;
     beginStackAttackButton.rect.top = 300;

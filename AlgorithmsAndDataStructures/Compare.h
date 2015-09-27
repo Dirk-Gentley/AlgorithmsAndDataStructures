@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Nicholas Judd. All rights reserved.
 //
 
-#ifndef comparisonSort_main_h
-#define comparisonSort_main_h
+#ifndef AlgorithmsAndDataStructures_main_h
+#define AlgorithmsAndDataStructures_main_h
 #include "ResourcePath.hpp"
 class comparisonModule {
 public:

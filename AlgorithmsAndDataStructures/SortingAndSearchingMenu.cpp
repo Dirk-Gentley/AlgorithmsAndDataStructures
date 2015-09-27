@@ -107,7 +107,7 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     beginDemoText.setPosition(380, 300);
     beginDemoText.setColor(sf::Color::White);
     
-    sf::Text beginComparissonText("Comparisson", font, 40);
+    sf::Text beginComparissonText("Comparison", font, 40);
     beginComparissonText.setPosition(380, 400);
     beginComparissonText.setColor(sf::Color::White);
     

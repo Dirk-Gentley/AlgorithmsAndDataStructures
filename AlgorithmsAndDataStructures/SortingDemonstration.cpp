@@ -20,7 +20,7 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
         drawScreen(mainWindow);
         while (mainWindow.pollEvent(menuEvent)){
             action = -1;
-            if (menuEvent.type == sf::Event::KeyPressed && menuEvent.key.code == sf::Keyboard::Escape) {
+            if (menuEvent.type == sf::Event::KeyPressed && menuEvent.key.code == sf::Keyboard::Q) {
                 return;
             }
             if (menuEvent.type == sf::Event::KeyPressed && menuEvent.key.code == sf::Keyboard::P && size < 100) {

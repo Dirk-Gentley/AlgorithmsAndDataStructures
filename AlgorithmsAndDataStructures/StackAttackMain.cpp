@@ -50,7 +50,7 @@ void beginStackAttack(sf::RenderWindow &window){
         // Process events
         sf::Event event;
         while (window.pollEvent(event)){
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Q) {
                 return;
             }
             

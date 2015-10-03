@@ -11,10 +11,9 @@
 int input(sf::RenderWindow &Window, class Character &Character, Maps &Map, Node* &CurrentNode, BTree &MapTree, TreeDungeonGraphics &MappedSprites){
     
     sf::Event event;
-    while (Window.pollEvent(event)){
-        
+    while(Window.pollEvent(event)){
+
         if (event.type == sf::Event::KeyPressed){
-            //sf::Uint32 event.key.code = event.key.code;
             
             if (event.key.code == sf::Keyboard::Left){
                 Character.setPlayerX(Character.getPlayerX()-32);
@@ -57,13 +56,13 @@ int input(sf::RenderWindow &Window, class Character &Character, Maps &Map, Node*
                 Character.goal = 3;
             }
             
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
-                return 0;
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Q) {
+                return 1;
             }
             treasure(Character, Map);
         }
     }
-    return 1;
+    return -1;
 }
 
 bool collisions(class Character& Character, Maps& Map){

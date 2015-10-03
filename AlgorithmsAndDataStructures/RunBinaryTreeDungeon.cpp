@@ -29,15 +29,16 @@ void beginBinaryTreeDungeon(sf::RenderWindow& window){
     MapTree.mapTree(CurrentNode);
     resetGameState(MapTree, RootNode, Character, Map, MappedSprites);
     
-    while (1){
+    while(window.isOpen()){
         Map.setCurrentMap(CurrentNode->NodeMap.currentMap);
-        if(input(window, Character, Map, CurrentNode, MapTree, MappedSprites) == 0){
-            return;
-        }
+        int exit = input(window, Character, Map, CurrentNode, MapTree, MappedSprites);
         lineOfSight(Map, Character);
         updateGraphics(window, MappedSprites, Map, Character, MapTree, CurrentNode);
         CurrentNode = updateMap(Character, Map, CurrentNode, RootNode);
         updateGame(MapTree, CurrentNode, Character, Map, MappedSprites);
         RootNode = MapTree.getRoot();
+        if(exit == 1){
+            return;
+        }
     }
 }

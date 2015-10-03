@@ -171,7 +171,7 @@ void beginConwaysGameOfLife(sf::RenderWindow &window) {
         while (window.pollEvent(event)) {
             
             if (event.type == sf::Event::KeyPressed) { // Hotkeys
-                if (event.key.code == sf::Keyboard::Escape) { // Esc - Quit/Back
+                if (event.key.code == sf::Keyboard::Q) { // Esc - Quit/Back
                     return;
                 }
                 if (event.key.code == sf::Keyboard::E) { // E - Edit Mode

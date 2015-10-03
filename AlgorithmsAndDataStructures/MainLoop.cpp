@@ -18,40 +18,16 @@ void MainLoop::Start(void){
     std::vector<sf::VideoMode> modes = sf::VideoMode::getFullscreenModes();
     MainWindow.setVerticalSyncEnabled(true);
     
-    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    //
-    //  What follows is probably the ugliest code I have ever written
-    //
-    //  It may, or may not be cleaned up before submission
-    //
-    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    
-    // modes[0] is the highest possible resolution
-    
     sf::VideoMode mode = modes[0];
     
-    unsigned int X = mode.width, Y = mode.height;                                           // Get the window resolution
-    // XPrime is the width of the view in pixels (inside the letterbox)
-    float L = 1.0f, W, XPrime = Y * 1.33333333333333;                                       // Get the width of the view (3 * 4)
-    // W is the relative width of the view (inside the letterbox)
-    W = ((XPrime / X) * 100) / 100;                                                         // Get the with of the view as a ratio
-    // L is the "letterbox" panel width
-    L -= W; L = L / 2;                                                                      // Divide above by two for letterbox
+    unsigned int X = mode.width, Y = mode.height;
+    float L = 1.0f, XPrime = Y * 4/3, W = (XPrime / X); L -= W; L = L / 2;
     
-    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    //
-    //  Thus ends the ugly code section xx
-    //
-    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    
-    MainWindow.create(sf::VideoMode(X, Y), "SFML window", sf::Style::Fullscreen);
+    MainWindow.create(sf::VideoMode(X, Y), "SFML window", sf::Style::Fullscreen);           // X Y
     sf::View MainView(sf::FloatRect(0, 0, 1024, 768));
-    MainView.setViewport(sf::FloatRect(L, 0.0f, W, 1.f));
+    MainView.setViewport(sf::FloatRect(L, 0.0f, W, 1.f));                                   // L W
     MainWindow.setView(MainView);
     
-    MainMusic.openFromFile(resourcePath() + "MenuMusic.ogg");
-    MainMusic.setLoop(true);
-    MainMusic.play();
     // Should never happen
     if(programState != Uninitialized){
         return;

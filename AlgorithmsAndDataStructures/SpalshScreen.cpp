@@ -39,7 +39,7 @@ void SplashScreen::Show(sf::RenderWindow &renderWindow){
 
     renderWindow.display();
     sf::Event event;
-    while(true){
+    while(renderWindow.isOpen()){
         while(renderWindow.pollEvent(event)){
             if( event.type == sf::Event::EventType::KeyPressed ||
                 event.type == sf::Event::EventType::MouseButtonPressed ||
@@ -47,5 +47,6 @@ void SplashScreen::Show(sf::RenderWindow &renderWindow){
                 return;
             }
         }
+        return;
     }
 }

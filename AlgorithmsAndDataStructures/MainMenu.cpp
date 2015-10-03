@@ -140,15 +140,10 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
                 sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, window);
                 return HandleClick(click.x, click.y);
 			}
-			if(menuEvent.type == sf::Event::Closed){
-				return Exit;
-			}
             if(menuEvent.type == sf::Event::KeyPressed){
-                return Exit;
-            }
-            if(menuEvent.type == sf::Event::Resized){
-                sf::FloatRect visibleArea(0, 0, menuEvent.size.width, menuEvent.size.height);
-                window.setView(sf::View(visibleArea));
+                if(menuEvent.key.code == sf::Keyboard::Q){
+                    return Exit;
+                }
             }
 		}
 	}

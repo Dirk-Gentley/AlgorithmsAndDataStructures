@@ -63,7 +63,7 @@ void comparisonModule::startModule(sf::RenderWindow& mainWindow, comparisonModul
             if (menuEvent.type == sf::Event::Closed) {
                 mainWindow.close();
             }
-            if (menuEvent.type == sf::Event::KeyPressed && menuEvent.key.code == sf::Keyboard::Escape) {
+            if (menuEvent.type == sf::Event::KeyPressed && menuEvent.key.code == sf::Keyboard::Q) {
                 return;
             }
             if(menuEvent.type == sf::Event::MouseButtonPressed){

@@ -149,7 +149,9 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
                 return HandleClick(click.x, click.y);
             }
             if(menuEvent.type == sf::Event::KeyPressed){
-                return Back;
+                if(menuEvent.key.code == sf::Keyboard::Q){
+                    return Back;
+                }
             }
         }
     }

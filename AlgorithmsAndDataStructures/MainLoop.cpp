@@ -258,7 +258,7 @@ void MainLoop::ShowSortingAndSearchingMenu(){
 
 void MainLoop::RunSortingDemonstration(){
     programState = MainLoop::RunningSortingAndSearchingLesson;
-    runLessonBuilder("SortingDemo.txt", MainWindow);
+    runLessonBuilder("SortingDemo.txt", MainWindow, 0);
     sortingModule sort;
     sort.startModule(MainWindow, sort);
     programState = MainLoop::ShowingSortingAndSearchingMenu;
@@ -295,14 +295,14 @@ void MainLoop::ShowTreesAndStructuresMenu(){
 
 void MainLoop::RunBinaryTreeDungeon(){
     programState = MainLoop::RunningBinaryTreeDungeon;
-    runLessonBuilder("BinaryTreeDungeon.txt", MainWindow);
+    runLessonBuilder("BinaryTreeDungeon.txt", MainWindow, 0);
     beginBinaryTreeDungeon(MainWindow);
     programState = MainLoop::ShowingTreesAndStructuresMenu;
 }
 
 void MainLoop::RunStackAttack(){
     programState = MainLoop::RunningStackAttack;
-    runLessonBuilder("StackAttack.txt", MainWindow);
+    runLessonBuilder("StackAttack.txt", MainWindow, 0);
     beginStackAttack(MainWindow);
     programState = MainLoop::ShowingTreesAndStructuresMenu;
 }
@@ -325,7 +325,7 @@ void MainLoop::ShowPuzzlesAndGamesMenu(){
 
 void MainLoop::RunConwaysGameOfLife(){
     programState = MainLoop::RunningConwaysGameOfLife;
-    runLessonBuilder("ConwaysGameOfLife.txt", MainWindow);
+    runLessonBuilder("ConwaysGameOfLife.txt", MainWindow, 0);
     beginConwaysGameOfLife(MainWindow);
     programState = MainLoop::ShowingPuzzlesAndGamesMenu;
 }

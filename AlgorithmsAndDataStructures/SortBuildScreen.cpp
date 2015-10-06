@@ -8,7 +8,8 @@
 
 #include "ResourcePath.hpp"
 
-sf::Texture const sortingModule::loadTexture(std::string filename) {
+sf::Texture const sortingModule::loadTexture(std::string filename)
+{
     sf::Texture texture;
     if(!texture.loadFromFile(resourcePath() + filename)){
         exit(1);
@@ -114,7 +115,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     elementNumber.setFont(font);
     elementNumber.setCharacterSize(20);
     elementNumber.setColor(sf::Color::White);
-    elementNumber.setPosition((width * 0.141601562), (height * 0.83984375));
+    elementNumber.setPosition((117), (645));
     
     swapsNumber.setString("0");
     swapsNumber.setFont(font);
@@ -125,7 +126,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menuControler.erase(menuControler.begin(), menuControler.end());
     
     highlightLine.setPosition(320, 429);
-    highlightLine.setFillColor(sf::Color(100, 250, 50, (uint8_t)5000));
+    highlightLine.setFillColor(sf::Color(100, 250, 50,(sf::Uint8)5000));
     
     menu shuffleController;
     shuffleController.buttonController.height = buttonSize.y;
@@ -214,5 +215,21 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     playController.buttonController.left = 550;
     playController.buttonNumber = 10;
     menuControler.push_back(playController);
-
+    
+    menu helpController;
+    helpController.buttonController.height = 25;
+    helpController.buttonController.width = 25;
+    helpController.buttonController.top = 5;
+    helpController.buttonController.left = 1000;
+    helpController.buttonNumber = 11;
+    menuControler.push_back(helpController);
+    
+    menu lessonController;
+    lessonController.buttonController.height = 25;
+    lessonController.buttonController.width = 25;
+    lessonController.buttonController.top = 5;
+    lessonController.buttonController.left = 5;
+    lessonController.buttonNumber = 12;
+    menuControler.push_back(lessonController);
+    
 }

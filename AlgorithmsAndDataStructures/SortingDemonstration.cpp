@@ -146,7 +146,7 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
                     break;
                 case 12:
                     if (bubble == true){
-                       // runLessonBuilder("bubbleSortLesson1.txt", mainWindow, 1);
+                        runLessonBuilder("bubbleSortLesson1.txt", mainWindow, 1);
                     }else if (selection == true){
                        // runLessonBuilder("selectionSortLesson.txt", mainWindow, 1);
                     }else if (insertion == true){

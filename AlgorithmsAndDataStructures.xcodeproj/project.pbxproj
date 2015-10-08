@@ -94,6 +94,7 @@
 		E79E3A6A1BC47540001206E2 /* hologram.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A661BC47540001206E2 /* hologram.png */; settings = {ASSET_TAGS = (); }; };
 		E79E3A6B1BC47540001206E2 /* hologram2.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A671BC47540001206E2 /* hologram2.png */; settings = {ASSET_TAGS = (); }; };
 		E79E3A6C1BC47540001206E2 /* hologram3.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A681BC47540001206E2 /* hologram3.png */; settings = {ASSET_TAGS = (); }; };
+		E79E3A6F1BC478D4001206E2 /* bubbleSortLesson1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A6E1BC478D4001206E2 /* bubbleSortLesson1.txt */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -208,6 +209,7 @@
 		E79E3A661BC47540001206E2 /* hologram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hologram.png; sourceTree = "<group>"; };
 		E79E3A671BC47540001206E2 /* hologram2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hologram2.png; sourceTree = "<group>"; };
 		E79E3A681BC47540001206E2 /* hologram3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hologram3.png; sourceTree = "<group>"; };
+		E79E3A6E1BC478D4001206E2 /* bubbleSortLesson1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bubbleSortLesson1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 		438CC9781A7CBE4D00B41E4F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E79E3A6E1BC478D4001206E2 /* bubbleSortLesson1.txt */,
 				E79E3A661BC47540001206E2 /* hologram.png */,
 				E79E3A671BC47540001206E2 /* hologram2.png */,
 				E79E3A681BC47540001206E2 /* hologram3.png */,
@@ -423,6 +426,7 @@
 				E79E3A5A1BC47511001206E2 /* bubbleSortLesson6.png in Resources */,
 				E79E3A551BC47511001206E2 /* bubbleSortLesson1.png in Resources */,
 				E79E3A6B1BC47540001206E2 /* hologram2.png in Resources */,
+				E79E3A6F1BC478D4001206E2 /* bubbleSortLesson1.txt in Resources */,
 				E79E3A631BC47511001206E2 /* LessonBackground.png in Resources */,
 				E79E3A5D1BC47511001206E2 /* bubbleSortLesson9.png in Resources */,
 				43AAA3921B7048D900AF799F /* StackAttackBackground.png in Resources */,

@@ -166,6 +166,7 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
         }
         it++;
         skip = false;
+        clock.restart();
     }
     if (speaker != 2){
         window.draw(DialogueText);

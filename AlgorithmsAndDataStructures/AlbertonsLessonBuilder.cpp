@@ -171,12 +171,12 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     if (speaker != 2){
         window.draw(DialogueText);
     }
-    lessonSlide.setTexture(Texture1);
-    lessonSlide.setPosition(189, 66);
-    window.draw(lessonSlide);
     if (type == 1){
+        lessonSlide.setTexture(Texture1);
+        lessonSlide.setPosition(189, 66);
         holoImage.setTexture(TextureHolo);
         window.draw(holoImage);
+        window.draw(lessonSlide);
     }
     
     window.display();

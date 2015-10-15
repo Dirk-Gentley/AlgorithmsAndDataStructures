@@ -95,6 +95,7 @@
 		E79E3A6B1BC47540001206E2 /* hologram2.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A671BC47540001206E2 /* hologram2.png */; settings = {ASSET_TAGS = (); }; };
 		E79E3A6C1BC47540001206E2 /* hologram3.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A681BC47540001206E2 /* hologram3.png */; settings = {ASSET_TAGS = (); }; };
 		E79E3A6F1BC478D4001206E2 /* bubbleSortLesson1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A6E1BC478D4001206E2 /* bubbleSortLesson1.txt */; settings = {ASSET_TAGS = (); }; };
+		E7C269CC1BCDE40400C1491A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C269CB1BCDE40400C1491A /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -210,6 +211,7 @@
 		E79E3A671BC47540001206E2 /* hologram2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hologram2.png; sourceTree = "<group>"; };
 		E79E3A681BC47540001206E2 /* hologram3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hologram3.png; sourceTree = "<group>"; };
 		E79E3A6E1BC478D4001206E2 /* bubbleSortLesson1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bubbleSortLesson1.txt; sourceTree = "<group>"; };
+		E7C269CB1BCDE40400C1491A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 				438CC98F1A7CBE9F00B41E4F /* TreesAndStructuresMenu.cpp */,
 				438CC9901A7CBE9F00B41E4F /* TreesAndStructuresMenu.h */,
 				438CC9781A7CBE4D00B41E4F /* Resources */,
+				E7C269CB1BCDE40400C1491A /* Images.xcassets */,
 			);
 			path = AlgorithmsAndDataStructures;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				E79E3A6C1BC47540001206E2 /* hologram3.png in Resources */,
 				43C996771BA04BC100F37F5F /* map_fork1.txt in Resources */,
 				430EC3A51B7765470050B76F /* MMbackground.png in Resources */,
+				E7C269CC1BCDE40400C1491A /* Images.xcassets in Resources */,
 				435B36531BA3FC5D00B7EF68 /* stackAttackBack1024.png in Resources */,
 				43C996751BA04BC100F37F5F /* map_corridor2.txt in Resources */,
 				E79E3A641BC47511001206E2 /* sort_b_pause.png in Resources */,
@@ -670,6 +674,7 @@
 		438CC9841A7CBE4D00B41E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "AlgorithmsAndDataStructures/AlgorithmsAndDataStructures-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "-21.${PRODUCT_NAME:rfc1034identifier}";
@@ -680,6 +685,7 @@
 		438CC9851A7CBE4D00B41E4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "AlgorithmsAndDataStructures/AlgorithmsAndDataStructures-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "-21.${PRODUCT_NAME:rfc1034identifier}";

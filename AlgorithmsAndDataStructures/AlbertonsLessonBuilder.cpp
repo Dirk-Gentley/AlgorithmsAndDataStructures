@@ -128,7 +128,11 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     else if(speaker == 1){
         DialogueText.setPosition(600, 500);
     }else if (speaker == 2){
+<<<<<<< HEAD
         if (!TextureLessonSlide.loadFromFile(resourcePath() + nextDialogue)) {
+=======
+        if (!Texture1.loadFromFile(resourcePath() + nextDialogue)) {
+>>>>>>> origin/master
             std::cerr << "ERROR with slide " << nextDialogue << std::endl;
         }
     }
@@ -172,7 +176,11 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
         window.draw(DialogueText);
     }
     if (type == 1){
+<<<<<<< HEAD
         lessonSlide.setTexture(TextureLessonSlide);
+=======
+        lessonSlide.setTexture(Texture1);
+>>>>>>> origin/master
         lessonSlide.setPosition(189, 66);
         holoImage.setTexture(TextureHolo);
         window.draw(holoImage);

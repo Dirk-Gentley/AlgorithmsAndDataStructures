@@ -23,6 +23,11 @@ sf::Texture sortingModule::pauseTexture;
 sf::Texture sortingModule::helpTexture;
 sf::Texture sortingModule::helpOverlayTexture;
 sf::Texture sortingModule::lessonTexture;
+sf::Texture sortingModule::button1Texture;
+sf::Texture sortingModule::button2Texture;
+sf::Texture sortingModule::button3Texture;
+sf::Texture sortingModule::button4Texture;
+sf::Texture sortingModule::button5Texture;
 
 void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort){
     backgroundTexture = sort.loadTexture("SortingBackground.png");
@@ -31,6 +36,12 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
     helpTexture = sort.loadTexture("Help.png");
     lessonTexture = sort.loadTexture("Lesson.png");
     helpOverlayTexture = sort.loadTexture("helpOverlay.png");
+    button1Texture = sort.loadTexture("sortButton1.png");
+    button2Texture = sort.loadTexture("sortButton2.png");
+    button3Texture = sort.loadTexture("sortButton3.png");
+    button4Texture = sort.loadTexture("sortButton4.png");
+    button5Texture = sort.loadTexture("sortButton5.png");
+    
     windowSize = mainWindow.getSize();
     buildBackground(mainWindow, sort);
     buildArray();
@@ -51,7 +62,9 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
             if(menuEvent.type == sf::Event::MouseButtonPressed){
                 sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, mainWindow);
                 action = HandleClick(click.x, click.y);
+                std::cout << action << std::endl;
             }
+            
             
             switch (action) {
                     //0. Shuffle
@@ -69,9 +82,14 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
                         insertionMenu(mainWindow, action);
                     }
                     drawScreen(mainWindow);
+                    buttonSprite.setTexture(button1Texture);
+                    buttonSprite.setPosition(18, 398);
                     break;
                     //1. Bubble sort
                 case 1:
+                    helpOverlayTexture = sort.loadTexture("bubbleSortHelpOverlay.png");
+                    buttonSprite.setTexture(button3Texture);
+                    buttonSprite.setPosition(154, 398);
                     bubbleMenu(mainWindow, action);
                     break;
                     
@@ -80,25 +98,37 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
                     play = false;
                     reverseSortArray();
                     highlightLine.move(10000, 10000);
+                    
+                    buttonSprite.setTexture(button2Texture);
+                    buttonSprite.setPosition(18, 467);
                     drawScreen(mainWindow);
                     break;
                     
                     //3. Selection Sort
                 case 3:
+                    helpOverlayTexture = sort.loadTexture("selectionSortHelpOverlay.png");
                     highlightLine.move(10000, 10000);
+                    buttonSprite.setTexture(button2Texture);
+                    buttonSprite.setPosition(154, 467);
                     selectionMenu(mainWindow, action);
                     break;
                     //4. Sorted Array
                 case 4:
                     play = false;
                     forwardSortArray();
+                    std::cout << "TEST" << std::endl;
                     highlightLine.move(10000, 10000);
+                    buttonSprite.setTexture(button5Texture);
+                    buttonSprite.setPosition(18, 534);
                     drawScreen(mainWindow);
                     break;
                     
                     //5. Insertion Sort
                 case 5:
+                    helpOverlayTexture = sort.loadTexture("insertionSortHelpOverlay.png");
                     highlightLine.move(10000, 10000);
+                    buttonSprite.setTexture(button4Texture);
+                    buttonSprite.setPosition(154, 534);
                     insertionMenu(mainWindow, action);
                     break;
                     //6. minus elements
@@ -157,7 +187,7 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
                     drawScreen(mainWindow);
                     break;
             }
-            
+
         }
         
     }

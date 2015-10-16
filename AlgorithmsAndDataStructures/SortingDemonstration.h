@@ -51,6 +51,7 @@ public:
     void setCompAndSwapValue();
     int HandleClick(int x, int y);
     sf::Texture const loadTexture(std::string);
+    sf::Sprite buttonSprite;
 private:
     static sf::Texture backgroundTexture;
     static sf::Texture pauseTexture;
@@ -58,6 +59,11 @@ private:
     static sf::Texture helpTexture;
     static sf::Texture lessonTexture;
     static sf::Texture helpOverlayTexture;
+    static sf::Texture button1Texture;
+    static sf::Texture button2Texture;
+    static sf::Texture button3Texture;
+    static sf::Texture button4Texture;
+    static sf::Texture button5Texture;
     int size = 10;
     int action = -1;
     int speed = 20;

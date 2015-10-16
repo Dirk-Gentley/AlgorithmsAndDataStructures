@@ -74,6 +74,14 @@
 		43FCC7421B9408C5003682E7 /* SortShuffle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC73E1B9408C5003682E7 /* SortShuffle.cpp */; };
 		43FCC7431B9408C5003682E7 /* SortSorts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC73F1B9408C5003682E7 /* SortSorts.cpp */; };
 		43FCC7471B940D22003682E7 /* SortingBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FCC7461B940D22003682E7 /* SortingBackground.png */; };
+		E77A377C1BD0905B00779BA0 /* bubbleSortHelpOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A37791BD0905B00779BA0 /* bubbleSortHelpOverlay.png */; settings = {ASSET_TAGS = (); }; };
+		E77A377D1BD0905B00779BA0 /* insertionSortHelpOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A377A1BD0905B00779BA0 /* insertionSortHelpOverlay.png */; settings = {ASSET_TAGS = (); }; };
+		E77A377E1BD0905B00779BA0 /* selectionSortHelpOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A377B1BD0905B00779BA0 /* selectionSortHelpOverlay.png */; settings = {ASSET_TAGS = (); }; };
+		E77A37811BD0A41200779BA0 /* sortButton1.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A377F1BD0A41200779BA0 /* sortButton1.png */; settings = {ASSET_TAGS = (); }; };
+		E77A37821BD0A41200779BA0 /* sortButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A37801BD0A41200779BA0 /* sortButton2.png */; settings = {ASSET_TAGS = (); }; };
+		E77A37861BD0B1E300779BA0 /* sortButton3.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A37831BD0B1E300779BA0 /* sortButton3.png */; settings = {ASSET_TAGS = (); }; };
+		E77A37871BD0B1E300779BA0 /* sortButton4.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A37841BD0B1E300779BA0 /* sortButton4.png */; settings = {ASSET_TAGS = (); }; };
+		E77A37881BD0B1E300779BA0 /* sortButton5.png in Resources */ = {isa = PBXBuildFile; fileRef = E77A37851BD0B1E300779BA0 /* sortButton5.png */; settings = {ASSET_TAGS = (); }; };
 		E79E3A551BC47511001206E2 /* bubbleSortLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A441BC47511001206E2 /* bubbleSortLesson1.png */; settings = {ASSET_TAGS = (); }; };
 		E79E3A561BC47511001206E2 /* bubbleSortLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A451BC47511001206E2 /* bubbleSortLesson2.png */; settings = {ASSET_TAGS = (); }; };
 		E79E3A571BC47511001206E2 /* bubbleSortLesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = E79E3A461BC47511001206E2 /* bubbleSortLesson3.png */; settings = {ASSET_TAGS = (); }; };
@@ -190,6 +198,14 @@
 		43FD15D11B77373400590A46 /* MenuMusic.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuMusic.ogg; sourceTree = "<group>"; };
 		43FD15D31B773FFF00590A46 /* DungeonMusic.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = DungeonMusic.ogg; sourceTree = "<group>"; };
 		43FD15D41B77400B00590A46 /* StackAttack.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = StackAttack.ogg; sourceTree = "<group>"; };
+		E77A37791BD0905B00779BA0 /* bubbleSortHelpOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSortHelpOverlay.png; sourceTree = "<group>"; };
+		E77A377A1BD0905B00779BA0 /* insertionSortHelpOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = insertionSortHelpOverlay.png; sourceTree = "<group>"; };
+		E77A377B1BD0905B00779BA0 /* selectionSortHelpOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectionSortHelpOverlay.png; sourceTree = "<group>"; };
+		E77A377F1BD0A41200779BA0 /* sortButton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sortButton1.png; sourceTree = "<group>"; };
+		E77A37801BD0A41200779BA0 /* sortButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sortButton2.png; sourceTree = "<group>"; };
+		E77A37831BD0B1E300779BA0 /* sortButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sortButton3.png; sourceTree = "<group>"; };
+		E77A37841BD0B1E300779BA0 /* sortButton4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sortButton4.png; sourceTree = "<group>"; };
+		E77A37851BD0B1E300779BA0 /* sortButton5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sortButton5.png; sourceTree = "<group>"; };
 		E79E3A441BC47511001206E2 /* bubbleSortLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSortLesson1.png; sourceTree = "<group>"; };
 		E79E3A451BC47511001206E2 /* bubbleSortLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSortLesson2.png; sourceTree = "<group>"; };
 		E79E3A461BC47511001206E2 /* bubbleSortLesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSortLesson3.png; sourceTree = "<group>"; };
@@ -301,6 +317,14 @@
 		438CC9781A7CBE4D00B41E4F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E77A37831BD0B1E300779BA0 /* sortButton3.png */,
+				E77A37841BD0B1E300779BA0 /* sortButton4.png */,
+				E77A37851BD0B1E300779BA0 /* sortButton5.png */,
+				E77A377F1BD0A41200779BA0 /* sortButton1.png */,
+				E77A37801BD0A41200779BA0 /* sortButton2.png */,
+				E77A37791BD0905B00779BA0 /* bubbleSortHelpOverlay.png */,
+				E77A377A1BD0905B00779BA0 /* insertionSortHelpOverlay.png */,
+				E77A377B1BD0905B00779BA0 /* selectionSortHelpOverlay.png */,
 				E79E3A6E1BC478D4001206E2 /* bubbleSortLesson1.txt */,
 				E79E3A661BC47540001206E2 /* hologram.png */,
 				E79E3A671BC47540001206E2 /* hologram2.png */,
@@ -427,8 +451,10 @@
 			files = (
 				435B36671BA4043800B7EF68 /* ConwaysGameOfLife.txt in Resources */,
 				E79E3A5A1BC47511001206E2 /* bubbleSortLesson6.png in Resources */,
+				E77A37871BD0B1E300779BA0 /* sortButton4.png in Resources */,
 				E79E3A551BC47511001206E2 /* bubbleSortLesson1.png in Resources */,
 				E79E3A6B1BC47540001206E2 /* hologram2.png in Resources */,
+				E77A377E1BD0905B00779BA0 /* selectionSortHelpOverlay.png in Resources */,
 				E79E3A6F1BC478D4001206E2 /* bubbleSortLesson1.txt in Resources */,
 				E79E3A631BC47511001206E2 /* LessonBackground.png in Resources */,
 				E79E3A5D1BC47511001206E2 /* bubbleSortLesson9.png in Resources */,
@@ -436,15 +462,19 @@
 				E79E3A611BC47511001206E2 /* helpOverlay.png in Resources */,
 				430488561BA3E25A0038C2A4 /* sortcomp_b_play.gif in Resources */,
 				430488571BA3E25A0038C2A4 /* sortcomp_b_selected.png in Resources */,
+				E77A377C1BD0905B00779BA0 /* bubbleSortHelpOverlay.png in Resources */,
 				43FCC7471B940D22003682E7 /* SortingBackground.png in Resources */,
+				E77A37811BD0A41200779BA0 /* sortButton1.png in Resources */,
 				E79E3A6C1BC47540001206E2 /* hologram3.png in Resources */,
 				43C996771BA04BC100F37F5F /* map_fork1.txt in Resources */,
 				430EC3A51B7765470050B76F /* MMbackground.png in Resources */,
 				E7C269CC1BCDE40400C1491A /* Images.xcassets in Resources */,
+				E77A37861BD0B1E300779BA0 /* sortButton3.png in Resources */,
 				435B36531BA3FC5D00B7EF68 /* stackAttackBack1024.png in Resources */,
 				43C996751BA04BC100F37F5F /* map_corridor2.txt in Resources */,
 				E79E3A641BC47511001206E2 /* sort_b_pause.png in Resources */,
 				435B36641BA4005800B7EF68 /* gol_editMode.gif in Resources */,
+				E77A377D1BD0905B00779BA0 /* insertionSortHelpOverlay.png in Resources */,
 				43CD40591BA3F2800098168E /* LessonCharacters.png in Resources */,
 				E79E3A5E1BC47511001206E2 /* bubbleSortLesson10.png in Resources */,
 				E79E3A651BC47511001206E2 /* sort_b_play.png in Resources */,
@@ -455,6 +485,7 @@
 				43CD40661BA3FAAD0098168E /* AlbertonLessonBackground.gif in Resources */,
 				438CC97E1A7CBE4D00B41E4F /* sansation.ttf in Resources */,
 				E79E3A561BC47511001206E2 /* bubbleSortLesson2.png in Resources */,
+				E77A37881BD0B1E300779BA0 /* sortButton5.png in Resources */,
 				E79E3A6A1BC47540001206E2 /* hologram.png in Resources */,
 				E79E3A571BC47511001206E2 /* bubbleSortLesson3.png in Resources */,
 				43C996721BA04BC100F37F5F /* DungeonTiles.png in Resources */,
@@ -477,6 +508,7 @@
 				430488581BA3E25A0038C2A4 /* sortcomp_icon_reverse.gif in Resources */,
 				430488591BA3E25A0038C2A4 /* sortcomp_icon_shuffle.gif in Resources */,
 				43C9967A1BA04BC100F37F5F /* map_leaf1.txt in Resources */,
+				E77A37821BD0A41200779BA0 /* sortButton2.png in Resources */,
 				4304885C1BA3E25A0038C2A4 /* SORTING.png in Resources */,
 				435B36621BA4005800B7EF68 /* gol_b_play.gif in Resources */,
 				E79E3A621BC47511001206E2 /* Lesson.png in Resources */,

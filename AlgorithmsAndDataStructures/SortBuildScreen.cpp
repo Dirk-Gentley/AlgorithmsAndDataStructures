@@ -115,7 +115,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     elementNumber.setFont(font);
     elementNumber.setCharacterSize(20);
     elementNumber.setColor(sf::Color::White);
-    elementNumber.setPosition((117), (645));
+    elementNumber.setPosition((142), (645));
     
     swapsNumber.setString("0");
     swapsNumber.setFont(font);
@@ -131,7 +131,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu shuffleController;
     shuffleController.buttonController.height = buttonSize.y;
     shuffleController.buttonController.width = buttonSize.x;
-    shuffleController.buttonController.top = 410;
+    shuffleController.buttonController.top = 405;
     shuffleController.buttonController.left = 20;
     shuffleController.buttonNumber = 0;
     menuControler.push_back(shuffleController);
@@ -139,7 +139,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu bubbleController;
     bubbleController.buttonController.height = buttonSize.y;
     bubbleController.buttonController.width = buttonSize.x;
-    bubbleController.buttonController.top = 410;
+    bubbleController.buttonController.top = 405;
     bubbleController.buttonController.left = 155;
     bubbleController.buttonNumber = 1;
     menuControler.push_back(bubbleController);
@@ -147,7 +147,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu revShuffelController;
     revShuffelController.buttonController.height = buttonSize.y;
     revShuffelController.buttonController.width = buttonSize.x;
-    revShuffelController.buttonController.top = 468;
+    revShuffelController.buttonController.top = 470;
     revShuffelController.buttonController.left = 20;
     revShuffelController.buttonNumber = 2;
     menuControler.push_back(revShuffelController);
@@ -155,7 +155,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu selectionController;
     selectionController.buttonController.height = buttonSize.y;
     selectionController.buttonController.width = buttonSize.x;
-    selectionController.buttonController.top = 468;
+    selectionController.buttonController.top = 470;
     selectionController.buttonController.left = 155;
     selectionController.buttonNumber = 3;
     menuControler.push_back(selectionController);
@@ -163,7 +163,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu sorttedController;
     sorttedController.buttonController.height = buttonSize.y;
     sorttedController.buttonController.width = buttonSize.x;
-    sorttedController.buttonController.top = height * 0.69921875;
+    sorttedController.buttonController.top = 540;
     sorttedController.buttonController.left = 20;
     sorttedController.buttonNumber = 4;
     menuControler.push_back(sorttedController);

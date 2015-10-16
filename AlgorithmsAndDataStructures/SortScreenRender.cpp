@@ -234,7 +234,7 @@ void sortingModule::animateInsertion(sf::RenderWindow& mainWindow, sf::Sprite ba
 
 //678,550
 void sortingModule::renderScreen(sf::RenderWindow& mainWindow,  sf::Sprite backgroundSprite){
-    mainWindow.clear(sf::Color(224, 224, 224, 255));
+    mainWindow.clear(sf::Color::Black);
     sf::Sprite helpSprite;
     helpSprite.setTexture(helpTexture);
     sf::Sprite lessonSprite;
@@ -264,12 +264,13 @@ void sortingModule::renderScreen(sf::RenderWindow& mainWindow,  sf::Sprite backg
     drawPsudeo(mainWindow);
     if (help == true){
         sf::Sprite helpOverlaySprite;
-        helpOverlaySprite.setTexture(helpOverlayTexture);
-        mainWindow.draw(helpOverlaySprite);
+            helpOverlaySprite.setTexture(helpOverlayTexture);
+            mainWindow.draw(helpOverlaySprite);
     }
     helpSprite.setPosition(1000.f, 0.f);
     mainWindow.draw(helpSprite);
     mainWindow.draw(lessonSprite);
+    mainWindow.draw(buttonSprite);
     mainWindow.display();
 }
 

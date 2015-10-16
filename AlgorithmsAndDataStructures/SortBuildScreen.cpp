@@ -8,7 +8,8 @@
 
 #include "ResourcePath.hpp"
 
-sf::Texture const sortingModule::loadTexture(std::string filename) {
+sf::Texture const sortingModule::loadTexture(std::string filename)
+{
     sf::Texture texture;
     if(!texture.loadFromFile(resourcePath() + filename)){
         exit(1);
@@ -114,7 +115,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     elementNumber.setFont(font);
     elementNumber.setCharacterSize(20);
     elementNumber.setColor(sf::Color::White);
-    elementNumber.setPosition((width * 0.141601562), (height * 0.83984375));
+    elementNumber.setPosition((142), (645));
     
     swapsNumber.setString("0");
     swapsNumber.setFont(font);
@@ -125,12 +126,12 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menuControler.erase(menuControler.begin(), menuControler.end());
     
     highlightLine.setPosition(320, 429);
-    highlightLine.setFillColor(sf::Color(100, 250, 50, (uint8_t)5000));
+    highlightLine.setFillColor(sf::Color(100, 250, 50,(sf::Uint8)5000));
     
     menu shuffleController;
     shuffleController.buttonController.height = buttonSize.y;
     shuffleController.buttonController.width = buttonSize.x;
-    shuffleController.buttonController.top = 410;
+    shuffleController.buttonController.top = 405;
     shuffleController.buttonController.left = 20;
     shuffleController.buttonNumber = 0;
     menuControler.push_back(shuffleController);
@@ -138,7 +139,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu bubbleController;
     bubbleController.buttonController.height = buttonSize.y;
     bubbleController.buttonController.width = buttonSize.x;
-    bubbleController.buttonController.top = 410;
+    bubbleController.buttonController.top = 405;
     bubbleController.buttonController.left = 155;
     bubbleController.buttonNumber = 1;
     menuControler.push_back(bubbleController);
@@ -146,7 +147,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu revShuffelController;
     revShuffelController.buttonController.height = buttonSize.y;
     revShuffelController.buttonController.width = buttonSize.x;
-    revShuffelController.buttonController.top = 468;
+    revShuffelController.buttonController.top = 470;
     revShuffelController.buttonController.left = 20;
     revShuffelController.buttonNumber = 2;
     menuControler.push_back(revShuffelController);
@@ -154,7 +155,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu selectionController;
     selectionController.buttonController.height = buttonSize.y;
     selectionController.buttonController.width = buttonSize.x;
-    selectionController.buttonController.top = 468;
+    selectionController.buttonController.top = 470;
     selectionController.buttonController.left = 155;
     selectionController.buttonNumber = 3;
     menuControler.push_back(selectionController);
@@ -162,7 +163,7 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     menu sorttedController;
     sorttedController.buttonController.height = buttonSize.y;
     sorttedController.buttonController.width = buttonSize.x;
-    sorttedController.buttonController.top = height * 0.69921875;
+    sorttedController.buttonController.top = 540;
     sorttedController.buttonController.left = 20;
     sorttedController.buttonNumber = 4;
     menuControler.push_back(sorttedController);
@@ -214,5 +215,21 @@ void sortingModule::buildBackground(sf::RenderWindow& mainWindow, sortingModule 
     playController.buttonController.left = 550;
     playController.buttonNumber = 10;
     menuControler.push_back(playController);
-
+    
+    menu helpController;
+    helpController.buttonController.height = 25;
+    helpController.buttonController.width = 25;
+    helpController.buttonController.top = 5;
+    helpController.buttonController.left = 1000;
+    helpController.buttonNumber = 11;
+    menuControler.push_back(helpController);
+    
+    menu lessonController;
+    lessonController.buttonController.height = 25;
+    lessonController.buttonController.width = 25;
+    lessonController.buttonController.top = 5;
+    lessonController.buttonController.left = 5;
+    lessonController.buttonNumber = 12;
+    menuControler.push_back(lessonController);
+    
 }

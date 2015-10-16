@@ -144,7 +144,7 @@ void sortingModule::animateSelection(sf::RenderWindow& mainWindow, sf::Sprite ba
         renderScreen(mainWindow, backgroundSprite);
         sf::sleep(sf::milliseconds(120));
         for (int i = 0; i < size; i++){
-                sortList[i].rect.setFillColor(sf::Color::Green);
+            sortList[i].rect.setFillColor(sf::Color::Green);
         }
         correct=0;
         play=false;
@@ -165,7 +165,7 @@ void sortingModule::animateSelection(sf::RenderWindow& mainWindow, sf::Sprite ba
         renderScreen(mainWindow, backgroundSprite);
         sf::sleep(sf::milliseconds(120));
     }
-
+    
     
     animate.pop_front();
 }
@@ -232,14 +232,28 @@ void sortingModule::animateInsertion(sf::RenderWindow& mainWindow, sf::Sprite ba
     animate.pop_front();
 }
 
-
+//678,550
 void sortingModule::renderScreen(sf::RenderWindow& mainWindow,  sf::Sprite backgroundSprite){
-    mainWindow.clear(sf::Color(224, 224, 224, 255));
+    mainWindow.clear(sf::Color::Black);
+    sf::Sprite helpSprite;
+    helpSprite.setTexture(helpTexture);
+    sf::Sprite lessonSprite;
+    lessonSprite.setTexture(lessonTexture);
     comparisonsNumber.setString(std::to_string(comparisons));
     swapsNumber.setString(std::to_string(swaps));
     elementNumber.setString(std::to_string(size));
-    //sf::Vector2f temp = elementNumber.getPosition();
     mainWindow.draw(backgroundSprite);
+    if (!play){
+        sf::Sprite playSprite;
+        playSprite.setTexture(playTexture);
+        playSprite.setPosition(552.f,680.f);
+        mainWindow.draw(playSprite);
+    }else{
+        sf::Sprite pauseSprite;
+        pauseSprite.setTexture(pauseTexture);
+        pauseSprite.setPosition(552.f,680.f);
+        mainWindow.draw(pauseSprite);
+    }
     mainWindow.draw(comparisonsNumber);
     mainWindow.draw(swapsNumber);
     mainWindow.draw(elementNumber);
@@ -248,6 +262,15 @@ void sortingModule::renderScreen(sf::RenderWindow& mainWindow,  sf::Sprite backg
         mainWindow.draw(sortList[i].rect);
     }
     drawPsudeo(mainWindow);
+    if (help == true){
+        sf::Sprite helpOverlaySprite;
+            helpOverlaySprite.setTexture(helpOverlayTexture);
+            mainWindow.draw(helpOverlaySprite);
+    }
+    helpSprite.setPosition(1000.f, 0.f);
+    mainWindow.draw(helpSprite);
+    mainWindow.draw(lessonSprite);
+    mainWindow.draw(buttonSprite);
     mainWindow.display();
 }
 
@@ -279,7 +302,7 @@ void sortingModule::drawPsudeo(sf::RenderWindow& mainWindow){
         fontSize = 30;
         sf::Vector2f highlightSize(471.f, 35.f);
         highlightLine.setSize(highlightSize);
-        int check = (int)psudeoCode.size();
+        int check = (unsigned int)psudeoCode.size();
         for (int i = 0; i < psudeoCode.size(); i++){
             sf::Text tempCommand(psudeoCode[i], font, fontSize);
             tempCommand.setPosition(width, height);

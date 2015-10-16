@@ -8,12 +8,18 @@
 
 #include "AlbertonsLessonBuilder.h"
 
-void buildLesson(std::string fileName, sf::RenderWindow &window){
+void buildLesson(std::string fileName, sf::RenderWindow &window, bool type){
     sf::Clock clock;
-    
+    sf::Clock clock2;
+    bool hologram = false;
+    sf::Texture LessonDialogueBackground;
     std::list<std::pair<int, std::string> > DialogueCommands = read(fileName);
+    if (type == 0){
+        LessonDialogueBackground = MappedLessonDialogueGraphics.initIntroBackground();
+    }else{
+        LessonDialogueBackground = MappedLessonDialogueGraphics.initLessonBackground();
+    }
     
-    sf::Texture LessonDialogueBackground = MappedLessonDialogueGraphics.initBackground();
     sf::Texture LessonDialogueCharacters = MappedLessonDialogueGraphics.initCharacters();
     MappedLessonDialogueGraphics.initBGSprite(LessonDialogueBackground);
     MappedLessonDialogueGraphics.initCharacterSprites(LessonDialogueCharacters);
@@ -22,16 +28,24 @@ void buildLesson(std::string fileName, sf::RenderWindow &window){
     
     while (window.isOpen()) {
         albertonInput(window, skip);
-        if(updateGraphics(window, MappedLessonDialogueGraphics, DialogueCommands, clock, skip) == 0){
+        if(updateGraphics(window, MappedLessonDialogueGraphics, DialogueCommands, clock, clock2, hologram, skip, type) == 0){
             return;
         };
     }
     return;
 }
 
-sf::Texture const LessonDialogueGraphics::initBackground(){
+sf::Texture const LessonDialogueGraphics::initIntroBackground(){
     sf::Texture Texture;
     if (!Texture.loadFromFile(resourcePath() + "AlbertonLessonBackground.gif")) {
+        std::cerr << "ERROR with background " << std::endl;
+    }
+    return Texture;
+}
+
+sf::Texture const LessonDialogueGraphics::initLessonBackground(){
+    sf::Texture Texture;
+    if (!Texture.loadFromFile(resourcePath() + "LessonBackground.png")) {
         std::cerr << "ERROR with background " << std::endl;
     }
     return Texture;
@@ -73,7 +87,7 @@ void albertonInput(sf::RenderWindow &window, bool &skip){
     }
 }
 
-int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLessonDialogueGraphics, std::list<std::pair<int, std::string> > &Dialogue, sf::Clock &clock, bool &skip){
+int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLessonDialogueGraphics, std::list<std::pair<int, std::string> > &Dialogue, sf::Clock &clock, sf::Clock &clock2, bool &holo, bool &skip, bool type){
     sf::Event event;
     if (sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
         return 0;
@@ -89,21 +103,21 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     DialogueText.setFont(DialogueFont);
     DialogueText.setColor(sf::Color::White);
     
-    sf::Sprite Background, Alberton, Companion;
+    sf::Sprite Background, Alberton, Companion, lessonSlide, holoImage;
     Background = MappedLessonDialogueGraphics.getDialogueBackround();
     Background.setPosition(0,0);
     window.draw(Background);
-    
-    Alberton = MappedLessonDialogueGraphics.getProfessorSprite();
-    Alberton.setPosition(64, 460);
-    window.draw(Alberton);
-    
-    Companion = MappedLessonDialogueGraphics.getCompanionSprite();
-    Companion.setPosition(676, 460);
-    window.draw(Companion);
-    
+    if ( type == 0){
+        Alberton = MappedLessonDialogueGraphics.getProfessorSprite();
+        Alberton.setPosition(64, 460);
+        window.draw(Alberton);
+        
+        Companion = MappedLessonDialogueGraphics.getCompanionSprite();
+        Companion.setPosition(676, 460);
+        window.draw(Companion);
+    }
     std::list<std::pair<int, std::string> >::iterator it = Dialogue.begin();
-
+    
     int speaker = it->first;
     std::string nextDialogue = it->second;
     DialogueText.setString(nextDialogue);
@@ -111,29 +125,60 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     if(speaker == 0){
         DialogueText.setPosition(280, 460);
     }
-    else{
+    else if(speaker == 1){
         DialogueText.setPosition(600, 500);
+    }else if (speaker == 2){
+        if (!TextureLessonSlide.loadFromFile(resourcePath() + nextDialogue)) {
+            std::cerr << "ERROR with slide " << nextDialogue << std::endl;
+        }
     }
     
     sf::Time elapsed1 = clock.getElapsedTime();
-    
+    sf::Time elapsed2 = clock2.getElapsedTime();
     if (elapsed1.asSeconds() > 3){
         if(it != Dialogue.end()){
             Dialogue.pop_front();
         }
         clock.restart();
     }
-    
+    if (elapsed2.asSeconds() > 0.05){
+        std::random_device rd;
+        std::default_random_engine e1(rd());
+        std::uniform_int_distribution<int> uniform_dist(1, 3);
+        if (uniform_dist(e1) == 1){
+            if (!TextureHolo.loadFromFile(resourcePath() + "hologram.png")) {
+                std::cerr << "ERROR with HOLOGRAM "<< std::endl;
+            }
+        }else if (uniform_dist(e1) == 2){
+            if (!TextureHolo.loadFromFile(resourcePath() + "hologram2.png")) {
+                std::cerr << "ERROR with HOLOGRAM "<< std::endl;
+            }
+        }else if (uniform_dist(e1) == 3){
+            if (!TextureHolo.loadFromFile(resourcePath() + "hologram3.png")) {
+                std::cerr << "ERROR with HOLOGRAM "<< std::endl;
+            }
+        }
+        clock2.restart();
+    }
     if (skip == true){
         if(it != Dialogue.end()){
             Dialogue.pop_front();
         }
         it++;
-        clock.restart();
         skip = false;
+        clock.restart();
+    }
+    if (speaker != 2){
+        window.draw(DialogueText);
+    }
+    if (type == 1){
+        lessonSlide.setTexture(TextureLessonSlide);
+        lessonSlide.setPosition(189, 66);
+        holoImage.setTexture(TextureHolo);
+        window.draw(holoImage);
+        window.draw(lessonSlide);
     }
     
-    window.draw(DialogueText);
     window.display();
     it = Dialogue.begin();
     if(it != Dialogue.end()){
@@ -173,6 +218,18 @@ std::list<std::pair<int, std::string> > read(std::string filename){
             }
             std::pair<int, std::string> speaker_dialogue;
             speaker_dialogue.first = speaking;
+            speaker_dialogue.second = command;
+            DialogueCommands.push_back(speaker_dialogue);
+        }
+        if (token.compare("Slide") == 0){
+            int speaking = 2;
+            std::string::size_type i = command.find("Slide: ");
+            if (i != std::string::npos){
+                command.erase(i, token.length() + 2);
+            }
+            std::pair<int, std::string> speaker_dialogue;
+            speaker_dialogue.first = speaking;
+            command.erase(command.size()-1);
             speaker_dialogue.second = command;
             DialogueCommands.push_back(speaker_dialogue);
         }

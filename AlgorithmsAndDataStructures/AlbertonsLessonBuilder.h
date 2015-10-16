@@ -10,10 +10,11 @@
 #define __AlbertonsLessonBuilder__AlbertonsLessonBuilder__
 
 #include "ResourcePath.hpp"
+static sf::Texture TextureHolo;
+static sf::Texture TextureLessonSlide;
+void runLessonBuilder(std::string, sf::RenderWindow &, bool);
 
-void runLessonBuilder(std::string, sf::RenderWindow &);
-
-void buildLesson(std::string, sf::RenderWindow &);
+void buildLesson(std::string, sf::RenderWindow &, bool);
 
 struct LessonDialogue{
     std::vector<std::string> professorString;
@@ -42,11 +43,12 @@ public:
     
     const LessonDialogueGraphics initBGSprite(sf::Texture &);
     const LessonDialogueGraphics initCharacterSprites(sf::Texture &);
-    static const sf::Texture initBackground();
+    static const sf::Texture initIntroBackground();
+    static const sf::Texture initLessonBackground();
     static const sf::Texture initCharacters();
 };
 
-int updateGraphics(sf::RenderWindow &, class LessonDialogueGraphics &, std::list<std::pair<int, std::string> > &, sf::Clock &, bool &);
+int updateGraphics(sf::RenderWindow &, class LessonDialogueGraphics &, std::list<std::pair<int, std::string> > &, sf::Clock &, sf::Clock &, bool &, bool &, bool);
 
 void albertonInput(sf::RenderWindow &, bool &);
 

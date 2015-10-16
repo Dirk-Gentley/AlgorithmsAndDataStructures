@@ -1,13 +1,13 @@
 //
-//  SortingDemonstration.h
-//  AlgorithmsAndDataStructures
+//  main.h
+//  SortingModule
 //
-//  Created by Nicholas Judd on 3/08/2015.
-//  Copyright (c) 2015 Nicholas. All rights reserved.
+//  Created by Nicholas Judd on 16/08/2015.
+//  Copyright (c) 2015 Nicholas Judd. All rights reserved.
 //
 
-#ifndef __AlgorithmsAndDataStructures__SortingDemonstration__
-#define __AlgorithmsAndDataStructures__SortingDemonstration__
+#ifndef SortingModule_main_h
+#define SortingModule_main_h
 
 class sortingModule {
 public:
@@ -27,7 +27,6 @@ public:
         int action;
     };
     sf::Vector2u windowSize;
-    // entry point for module
     void startModule(sf::RenderWindow&, sortingModule);
     void buildScreen(sortingModule);
     void buildBackground(sf::RenderWindow&, sortingModule);
@@ -52,11 +51,19 @@ public:
     void setCompAndSwapValue();
     int HandleClick(int x, int y);
     sf::Texture const loadTexture(std::string);
-    //
-    //static sf::Texture backgroundTexture;
-    
+    sf::Sprite buttonSprite;
 private:
-    sf::Texture backgroundTexture;
+    static sf::Texture backgroundTexture;
+    static sf::Texture pauseTexture;
+    static sf::Texture playTexture;
+    static sf::Texture helpTexture;
+    static sf::Texture lessonTexture;
+    static sf::Texture helpOverlayTexture;
+    static sf::Texture button1Texture;
+    static sf::Texture button2Texture;
+    static sf::Texture button3Texture;
+    static sf::Texture button4Texture;
+    static sf::Texture button5Texture;
     int size = 10;
     int action = -1;
     int speed = 20;
@@ -68,6 +75,7 @@ private:
     bool bubble = false;
     bool selection = false;
     bool insertion = false;
+    bool help = false;
     int fontSize = 50;
     sf::RectangleShape highlightLine;
     sf::FloatRect stringLength1;
@@ -82,4 +90,4 @@ private:
     std::vector<std::string> psudeoCode;
 };
 
-#endif /* defined(__AlgorithmsAndDataStructures__SortingDemonstration__) */
+#endif

@@ -8,7 +8,7 @@
 
 #include "ResourcePath.hpp"
 
-void runLessonBuilder(std::string fileName, sf::RenderWindow &mainWindow) {
-    buildLesson(fileName, mainWindow);
+void runLessonBuilder(std::string fileName, sf::RenderWindow &mainWindow, bool type) {
+    buildLesson(fileName, mainWindow, type);
     return;
 }

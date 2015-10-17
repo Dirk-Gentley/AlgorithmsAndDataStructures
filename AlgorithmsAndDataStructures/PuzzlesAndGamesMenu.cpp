@@ -34,6 +34,23 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     beginBox.setPosition(312, 200);
     renderWindow.draw(beginBox);
     
+    //Begin boat menu item coordinates
+    PuzzlesAndGamesMenuItem beginBoatButton;
+    beginBoatButton.rect.top= 300;
+    beginBoatButton.rect.height = 80;
+    beginBoatButton.rect.left = 312;
+    beginBoatButton.rect.width = 400;
+    beginBoatButton.action = BeginRiverCrossing;
+    
+    //Begin boat clickable button
+    sf::RectangleShape beginBoatBox;
+    beginBoatBox.setSize(sf::Vector2f(400, 80));
+    beginBoatBox.setOutlineColor(sf::Color::Blue);
+    beginBoatBox.setFillColor(sf::Color::Blue);
+    beginBoatBox.setOutlineThickness(0);
+    beginBoatBox.setPosition(312, 300);
+    renderWindow.draw(beginBoatBox);
+    
     //Exit menu item coordinates
     PuzzlesAndGamesMenuItem backButton;
     backButton.rect.top = 600;
@@ -52,6 +69,7 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     renderWindow.draw(exitBox);
     
     menuItems.push_back(beginButton);
+    menuItems.push_back(beginBoatButton);
     menuItems.push_back(backButton);
     
     sf::Font font;
@@ -66,12 +84,17 @@ PuzzlesAndGamesMenu::PuzzlesAndGamesMenuResult PuzzlesAndGamesMenu::Show(sf::Ren
     beginText.setPosition(310, 200);
     beginText.setColor(sf::Color::White);
     
+    sf::Text beginBoatText("River Crossing", font, 40);
+    beginBoatText.setPosition(390, 300);
+    beginBoatText.setColor(sf::Color::White);
+    
     sf::Text backText("Back", font, 40);
     backText.setPosition(460, 600);
     backText.setColor(sf::Color::White);
     
     renderWindow.draw(menuText);
     renderWindow.draw(beginText);
+    renderWindow.draw(beginBoatText);
     renderWindow.draw(backText);
     
     renderWindow.display();

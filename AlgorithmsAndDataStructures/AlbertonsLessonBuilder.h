@@ -10,12 +10,10 @@
 #define __AlbertonsLessonBuilder__AlbertonsLessonBuilder__
 
 #include "ResourcePath.hpp"
+
 static sf::Texture TextureHolo;
-<<<<<<< HEAD
 static sf::Texture TextureLessonSlide;
-=======
 static sf::Texture Texture1;
->>>>>>> origin/master
 void runLessonBuilder(std::string, sf::RenderWindow &, bool);
 
 void buildLesson(std::string, sf::RenderWindow &, bool);

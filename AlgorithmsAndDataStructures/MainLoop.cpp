@@ -11,6 +11,7 @@
 MainLoop::ProgramState MainLoop::programState = Uninitialized;
 sf::RenderWindow MainLoop::MainWindow;
 sf::View MainLoop::MainView;
+sf::Music MainLoop::MainMusic;
 
 void MainLoop::Start(void){
     
@@ -20,28 +21,25 @@ void MainLoop::Start(void){
     sf::VideoMode mode = modes[0];
     
     unsigned int X = mode.width, Y = mode.height;
-    //  The following ugly line will setup the letterboxing in order to maintain the aspect ratio
-    float L = 1.0f, XPrime = Y * 4/3, W = (XPrime / X); L -= W; L /= 2;
+    float L = 1.0f, XPrime = Y * 4/3, W = (XPrime / X); L -= W; L = L / 2;
     
-    MainWindow.create(sf::VideoMode(X, Y), "SFML window", sf::Style::Fullscreen);       // X Y
+    MainWindow.create(sf::VideoMode(X, Y), "SFML window", sf::Style::Fullscreen);           // X Y
     sf::View MainView(sf::FloatRect(0, 0, 1024, 768));
-    MainView.setViewport(sf::FloatRect(L, 0.0f, W, 1.f));                               // L W
+    MainView.setViewport(sf::FloatRect(L, 0.0f, W, 1.f));                                   // L W
     MainWindow.setView(MainView);
     
     // Should never happen
     if(programState != Uninitialized){
         return;
     }
-
+    // The initial program state, should only happen once
     programState = MainLoop::ShowingSplash;
     
+    // Enter the main program loop
     while(!IsExiting()){
         RunLoop();
     }
-    
-    //  I am not sure what the below line does
-    
-    //MainWindow.close();
+    MainWindow.close();
 }
 
 bool MainLoop::IsExiting(){
@@ -50,6 +48,20 @@ bool MainLoop::IsExiting(){
     else
         return false;
 }
+
+/*
+ 
+ THIS IS THE MAIN PROGRAM LOOP
+ 
+ This switch() statement will grow as the application grows.
+ The program states will appear here as enumerated types, or "states",
+ hence state driven design.
+ 
+ PLEASE KEEP THE SWITCH STATEMENT NEAT AND TIDY
+ 
+ Everything that happens goes here
+ 
+ */
 
 void MainLoop::RunLoop(){
     sf::Event currentEvent;
@@ -140,6 +152,10 @@ void MainLoop::RunLoop(){
                 RunConwaysGameOfLife();
                 break;
             }
+            case MainLoop::RunningRiverCrossing:{
+                RunRiverCrossing();
+                break;
+            }
             case MainLoop::ShowingSchoolOfImplementationsMenu:{
                 ShowSchoolOfImplementationsMenu();
                 break;
@@ -169,7 +185,6 @@ void MainLoop::RunLoop(){
             }
             case MainLoop::Exiting:{
                 // Exit safely.  SFML should by rights free resources here
-                MainWindow.close();
                 exit(0);
                 break;
             }
@@ -306,6 +321,9 @@ void MainLoop::ShowPuzzlesAndGamesMenu(){
         case PuzzlesAndGamesMenu::BeginConways:
             programState = MainLoop::RunningConwaysGameOfLife;
             break;
+        case PuzzlesAndGamesMenu::BeginRiverCrossing:
+            programState = MainLoop::RunningRiverCrossing;
+            break;
         case PuzzlesAndGamesMenu::Nothing:
             ShowPuzzlesAndGamesMenu();
             break;
@@ -316,6 +334,12 @@ void MainLoop::RunConwaysGameOfLife(){
     programState = MainLoop::RunningConwaysGameOfLife;
     runLessonBuilder("ConwaysGameOfLife.txt", MainWindow, 0);
     beginConwaysGameOfLife(MainWindow);
+    programState = MainLoop::ShowingPuzzlesAndGamesMenu;
+}
+
+void MainLoop::RunRiverCrossing(){
+    programState = MainLoop::RunningRiverCrossing;
+    RiverLoop(MainWindow);
     programState = MainLoop::ShowingPuzzlesAndGamesMenu;
 }
 

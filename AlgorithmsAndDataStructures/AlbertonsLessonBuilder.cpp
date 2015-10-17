@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Benjamin. All rights reserved.
 //
 
-#include "AlbertonsLessonBuilder.h"
+#include "ResourcePath.hpp"
 
 void buildLesson(std::string fileName, sf::RenderWindow &window, bool type){
     sf::Clock clock;
@@ -87,7 +87,9 @@ void albertonInput(sf::RenderWindow &window, bool &skip){
     }
 }
 
-int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLessonDialogueGraphics, std::list<std::pair<int, std::string> > &Dialogue, sf::Clock &clock, sf::Clock &clock2, bool &holo, bool &skip, bool type){
+int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLessonDialogueGraphics,
+                   std::list<std::pair<int, std::string> > & Dialogue, sf::Clock &clock,
+                   sf::Clock &clock2, bool &holo, bool &skip, bool type){
     sf::Event event;
     if (sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
         return 0;
@@ -127,13 +129,10 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     }
     else if(speaker == 1){
         DialogueText.setPosition(600, 500);
-    }else if (speaker == 2){
-<<<<<<< HEAD
+    }
+    else if (speaker == 2){
         if (!TextureLessonSlide.loadFromFile(resourcePath() + nextDialogue)) {
-=======
-        if (!Texture1.loadFromFile(resourcePath() + nextDialogue)) {
->>>>>>> origin/master
-            std::cerr << "ERROR with slide " << nextDialogue << std::endl;
+                std::cerr << "ERROR with slide " << nextDialogue << std::endl;
         }
     }
     
@@ -175,12 +174,9 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     if (speaker != 2){
         window.draw(DialogueText);
     }
+    std::cout << type << std::endl;
     if (type == 1){
-<<<<<<< HEAD
         lessonSlide.setTexture(TextureLessonSlide);
-=======
-        lessonSlide.setTexture(Texture1);
->>>>>>> origin/master
         lessonSlide.setPosition(189, 66);
         holoImage.setTexture(TextureHolo);
         window.draw(holoImage);
@@ -196,14 +192,16 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     }
 }
 
-std::list<std::pair<int, std::string> > read(std::string filename){
+std::list<std::pair<int, std::string> > read(std::string filename) {
     std::list<std::pair<int, std::string> > DialogueCommands;
     std::ifstream infile;
     infile.open(resourcePath() + filename.c_str(), std::ifstream::in);
+    
     if (!infile.good()){
         std::cout << "Problem opening file" << std::endl;
         exit(0);
     }
+    
     std::string command;
     while (std::getline(infile, command)){
         std::string token = command.substr(0, command.find(":"));
@@ -244,3 +242,4 @@ std::list<std::pair<int, std::string> > read(std::string filename){
     }
     return DialogueCommands;
 }
+    

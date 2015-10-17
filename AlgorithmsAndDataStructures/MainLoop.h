@@ -17,22 +17,30 @@ class MainLoop{
     
 public:
     static void Start();
+    // Each of the menus/sub menus will appear here
     static void ShowMenu();
     static void ShowTreesAndStructuresMenu();
     static void ShowSortingAndSearchingMenu();
     static void ShowPuzzlesAndGamesMenu();
     static void ShowSchoolOfImplementationsMenu();
+    //
     static void RunSortingDemonstration();
     static void RunSortingComparisson();
     static void RunBinaryTreeDungeon();
     static void RunStackAttack();
     static void RunConwaysGameOfLife();
+    static void RunRiverCrossing();
     
-private:
+//private:
+    // Safely shut down
     static bool IsExiting();
+    // The main loop will itterate though the enumerated states
     static void RunLoop();
+    // More a demonstration than anything else, but will most likely be kept
     static void ShowSplashScreen();
 
+    // This list will grow as the program grows.  Running may change to
+    // RunningLinkedList or RunningBinaryTree etc
     enum ProgramState { Uninitialized,
                         ShowingSplash,
                         Paused,
@@ -49,11 +57,13 @@ private:
                         RunningSchoolOfImplementations,
                         RunningBinaryTreeDungeon,
                         RunningConwaysGameOfLife,
+                        RunningRiverCrossing,
                         Exiting };
-
+    
     static ProgramState programState;
     static sf::RenderWindow MainWindow;
     static sf::View MainView;
+    static sf::Music MainMusic;
 };
 
 #endif

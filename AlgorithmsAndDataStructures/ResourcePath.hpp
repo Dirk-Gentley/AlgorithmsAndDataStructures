@@ -63,6 +63,7 @@
 #include "Compare.h"
 #include "AlbertonsLessonBuilder.h"
 #include "ConwaysMain.h"
+#include "RiverCrossing.h"
 ////////////////////////////////////////////////////////////
 /// \brief Return the path to the resource folder.
 ///

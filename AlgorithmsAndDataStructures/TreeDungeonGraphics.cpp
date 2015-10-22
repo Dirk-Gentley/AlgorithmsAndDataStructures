@@ -169,7 +169,36 @@ void updateGraphics(sf::RenderWindow &window, TreeDungeonGraphics &MappedSprites
     
     int collectedYOffset = 0;
     for (std::string::iterator it=Character.treasureInventory.begin(); it!=Character.treasureInventory.end(); ++it){
-        DungeonMapText.setString(*it);
+        if(*it == 'A'){
+            DungeonMapText.setString("An amazing amythist armlet");
+        }
+        if(*it == 'B'){
+            DungeonMapText.setString("Boring borite barney-snatchers");
+        }
+        if(*it == 'C'){
+            DungeonMapText.setString("Considerably callous cornicopia");
+        }
+        if(*it == 'D'){
+            DungeonMapText.setString("Digested donkey dilberts");
+        }
+        if(*it == 'E'){
+            DungeonMapText.setString("Eggman Egberts erronious elepads");
+        }
+        if(*it == 'F'){
+            DungeonMapText.setString("Festooned floundering flip-flops");
+        }
+        if(*it == 'G'){
+            DungeonMapText.setString("Gloopy glamarous galoshes");
+        }
+        if(*it == 'H'){
+            DungeonMapText.setString("Hillbert Humperdinks horrendous high-tops");
+        }
+        if(*it == 'I'){
+            DungeonMapText.setString("Incognito incutaurs of the impetuous");
+        }
+        if(*it == 'J'){
+            DungeonMapText.setString("Jostling jalepino jumpers");
+        }
         DungeonMapText.setCharacterSize(16);
         DungeonMapText.setColor(sf::Color::White);
         DungeonMapText.setStyle(sf::Text::Regular);

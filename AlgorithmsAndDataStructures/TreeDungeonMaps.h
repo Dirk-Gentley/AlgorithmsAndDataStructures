@@ -74,10 +74,10 @@ public:
 private:
     void destroy_tree(Node *leaf);
     void insert(char key, Node *leaf);
+    
     Node *search(char key, Node *leaf);
     
     Node *root;
-    
     Node *current;
 };
 

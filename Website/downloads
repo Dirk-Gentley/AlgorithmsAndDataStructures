@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<title>CSCI321</title>
+</head>
+
+<body id = "MainPage" >
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">csci321ga1</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="minutes.html">Meeting Minutes</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Diaries
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="diary.html">Group Diary</a></li>
+								<li><a href="bwBlog.html">Ben Waters Blog</a></li>
+								<li><a href="jgBlog.html">Jim Gollops Blog</a></li> 
+								<li><a href="njBlog.html">Nicholas Judds Blog</a></li> 
+								<li><a href="pmBlog.html">Peter Mavridis Blog</a></li> 
+							</ul>
+							<li><a href="correspondence.html">Correspondence</a></li>
+							<li><a href="docs.html">Documentation</a></li>
+						</ul>
+						<ul class="pull-right">
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>

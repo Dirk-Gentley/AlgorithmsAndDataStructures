@@ -15,6 +15,7 @@
 class TreeDungeonGraphics{
 private:
     sf::Sprite PlayerSprite;
+    sf::Sprite MonsterSprite;
     sf::Sprite FloorSprite;
     sf::Sprite WallSprite;
     sf::Sprite FogSprite;
@@ -27,6 +28,7 @@ private:
 public:
     std::vector<sf::Sprite> getFloorSprites()           { return FloorSprites; };
     sf::Sprite getPlayerSprite()                        { return PlayerSprite; };
+    sf::Sprite getMonsterSprite()                       { return MonsterSprite; };
     sf::Sprite getFloorSprite()                         { return FloorSprite; };
     sf::Sprite getWallSprite()                          { return WallSprite; };
     sf::Sprite getFogSprite()                           { return FogSprite; };

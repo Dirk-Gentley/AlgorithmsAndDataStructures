@@ -10,7 +10,7 @@
 
 Character::Character(){
     playerXPosition = 256;
-    playerYPosition = 160;
+    playerYPosition = 320;
     playerMove = false;
     treasureCollected = 0;
     onTreasure = false;

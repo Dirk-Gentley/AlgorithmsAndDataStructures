@@ -12,9 +12,25 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     
     renderWindow.clear(sf::Color(sf::Color::Black));
     
-    sf::Texture texture;
-    texture.loadFromFile(resourcePath() + "MMBackground.png");
-    sf::Sprite sprite(texture);
+    sf::Texture puzzlesATexture;
+    puzzlesATexture.loadFromFile(resourcePath() + "MMpuzzlesA.png");
+    sf::Sprite puzzlesASprite(puzzlesATexture);
+    puzzlesASprite.setPosition(212, 420);
+    
+    sf::Texture schoolATexture;
+    schoolATexture.loadFromFile(resourcePath() + "MMschoolA.png");
+    sf::Sprite schoolASprite(schoolATexture);
+    schoolASprite.setPosition(524, 420);
+    
+    sf::Texture sortingATexture;
+    sortingATexture.loadFromFile(resourcePath() + "MMsortingA.png");
+    sf::Sprite sortingASprite(sortingATexture);
+    sortingASprite.setPosition(212, 200);
+    
+    sf::Texture structuresATexture;
+    structuresATexture.loadFromFile(resourcePath() + "MMstructuresA.png");
+    sf::Sprite structuresASprite(structuresATexture);
+    structuresASprite.setPosition(522, 200);
     
 	//Begin sorting and searching menu item coordinates
 	MenuItem beginSortingAndSearchingButton;
@@ -24,15 +40,6 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
 	beginSortingAndSearchingButton.rect.width = 300;
     beginSortingAndSearchingButton.action = SortingAndSearchingMenu;
     
-    //Sorting and Searching clickable button
-    sf::RectangleShape beginSortingAndSearchingBox;
-    beginSortingAndSearchingBox.setSize(sf::Vector2f(296, 200));
-    beginSortingAndSearchingBox.setOutlineColor(sf::Color::Blue);
-    beginSortingAndSearchingBox.setFillColor(sf::Color::Blue);
-    beginSortingAndSearchingBox.setOutlineThickness(5);
-    beginSortingAndSearchingBox.setPosition(212, 200);
-    renderWindow.draw(beginSortingAndSearchingBox);
-    
     //Begin trees and structures menu item coordinates
     MenuItem beginTreesAndStructuresButton;
     beginTreesAndStructuresButton.rect.top= 200;
@@ -40,15 +47,6 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     beginTreesAndStructuresButton.rect.left = 522;
     beginTreesAndStructuresButton.rect.width = 300;
     beginTreesAndStructuresButton.action = TreesAndStructuresMenu;
-    
-    //Trees and Structures clickable button
-    sf::RectangleShape beginTreesAndStructuresBox;
-    beginTreesAndStructuresBox.setSize(sf::Vector2f(296, 200));
-    beginTreesAndStructuresBox.setOutlineColor(sf::Color::Blue);
-    beginTreesAndStructuresBox.setFillColor(sf::Color::Blue);
-    beginTreesAndStructuresBox.setOutlineThickness(5);
-    beginTreesAndStructuresBox.setPosition(528, 200);
-    renderWindow.draw(beginTreesAndStructuresBox);
     
     //Begin puzzles and games menu item coordinates
     MenuItem beginPuzzlesAndGamesButton;
@@ -58,15 +56,6 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     beginPuzzlesAndGamesButton.rect.width = 300;
     beginPuzzlesAndGamesButton.action = PuzzlesAndGamesMenu;
     
-    //Puzzles and games clickable button
-    sf::RectangleShape beginPuzzlesAndGamesBox;
-    beginPuzzlesAndGamesBox.setSize(sf::Vector2f(296, 200));
-    beginPuzzlesAndGamesBox.setOutlineColor(sf::Color::Blue);
-    beginPuzzlesAndGamesBox.setFillColor(sf::Color::Blue);
-    beginPuzzlesAndGamesBox.setOutlineThickness(5);
-    beginPuzzlesAndGamesBox.setPosition(212, 420);
-    renderWindow.draw(beginPuzzlesAndGamesBox);
-    
     //Begin school of implementations menu item coordinates
     MenuItem beginSchoolOfImplementationsButton;
     beginSchoolOfImplementationsButton.rect.top = 420;
@@ -74,15 +63,6 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     beginSchoolOfImplementationsButton.rect.left = 524;
     beginSchoolOfImplementationsButton.rect.width = 300;
     beginSchoolOfImplementationsButton.action = SchoolOfImplementationsMenu;
-    
-    //School of implementations clickable button
-    sf::RectangleShape beginSchoolOfImplementationsBox;
-    beginSchoolOfImplementationsBox.setSize(sf::Vector2f(296, 200));
-    beginSchoolOfImplementationsBox.setOutlineColor(sf::Color::Blue);
-    beginSchoolOfImplementationsBox.setFillColor(sf::Color::Blue);
-    beginSchoolOfImplementationsBox.setOutlineThickness(5);
-    beginSchoolOfImplementationsBox.setPosition(528, 420);
-    renderWindow.draw(beginSchoolOfImplementationsBox);
 
 	menuItems.push_back(beginSortingAndSearchingButton);
     menuItems.push_back(beginTreesAndStructuresButton);
@@ -90,27 +70,18 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     menuItems.push_back(beginSchoolOfImplementationsButton);
 	//menuItems.push_back(exitButton);
     
-    sf::Font font;
-    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-        exit(1);
-    }
-    sf::Text menuText("Menu", font, 80);
-    menuText.setPosition(400, 50);
-    menuText.setColor(sf::Color::White);
+    //sf::Font font;
+    //if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+    //    exit(1);
+    //}
+    //sf::Text menuText("Menu", font, 80);
+    //menuText.setPosition(400, 50);
+    //menuText.setColor(sf::Color::White);
     
-    sf::Text beginSortingAndSearchingText("Sorting", font, 40);
-    beginSortingAndSearchingText.setPosition(300, 200);
-    
-    sf::Text beginTreesAndStructuresText("Structures", font, 40);
-    beginTreesAndStructuresText.setPosition(580, 200);
-    
-    sf::Text beginPuzzlesAndGamesText("Puzzles", font, 40);
-    beginPuzzlesAndGamesText.setPosition(300, 420);
-    
-    sf::Text beginSchoolOfImplementationsText("School", font, 40);
-    beginSchoolOfImplementationsText.setPosition(620, 420);
-    
-    renderWindow.draw(sprite);
+    renderWindow.draw(puzzlesASprite);
+    renderWindow.draw(schoolASprite);
+    renderWindow.draw(sortingASprite);
+    renderWindow.draw(structuresASprite);
 	renderWindow.display();
     
 	return GetMenuResponse(renderWindow);
@@ -132,10 +103,54 @@ MainMenu::MenuResult MainMenu::HandleClick(int x, int y){
 }
 
 MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
+    window.clear();
 	sf::Event menuEvent;
+    
+    sf::Texture puzzlesATexture;
+    puzzlesATexture.loadFromFile(resourcePath() + "MMpuzzlesA.png");
+    sf::Sprite puzzlesASprite(puzzlesATexture);
+    puzzlesASprite.setPosition(212, 420);
+    
+    sf::Texture schoolATexture;
+    schoolATexture.loadFromFile(resourcePath() + "MMschoolA.png");
+    sf::Sprite schoolASprite(schoolATexture);
+    schoolASprite.setPosition(524, 420);
+    
+    sf::Texture sortingATexture;
+    sortingATexture.loadFromFile(resourcePath() + "MMsortingA.png");
+    sf::Sprite sortingASprite(sortingATexture);
+    sortingASprite.setPosition(212, 200);
+    
+    sf::Texture structuresATexture;
+    structuresATexture.loadFromFile(resourcePath() + "MMstructuresA.png");
+    sf::Sprite structuresASprite(structuresATexture);
+    structuresASprite.setPosition(522, 200);
+    
+    sf::Texture puzzlesBTexture;
+    puzzlesBTexture.loadFromFile(resourcePath() + "MMPuzzlesB.png");
+    sf::Sprite puzzlesBSprite(puzzlesBTexture);
+    puzzlesBSprite.setPosition(212, 420);
+    
+    sf::Texture schoolBTexture;
+    schoolBTexture.loadFromFile(resourcePath() + "MMschoolB.png");
+    sf::Sprite schoolBSprite(schoolBTexture);
+    schoolBSprite.setPosition(524, 420);
+    
+    sf::Texture sortingBTexture;
+    sortingBTexture.loadFromFile(resourcePath() + "MMsortingB.png");
+    sf::Sprite sortingBSprite(sortingBTexture);
+    sortingBSprite.setPosition(212, 200);
+    
+    sf::Texture structuresBTexture;
+    structuresBTexture.loadFromFile(resourcePath() + "MMstructuresB.png");
+    sf::Sprite structuresBSprite(structuresBTexture);
+    structuresBSprite.setPosition(522, 200);
     
     for(;;){
 		while(window.pollEvent(menuEvent)){
+            sf::Vector2i position = sf::Mouse::getPosition(window);
+            sf::Vector2i relativePosition = handleMouseClick(position.x, position.y, window);
+            std::list<MenuItem>::iterator it;
 			if(menuEvent.type == sf::Event::MouseButtonPressed){
                 sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, window);
                 return HandleClick(click.x, click.y);
@@ -143,6 +158,51 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
             if(menuEvent.type == sf::Event::KeyPressed){
                 if(menuEvent.key.code == sf::Keyboard::Q){
                     return Exit;
+                }
+            }
+            for ( it = menuItems.begin(); it != menuItems.end(); it++){
+                int x = relativePosition.x, y = relativePosition.y;
+                sf::Rect<int> menuItemRect = (*it).rect;
+                if( x > menuItemRect.left
+                   && x < menuItemRect.left + menuItemRect.width
+                   && y > menuItemRect.top
+                   && y < menuItemRect.height + menuItemRect.top){
+                    if(std::distance(menuItems.begin(), it) == 0){
+                        
+                        window.draw(puzzlesASprite);
+                        window.draw(schoolASprite);
+                        window.draw(sortingASprite);
+                        window.draw(structuresASprite);
+                        window.draw(sortingBSprite);
+                        window.display();
+                    }
+                    if(std::distance(menuItems.begin(), it) == 1){
+                        
+                        window.draw(puzzlesASprite);
+                        window.draw(schoolASprite);
+                        window.draw(sortingASprite);
+                        window.draw(structuresASprite);
+                        window.draw(structuresBSprite);
+                        window.display();
+                    }
+                    if(std::distance(menuItems.begin(), it) == 2){
+                        
+                        window.draw(puzzlesASprite);
+                        window.draw(schoolASprite);
+                        window.draw(sortingASprite);
+                        window.draw(structuresASprite);
+                        window.draw(puzzlesBSprite);
+                        window.display();
+                    }
+                    if(std::distance(menuItems.begin(), it) == 3){
+                        
+                        window.draw(puzzlesASprite);
+                        window.draw(schoolASprite);
+                        window.draw(sortingASprite);
+                        window.draw(structuresASprite);
+                        window.draw(schoolBSprite);
+                        window.display();
+                    }
                 }
             }
 		}

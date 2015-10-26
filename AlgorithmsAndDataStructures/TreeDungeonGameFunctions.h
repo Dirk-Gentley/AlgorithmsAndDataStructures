@@ -11,7 +11,8 @@
 
 #include "ResourcePath.hpp"
 
-void updateGame(class BTree &, struct Node* &, class Character &, class Maps &, class TreeDungeonGraphics &);
+void updateGame(class BTree &, struct Node* &, class Character &, class Maps &, class TreeDungeonGraphics &, sf::RenderWindow &);
 void resetGameState(class BTree &, struct Node* &, class Character &, class Maps &, class TreeDungeonGraphics &);
+void displayEndGame(sf::RenderWindow &);
 
 #endif /* defined(__Trevors_Traversal__TreeDungeonGameFunctions__) */

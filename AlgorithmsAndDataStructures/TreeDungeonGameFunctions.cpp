@@ -8,7 +8,7 @@
 
 #include "ResourcePath.hpp"
 
-void updateGame(BTree &MapTree, Node* &CurrentNode, class Character &Character, Maps &Map, TreeDungeonGraphics &MappedSprites){
+void updateGame(BTree &MapTree, Node* &CurrentNode, class Character &Character, Maps &Map, TreeDungeonGraphics &MappedSprites, sf::RenderWindow &window){
     if(Character.getOnTreasure() == true){
         if(Character.goal == 1){
             if(CurrentNode->keyValue == MapTree.goalInOrder.at(Character.getTreasureCollected())){
@@ -38,7 +38,14 @@ void updateGame(BTree &MapTree, Node* &CurrentNode, class Character &Character, 
     Character.setOnTreasure(false);
     
     if(Character.getTreasureCollected() == 10){
-        resetGameState(MapTree, CurrentNode, Character, Map, MappedSprites);
+        Character.setAllTreasures(true);
+    }
+    if(Character.getAllTreasures() == true && CurrentNode == MapTree.getRoot()){
+        if(Character.getPlayerX() == 256 && Character.getPlayerY() == 224){
+            Character.setAllTreasures(false);
+            displayEndGame(window);
+            resetGameState(MapTree, CurrentNode, Character, Map, MappedSprites);
+        }
     }
 }
 
@@ -60,4 +67,9 @@ void resetGameState(BTree &MapTree, Node* &CurrentNode, class Character &Charact
     MapTree.preOrder(CurrentNode);
     MapTree.postOrder(CurrentNode);
     CurrentNode = MapTree.getRoot();
+}
+
+void displayEndGame(sf::RenderWindow &window){
+    window.clear(sf::Color::Red);
+    window.display();
 }

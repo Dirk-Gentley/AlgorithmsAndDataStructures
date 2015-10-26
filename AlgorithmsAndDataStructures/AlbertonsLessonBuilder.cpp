@@ -235,7 +235,6 @@ std::list<std::pair<int, std::string> > read(std::string filename) {
             }
             std::pair<int, std::string> speaker_dialogue;
             speaker_dialogue.first = speaking;
-//            command.erase(command.size()-1);
             speaker_dialogue.second = command;
             DialogueCommands.push_back(speaker_dialogue);
         }

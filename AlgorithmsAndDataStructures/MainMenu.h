@@ -16,7 +16,6 @@
 class MainMenu{
     
 public:
-    // Results are returned by the action handler
 	enum MenuResult {   Nothing,
                         Exit,
                         SortingAndSearchingMenu,
@@ -24,19 +23,15 @@ public:
                         TreesAndStructuresMenu,
                         SchoolOfImplementationsMenu };
     
-	// All menu items are public members, hence struct
 	struct MenuItem{
     public:
         sf::Rect<int> rect;
         MenuResult action;
     };
-	// Show the menu itself
 	MenuResult Show(sf::RenderWindow& window);
     
 private:
-    // Action listener
 	MenuResult GetMenuResponse(sf::RenderWindow& window);
-    // Action handler
     MenuResult HandleClick(int x, int y);
 	std::list<MenuItem> menuItems;
 };

@@ -24,6 +24,7 @@ void MainLoop::Start(void){
     float L = 1.0f, XPrime = Y * 4/3, W = (XPrime / X); L -= W; L = L / 2;
     
     MainWindow.create(sf::VideoMode(X, Y), "SFML window", sf::Style::Fullscreen);           // X Y
+    //MainWindow.create(sf::VideoMode(X, Y), "SFML window");           // X Y
     sf::View MainView(sf::FloatRect(0, 0, 1024, 768));
     MainView.setViewport(sf::FloatRect(L, 0.0f, W, 1.f));                                   // L W
     MainWindow.setView(MainView);
@@ -231,7 +232,6 @@ void MainLoop::ShowMenu(){
             programState = MainLoop::ShowingSchoolOfImplementationsMenu;
             break;
         case MainMenu::Nothing:
-            // Vitally important
             ShowMenu();
             break;
 	}

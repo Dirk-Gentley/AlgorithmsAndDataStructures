@@ -31,7 +31,7 @@ public:
     static void RunConwaysGameOfLife();
     static void RunRiverCrossing();
     
-//private:
+private:
     // Safely shut down
     static bool IsExiting();
     // The main loop will itterate though the enumerated states

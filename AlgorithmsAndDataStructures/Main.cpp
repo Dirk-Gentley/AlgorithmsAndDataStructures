@@ -8,6 +8,8 @@
 
 #include "ResourcePath.hpp"
 
+sf::Clock GLOBAL_CLOCK;
+
 int main(int argc, const char* argv[]){
     MainLoop::Start();
     return 0;

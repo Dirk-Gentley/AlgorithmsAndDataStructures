@@ -15,6 +15,10 @@ TreeDungeonGraphics const TreeDungeonGraphics::initSprites(sf::Texture &Texture,
     Player.setPosition(Character.getPlayerX(), Character.getPlayerY());
     PlayerSprite = Player;
     
+    sf::Sprite Monster(Texture);
+    Monster.setTextureRect(sf::IntRect(0, 64, 32, 32));
+    MonsterSprite = Monster;
+    
     sf::Sprite Floor(Texture);
     Floor.setTextureRect(sf::IntRect(0, 32, 32, 32));
     FloorSprite = Floor;
@@ -85,8 +89,9 @@ void updateGraphics(sf::RenderWindow &window, TreeDungeonGraphics &MappedSprites
     
     // Draw the map, fog and character
     
-    sf::Sprite FloorSprite, WallSprite, PlayerSprite, FogSprite, TreasureSpriteOpen, UpSprite, DownSprite, TreasureSpriteClosed, Background;
+    sf::Sprite FloorSprite, WallSprite, PlayerSprite, MonsterSprite, FogSprite, TreasureSpriteOpen, UpSprite, DownSprite, TreasureSpriteClosed, Background;
     FloorSprite = MappedSprites.getFloorSprite();
+    MonsterSprite = MappedSprites.getMonsterSprite();
     WallSprite = MappedSprites.getWallSprite();
     PlayerSprite = MappedSprites.getPlayerSprite();
     FogSprite = MappedSprites.getFogSprite();
@@ -116,6 +121,14 @@ void updateGraphics(sf::RenderWindow &window, TreeDungeonGraphics &MappedSprites
             if(Map.getCurrentMap(j, i)=='o'){
                 FloorSprite.setPosition(j * 32, i * 32);
                 window.draw(FloorSprite);
+            }
+            if(Map.getCurrentMap(j, i)=='m'){
+                FloorSprite.setPosition(j * 32, i * 32);
+                window.draw(FloorSprite);
+            }
+            if(Map.getCurrentMap(j, i)=='m'){
+                MonsterSprite.setPosition(j * 32, i * 32);
+                window.draw(MonsterSprite);
             }
             if(Map.getLOS(j, i) == 'x'){
                 FogSprite.setPosition(j * 32, i * 32);
@@ -170,7 +183,7 @@ void updateGraphics(sf::RenderWindow &window, TreeDungeonGraphics &MappedSprites
     int collectedYOffset = 0;
     for (std::string::iterator it=Character.treasureInventory.begin(); it!=Character.treasureInventory.end(); ++it){
         if(*it == 'A'){
-            DungeonMapText.setString("An amazing amythist armlet");
+            DungeonMapText.setString("Amazing amethyst armlet");
         }
         if(*it == 'B'){
             DungeonMapText.setString("Boring borite barney-snatchers");

@@ -16,9 +16,11 @@ private:
     bool playerMove;
     int treasureCollected;
     bool onTreasure;
+    bool allTreasures;
 public:
     int goal;
-    
+    void setAllTreasures(bool AT)       { allTreasures = AT; };
+    bool getAllTreasures()              { return allTreasures; };
     int getTreasureCollected()          { return treasureCollected; };
     void incTreasure()                  { treasureCollected++; };
     void setOnTreasure(bool t)          { onTreasure = t; };

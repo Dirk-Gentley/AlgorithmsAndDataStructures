@@ -45,6 +45,9 @@ void lineOfSight(class Maps& Map, class Character& Character){
                     if (Map.getCurrentMap(x, y) == 't'){
                         Map.setLOS(x, y, 'o');
                     }
+                    if (Map.getCurrentMap(x, y) == 'm'){
+                        Map.setLOS(x, y, 'o');
+                    }
                 }
                 
                 else{
@@ -60,6 +63,9 @@ void lineOfSight(class Maps& Map, class Character& Character){
                         Map.setLOS(x, y, 'o');
                     }
                     if (Map.getCurrentMap(x, y) == 't'){
+                        Map.setLOS(x, y, 'o');
+                    }
+                    if (Map.getCurrentMap(x, y) == 'm'){
                         Map.setLOS(x, y, 'o');
                     }
                 }

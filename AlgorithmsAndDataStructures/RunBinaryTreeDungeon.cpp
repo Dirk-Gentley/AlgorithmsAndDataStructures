@@ -35,7 +35,7 @@ void beginBinaryTreeDungeon(sf::RenderWindow& window){
         lineOfSight(Map, Character);
         updateGraphics(window, MappedSprites, Map, Character, MapTree, CurrentNode);
         CurrentNode = updateMap(Character, Map, CurrentNode, RootNode);
-        updateGame(MapTree, CurrentNode, Character, Map, MappedSprites);
+        updateGame(MapTree, CurrentNode, Character, Map, MappedSprites, window);
         RootNode = MapTree.getRoot();
         if(exit == 1){
             return;

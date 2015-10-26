@@ -62,7 +62,6 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
             if(menuEvent.type == sf::Event::MouseButtonPressed){
                 sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, mainWindow);
                 action = HandleClick(click.x, click.y);
-                std::cout << action << std::endl;
             }
             
             
@@ -116,7 +115,6 @@ void sortingModule::startModule(sf::RenderWindow& mainWindow, sortingModule sort
                 case 4:
                     play = false;
                     forwardSortArray();
-                    std::cout << "TEST" << std::endl;
                     highlightLine.move(10000, 10000);
                     buttonSprite.setTexture(button5Texture);
                     buttonSprite.setPosition(18, 534);

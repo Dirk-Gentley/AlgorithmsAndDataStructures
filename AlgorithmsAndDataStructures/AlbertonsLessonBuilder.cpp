@@ -128,7 +128,7 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
         DialogueText.setPosition(280, 460);
     }
     else if(speaker == 1){
-        DialogueText.setPosition(600, 500);
+        DialogueText.setPosition(400, 600);
     }
     else if (speaker == 2){
         if (!TextureLessonSlide.loadFromFile(resourcePath() + nextDialogue)) {
@@ -149,16 +149,16 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
         std::default_random_engine e1(rd());
         std::uniform_int_distribution<int> uniform_dist(1, 3);
         if (uniform_dist(e1) == 1){
-            if (!TextureHolo.loadFromFile(resourcePath() + "hologram.png")) {
-                std::cerr << "ERROR with HOLOGRAM "<< std::endl;
+            if (!TextureHolo.loadFromFile(resourcePath() + "hologram1.png")) {
+                std::cerr << "ERROR with HOLOGRAM 1 "<< std::endl;
             }
         }else if (uniform_dist(e1) == 2){
             if (!TextureHolo.loadFromFile(resourcePath() + "hologram2.png")) {
-                std::cerr << "ERROR with HOLOGRAM "<< std::endl;
+                std::cerr << "ERROR with HOLOGRAM 2 "<< std::endl;
             }
         }else if (uniform_dist(e1) == 3){
-            if (!TextureHolo.loadFromFile(resourcePath() + "hologram3.png")) {
-                std::cerr << "ERROR with HOLOGRAM "<< std::endl;
+            if (!TextureHolo.loadFromFile(resourcePath() + "hologram3.1.png")) {
+                std::cerr << "ERROR with HOLOGRAM 3 "<< std::endl;
             }
         }
         clock2.restart();
@@ -177,7 +177,7 @@ int updateGraphics(sf::RenderWindow &window, LessonDialogueGraphics &MappedLesso
     std::cout << type << std::endl;
     if (type == 1){
         lessonSlide.setTexture(TextureLessonSlide);
-        lessonSlide.setPosition(189, 66);
+        lessonSlide.setPosition(91, 179);
         holoImage.setTexture(TextureHolo);
         window.draw(holoImage);
         window.draw(lessonSlide);
@@ -198,7 +198,7 @@ std::list<std::pair<int, std::string> > read(std::string filename) {
     infile.open(resourcePath() + filename.c_str(), std::ifstream::in);
     
     if (!infile.good()){
-        std::cout << "Problem opening file" << std::endl;
+        std::cout << "Problem opening lesson file" << std::endl;
         exit(0);
     }
     
@@ -242,3 +242,4 @@ std::list<std::pair<int, std::string> > read(std::string filename) {
     return DialogueCommands;
 }
     
+//98,197

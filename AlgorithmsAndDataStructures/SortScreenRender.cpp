@@ -112,7 +112,7 @@ void sortingModule::animateSelection(sf::RenderWindow& mainWindow, sf::Sprite ba
             sortList[i].rect.setFillColor(sf::Color::Green);
         }
         sortList[correct].rect.setFillColor(sf::Color::Red);
-        sortList[(*it).element1].rect.setFillColor(sf::Color::Red);
+        sortList[(*it).element1].rect.setFillColor(sf::Color::Yellow);
         sortList[(*it).element2].rect.setFillColor(sf::Color::Yellow);
         highlightLine.setPosition(320, 550);
         renderScreen(mainWindow, backgroundSprite);
@@ -138,7 +138,8 @@ void sortingModule::animateSelection(sf::RenderWindow& mainWindow, sf::Sprite ba
             sortList[(*it).element2].rect.move((moveSize/speed), 0);
             renderScreen(mainWindow, backgroundSprite);
         }
-        sortList[(*it).element1].rect.setFillColor(sf::Color::Green);
+        sortList[(*it).element2].rect.setFillColor(sf::Color::Green);
+        sortList[(*it).element1].rect.setFillColor(sf::Color::White);
     }else if((*it).action == 3){
         highlightLine.setPosition(320, 429);
         renderScreen(mainWindow, backgroundSprite);

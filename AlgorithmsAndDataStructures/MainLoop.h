@@ -30,6 +30,11 @@ public:
     static void RunStackAttack();
     static void RunConwaysGameOfLife();
     static void RunRiverCrossing();
+    //
+    static void RunSortingLesson();
+    static void RunTreesLesson();
+    static void RunStacksLesson();
+    static void RunProblemSolvingLesson();
     
 private:
     // Safely shut down
@@ -49,9 +54,12 @@ private:
                         ShowingSortingAndSearchingMenu,
                         ShowingPuzzlesAndGamesMenu,
                         ShowingSchoolOfImplementationsMenu,
-                        RunningStacksLesson,
                         RunningStackAttack,
                         RunningSortingAndSearchingLesson,
+                        RunningSortingLesson,
+                        RunningTreesLesson,
+                        RunningStacksLesson,
+                        RunningProblemSolvingLesson,
                         RunningSortingAndSearchingDemo,
                         RunningSortingComparisson,
                         RunningSchoolOfImplementations,

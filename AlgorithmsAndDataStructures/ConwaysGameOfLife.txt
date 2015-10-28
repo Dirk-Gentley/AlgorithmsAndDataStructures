@@ -4,7 +4,7 @@ Companion:        Alberton is much better.
 Professor: Better indeed.
 Companion:              And what is Conways?
 Professor: Its a game of life. A cellular automata.
-Companion:                Youre a cellular.
+Companion:                You're a cellular.
 Professor: And youre an automata!
 Companion:                           It is us.
 Professor: It is we.

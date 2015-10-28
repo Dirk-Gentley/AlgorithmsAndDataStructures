@@ -12,6 +12,17 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     
     renderWindow.clear(sf::Color(sf::Color::Black));
     
+    // Load a sprite to use for scrolling background
+    sf::Texture texture;
+    texture.loadFromFile(resourcePath() + "scrollingBackgroundTile.gif");
+    sf::Sprite backgroundSprite(texture);
+    
+    scrollingBackground myBackground(backgroundSprite,(sf::Vector2f(-0.5, -0.5)));
+    
+    sf::Time elapsed = GLOBAL_CLOCK.restart();
+    myBackground.update(elapsed);
+    myBackground.draw(renderWindow);
+    
     sf::Texture puzzlesATexture;
     puzzlesATexture.loadFromFile(resourcePath() + "MMpuzzlesA.png");
     sf::Sprite puzzlesASprite(puzzlesATexture);
@@ -106,6 +117,17 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
     window.clear();
 	sf::Event menuEvent;
     
+    // Load a sprite to use for scrolling background
+    sf::Texture texture;
+    texture.loadFromFile(resourcePath() + "scrollingBackgroundTile.gif");
+    sf::Sprite backgroundSprite(texture);
+    
+    scrollingBackground myBackground(backgroundSprite,(sf::Vector2f(-0.5, -0.5)));
+    
+    sf::Time elapsed = GLOBAL_CLOCK.restart();
+    myBackground.update(elapsed);
+    myBackground.draw(window);
+    
     sf::Texture puzzlesATexture;
     puzzlesATexture.loadFromFile(resourcePath() + "MMpuzzlesA.png");
     sf::Sprite puzzlesASprite(puzzlesATexture);
@@ -148,6 +170,9 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
     
     for(;;){
 		while(window.pollEvent(menuEvent)){
+            
+            myBackground.draw(window);
+            
             sf::Vector2i position = sf::Mouse::getPosition(window);
             sf::Vector2i relativePosition = handleMouseClick(position.x, position.y, window);
             std::list<MenuItem>::iterator it;

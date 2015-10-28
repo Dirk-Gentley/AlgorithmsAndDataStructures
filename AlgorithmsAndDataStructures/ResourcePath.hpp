@@ -64,6 +64,8 @@
 #include "AlbertonsLessonBuilder.h"
 #include "ConwaysMain.h"
 #include "RiverCrossing.h"
+#include "scrollingBackground.h"
+#include "stackAttackGame.h"
 ////////////////////////////////////////////////////////////
 /// \brief Return the path to the resource folder.
 ///
@@ -72,5 +74,6 @@
 ///
 //////////////////////////////////////////////////////////// 
 std::string resourcePath(void);
+extern sf::Clock GLOBAL_CLOCK;
 
 #endif

@@ -85,21 +85,15 @@ void MainLoop::RunLoop(){
                 break;
             }
             case MainLoop::RunningStacksLesson:{
-                MainWindow.clear(sf::Color::Black);
-                sf::Font font;
-                if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-                    exit(1);
-                }
-                sf::Text LessonText("Placeholder text.  ESC to go back", font, 30);
-                MainWindow.draw(LessonText);
-                
-                MainWindow.display();
-                if(currentEvent.type == sf::Event::Closed){
-                    programState = MainLoop::Exiting;
-                }
-                if(currentEvent.type == sf::Event::KeyPressed){
-                    if(currentEvent.key.code == sf::Keyboard::Key::Escape) ShowTreesAndStructuresMenu();
-                }
+                RunStacksLesson();
+                break;
+            }
+            case MainLoop::RunningTreesLesson:{
+                RunTreesLesson();
+                break;
+            }
+            case MainLoop::RunningSortingLesson:{
+                RunSortingLesson();
                 break;
             }
                 
@@ -182,6 +176,9 @@ void MainLoop::RunLoop(){
                 break;
             }
             case MainLoop::Paused:{
+                break;
+            }
+            case MainLoop::RunningProblemSolvingLesson:{
                 break;
             }
             case MainLoop::Exiting:{
@@ -343,6 +340,24 @@ void MainLoop::RunRiverCrossing(){
     programState = MainLoop::ShowingPuzzlesAndGamesMenu;
 }
 
+void MainLoop::RunStacksLesson(){
+    programState = MainLoop::RunningStacksLesson;
+    runLessonBuilder("sAndQLesson.txt", MainWindow, 1);
+    programState = MainLoop::ShowingSchoolOfImplementationsMenu;
+}
+
+void MainLoop::RunTreesLesson(){
+    programState = MainLoop::RunningTreesLesson;
+    runLessonBuilder("masterTreeLesson.txt", MainWindow, 1);
+    programState = MainLoop::ShowingSchoolOfImplementationsMenu;
+}
+
+void MainLoop::RunSortingLesson(){
+    programState = MainLoop::RunningSortingLesson;
+    runLessonBuilder("masterSortingLesson.txt", MainWindow, 1);
+    programState = MainLoop::ShowingSchoolOfImplementationsMenu;
+}
+
 void MainLoop::ShowSchoolOfImplementationsMenu(){
     SchoolOfImplementationsMenu schoolOfImplementationsMenu;
     SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult result = schoolOfImplementationsMenu.Show(MainWindow);
@@ -350,7 +365,16 @@ void MainLoop::ShowSchoolOfImplementationsMenu(){
         case SchoolOfImplementationsMenu::Back:
             programState = MainLoop::ShowingMenu;
             break;
-        case SchoolOfImplementationsMenu::Begin:
+        case SchoolOfImplementationsMenu::BeginSortingLesson:
+            programState = MainLoop::RunningSortingLesson;
+            break;
+        case SchoolOfImplementationsMenu::BeginTreesLesson:
+            programState = MainLoop::RunningTreesLesson;
+            break;
+        case SchoolOfImplementationsMenu::BeginStacksLesson:
+            programState = MainLoop::RunningStacksLesson;
+            break;
+        case SchoolOfImplementationsMenu::BeginProblemSolvingLesson:
             programState = MainLoop::RunningSchoolOfImplementations;
             break;
         case SchoolOfImplementationsMenu::Nothing:

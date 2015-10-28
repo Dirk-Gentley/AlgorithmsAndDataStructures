@@ -107,13 +107,11 @@ void comparisonModule::startModule(sf::RenderWindow& mainWindow, comparisonModul
                         play = true;
                         sf::Sprite sortingSprite;
                         sortingSprite.setTexture(sortingTexture);
-                        mainWindow.clear();
                         mainWindow.draw(sortingSprite);
                         sf::Sprite pauseSprite;
                         pauseSprite.setTexture(pauseTexture);
                         pauseSprite.setPosition(534.f,606.f);
                         mainWindow.draw(pauseSprite);
-                        mainWindow.draw(elementNum);
                         mainWindow.display();
                         bubbleSortFunction(mainWindow);
                         selectionSortFunction(mainWindow);

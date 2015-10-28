@@ -13,7 +13,7 @@
 
 class SchoolOfImplementationsMenu{
 public:
-    enum SchoolOfImplementationsMenuResult { Nothing, Back, Begin };
+    enum SchoolOfImplementationsMenuResult { Nothing, Back, BeginSortingLesson, BeginTreesLesson, BeginStacksLesson, BeginProblemSolvingLesson };
     
     struct SchoolOfImplementationsMenuItem{
     public:

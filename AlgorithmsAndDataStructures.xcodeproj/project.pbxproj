@@ -15,6 +15,25 @@
 		430488651BA3E2740038C2A4 /* CompareScreenRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430488601BA3E2740038C2A4 /* CompareScreenRender.cpp */; };
 		430488661BA3E2740038C2A4 /* CompareShuffle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430488611BA3E2740038C2A4 /* CompareShuffle.cpp */; };
 		430488671BA3E2740038C2A4 /* CompareSorts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430488621BA3E2740038C2A4 /* CompareSorts.cpp */; };
+		4304AEAF1BDF1C7C007E3998 /* MMsorting1a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEA91BDF1C7C007E3998 /* MMsorting1a.gif */; };
+		4304AEB01BDF1C7C007E3998 /* MMsorting1b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEAA1BDF1C7C007E3998 /* MMsorting1b.gif */; };
+		4304AEB11BDF1C7C007E3998 /* MMsorting2a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEAB1BDF1C7C007E3998 /* MMsorting2a.gif */; };
+		4304AEB21BDF1C7C007E3998 /* MMsorting2b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEAC1BDF1C7C007E3998 /* MMsorting2b.gif */; };
+		4304AEB31BDF1C7C007E3998 /* MMsorting3a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEAD1BDF1C7C007E3998 /* MMsorting3a.gif */; };
+		4304AEB41BDF1C7C007E3998 /* MMsorting3b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEAE1BDF1C7C007E3998 /* MMsorting3b.gif */; };
+		4304AEBB1BDF4892007E3998 /* MMstructures1a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEB51BDF4892007E3998 /* MMstructures1a.gif */; };
+		4304AEBC1BDF4892007E3998 /* MMstructures1b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEB61BDF4892007E3998 /* MMstructures1b.gif */; };
+		4304AEBD1BDF4892007E3998 /* MMstructures2a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEB71BDF4892007E3998 /* MMstructures2a.gif */; };
+		4304AEBE1BDF4892007E3998 /* MMstructures2b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEB81BDF4892007E3998 /* MMstructures2b.gif */; };
+		4304AEBF1BDF4892007E3998 /* MMstructures3a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEB91BDF4892007E3998 /* MMstructures3a.gif */; };
+		4304AEC01BDF4892007E3998 /* MMstructures3b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEBA1BDF4892007E3998 /* MMstructures3b.gif */; };
+		4304AEC31BE04C38007E3998 /* LessonTreesA.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEC11BE04C38007E3998 /* LessonTreesA.gif */; };
+		4304AEC41BE04C38007E3998 /* LessonTreesB.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEC21BE04C38007E3998 /* LessonTreesB.gif */; };
+		4304AEC91BE04CEC007E3998 /* LessonAbstractionA.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEC51BE04CEC007E3998 /* LessonAbstractionA.gif */; };
+		4304AECA1BE04CEC007E3998 /* LessonAbstractionB.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEC61BE04CEC007E3998 /* LessonAbstractionB.gif */; };
+		4304AECB1BE04CEC007E3998 /* LessonStacksA.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEC71BE04CEC007E3998 /* LessonStacksA.gif */; };
+		4304AECC1BE04CEC007E3998 /* LessonStacksB.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AEC81BE04CEC007E3998 /* LessonStacksB.gif */; };
+		4304AECE1BE053C6007E3998 /* scrollingBackgroundTile.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4304AECD1BE053C6007E3998 /* scrollingBackgroundTile.gif */; };
 		433B39741B6F374400700E95 /* SortingDemonstration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433B39721B6F374400700E95 /* SortingDemonstration.cpp */; };
 		435B36511BA3FBBF00B7EF68 /* StackAttackMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 435B36501BA3FBBF00B7EF68 /* StackAttackMain.cpp */; };
 		435B36561BA3FE6A00B7EF68 /* StackAttack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 435B36551BA3FE6A00B7EF68 /* StackAttack.txt */; };
@@ -34,6 +53,205 @@
 		43BE643B1BDE0B53001C1E6F /* conwaysIntro.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BE64371BDE0B53001C1E6F /* conwaysIntro.png */; };
 		43BE643C1BDE0B53001C1E6F /* conwaysLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BE64381BDE0B53001C1E6F /* conwaysLesson1.png */; };
 		43BE643D1BDE0B53001C1E6F /* conwaysLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BE64391BDE0B53001C1E6F /* conwaysLesson2.png */; };
+		43BE64441BDEF382001C1E6F /* MMbackA.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43BE643E1BDEF382001C1E6F /* MMbackA.gif */; };
+		43BE64451BDEF382001C1E6F /* MMbackB.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43BE643F1BDEF382001C1E6F /* MMbackB.gif */; };
+		43BE64461BDEF382001C1E6F /* MMpuzzles1a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43BE64401BDEF382001C1E6F /* MMpuzzles1a.gif */; };
+		43BE64471BDEF382001C1E6F /* MMpuzzles1b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43BE64411BDEF382001C1E6F /* MMpuzzles1b.gif */; };
+		43BE64481BDEF382001C1E6F /* MMpuzzles2a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43BE64421BDEF382001C1E6F /* MMpuzzles2a.gif */; };
+		43BE64491BDEF382001C1E6F /* MMpuzzles2b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43BE64431BDEF382001C1E6F /* MMpuzzles2b.gif */; };
+		43C1040B1BE054890070541B /* scrollingBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C104091BE054890070541B /* scrollingBackground.cpp */; };
+		43C1040E1BE066940070541B /* stackAttackGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C1040C1BE066940070541B /* stackAttackGame.cpp */; };
+		43C104101BE0675E0070541B /* editMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43C1040F1BE0675E0070541B /* editMenu.gif */; };
+		43C104121BE067CA0070541B /* playMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43C104111BE067CA0070541B /* playMenu.gif */; };
+		43C104141BE067D40070541B /* SA_BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104131BE067D40070541B /* SA_BG.png */; };
+		43C104161BE067F60070541B /* stackAttackBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104151BE067F60070541B /* stackAttackBG.png */; };
+		43C1041A1BE068020070541B /* stackBase.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43C104171BE068020070541B /* stackBase.gif */; };
+		43C1041B1BE068020070541B /* stackDown.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43C104181BE068020070541B /* stackDown.gif */; };
+		43C1041C1BE068020070541B /* stackUp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43C104191BE068020070541B /* stackUp.gif */; };
+		43C1047A1BE06D510070541B /* conwaysLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C1041D1BE06D500070541B /* conwaysLesson.txt */; };
+		43C1047B1BE06D510070541B /* masterSortingLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C1041E1BE06D500070541B /* masterSortingLesson.txt */; };
+		43C1047C1BE06D510070541B /* masterTreeLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C1041F1BE06D500070541B /* masterTreeLesson.txt */; };
+		43C1047D1BE06D510070541B /* sAndQLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C104201BE06D500070541B /* sAndQLesson.txt */; };
+		43C1047E1BE06D510070541B /* sAndQlesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104211BE06D500070541B /* sAndQlesson1.png */; };
+		43C1047F1BE06D510070541B /* sAndQlesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104221BE06D500070541B /* sAndQlesson2.png */; };
+		43C104801BE06D510070541B /* sAndQlesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104231BE06D500070541B /* sAndQlesson3.png */; };
+		43C104811BE06D510070541B /* sAndQlesson4.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104241BE06D500070541B /* sAndQlesson4.1.png */; };
+		43C104821BE06D510070541B /* sAndQlesson4.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104251BE06D510070541B /* sAndQlesson4.2.png */; };
+		43C104831BE06D510070541B /* sAndQlesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104261BE06D510070541B /* sAndQlesson4.png */; };
+		43C104841BE06D510070541B /* sAndQlesson5.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104271BE06D510070541B /* sAndQlesson5.1.png */; };
+		43C104851BE06D510070541B /* sAndQlesson5.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104281BE06D510070541B /* sAndQlesson5.2.png */; };
+		43C104861BE06D510070541B /* sAndQlesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104291BE06D510070541B /* sAndQlesson5.png */; };
+		43C104871BE06D510070541B /* sAndQlesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1042A1BE06D510070541B /* sAndQlesson6.png */; };
+		43C104881BE06D510070541B /* sAndQlesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1042B1BE06D510070541B /* sAndQlesson7.png */; };
+		43C104891BE06D510070541B /* sAndQlesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1042C1BE06D510070541B /* sAndQlesson8.png */; };
+		43C1048A1BE06D510070541B /* sAndQlesson9.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1042D1BE06D510070541B /* sAndQlesson9.1.png */; };
+		43C1048B1BE06D510070541B /* sAndQlesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1042E1BE06D510070541B /* sAndQlesson9.png */; };
+		43C1048C1BE06D510070541B /* sAndQlesson10.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1042F1BE06D510070541B /* sAndQlesson10.1.png */; };
+		43C1048D1BE06D510070541B /* sAndQlesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104301BE06D510070541B /* sAndQlesson10.png */; };
+		43C1048E1BE06D510070541B /* sAndQlesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104311BE06D510070541B /* sAndQlesson11.png */; };
+		43C1048F1BE06D510070541B /* sAndQlesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104321BE06D510070541B /* sAndQlesson12.png */; };
+		43C104901BE06D510070541B /* sAndQlesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104331BE06D510070541B /* sAndQlesson13.png */; };
+		43C104911BE06D510070541B /* sAndQlesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104341BE06D510070541B /* sAndQlesson14.png */; };
+		43C104921BE06D510070541B /* sAndQlesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104351BE06D510070541B /* sAndQlesson15.png */; };
+		43C104931BE06D510070541B /* sAndQlesson16.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104361BE06D510070541B /* sAndQlesson16.png */; };
+		43C104941BE06D510070541B /* sAndQlesson17.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104371BE06D510070541B /* sAndQlesson17.png */; };
+		43C104951BE06D510070541B /* sAndQlesson18.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104381BE06D510070541B /* sAndQlesson18.png */; };
+		43C104961BE06D510070541B /* sAndQlesson19.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104391BE06D510070541B /* sAndQlesson19.png */; };
+		43C104971BE06D510070541B /* sAndQlesson20.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1043A1BE06D510070541B /* sAndQlesson20.png */; };
+		43C104981BE06D510070541B /* sAndQlesson21.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1043B1BE06D510070541B /* sAndQlesson21.png */; };
+		43C104991BE06D510070541B /* sAndQlesson22.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1043C1BE06D510070541B /* sAndQlesson22.png */; };
+		43C1049A1BE06D510070541B /* sAndQlesson23.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1043D1BE06D510070541B /* sAndQlesson23.png */; };
+		43C1049B1BE06D510070541B /* sAndQlesson24.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1043E1BE06D510070541B /* sAndQlesson24.png */; };
+		43C1049C1BE06D510070541B /* sAndQlessonIntro.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1043F1BE06D510070541B /* sAndQlessonIntro.png */; };
+		43C1049D1BE06D510070541B /* treeIOTLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104401BE06D510070541B /* treeIOTLesson1.png */; };
+		43C1049E1BE06D510070541B /* treeIOTLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104411BE06D510070541B /* treeIOTLesson2.png */; };
+		43C1049F1BE06D510070541B /* treeIOTLesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104421BE06D510070541B /* treeIOTLesson3.png */; };
+		43C104A01BE06D510070541B /* treeIOTLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104431BE06D510070541B /* treeIOTLesson4.png */; };
+		43C104A11BE06D510070541B /* treeIOTLesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104441BE06D510070541B /* treeIOTLesson5.png */; };
+		43C104A21BE06D510070541B /* treeIOTLesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104451BE06D510070541B /* treeIOTLesson6.png */; };
+		43C104A31BE06D510070541B /* treeIOTLesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104461BE06D510070541B /* treeIOTLesson7.png */; };
+		43C104A41BE06D510070541B /* treeIOTLesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104471BE06D510070541B /* treeIOTLesson8.png */; };
+		43C104A51BE06D510070541B /* treeIOTLesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104481BE06D510070541B /* treeIOTLesson9.png */; };
+		43C104A61BE06D510070541B /* treeIOTLesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104491BE06D510070541B /* treeIOTLesson10.png */; };
+		43C104A71BE06D510070541B /* treeIOTLesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1044A1BE06D510070541B /* treeIOTLesson11.png */; };
+		43C104A81BE06D510070541B /* treeIOTLesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1044B1BE06D510070541B /* treeIOTLesson12.png */; };
+		43C104A91BE06D510070541B /* treeIOTLesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1044C1BE06D510070541B /* treeIOTLesson13.png */; };
+		43C104AA1BE06D510070541B /* treeIOTLesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1044D1BE06D510070541B /* treeIOTLesson14.png */; };
+		43C104AB1BE06D510070541B /* treeIOTLesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1044E1BE06D510070541B /* treeIOTLesson15.png */; };
+		43C104AC1BE06D510070541B /* treeIOTLesson16.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1044F1BE06D510070541B /* treeIOTLesson16.png */; };
+		43C104AD1BE06D510070541B /* treeLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104501BE06D510070541B /* treeLesson1.png */; };
+		43C104AE1BE06D510070541B /* treeLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104511BE06D510070541B /* treeLesson2.png */; };
+		43C104AF1BE06D510070541B /* treeLesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104521BE06D510070541B /* treeLesson3.png */; };
+		43C104B01BE06D510070541B /* treeLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104531BE06D510070541B /* treeLesson4.png */; };
+		43C104B11BE06D510070541B /* treeLesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104541BE06D510070541B /* treeLesson5.png */; };
+		43C104B21BE06D510070541B /* treeLesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104551BE06D510070541B /* treeLesson6.png */; };
+		43C104B31BE06D510070541B /* treePoOTLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104561BE06D510070541B /* treePoOTLesson1.png */; };
+		43C104B41BE06D510070541B /* treePoOTLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104571BE06D510070541B /* treePoOTLesson2.png */; };
+		43C104B51BE06D510070541B /* treePoOTLesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104581BE06D510070541B /* treePoOTLesson3.png */; };
+		43C104B61BE06D510070541B /* treePoOTLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104591BE06D510070541B /* treePoOTLesson4.png */; };
+		43C104B71BE06D510070541B /* treePoOTLesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1045A1BE06D510070541B /* treePoOTLesson5.png */; };
+		43C104B81BE06D510070541B /* treePoOTLesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1045B1BE06D510070541B /* treePoOTLesson7.png */; };
+		43C104B91BE06D510070541B /* treePoOTLesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1045C1BE06D510070541B /* treePoOTLesson8.png */; };
+		43C104BA1BE06D510070541B /* treePoOTLesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1045D1BE06D510070541B /* treePoOTLesson9.png */; };
+		43C104BB1BE06D510070541B /* treePoOTLesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1045E1BE06D510070541B /* treePoOTLesson10.png */; };
+		43C104BC1BE06D510070541B /* treePoOTLesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1045F1BE06D510070541B /* treePoOTLesson11.png */; };
+		43C104BD1BE06D510070541B /* treePoOTLesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104601BE06D510070541B /* treePoOTLesson12.png */; };
+		43C104BE1BE06D510070541B /* treePoOTLesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104611BE06D510070541B /* treePoOTLesson13.png */; };
+		43C104BF1BE06D510070541B /* treePoOTLesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104621BE06D510070541B /* treePoOTLesson14.png */; };
+		43C104C01BE06D510070541B /* treePoOTLesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104631BE06D510070541B /* treePoOTLesson15.png */; };
+		43C104C11BE06D510070541B /* treePoOTLesson16.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104641BE06D510070541B /* treePoOTLesson16.png */; };
+		43C104C21BE06D510070541B /* treePoOTLesson17.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104651BE06D510070541B /* treePoOTLesson17.png */; };
+		43C104C31BE06D510070541B /* treePoOTLesson18.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104661BE06D510070541B /* treePoOTLesson18.png */; };
+		43C104C41BE06D510070541B /* treePoOTLesson19.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104671BE06D510070541B /* treePoOTLesson19.png */; };
+		43C104C51BE06D510070541B /* treePoOTLesson20.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104681BE06D510070541B /* treePoOTLesson20.png */; };
+		43C104C61BE06D510070541B /* treePoOTLesson21.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104691BE06D510070541B /* treePoOTLesson21.png */; };
+		43C104C81BE06D510070541B /* treePOTLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1046B1BE06D510070541B /* treePOTLesson2.png */; };
+		43C104C91BE06D510070541B /* treePOTLesson3.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1046C1BE06D510070541B /* treePOTLesson3.1.png */; };
+		43C104CA1BE06D510070541B /* treePOTLesson4.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1046D1BE06D510070541B /* treePOTLesson4.1.png */; };
+		43C104CB1BE06D510070541B /* treePOTLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1046E1BE06D510070541B /* treePOTLesson4.png */; };
+		43C104CD1BE06D510070541B /* treePOTLesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104701BE06D510070541B /* treePOTLesson6.png */; };
+		43C104CE1BE06D510070541B /* treePOTLesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104711BE06D510070541B /* treePOTLesson7.png */; };
+		43C104CF1BE06D510070541B /* treePOTLesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104721BE06D510070541B /* treePOTLesson8.png */; };
+		43C104D01BE06D510070541B /* treePOTLesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104731BE06D510070541B /* treePOTLesson9.png */; };
+		43C104D11BE06D510070541B /* treePOTLesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104741BE06D510070541B /* treePOTLesson10.png */; };
+		43C104D21BE06D510070541B /* treePOTLesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104751BE06D510070541B /* treePOTLesson11.png */; };
+		43C104D31BE06D510070541B /* treePOTLesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104761BE06D510070541B /* treePOTLesson12.png */; };
+		43C104D41BE06D510070541B /* treePOTLesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104771BE06D510070541B /* treePOTLesson13.png */; };
+		43C104D51BE06D510070541B /* treePOTLesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104781BE06D510070541B /* treePOTLesson14.png */; };
+		43C104D61BE06D510070541B /* treePOTLesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104791BE06D510070541B /* treePOTLesson15.png */; };
+		43C105341BE06D6C0070541B /* conwaysLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C104D71BE06D6B0070541B /* conwaysLesson.txt */; };
+		43C105351BE06D6C0070541B /* masterSortingLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C104D81BE06D6B0070541B /* masterSortingLesson.txt */; };
+		43C105361BE06D6C0070541B /* masterTreeLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C104D91BE06D6B0070541B /* masterTreeLesson.txt */; };
+		43C105371BE06D6C0070541B /* sAndQLesson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43C104DA1BE06D6B0070541B /* sAndQLesson.txt */; };
+		43C105381BE06D6C0070541B /* sAndQlesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104DB1BE06D6B0070541B /* sAndQlesson1.png */; };
+		43C105391BE06D6C0070541B /* sAndQlesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104DC1BE06D6B0070541B /* sAndQlesson2.png */; };
+		43C1053A1BE06D6C0070541B /* sAndQlesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104DD1BE06D6B0070541B /* sAndQlesson3.png */; };
+		43C1053B1BE06D6C0070541B /* sAndQlesson4.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104DE1BE06D6B0070541B /* sAndQlesson4.1.png */; };
+		43C1053C1BE06D6C0070541B /* sAndQlesson4.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104DF1BE06D6B0070541B /* sAndQlesson4.2.png */; };
+		43C1053D1BE06D6C0070541B /* sAndQlesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E01BE06D6B0070541B /* sAndQlesson4.png */; };
+		43C1053E1BE06D6C0070541B /* sAndQlesson5.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E11BE06D6B0070541B /* sAndQlesson5.1.png */; };
+		43C1053F1BE06D6C0070541B /* sAndQlesson5.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E21BE06D6B0070541B /* sAndQlesson5.2.png */; };
+		43C105401BE06D6C0070541B /* sAndQlesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E31BE06D6B0070541B /* sAndQlesson5.png */; };
+		43C105411BE06D6C0070541B /* sAndQlesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E41BE06D6B0070541B /* sAndQlesson6.png */; };
+		43C105421BE06D6C0070541B /* sAndQlesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E51BE06D6B0070541B /* sAndQlesson7.png */; };
+		43C105431BE06D6C0070541B /* sAndQlesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E61BE06D6B0070541B /* sAndQlesson8.png */; };
+		43C105441BE06D6C0070541B /* sAndQlesson9.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E71BE06D6B0070541B /* sAndQlesson9.1.png */; };
+		43C105451BE06D6C0070541B /* sAndQlesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E81BE06D6B0070541B /* sAndQlesson9.png */; };
+		43C105461BE06D6C0070541B /* sAndQlesson10.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104E91BE06D6B0070541B /* sAndQlesson10.1.png */; };
+		43C105471BE06D6C0070541B /* sAndQlesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104EA1BE06D6B0070541B /* sAndQlesson10.png */; };
+		43C105481BE06D6C0070541B /* sAndQlesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104EB1BE06D6B0070541B /* sAndQlesson11.png */; };
+		43C105491BE06D6C0070541B /* sAndQlesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104EC1BE06D6B0070541B /* sAndQlesson12.png */; };
+		43C1054A1BE06D6C0070541B /* sAndQlesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104ED1BE06D6B0070541B /* sAndQlesson13.png */; };
+		43C1054B1BE06D6C0070541B /* sAndQlesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104EE1BE06D6B0070541B /* sAndQlesson14.png */; };
+		43C1054C1BE06D6C0070541B /* sAndQlesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104EF1BE06D6B0070541B /* sAndQlesson15.png */; };
+		43C1054D1BE06D6C0070541B /* sAndQlesson16.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F01BE06D6B0070541B /* sAndQlesson16.png */; };
+		43C1054E1BE06D6C0070541B /* sAndQlesson17.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F11BE06D6B0070541B /* sAndQlesson17.png */; };
+		43C1054F1BE06D6C0070541B /* sAndQlesson18.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F21BE06D6B0070541B /* sAndQlesson18.png */; };
+		43C105501BE06D6C0070541B /* sAndQlesson19.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F31BE06D6B0070541B /* sAndQlesson19.png */; };
+		43C105511BE06D6C0070541B /* sAndQlesson20.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F41BE06D6B0070541B /* sAndQlesson20.png */; };
+		43C105521BE06D6C0070541B /* sAndQlesson21.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F51BE06D6B0070541B /* sAndQlesson21.png */; };
+		43C105531BE06D6C0070541B /* sAndQlesson22.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F61BE06D6B0070541B /* sAndQlesson22.png */; };
+		43C105541BE06D6C0070541B /* sAndQlesson23.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F71BE06D6B0070541B /* sAndQlesson23.png */; };
+		43C105551BE06D6C0070541B /* sAndQlesson24.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F81BE06D6B0070541B /* sAndQlesson24.png */; };
+		43C105561BE06D6C0070541B /* sAndQlessonIntro.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104F91BE06D6B0070541B /* sAndQlessonIntro.png */; };
+		43C105571BE06D6C0070541B /* treeIOTLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104FA1BE06D6B0070541B /* treeIOTLesson1.png */; };
+		43C105581BE06D6C0070541B /* treeIOTLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104FB1BE06D6B0070541B /* treeIOTLesson2.png */; };
+		43C105591BE06D6C0070541B /* treeIOTLesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104FC1BE06D6B0070541B /* treeIOTLesson3.png */; };
+		43C1055A1BE06D6C0070541B /* treeIOTLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104FD1BE06D6B0070541B /* treeIOTLesson4.png */; };
+		43C1055B1BE06D6C0070541B /* treeIOTLesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104FE1BE06D6B0070541B /* treeIOTLesson5.png */; };
+		43C1055C1BE06D6C0070541B /* treeIOTLesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C104FF1BE06D6B0070541B /* treeIOTLesson6.png */; };
+		43C1055D1BE06D6C0070541B /* treeIOTLesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105001BE06D6B0070541B /* treeIOTLesson7.png */; };
+		43C1055E1BE06D6C0070541B /* treeIOTLesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105011BE06D6B0070541B /* treeIOTLesson8.png */; };
+		43C1055F1BE06D6C0070541B /* treeIOTLesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105021BE06D6B0070541B /* treeIOTLesson9.png */; };
+		43C105601BE06D6C0070541B /* treeIOTLesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105031BE06D6B0070541B /* treeIOTLesson10.png */; };
+		43C105611BE06D6C0070541B /* treeIOTLesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105041BE06D6B0070541B /* treeIOTLesson11.png */; };
+		43C105621BE06D6C0070541B /* treeIOTLesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105051BE06D6B0070541B /* treeIOTLesson12.png */; };
+		43C105631BE06D6C0070541B /* treeIOTLesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105061BE06D6B0070541B /* treeIOTLesson13.png */; };
+		43C105641BE06D6C0070541B /* treeIOTLesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105071BE06D6B0070541B /* treeIOTLesson14.png */; };
+		43C105651BE06D6C0070541B /* treeIOTLesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105081BE06D6B0070541B /* treeIOTLesson15.png */; };
+		43C105661BE06D6C0070541B /* treeIOTLesson16.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105091BE06D6B0070541B /* treeIOTLesson16.png */; };
+		43C105671BE06D6C0070541B /* treeLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1050A1BE06D6B0070541B /* treeLesson1.png */; };
+		43C105681BE06D6C0070541B /* treeLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1050B1BE06D6B0070541B /* treeLesson2.png */; };
+		43C105691BE06D6C0070541B /* treeLesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1050C1BE06D6B0070541B /* treeLesson3.png */; };
+		43C1056A1BE06D6C0070541B /* treeLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1050D1BE06D6B0070541B /* treeLesson4.png */; };
+		43C1056B1BE06D6C0070541B /* treeLesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1050E1BE06D6B0070541B /* treeLesson5.png */; };
+		43C1056C1BE06D6C0070541B /* treeLesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1050F1BE06D6B0070541B /* treeLesson6.png */; };
+		43C1056D1BE06D6C0070541B /* treePoOTLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105101BE06D6B0070541B /* treePoOTLesson1.png */; };
+		43C1056E1BE06D6C0070541B /* treePoOTLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105111BE06D6B0070541B /* treePoOTLesson2.png */; };
+		43C1056F1BE06D6C0070541B /* treePoOTLesson3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105121BE06D6B0070541B /* treePoOTLesson3.png */; };
+		43C105701BE06D6C0070541B /* treePoOTLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105131BE06D6B0070541B /* treePoOTLesson4.png */; };
+		43C105711BE06D6C0070541B /* treePoOTLesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105141BE06D6B0070541B /* treePoOTLesson5.png */; };
+		43C105721BE06D6C0070541B /* treePoOTLesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105151BE06D6B0070541B /* treePoOTLesson7.png */; };
+		43C105731BE06D6C0070541B /* treePoOTLesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105161BE06D6B0070541B /* treePoOTLesson8.png */; };
+		43C105741BE06D6C0070541B /* treePoOTLesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105171BE06D6B0070541B /* treePoOTLesson9.png */; };
+		43C105751BE06D6C0070541B /* treePoOTLesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105181BE06D6B0070541B /* treePoOTLesson10.png */; };
+		43C105761BE06D6C0070541B /* treePoOTLesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105191BE06D6B0070541B /* treePoOTLesson11.png */; };
+		43C105771BE06D6C0070541B /* treePoOTLesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1051A1BE06D6B0070541B /* treePoOTLesson12.png */; };
+		43C105781BE06D6C0070541B /* treePoOTLesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1051B1BE06D6B0070541B /* treePoOTLesson13.png */; };
+		43C105791BE06D6C0070541B /* treePoOTLesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1051C1BE06D6B0070541B /* treePoOTLesson14.png */; };
+		43C1057A1BE06D6C0070541B /* treePoOTLesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1051D1BE06D6B0070541B /* treePoOTLesson15.png */; };
+		43C1057B1BE06D6C0070541B /* treePoOTLesson16.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1051E1BE06D6B0070541B /* treePoOTLesson16.png */; };
+		43C1057C1BE06D6C0070541B /* treePoOTLesson17.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1051F1BE06D6B0070541B /* treePoOTLesson17.png */; };
+		43C1057D1BE06D6C0070541B /* treePoOTLesson18.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105201BE06D6B0070541B /* treePoOTLesson18.png */; };
+		43C1057E1BE06D6C0070541B /* treePoOTLesson19.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105211BE06D6B0070541B /* treePoOTLesson19.png */; };
+		43C1057F1BE06D6C0070541B /* treePoOTLesson20.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105221BE06D6B0070541B /* treePoOTLesson20.png */; };
+		43C105801BE06D6C0070541B /* treePoOTLesson21.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105231BE06D6B0070541B /* treePoOTLesson21.png */; };
+		43C105811BE06D6C0070541B /* treePOTLesson1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105241BE06D6B0070541B /* treePOTLesson1.png */; };
+		43C105821BE06D6C0070541B /* treePOTLesson2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105251BE06D6B0070541B /* treePOTLesson2.png */; };
+		43C105831BE06D6C0070541B /* treePOTLesson3.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105261BE06D6B0070541B /* treePOTLesson3.1.png */; };
+		43C105841BE06D6C0070541B /* treePOTLesson4.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105271BE06D6B0070541B /* treePOTLesson4.1.png */; };
+		43C105851BE06D6C0070541B /* treePOTLesson4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105281BE06D6B0070541B /* treePOTLesson4.png */; };
+		43C105861BE06D6C0070541B /* treePOTLesson5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105291BE06D6B0070541B /* treePOTLesson5.png */; };
+		43C105871BE06D6C0070541B /* treePOTLesson6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1052A1BE06D6B0070541B /* treePOTLesson6.png */; };
+		43C105881BE06D6C0070541B /* treePOTLesson7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1052B1BE06D6B0070541B /* treePOTLesson7.png */; };
+		43C105891BE06D6C0070541B /* treePOTLesson8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1052C1BE06D6B0070541B /* treePOTLesson8.png */; };
+		43C1058A1BE06D6C0070541B /* treePOTLesson9.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1052D1BE06D6B0070541B /* treePOTLesson9.png */; };
+		43C1058B1BE06D6C0070541B /* treePOTLesson10.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1052E1BE06D6B0070541B /* treePOTLesson10.png */; };
+		43C1058C1BE06D6C0070541B /* treePOTLesson11.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C1052F1BE06D6C0070541B /* treePOTLesson11.png */; };
+		43C1058D1BE06D6C0070541B /* treePOTLesson12.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105301BE06D6C0070541B /* treePOTLesson12.png */; };
+		43C1058E1BE06D6C0070541B /* treePOTLesson13.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105311BE06D6C0070541B /* treePOTLesson13.png */; };
+		43C1058F1BE06D6C0070541B /* treePOTLesson14.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105321BE06D6C0070541B /* treePOTLesson14.png */; };
+		43C105901BE06D6C0070541B /* treePOTLesson15.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C105331BE06D6C0070541B /* treePOTLesson15.png */; };
 		43C9965E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C9964E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp */; };
 		43C9965F1BA04B7000F37F5F /* TreeDungeonCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */; };
 		43C996601BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C996521BA04B7000F37F5F /* TreeDungeonGameFunctions.cpp */; };
@@ -173,6 +391,25 @@
 		430488601BA3E2740038C2A4 /* CompareScreenRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareScreenRender.cpp; sourceTree = "<group>"; };
 		430488611BA3E2740038C2A4 /* CompareShuffle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareShuffle.cpp; sourceTree = "<group>"; };
 		430488621BA3E2740038C2A4 /* CompareSorts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompareSorts.cpp; sourceTree = "<group>"; };
+		4304AEA91BDF1C7C007E3998 /* MMsorting1a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMsorting1a.gif; sourceTree = "<group>"; };
+		4304AEAA1BDF1C7C007E3998 /* MMsorting1b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMsorting1b.gif; sourceTree = "<group>"; };
+		4304AEAB1BDF1C7C007E3998 /* MMsorting2a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMsorting2a.gif; sourceTree = "<group>"; };
+		4304AEAC1BDF1C7C007E3998 /* MMsorting2b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMsorting2b.gif; sourceTree = "<group>"; };
+		4304AEAD1BDF1C7C007E3998 /* MMsorting3a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMsorting3a.gif; sourceTree = "<group>"; };
+		4304AEAE1BDF1C7C007E3998 /* MMsorting3b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMsorting3b.gif; sourceTree = "<group>"; };
+		4304AEB51BDF4892007E3998 /* MMstructures1a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMstructures1a.gif; sourceTree = "<group>"; };
+		4304AEB61BDF4892007E3998 /* MMstructures1b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMstructures1b.gif; sourceTree = "<group>"; };
+		4304AEB71BDF4892007E3998 /* MMstructures2a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMstructures2a.gif; sourceTree = "<group>"; };
+		4304AEB81BDF4892007E3998 /* MMstructures2b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMstructures2b.gif; sourceTree = "<group>"; };
+		4304AEB91BDF4892007E3998 /* MMstructures3a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMstructures3a.gif; sourceTree = "<group>"; };
+		4304AEBA1BDF4892007E3998 /* MMstructures3b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMstructures3b.gif; sourceTree = "<group>"; };
+		4304AEC11BE04C38007E3998 /* LessonTreesA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LessonTreesA.gif; sourceTree = "<group>"; };
+		4304AEC21BE04C38007E3998 /* LessonTreesB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LessonTreesB.gif; sourceTree = "<group>"; };
+		4304AEC51BE04CEC007E3998 /* LessonAbstractionA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LessonAbstractionA.gif; sourceTree = "<group>"; };
+		4304AEC61BE04CEC007E3998 /* LessonAbstractionB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LessonAbstractionB.gif; sourceTree = "<group>"; };
+		4304AEC71BE04CEC007E3998 /* LessonStacksA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LessonStacksA.gif; sourceTree = "<group>"; };
+		4304AEC81BE04CEC007E3998 /* LessonStacksB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LessonStacksB.gif; sourceTree = "<group>"; };
+		4304AECD1BE053C6007E3998 /* scrollingBackgroundTile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = scrollingBackgroundTile.gif; sourceTree = "<group>"; };
 		430EC3A41B7765470050B76F /* MMbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMbackground.png; sourceTree = "<group>"; };
 		433B39721B6F374400700E95 /* SortingDemonstration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortingDemonstration.cpp; sourceTree = "<group>"; };
 		433B39731B6F374400700E95 /* SortingDemonstration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingDemonstration.h; sourceTree = "<group>"; };
@@ -207,6 +444,207 @@
 		43BE64371BDE0B53001C1E6F /* conwaysIntro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conwaysIntro.png; sourceTree = "<group>"; };
 		43BE64381BDE0B53001C1E6F /* conwaysLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conwaysLesson1.png; sourceTree = "<group>"; };
 		43BE64391BDE0B53001C1E6F /* conwaysLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conwaysLesson2.png; sourceTree = "<group>"; };
+		43BE643E1BDEF382001C1E6F /* MMbackA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMbackA.gif; sourceTree = "<group>"; };
+		43BE643F1BDEF382001C1E6F /* MMbackB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMbackB.gif; sourceTree = "<group>"; };
+		43BE64401BDEF382001C1E6F /* MMpuzzles1a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMpuzzles1a.gif; sourceTree = "<group>"; };
+		43BE64411BDEF382001C1E6F /* MMpuzzles1b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMpuzzles1b.gif; sourceTree = "<group>"; };
+		43BE64421BDEF382001C1E6F /* MMpuzzles2a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMpuzzles2a.gif; sourceTree = "<group>"; };
+		43BE64431BDEF382001C1E6F /* MMpuzzles2b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MMpuzzles2b.gif; sourceTree = "<group>"; };
+		43C104091BE054890070541B /* scrollingBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scrollingBackground.cpp; sourceTree = "<group>"; };
+		43C1040A1BE054890070541B /* scrollingBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollingBackground.h; sourceTree = "<group>"; };
+		43C1040C1BE066940070541B /* stackAttackGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stackAttackGame.cpp; sourceTree = "<group>"; };
+		43C1040D1BE066940070541B /* stackAttackGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stackAttackGame.h; sourceTree = "<group>"; };
+		43C1040F1BE0675E0070541B /* editMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = editMenu.gif; sourceTree = "<group>"; };
+		43C104111BE067CA0070541B /* playMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = playMenu.gif; sourceTree = "<group>"; };
+		43C104131BE067D40070541B /* SA_BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SA_BG.png; sourceTree = "<group>"; };
+		43C104151BE067F60070541B /* stackAttackBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stackAttackBG.png; sourceTree = "<group>"; };
+		43C104171BE068020070541B /* stackBase.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stackBase.gif; sourceTree = "<group>"; };
+		43C104181BE068020070541B /* stackDown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stackDown.gif; sourceTree = "<group>"; };
+		43C104191BE068020070541B /* stackUp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stackUp.gif; sourceTree = "<group>"; };
+		43C1041D1BE06D500070541B /* conwaysLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conwaysLesson.txt; sourceTree = "<group>"; };
+		43C1041E1BE06D500070541B /* masterSortingLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masterSortingLesson.txt; sourceTree = "<group>"; };
+		43C1041F1BE06D500070541B /* masterTreeLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masterTreeLesson.txt; sourceTree = "<group>"; };
+		43C104201BE06D500070541B /* sAndQLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sAndQLesson.txt; sourceTree = "<group>"; };
+		43C104211BE06D500070541B /* sAndQlesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson1.png; sourceTree = "<group>"; };
+		43C104221BE06D500070541B /* sAndQlesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson2.png; sourceTree = "<group>"; };
+		43C104231BE06D500070541B /* sAndQlesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson3.png; sourceTree = "<group>"; };
+		43C104241BE06D500070541B /* sAndQlesson4.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson4.1.png; sourceTree = "<group>"; };
+		43C104251BE06D510070541B /* sAndQlesson4.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson4.2.png; sourceTree = "<group>"; };
+		43C104261BE06D510070541B /* sAndQlesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson4.png; sourceTree = "<group>"; };
+		43C104271BE06D510070541B /* sAndQlesson5.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson5.1.png; sourceTree = "<group>"; };
+		43C104281BE06D510070541B /* sAndQlesson5.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson5.2.png; sourceTree = "<group>"; };
+		43C104291BE06D510070541B /* sAndQlesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson5.png; sourceTree = "<group>"; };
+		43C1042A1BE06D510070541B /* sAndQlesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson6.png; sourceTree = "<group>"; };
+		43C1042B1BE06D510070541B /* sAndQlesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson7.png; sourceTree = "<group>"; };
+		43C1042C1BE06D510070541B /* sAndQlesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson8.png; sourceTree = "<group>"; };
+		43C1042D1BE06D510070541B /* sAndQlesson9.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson9.1.png; sourceTree = "<group>"; };
+		43C1042E1BE06D510070541B /* sAndQlesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson9.png; sourceTree = "<group>"; };
+		43C1042F1BE06D510070541B /* sAndQlesson10.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson10.1.png; sourceTree = "<group>"; };
+		43C104301BE06D510070541B /* sAndQlesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson10.png; sourceTree = "<group>"; };
+		43C104311BE06D510070541B /* sAndQlesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson11.png; sourceTree = "<group>"; };
+		43C104321BE06D510070541B /* sAndQlesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson12.png; sourceTree = "<group>"; };
+		43C104331BE06D510070541B /* sAndQlesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson13.png; sourceTree = "<group>"; };
+		43C104341BE06D510070541B /* sAndQlesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson14.png; sourceTree = "<group>"; };
+		43C104351BE06D510070541B /* sAndQlesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson15.png; sourceTree = "<group>"; };
+		43C104361BE06D510070541B /* sAndQlesson16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson16.png; sourceTree = "<group>"; };
+		43C104371BE06D510070541B /* sAndQlesson17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson17.png; sourceTree = "<group>"; };
+		43C104381BE06D510070541B /* sAndQlesson18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson18.png; sourceTree = "<group>"; };
+		43C104391BE06D510070541B /* sAndQlesson19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson19.png; sourceTree = "<group>"; };
+		43C1043A1BE06D510070541B /* sAndQlesson20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson20.png; sourceTree = "<group>"; };
+		43C1043B1BE06D510070541B /* sAndQlesson21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson21.png; sourceTree = "<group>"; };
+		43C1043C1BE06D510070541B /* sAndQlesson22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson22.png; sourceTree = "<group>"; };
+		43C1043D1BE06D510070541B /* sAndQlesson23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson23.png; sourceTree = "<group>"; };
+		43C1043E1BE06D510070541B /* sAndQlesson24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson24.png; sourceTree = "<group>"; };
+		43C1043F1BE06D510070541B /* sAndQlessonIntro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlessonIntro.png; sourceTree = "<group>"; };
+		43C104401BE06D510070541B /* treeIOTLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson1.png; sourceTree = "<group>"; };
+		43C104411BE06D510070541B /* treeIOTLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson2.png; sourceTree = "<group>"; };
+		43C104421BE06D510070541B /* treeIOTLesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson3.png; sourceTree = "<group>"; };
+		43C104431BE06D510070541B /* treeIOTLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson4.png; sourceTree = "<group>"; };
+		43C104441BE06D510070541B /* treeIOTLesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson5.png; sourceTree = "<group>"; };
+		43C104451BE06D510070541B /* treeIOTLesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson6.png; sourceTree = "<group>"; };
+		43C104461BE06D510070541B /* treeIOTLesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson7.png; sourceTree = "<group>"; };
+		43C104471BE06D510070541B /* treeIOTLesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson8.png; sourceTree = "<group>"; };
+		43C104481BE06D510070541B /* treeIOTLesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson9.png; sourceTree = "<group>"; };
+		43C104491BE06D510070541B /* treeIOTLesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson10.png; sourceTree = "<group>"; };
+		43C1044A1BE06D510070541B /* treeIOTLesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson11.png; sourceTree = "<group>"; };
+		43C1044B1BE06D510070541B /* treeIOTLesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson12.png; sourceTree = "<group>"; };
+		43C1044C1BE06D510070541B /* treeIOTLesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson13.png; sourceTree = "<group>"; };
+		43C1044D1BE06D510070541B /* treeIOTLesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson14.png; sourceTree = "<group>"; };
+		43C1044E1BE06D510070541B /* treeIOTLesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson15.png; sourceTree = "<group>"; };
+		43C1044F1BE06D510070541B /* treeIOTLesson16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson16.png; sourceTree = "<group>"; };
+		43C104501BE06D510070541B /* treeLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson1.png; sourceTree = "<group>"; };
+		43C104511BE06D510070541B /* treeLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson2.png; sourceTree = "<group>"; };
+		43C104521BE06D510070541B /* treeLesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson3.png; sourceTree = "<group>"; };
+		43C104531BE06D510070541B /* treeLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson4.png; sourceTree = "<group>"; };
+		43C104541BE06D510070541B /* treeLesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson5.png; sourceTree = "<group>"; };
+		43C104551BE06D510070541B /* treeLesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson6.png; sourceTree = "<group>"; };
+		43C104561BE06D510070541B /* treePoOTLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson1.png; sourceTree = "<group>"; };
+		43C104571BE06D510070541B /* treePoOTLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson2.png; sourceTree = "<group>"; };
+		43C104581BE06D510070541B /* treePoOTLesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson3.png; sourceTree = "<group>"; };
+		43C104591BE06D510070541B /* treePoOTLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson4.png; sourceTree = "<group>"; };
+		43C1045A1BE06D510070541B /* treePoOTLesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson5.png; sourceTree = "<group>"; };
+		43C1045B1BE06D510070541B /* treePoOTLesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson7.png; sourceTree = "<group>"; };
+		43C1045C1BE06D510070541B /* treePoOTLesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson8.png; sourceTree = "<group>"; };
+		43C1045D1BE06D510070541B /* treePoOTLesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson9.png; sourceTree = "<group>"; };
+		43C1045E1BE06D510070541B /* treePoOTLesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson10.png; sourceTree = "<group>"; };
+		43C1045F1BE06D510070541B /* treePoOTLesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson11.png; sourceTree = "<group>"; };
+		43C104601BE06D510070541B /* treePoOTLesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson12.png; sourceTree = "<group>"; };
+		43C104611BE06D510070541B /* treePoOTLesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson13.png; sourceTree = "<group>"; };
+		43C104621BE06D510070541B /* treePoOTLesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson14.png; sourceTree = "<group>"; };
+		43C104631BE06D510070541B /* treePoOTLesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson15.png; sourceTree = "<group>"; };
+		43C104641BE06D510070541B /* treePoOTLesson16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson16.png; sourceTree = "<group>"; };
+		43C104651BE06D510070541B /* treePoOTLesson17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson17.png; sourceTree = "<group>"; };
+		43C104661BE06D510070541B /* treePoOTLesson18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson18.png; sourceTree = "<group>"; };
+		43C104671BE06D510070541B /* treePoOTLesson19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson19.png; sourceTree = "<group>"; };
+		43C104681BE06D510070541B /* treePoOTLesson20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson20.png; sourceTree = "<group>"; };
+		43C104691BE06D510070541B /* treePoOTLesson21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson21.png; sourceTree = "<group>"; };
+		43C1046B1BE06D510070541B /* treePOTLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson2.png; sourceTree = "<group>"; };
+		43C1046C1BE06D510070541B /* treePOTLesson3.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson3.1.png; sourceTree = "<group>"; };
+		43C1046D1BE06D510070541B /* treePOTLesson4.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson4.1.png; sourceTree = "<group>"; };
+		43C1046E1BE06D510070541B /* treePOTLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson4.png; sourceTree = "<group>"; };
+		43C104701BE06D510070541B /* treePOTLesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson6.png; sourceTree = "<group>"; };
+		43C104711BE06D510070541B /* treePOTLesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson7.png; sourceTree = "<group>"; };
+		43C104721BE06D510070541B /* treePOTLesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson8.png; sourceTree = "<group>"; };
+		43C104731BE06D510070541B /* treePOTLesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson9.png; sourceTree = "<group>"; };
+		43C104741BE06D510070541B /* treePOTLesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson10.png; sourceTree = "<group>"; };
+		43C104751BE06D510070541B /* treePOTLesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson11.png; sourceTree = "<group>"; };
+		43C104761BE06D510070541B /* treePOTLesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson12.png; sourceTree = "<group>"; };
+		43C104771BE06D510070541B /* treePOTLesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson13.png; sourceTree = "<group>"; };
+		43C104781BE06D510070541B /* treePOTLesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson14.png; sourceTree = "<group>"; };
+		43C104791BE06D510070541B /* treePOTLesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson15.png; sourceTree = "<group>"; };
+		43C104D71BE06D6B0070541B /* conwaysLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conwaysLesson.txt; sourceTree = "<group>"; };
+		43C104D81BE06D6B0070541B /* masterSortingLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masterSortingLesson.txt; sourceTree = "<group>"; };
+		43C104D91BE06D6B0070541B /* masterTreeLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masterTreeLesson.txt; sourceTree = "<group>"; };
+		43C104DA1BE06D6B0070541B /* sAndQLesson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sAndQLesson.txt; sourceTree = "<group>"; };
+		43C104DB1BE06D6B0070541B /* sAndQlesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson1.png; sourceTree = "<group>"; };
+		43C104DC1BE06D6B0070541B /* sAndQlesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson2.png; sourceTree = "<group>"; };
+		43C104DD1BE06D6B0070541B /* sAndQlesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson3.png; sourceTree = "<group>"; };
+		43C104DE1BE06D6B0070541B /* sAndQlesson4.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson4.1.png; sourceTree = "<group>"; };
+		43C104DF1BE06D6B0070541B /* sAndQlesson4.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson4.2.png; sourceTree = "<group>"; };
+		43C104E01BE06D6B0070541B /* sAndQlesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson4.png; sourceTree = "<group>"; };
+		43C104E11BE06D6B0070541B /* sAndQlesson5.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson5.1.png; sourceTree = "<group>"; };
+		43C104E21BE06D6B0070541B /* sAndQlesson5.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson5.2.png; sourceTree = "<group>"; };
+		43C104E31BE06D6B0070541B /* sAndQlesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson5.png; sourceTree = "<group>"; };
+		43C104E41BE06D6B0070541B /* sAndQlesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson6.png; sourceTree = "<group>"; };
+		43C104E51BE06D6B0070541B /* sAndQlesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson7.png; sourceTree = "<group>"; };
+		43C104E61BE06D6B0070541B /* sAndQlesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson8.png; sourceTree = "<group>"; };
+		43C104E71BE06D6B0070541B /* sAndQlesson9.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson9.1.png; sourceTree = "<group>"; };
+		43C104E81BE06D6B0070541B /* sAndQlesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson9.png; sourceTree = "<group>"; };
+		43C104E91BE06D6B0070541B /* sAndQlesson10.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson10.1.png; sourceTree = "<group>"; };
+		43C104EA1BE06D6B0070541B /* sAndQlesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson10.png; sourceTree = "<group>"; };
+		43C104EB1BE06D6B0070541B /* sAndQlesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson11.png; sourceTree = "<group>"; };
+		43C104EC1BE06D6B0070541B /* sAndQlesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson12.png; sourceTree = "<group>"; };
+		43C104ED1BE06D6B0070541B /* sAndQlesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson13.png; sourceTree = "<group>"; };
+		43C104EE1BE06D6B0070541B /* sAndQlesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson14.png; sourceTree = "<group>"; };
+		43C104EF1BE06D6B0070541B /* sAndQlesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson15.png; sourceTree = "<group>"; };
+		43C104F01BE06D6B0070541B /* sAndQlesson16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson16.png; sourceTree = "<group>"; };
+		43C104F11BE06D6B0070541B /* sAndQlesson17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson17.png; sourceTree = "<group>"; };
+		43C104F21BE06D6B0070541B /* sAndQlesson18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson18.png; sourceTree = "<group>"; };
+		43C104F31BE06D6B0070541B /* sAndQlesson19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson19.png; sourceTree = "<group>"; };
+		43C104F41BE06D6B0070541B /* sAndQlesson20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson20.png; sourceTree = "<group>"; };
+		43C104F51BE06D6B0070541B /* sAndQlesson21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson21.png; sourceTree = "<group>"; };
+		43C104F61BE06D6B0070541B /* sAndQlesson22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson22.png; sourceTree = "<group>"; };
+		43C104F71BE06D6B0070541B /* sAndQlesson23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson23.png; sourceTree = "<group>"; };
+		43C104F81BE06D6B0070541B /* sAndQlesson24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlesson24.png; sourceTree = "<group>"; };
+		43C104F91BE06D6B0070541B /* sAndQlessonIntro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sAndQlessonIntro.png; sourceTree = "<group>"; };
+		43C104FA1BE06D6B0070541B /* treeIOTLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson1.png; sourceTree = "<group>"; };
+		43C104FB1BE06D6B0070541B /* treeIOTLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson2.png; sourceTree = "<group>"; };
+		43C104FC1BE06D6B0070541B /* treeIOTLesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson3.png; sourceTree = "<group>"; };
+		43C104FD1BE06D6B0070541B /* treeIOTLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson4.png; sourceTree = "<group>"; };
+		43C104FE1BE06D6B0070541B /* treeIOTLesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson5.png; sourceTree = "<group>"; };
+		43C104FF1BE06D6B0070541B /* treeIOTLesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson6.png; sourceTree = "<group>"; };
+		43C105001BE06D6B0070541B /* treeIOTLesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson7.png; sourceTree = "<group>"; };
+		43C105011BE06D6B0070541B /* treeIOTLesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson8.png; sourceTree = "<group>"; };
+		43C105021BE06D6B0070541B /* treeIOTLesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson9.png; sourceTree = "<group>"; };
+		43C105031BE06D6B0070541B /* treeIOTLesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson10.png; sourceTree = "<group>"; };
+		43C105041BE06D6B0070541B /* treeIOTLesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson11.png; sourceTree = "<group>"; };
+		43C105051BE06D6B0070541B /* treeIOTLesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson12.png; sourceTree = "<group>"; };
+		43C105061BE06D6B0070541B /* treeIOTLesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson13.png; sourceTree = "<group>"; };
+		43C105071BE06D6B0070541B /* treeIOTLesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson14.png; sourceTree = "<group>"; };
+		43C105081BE06D6B0070541B /* treeIOTLesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson15.png; sourceTree = "<group>"; };
+		43C105091BE06D6B0070541B /* treeIOTLesson16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeIOTLesson16.png; sourceTree = "<group>"; };
+		43C1050A1BE06D6B0070541B /* treeLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson1.png; sourceTree = "<group>"; };
+		43C1050B1BE06D6B0070541B /* treeLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson2.png; sourceTree = "<group>"; };
+		43C1050C1BE06D6B0070541B /* treeLesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson3.png; sourceTree = "<group>"; };
+		43C1050D1BE06D6B0070541B /* treeLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson4.png; sourceTree = "<group>"; };
+		43C1050E1BE06D6B0070541B /* treeLesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson5.png; sourceTree = "<group>"; };
+		43C1050F1BE06D6B0070541B /* treeLesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treeLesson6.png; sourceTree = "<group>"; };
+		43C105101BE06D6B0070541B /* treePoOTLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson1.png; sourceTree = "<group>"; };
+		43C105111BE06D6B0070541B /* treePoOTLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson2.png; sourceTree = "<group>"; };
+		43C105121BE06D6B0070541B /* treePoOTLesson3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson3.png; sourceTree = "<group>"; };
+		43C105131BE06D6B0070541B /* treePoOTLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson4.png; sourceTree = "<group>"; };
+		43C105141BE06D6B0070541B /* treePoOTLesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson5.png; sourceTree = "<group>"; };
+		43C105151BE06D6B0070541B /* treePoOTLesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson7.png; sourceTree = "<group>"; };
+		43C105161BE06D6B0070541B /* treePoOTLesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson8.png; sourceTree = "<group>"; };
+		43C105171BE06D6B0070541B /* treePoOTLesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson9.png; sourceTree = "<group>"; };
+		43C105181BE06D6B0070541B /* treePoOTLesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson10.png; sourceTree = "<group>"; };
+		43C105191BE06D6B0070541B /* treePoOTLesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson11.png; sourceTree = "<group>"; };
+		43C1051A1BE06D6B0070541B /* treePoOTLesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson12.png; sourceTree = "<group>"; };
+		43C1051B1BE06D6B0070541B /* treePoOTLesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson13.png; sourceTree = "<group>"; };
+		43C1051C1BE06D6B0070541B /* treePoOTLesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson14.png; sourceTree = "<group>"; };
+		43C1051D1BE06D6B0070541B /* treePoOTLesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson15.png; sourceTree = "<group>"; };
+		43C1051E1BE06D6B0070541B /* treePoOTLesson16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson16.png; sourceTree = "<group>"; };
+		43C1051F1BE06D6B0070541B /* treePoOTLesson17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson17.png; sourceTree = "<group>"; };
+		43C105201BE06D6B0070541B /* treePoOTLesson18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson18.png; sourceTree = "<group>"; };
+		43C105211BE06D6B0070541B /* treePoOTLesson19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson19.png; sourceTree = "<group>"; };
+		43C105221BE06D6B0070541B /* treePoOTLesson20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson20.png; sourceTree = "<group>"; };
+		43C105231BE06D6B0070541B /* treePoOTLesson21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePoOTLesson21.png; sourceTree = "<group>"; };
+		43C105241BE06D6B0070541B /* treePOTLesson1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson1.png; sourceTree = "<group>"; };
+		43C105251BE06D6B0070541B /* treePOTLesson2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson2.png; sourceTree = "<group>"; };
+		43C105261BE06D6B0070541B /* treePOTLesson3.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson3.1.png; sourceTree = "<group>"; };
+		43C105271BE06D6B0070541B /* treePOTLesson4.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson4.1.png; sourceTree = "<group>"; };
+		43C105281BE06D6B0070541B /* treePOTLesson4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson4.png; sourceTree = "<group>"; };
+		43C105291BE06D6B0070541B /* treePOTLesson5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson5.png; sourceTree = "<group>"; };
+		43C1052A1BE06D6B0070541B /* treePOTLesson6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson6.png; sourceTree = "<group>"; };
+		43C1052B1BE06D6B0070541B /* treePOTLesson7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson7.png; sourceTree = "<group>"; };
+		43C1052C1BE06D6B0070541B /* treePOTLesson8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson8.png; sourceTree = "<group>"; };
+		43C1052D1BE06D6B0070541B /* treePOTLesson9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson9.png; sourceTree = "<group>"; };
+		43C1052E1BE06D6B0070541B /* treePOTLesson10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson10.png; sourceTree = "<group>"; };
+		43C1052F1BE06D6C0070541B /* treePOTLesson11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson11.png; sourceTree = "<group>"; };
+		43C105301BE06D6C0070541B /* treePOTLesson12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson12.png; sourceTree = "<group>"; };
+		43C105311BE06D6C0070541B /* treePOTLesson13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson13.png; sourceTree = "<group>"; };
+		43C105321BE06D6C0070541B /* treePOTLesson14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson14.png; sourceTree = "<group>"; };
+		43C105331BE06D6C0070541B /* treePOTLesson15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treePOTLesson15.png; sourceTree = "<group>"; };
 		43C9964E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RunBinaryTreeDungeon.cpp; sourceTree = "<group>"; };
 		43C9964F1BA04B7000F37F5F /* RunBinaryTreeDungeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunBinaryTreeDungeon.h; sourceTree = "<group>"; };
 		43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeDungeonCharacter.cpp; sourceTree = "<group>"; };
@@ -430,6 +868,8 @@
 				43C9964F1BA04B7000F37F5F /* RunBinaryTreeDungeon.h */,
 				43FCC73C1B9408C5003682E7 /* SortBuildScreen.cpp */,
 				43FCC73D1B9408C5003682E7 /* SortScreenRender.cpp */,
+				43C104091BE054890070541B /* scrollingBackground.cpp */,
+				43C1040A1BE054890070541B /* scrollingBackground.h */,
 				43FCC73E1B9408C5003682E7 /* SortShuffle.cpp */,
 				43FCC73F1B9408C5003682E7 /* SortSorts.cpp */,
 				43D6C8D01B57389800E147F0 /* SchoolOfImplementationsMenu.cpp */,
@@ -440,6 +880,8 @@
 				433B39731B6F374400700E95 /* SortingDemonstration.h */,
 				438CC98D1A7CBE9F00B41E4F /* SpalshScreen.cpp */,
 				438CC98E1A7CBE9F00B41E4F /* SplashScreen.h */,
+				43C1040C1BE066940070541B /* stackAttackGame.cpp */,
+				43C1040D1BE066940070541B /* stackAttackGame.h */,
 				435B36501BA3FBBF00B7EF68 /* StackAttackMain.cpp */,
 				435B36541BA3FCDD00B7EF68 /* StackAttack.h */,
 				43C996501BA04B7000F37F5F /* TreeDungeonCharacter.cpp */,
@@ -464,34 +906,13 @@
 		438CC9781A7CBE4D00B41E4F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				438CC98B1A7CBE9F00B41E4F /* ResourcePath.hpp */,
-				438CC98C1A7CBE9F00B41E4F /* ResourcePath.mm */,
-				43CD405A1BA3F2870098168E /* BinaryTreeDungeon.txt */,
-				435B36661BA4043800B7EF68 /* ConwaysGameOfLife.txt */,
-				435B36551BA3FE6A00B7EF68 /* StackAttack.txt */,
-				43CD40631BA3F88D0098168E /* SortingDemo.txt */,
-				43C996671BA04BC100F37F5F /* map_corridor0.txt */,
-				43C996681BA04BC100F37F5F /* map_corridor1.txt */,
-				43C996691BA04BC100F37F5F /* map_corridor2.txt */,
-				43C9966A1BA04BC100F37F5F /* map_fork0.txt */,
-				43C9966B1BA04BC100F37F5F /* map_fork1.txt */,
-				43C9966C1BA04BC100F37F5F /* map_fork2.txt */,
-				43C9966D1BA04BC100F37F5F /* map_leaf0.txt */,
-				43CB49A81BD1C2B600AAB788 /* bubbleSortLesson1.txt */,
-				43C9966E1BA04BC100F37F5F /* map_leaf1.txt */,
-				43C9966F1BA04BC100F37F5F /* map_leaf2.txt */,
-				43C996701BA04BC100F37F5F /* map_root.txt */,
 				43CB49AA1BD1C31A00AAB788 /* AlbertonLessonBackground.gif */,
+				43CD405A1BA3F2870098168E /* BinaryTreeDungeon.txt */,
 				43CB49AB1BD1C31A00AAB788 /* bubbleSortHelpOverlay.png */,
 				43CB49AC1BD1C31A00AAB788 /* bubbleSortLesson1.png */,
-				43CB49AD1BD1C31A00AAB788 /* bubbleSortLesson1.txt */,
-				43BE64361BDE0B53001C1E6F /* ConwayLesson */,
-				43BE64371BDE0B53001C1E6F /* conwaysIntro.png */,
-				43BE64381BDE0B53001C1E6F /* conwaysLesson1.png */,
-				43BE64391BDE0B53001C1E6F /* conwaysLesson2.png */,
+				43CB49A81BD1C2B600AAB788 /* bubbleSortLesson1.txt */,
 				43CB49AE1BD1C31A00AAB788 /* bubbleSortLesson2.png */,
 				43CB49AF1BD1C31A00AAB788 /* bubbleSortLesson3.png */,
-				43CB4A0E1BD1C3A300AAB788 /* LessonBackground.png */,
 				43CB49B01BD1C31A00AAB788 /* bubbleSortLesson4.png */,
 				43CB49B11BD1C31A00AAB788 /* bubbleSortLesson5.png */,
 				43CB49B21BD1C31A00AAB788 /* bubbleSortLesson6.png */,
@@ -500,9 +921,19 @@
 				43CB49B51BD1C31A00AAB788 /* bubbleSortLesson9.png */,
 				43CB49B61BD1C31A00AAB788 /* bubbleSortLesson10.png */,
 				43CB49B71BD1C31A00AAB788 /* bubbleSortLessonIntro.png */,
+				43CB4A131BD1D4C800AAB788 /* CloudsLoop.png */,
+				43BE64361BDE0B53001C1E6F /* ConwayLesson */,
 				43CB49B81BD1C31A00AAB788 /* ConwaysBackground.jpg */,
 				43CB49B91BD1C31A00AAB788 /* ConwaysBackground.png */,
+				435B36661BA4043800B7EF68 /* ConwaysGameOfLife.txt */,
+				43BE64371BDE0B53001C1E6F /* conwaysIntro.png */,
+				43C104D71BE06D6B0070541B /* conwaysLesson.txt */,
+				43BE64381BDE0B53001C1E6F /* conwaysLesson1.png */,
+				43BE64391BDE0B53001C1E6F /* conwaysLesson2.png */,
+				43FD15D31B773FFF00590A46 /* DungeonMusic.ogg */,
 				43CB49BA1BD1C31A00AAB788 /* DungeonTiles.png */,
+				43C1040F1BE0675E0070541B /* editMenu.gif */,
+				43CB4A141BD1D4C800AAB788 /* gameOver.jpg */,
 				43CB49BB1BD1C31A00AAB788 /* gol_b_pause.gif */,
 				43CB49BC1BD1C31A00AAB788 /* gol_b_play.gif */,
 				43CB49BD1BD1C31A00AAB788 /* gol_editMode.gif */,
@@ -512,29 +943,11 @@
 				43CB49C11BD1C31A00AAB788 /* hologram.png */,
 				43CB49C21BD1C31A00AAB788 /* hologram2.png */,
 				43CB49C31BD1C31A00AAB788 /* hologram3.png */,
-				43CB49C41BD1C31A00AAB788 /* insertionSortHelpOverlay.png */,
-				43CB49C51BD1C31A00AAB788 /* Lesson.png */,
-				43CB49C61BD1C31A00AAB788 /* LessonCharacters.png */,
-				43CB49C71BD1C31A00AAB788 /* MMbackground.png */,
-				43CB49C81BD1C31A00AAB788 /* selectionSortHelpOverlay.png */,
-				43CB49C91BD1C31A00AAB788 /* sort_b_pause.png */,
-				43CB49CA1BD1C31A00AAB788 /* sort_b_play.png */,
-				43CB49CB1BD1C31A00AAB788 /* sortButton1.png */,
-				43CB49CC1BD1C31A00AAB788 /* sortButton2.png */,
-				43CB49CD1BD1C31A00AAB788 /* sortButton3.png */,
-				43CB49CE1BD1C31A00AAB788 /* sortButton4.png */,
-				43CB49CF1BD1C31A00AAB788 /* sortButton5.png */,
-				43CB49D01BD1C31A00AAB788 /* sortcomp_b_pause.gif */,
-				43CB49D11BD1C31A00AAB788 /* sortcomp_b_play.gif */,
-				43CB49D21BD1C31A00AAB788 /* sortcomp_b_selected.png */,
-				43CB49D31BD1C31A00AAB788 /* sortcomp_icon_reverse.gif */,
-				43CB49D41BD1C31A00AAB788 /* sortcomp_icon_shuffle.gif */,
-				43CB4A331BD1D60200AAB788 /* river_boat.png */,
 				43CB4A311BD1D5EB00AAB788 /* icon.png */,
-				43CB49D51BD1C31A00AAB788 /* sortcomp_icon_sorted.gif */,
+				43CB49C41BD1C31A00AAB788 /* insertionSortHelpOverlay.png */,
 				43CB4A351BD1E86A00AAB788 /* insertionSortIntro.png */,
-				43CB4A6B1BD1EBC900AAB788 /* insertionSortLesson1.txt */,
 				43CB4A371BD1E86A00AAB788 /* insertionSortLesson1.png */,
+				43CB4A6B1BD1EBC900AAB788 /* insertionSortLesson1.txt */,
 				43CB4A381BD1E86A00AAB788 /* insertionSortLesson2.png */,
 				43CB4A391BD1E86A00AAB788 /* insertionSortLesson3.png */,
 				43CB4A3A1BD1E86A00AAB788 /* insertionSortLesson4.png */,
@@ -544,46 +957,59 @@
 				43CB4A3E1BD1E86A00AAB788 /* insertionSortLesson8.png */,
 				43CB4A3F1BD1E86A00AAB788 /* insertionSortLesson9.png */,
 				43CB4A401BD1E86A00AAB788 /* insertionSortLesson10.png */,
-				43D1008B1BDC6B1C003AD9B1 /* MMpuzzlesB.png */,
-				43D1008C1BDC6B1C003AD9B1 /* MMschoolB.png */,
-				43D1008D1BDC6B1C003AD9B1 /* MMsortingB.png */,
+				43CB49C51BD1C31A00AAB788 /* Lesson.png */,
+				4304AEC51BE04CEC007E3998 /* LessonAbstractionA.gif */,
+				4304AEC61BE04CEC007E3998 /* LessonAbstractionB.gif */,
+				43CB4A0E1BD1C3A300AAB788 /* LessonBackground.png */,
+				43CB49C61BD1C31A00AAB788 /* LessonCharacters.png */,
+				4304AEC71BE04CEC007E3998 /* LessonStacksA.gif */,
+				4304AEC81BE04CEC007E3998 /* LessonStacksB.gif */,
+				4304AEC11BE04C38007E3998 /* LessonTreesA.gif */,
+				4304AEC21BE04C38007E3998 /* LessonTreesB.gif */,
+				43C996671BA04BC100F37F5F /* map_corridor0.txt */,
+				43C996681BA04BC100F37F5F /* map_corridor1.txt */,
+				43C996691BA04BC100F37F5F /* map_corridor2.txt */,
+				43C9966A1BA04BC100F37F5F /* map_fork0.txt */,
+				43C9966B1BA04BC100F37F5F /* map_fork1.txt */,
+				43C9966C1BA04BC100F37F5F /* map_fork2.txt */,
+				43C9966D1BA04BC100F37F5F /* map_leaf0.txt */,
+				43C9966E1BA04BC100F37F5F /* map_leaf1.txt */,
+				43C9966F1BA04BC100F37F5F /* map_leaf2.txt */,
+				43C996701BA04BC100F37F5F /* map_root.txt */,
+				43C104D81BE06D6B0070541B /* masterSortingLesson.txt */,
+				43C104D91BE06D6B0070541B /* masterTreeLesson.txt */,
+				43FD15D11B77373400590A46 /* MenuMusic.ogg */,
+				43BE643E1BDEF382001C1E6F /* MMbackA.gif */,
+				43BE643F1BDEF382001C1E6F /* MMbackB.gif */,
+				43CB49C71BD1C31A00AAB788 /* MMbackground.png */,
+				43BE64401BDEF382001C1E6F /* MMpuzzles1a.gif */,
+				43BE64411BDEF382001C1E6F /* MMpuzzles1b.gif */,
+				43BE64421BDEF382001C1E6F /* MMpuzzles2a.gif */,
+				43BE64431BDEF382001C1E6F /* MMpuzzles2b.gif */,
 				43D1009B1BDC6E82003AD9B1 /* MMpuzzlesA.png */,
+				43D1008B1BDC6B1C003AD9B1 /* MMpuzzlesB.png */,
 				43D1009C1BDC6E82003AD9B1 /* MMschoolA.png */,
+				43D1008C1BDC6B1C003AD9B1 /* MMschoolB.png */,
+				4304AEA91BDF1C7C007E3998 /* MMsorting1a.gif */,
+				4304AEAA1BDF1C7C007E3998 /* MMsorting1b.gif */,
+				4304AEAB1BDF1C7C007E3998 /* MMsorting2a.gif */,
+				4304AEAC1BDF1C7C007E3998 /* MMsorting2b.gif */,
+				4304AEAD1BDF1C7C007E3998 /* MMsorting3a.gif */,
+				4304AEAE1BDF1C7C007E3998 /* MMsorting3b.gif */,
 				43D1009D1BDC6E82003AD9B1 /* MMsortingA.png */,
+				43D1008D1BDC6B1C003AD9B1 /* MMsortingB.png */,
+				4304AEB51BDF4892007E3998 /* MMstructures1a.gif */,
+				4304AEB61BDF4892007E3998 /* MMstructures1b.gif */,
+				4304AEB71BDF4892007E3998 /* MMstructures2a.gif */,
+				4304AEB81BDF4892007E3998 /* MMstructures2b.gif */,
+				4304AEB91BDF4892007E3998 /* MMstructures3a.gif */,
+				4304AEBA1BDF4892007E3998 /* MMstructures3b.gif */,
 				43D1009E1BDC6E82003AD9B1 /* MMstructuresA.png */,
 				43D1008E1BDC6B1C003AD9B1 /* MMstructuresB.png */,
-				43CB4A671BD1E99A00AAB788 /* selectionSortLesson1.txt */,
-				43CB4A421BD1E86A00AAB788 /* selectionSortLesson1.png */,
-				43CB4A431BD1E86A00AAB788 /* selectionSortLesson2.png */,
-				43CB4A441BD1E86A00AAB788 /* selectionSortLesson3.png */,
-				43CB4A451BD1E86A00AAB788 /* selectionSortLesson4.png */,
-				43CB4A461BD1E86A00AAB788 /* selectionSortLesson5.png */,
-				43CB4A471BD1E86A00AAB788 /* selectionSortLesson6.png */,
-				43CB4A481BD1E86A00AAB788 /* selectionSortLesson7.png */,
-				43CB4A491BD1E86A00AAB788 /* selectionSortLesson8.png */,
-				43CB4A4A1BD1E86A00AAB788 /* selectionSortLesson9.png */,
-				43CB4A4B1BD1E86A00AAB788 /* selectionSortLesson10.png */,
-				43CB4A4C1BD1E86A00AAB788 /* selectionSortLesson11.png */,
-				43CB4A4D1BD1E86A00AAB788 /* selectionSortLessonIntro.png */,
-				43CB49D61BD1C31A00AAB788 /* SortCompBackground04.png */,
-				43CB49D71BD1C31A00AAB788 /* SORTING.png */,
-				43CB49D81BD1C31A00AAB788 /* SortingBackground.png */,
-				43CB49D91BD1C31A00AAB788 /* stackAttackBack1024.png */,
-				43CB49DA1BD1C31A00AAB788 /* StackAttackBackground.png */,
-				43CB49DB1BD1C31A00AAB788 /* TreeDungeonBackground.png */,
-				43CD40651BA3FAAD0098168E /* AlbertonLessonBackground.gif */,
-				43C996661BA04BC100F37F5F /* DungeonTiles.png */,
-				43CD40581BA3F27F0098168E /* LessonCharacters.png */,
-				43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */,
-				43FCC7461B940D22003682E7 /* SortingBackground.png */,
-				430EC3A41B7765470050B76F /* MMbackground.png */,
-				43AAA3911B7048D900AF799F /* StackAttackBackground.png */,
-				4304884D1BA3E25A0038C2A4 /* sortcomp_b_pause.gif */,
-				43CB49A21BD1C27F00AAB788 /* hologram.png */,
-				43CB49A31BD1C27F00AAB788 /* hologram2.png */,
-				43CB49A41BD1C27F00AAB788 /* hologram3.png */,
-				43CB4A131BD1D4C800AAB788 /* CloudsLoop.png */,
-				43CB4A141BD1D4C800AAB788 /* gameOver.jpg */,
+				43C104111BE067CA0070541B /* playMenu.gif */,
+				438CC98B1A7CBE9F00B41E4F /* ResourcePath.hpp */,
+				438CC98C1A7CBE9F00B41E4F /* ResourcePath.mm */,
+				43CB4A331BD1D60200AAB788 /* river_boat.png */,
 				43CB4A151BD1D4C800AAB788 /* river_icon_boat.png */,
 				43CB4A161BD1D4C800AAB788 /* river_icon_boatLeft.png */,
 				43CB4A171BD1D4C800AAB788 /* river_icon_boatRight.png */,
@@ -596,7 +1022,243 @@
 				43CB4A1E1BD1D4C800AAB788 /* river_truthTable.png */,
 				43CB4A1F1BD1D4C800AAB788 /* river_ttHighlight.png */,
 				43CB4A201BD1D4C800AAB788 /* RiverCrossingTempBack.gif */,
+				43C104131BE067D40070541B /* SA_BG.png */,
+				43C104DA1BE06D6B0070541B /* sAndQLesson.txt */,
+				43C104DB1BE06D6B0070541B /* sAndQlesson1.png */,
+				43C104DC1BE06D6B0070541B /* sAndQlesson2.png */,
+				43C104DD1BE06D6B0070541B /* sAndQlesson3.png */,
+				43C104DE1BE06D6B0070541B /* sAndQlesson4.1.png */,
+				43C104DF1BE06D6B0070541B /* sAndQlesson4.2.png */,
+				43C104E01BE06D6B0070541B /* sAndQlesson4.png */,
+				43C104E11BE06D6B0070541B /* sAndQlesson5.1.png */,
+				43C104E21BE06D6B0070541B /* sAndQlesson5.2.png */,
+				43C104E31BE06D6B0070541B /* sAndQlesson5.png */,
+				43C104E41BE06D6B0070541B /* sAndQlesson6.png */,
+				43C104E51BE06D6B0070541B /* sAndQlesson7.png */,
+				43C104E61BE06D6B0070541B /* sAndQlesson8.png */,
+				43C104E71BE06D6B0070541B /* sAndQlesson9.1.png */,
+				43C104E81BE06D6B0070541B /* sAndQlesson9.png */,
+				43C104E91BE06D6B0070541B /* sAndQlesson10.1.png */,
+				43C104EA1BE06D6B0070541B /* sAndQlesson10.png */,
+				43C104EB1BE06D6B0070541B /* sAndQlesson11.png */,
+				43C104EC1BE06D6B0070541B /* sAndQlesson12.png */,
+				43C104ED1BE06D6B0070541B /* sAndQlesson13.png */,
+				43C104EE1BE06D6B0070541B /* sAndQlesson14.png */,
+				43C104EF1BE06D6B0070541B /* sAndQlesson15.png */,
+				43C104F01BE06D6B0070541B /* sAndQlesson16.png */,
+				43C104F11BE06D6B0070541B /* sAndQlesson17.png */,
+				43C104F21BE06D6B0070541B /* sAndQlesson18.png */,
+				43C104F31BE06D6B0070541B /* sAndQlesson19.png */,
+				43C104F41BE06D6B0070541B /* sAndQlesson20.png */,
+				43C104F51BE06D6B0070541B /* sAndQlesson21.png */,
+				43C104F61BE06D6B0070541B /* sAndQlesson22.png */,
+				43C104F71BE06D6B0070541B /* sAndQlesson23.png */,
+				43C104F81BE06D6B0070541B /* sAndQlesson24.png */,
+				43C104F91BE06D6B0070541B /* sAndQlessonIntro.png */,
+				438CC97D1A7CBE4D00B41E4F /* sansation.ttf */,
+				4304AECD1BE053C6007E3998 /* scrollingBackgroundTile.gif */,
+				43CB49C81BD1C31A00AAB788 /* selectionSortHelpOverlay.png */,
+				43CB4A421BD1E86A00AAB788 /* selectionSortLesson1.png */,
+				43CB4A671BD1E99A00AAB788 /* selectionSortLesson1.txt */,
+				43CB4A431BD1E86A00AAB788 /* selectionSortLesson2.png */,
+				43CB4A441BD1E86A00AAB788 /* selectionSortLesson3.png */,
+				43CB4A451BD1E86A00AAB788 /* selectionSortLesson4.png */,
+				43CB4A461BD1E86A00AAB788 /* selectionSortLesson5.png */,
+				43CB4A471BD1E86A00AAB788 /* selectionSortLesson6.png */,
+				43CB4A481BD1E86A00AAB788 /* selectionSortLesson7.png */,
+				43CB4A491BD1E86A00AAB788 /* selectionSortLesson8.png */,
+				43CB4A4A1BD1E86A00AAB788 /* selectionSortLesson9.png */,
+				43CB4A4B1BD1E86A00AAB788 /* selectionSortLesson10.png */,
+				43CB4A4C1BD1E86A00AAB788 /* selectionSortLesson11.png */,
+				43CB4A4D1BD1E86A00AAB788 /* selectionSortLessonIntro.png */,
+				43CB49C91BD1C31A00AAB788 /* sort_b_pause.png */,
+				43CB49CA1BD1C31A00AAB788 /* sort_b_play.png */,
+				43CB49CB1BD1C31A00AAB788 /* sortButton1.png */,
+				43CB49CC1BD1C31A00AAB788 /* sortButton2.png */,
+				43CB49CD1BD1C31A00AAB788 /* sortButton3.png */,
+				43CB49CE1BD1C31A00AAB788 /* sortButton4.png */,
+				43CB49CF1BD1C31A00AAB788 /* sortButton5.png */,
+				43CB49D01BD1C31A00AAB788 /* sortcomp_b_pause.gif */,
+				43CB49D11BD1C31A00AAB788 /* sortcomp_b_play.gif */,
+				43CB49D21BD1C31A00AAB788 /* sortcomp_b_selected.png */,
+				43CB49D31BD1C31A00AAB788 /* sortcomp_icon_reverse.gif */,
+				43CB49D41BD1C31A00AAB788 /* sortcomp_icon_shuffle.gif */,
+				43CB49D51BD1C31A00AAB788 /* sortcomp_icon_sorted.gif */,
+				43CB49D61BD1C31A00AAB788 /* SortCompBackground04.png */,
+				43CB49D71BD1C31A00AAB788 /* SORTING.png */,
+				43CB49D81BD1C31A00AAB788 /* SortingBackground.png */,
+				43CD40631BA3F88D0098168E /* SortingDemo.txt */,
+				43FD15D41B77400B00590A46 /* StackAttack.ogg */,
+				435B36551BA3FE6A00B7EF68 /* StackAttack.txt */,
+				43CB49D91BD1C31A00AAB788 /* stackAttackBack1024.png */,
+				43CB49DA1BD1C31A00AAB788 /* StackAttackBackground.png */,
+				43C104151BE067F60070541B /* stackAttackBG.png */,
+				43C104171BE068020070541B /* stackBase.gif */,
+				43C104181BE068020070541B /* stackDown.gif */,
+				43C104191BE068020070541B /* stackUp.gif */,
 				43CB4A211BD1D4C800AAB788 /* states.jpg */,
+				43CB49DB1BD1C31A00AAB788 /* TreeDungeonBackground.png */,
+				43C104FA1BE06D6B0070541B /* treeIOTLesson1.png */,
+				43C104FB1BE06D6B0070541B /* treeIOTLesson2.png */,
+				43C104FC1BE06D6B0070541B /* treeIOTLesson3.png */,
+				43C104FD1BE06D6B0070541B /* treeIOTLesson4.png */,
+				43C104FE1BE06D6B0070541B /* treeIOTLesson5.png */,
+				43C104FF1BE06D6B0070541B /* treeIOTLesson6.png */,
+				43C105001BE06D6B0070541B /* treeIOTLesson7.png */,
+				43C105011BE06D6B0070541B /* treeIOTLesson8.png */,
+				43C105021BE06D6B0070541B /* treeIOTLesson9.png */,
+				43C105031BE06D6B0070541B /* treeIOTLesson10.png */,
+				43C105041BE06D6B0070541B /* treeIOTLesson11.png */,
+				43C105051BE06D6B0070541B /* treeIOTLesson12.png */,
+				43C105061BE06D6B0070541B /* treeIOTLesson13.png */,
+				43C105071BE06D6B0070541B /* treeIOTLesson14.png */,
+				43C105081BE06D6B0070541B /* treeIOTLesson15.png */,
+				43C105091BE06D6B0070541B /* treeIOTLesson16.png */,
+				43C1050A1BE06D6B0070541B /* treeLesson1.png */,
+				43C1050B1BE06D6B0070541B /* treeLesson2.png */,
+				43C1050C1BE06D6B0070541B /* treeLesson3.png */,
+				43C1050D1BE06D6B0070541B /* treeLesson4.png */,
+				43C1050E1BE06D6B0070541B /* treeLesson5.png */,
+				43C1050F1BE06D6B0070541B /* treeLesson6.png */,
+				43C105101BE06D6B0070541B /* treePoOTLesson1.png */,
+				43C105111BE06D6B0070541B /* treePoOTLesson2.png */,
+				43CB49AD1BD1C31A00AAB788 /* bubbleSortLesson1.txt */,
+				43C105121BE06D6B0070541B /* treePoOTLesson3.png */,
+				43C1041D1BE06D500070541B /* conwaysLesson.txt */,
+				43C105131BE06D6B0070541B /* treePoOTLesson4.png */,
+				43C1041E1BE06D500070541B /* masterSortingLesson.txt */,
+				43C105141BE06D6B0070541B /* treePoOTLesson5.png */,
+				43C1041F1BE06D500070541B /* masterTreeLesson.txt */,
+				43C105151BE06D6B0070541B /* treePoOTLesson7.png */,
+				43C104201BE06D500070541B /* sAndQLesson.txt */,
+				43C105161BE06D6B0070541B /* treePoOTLesson8.png */,
+				43C104211BE06D500070541B /* sAndQlesson1.png */,
+				43C105171BE06D6B0070541B /* treePoOTLesson9.png */,
+				43C104221BE06D500070541B /* sAndQlesson2.png */,
+				43C105181BE06D6B0070541B /* treePoOTLesson10.png */,
+				43C104231BE06D500070541B /* sAndQlesson3.png */,
+				43C105191BE06D6B0070541B /* treePoOTLesson11.png */,
+				43C104241BE06D500070541B /* sAndQlesson4.1.png */,
+				43C1051A1BE06D6B0070541B /* treePoOTLesson12.png */,
+				43C104251BE06D510070541B /* sAndQlesson4.2.png */,
+				43C1051B1BE06D6B0070541B /* treePoOTLesson13.png */,
+				43C104261BE06D510070541B /* sAndQlesson4.png */,
+				43C1051C1BE06D6B0070541B /* treePoOTLesson14.png */,
+				43C104271BE06D510070541B /* sAndQlesson5.1.png */,
+				43C1051D1BE06D6B0070541B /* treePoOTLesson15.png */,
+				43C104281BE06D510070541B /* sAndQlesson5.2.png */,
+				43C1051E1BE06D6B0070541B /* treePoOTLesson16.png */,
+				43C104291BE06D510070541B /* sAndQlesson5.png */,
+				43C1051F1BE06D6B0070541B /* treePoOTLesson17.png */,
+				43C1042A1BE06D510070541B /* sAndQlesson6.png */,
+				43C105201BE06D6B0070541B /* treePoOTLesson18.png */,
+				43C1042B1BE06D510070541B /* sAndQlesson7.png */,
+				43C105211BE06D6B0070541B /* treePoOTLesson19.png */,
+				43C1042C1BE06D510070541B /* sAndQlesson8.png */,
+				43C105221BE06D6B0070541B /* treePoOTLesson20.png */,
+				43C1042D1BE06D510070541B /* sAndQlesson9.1.png */,
+				43C105231BE06D6B0070541B /* treePoOTLesson21.png */,
+				43C1042E1BE06D510070541B /* sAndQlesson9.png */,
+				43C105241BE06D6B0070541B /* treePOTLesson1.png */,
+				43C105251BE06D6B0070541B /* treePOTLesson2.png */,
+				43C1042F1BE06D510070541B /* sAndQlesson10.1.png */,
+				43C105261BE06D6B0070541B /* treePOTLesson3.1.png */,
+				43C104301BE06D510070541B /* sAndQlesson10.png */,
+				43C105271BE06D6B0070541B /* treePOTLesson4.1.png */,
+				43C104311BE06D510070541B /* sAndQlesson11.png */,
+				43C105281BE06D6B0070541B /* treePOTLesson4.png */,
+				43C104321BE06D510070541B /* sAndQlesson12.png */,
+				43C105291BE06D6B0070541B /* treePOTLesson5.png */,
+				43C104331BE06D510070541B /* sAndQlesson13.png */,
+				43C1052A1BE06D6B0070541B /* treePOTLesson6.png */,
+				43C104341BE06D510070541B /* sAndQlesson14.png */,
+				43C1052B1BE06D6B0070541B /* treePOTLesson7.png */,
+				43C104351BE06D510070541B /* sAndQlesson15.png */,
+				43C1052C1BE06D6B0070541B /* treePOTLesson8.png */,
+				43C104361BE06D510070541B /* sAndQlesson16.png */,
+				43C1052D1BE06D6B0070541B /* treePOTLesson9.png */,
+				43C104371BE06D510070541B /* sAndQlesson17.png */,
+				43C1052E1BE06D6B0070541B /* treePOTLesson10.png */,
+				43C104381BE06D510070541B /* sAndQlesson18.png */,
+				43C1052F1BE06D6C0070541B /* treePOTLesson11.png */,
+				43C104391BE06D510070541B /* sAndQlesson19.png */,
+				43C105301BE06D6C0070541B /* treePOTLesson12.png */,
+				43C1043A1BE06D510070541B /* sAndQlesson20.png */,
+				43C105311BE06D6C0070541B /* treePOTLesson13.png */,
+				43C1043B1BE06D510070541B /* sAndQlesson21.png */,
+				43C105321BE06D6C0070541B /* treePOTLesson14.png */,
+				43C1043C1BE06D510070541B /* sAndQlesson22.png */,
+				43C105331BE06D6C0070541B /* treePOTLesson15.png */,
+				43C1043D1BE06D510070541B /* sAndQlesson23.png */,
+				43C1043E1BE06D510070541B /* sAndQlesson24.png */,
+				43C1043F1BE06D510070541B /* sAndQlessonIntro.png */,
+				43C104401BE06D510070541B /* treeIOTLesson1.png */,
+				43C104411BE06D510070541B /* treeIOTLesson2.png */,
+				43C104421BE06D510070541B /* treeIOTLesson3.png */,
+				43C104431BE06D510070541B /* treeIOTLesson4.png */,
+				43C104441BE06D510070541B /* treeIOTLesson5.png */,
+				43C104451BE06D510070541B /* treeIOTLesson6.png */,
+				43C104461BE06D510070541B /* treeIOTLesson7.png */,
+				43C104471BE06D510070541B /* treeIOTLesson8.png */,
+				43C104481BE06D510070541B /* treeIOTLesson9.png */,
+				43C104491BE06D510070541B /* treeIOTLesson10.png */,
+				43C1044A1BE06D510070541B /* treeIOTLesson11.png */,
+				43C1044B1BE06D510070541B /* treeIOTLesson12.png */,
+				43C1044C1BE06D510070541B /* treeIOTLesson13.png */,
+				43C1044D1BE06D510070541B /* treeIOTLesson14.png */,
+				43C1044E1BE06D510070541B /* treeIOTLesson15.png */,
+				43C1044F1BE06D510070541B /* treeIOTLesson16.png */,
+				43C104501BE06D510070541B /* treeLesson1.png */,
+				43C104511BE06D510070541B /* treeLesson2.png */,
+				43C104521BE06D510070541B /* treeLesson3.png */,
+				43C104531BE06D510070541B /* treeLesson4.png */,
+				43C104541BE06D510070541B /* treeLesson5.png */,
+				43C104551BE06D510070541B /* treeLesson6.png */,
+				43C104561BE06D510070541B /* treePoOTLesson1.png */,
+				43C104571BE06D510070541B /* treePoOTLesson2.png */,
+				43C104581BE06D510070541B /* treePoOTLesson3.png */,
+				43C104591BE06D510070541B /* treePoOTLesson4.png */,
+				43C1045A1BE06D510070541B /* treePoOTLesson5.png */,
+				43C1045B1BE06D510070541B /* treePoOTLesson7.png */,
+				43C1045C1BE06D510070541B /* treePoOTLesson8.png */,
+				43C1045D1BE06D510070541B /* treePoOTLesson9.png */,
+				43C1045E1BE06D510070541B /* treePoOTLesson10.png */,
+				43C1045F1BE06D510070541B /* treePoOTLesson11.png */,
+				43C104601BE06D510070541B /* treePoOTLesson12.png */,
+				43C104611BE06D510070541B /* treePoOTLesson13.png */,
+				43C104621BE06D510070541B /* treePoOTLesson14.png */,
+				43C104631BE06D510070541B /* treePoOTLesson15.png */,
+				43C104641BE06D510070541B /* treePoOTLesson16.png */,
+				43C104651BE06D510070541B /* treePoOTLesson17.png */,
+				43C104661BE06D510070541B /* treePoOTLesson18.png */,
+				43C104671BE06D510070541B /* treePoOTLesson19.png */,
+				43C104681BE06D510070541B /* treePoOTLesson20.png */,
+				43C104691BE06D510070541B /* treePoOTLesson21.png */,
+				43C1046B1BE06D510070541B /* treePOTLesson2.png */,
+				43C1046C1BE06D510070541B /* treePOTLesson3.1.png */,
+				43C1046D1BE06D510070541B /* treePOTLesson4.1.png */,
+				43C1046E1BE06D510070541B /* treePOTLesson4.png */,
+				43C104701BE06D510070541B /* treePOTLesson6.png */,
+				43C104711BE06D510070541B /* treePOTLesson7.png */,
+				43C104721BE06D510070541B /* treePOTLesson8.png */,
+				43C104731BE06D510070541B /* treePOTLesson9.png */,
+				43C104741BE06D510070541B /* treePOTLesson10.png */,
+				43C104751BE06D510070541B /* treePOTLesson11.png */,
+				43C104761BE06D510070541B /* treePOTLesson12.png */,
+				43C104771BE06D510070541B /* treePOTLesson13.png */,
+				43C104781BE06D510070541B /* treePOTLesson14.png */,
+				43C104791BE06D510070541B /* treePOTLesson15.png */,
+				43CD40651BA3FAAD0098168E /* AlbertonLessonBackground.gif */,
+				43C996661BA04BC100F37F5F /* DungeonTiles.png */,
+				43CD40581BA3F27F0098168E /* LessonCharacters.png */,
+				43C996711BA04BC100F37F5F /* TreeDungeonBackground.png */,
+				43FCC7461B940D22003682E7 /* SortingBackground.png */,
+				430EC3A41B7765470050B76F /* MMbackground.png */,
+				43AAA3911B7048D900AF799F /* StackAttackBackground.png */,
+				4304884D1BA3E25A0038C2A4 /* sortcomp_b_pause.gif */,
+				43CB49A21BD1C27F00AAB788 /* hologram.png */,
+				43CB49A31BD1C27F00AAB788 /* hologram2.png */,
+				43CB49A41BD1C27F00AAB788 /* hologram3.png */,
 				4304884E1BA3E25A0038C2A4 /* sortcomp_b_play.gif */,
 				4304884F1BA3E25A0038C2A4 /* sortcomp_b_selected.png */,
 				43CB49921BD1C11C00AAB788 /* sortButton1.png */,
@@ -624,10 +1286,6 @@
 				43CB49891BD1C0BB00AAB788 /* sort_b_play.png */,
 				435B365D1BA4005800B7EF68 /* ConwaysBackground.png */,
 				435B365E1BA4005800B7EF68 /* gol_editMode.gif */,
-				43FD15D41B77400B00590A46 /* StackAttack.ogg */,
-				43FD15D31B773FFF00590A46 /* DungeonMusic.ogg */,
-				43FD15D11B77373400590A46 /* MenuMusic.ogg */,
-				438CC97D1A7CBE4D00B41E4F /* sansation.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -689,44 +1347,137 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C104C91BE06D510070541B /* treePOTLesson3.1.png in Resources */,
+				4304AEB01BDF1C7C007E3998 /* MMsorting1b.gif in Resources */,
 				43CB4A531BD1E86A00AAB788 /* insertionSortLesson4.png in Resources */,
+				43C105901BE06D6C0070541B /* treePOTLesson15.png in Resources */,
+				4304AECE1BE053C6007E3998 /* scrollingBackgroundTile.gif in Resources */,
+				43C1057D1BE06D6C0070541B /* treePoOTLesson18.png in Resources */,
+				43C1056F1BE06D6C0070541B /* treePoOTLesson3.png in Resources */,
 				43CB49FA1BD1C31A00AAB788 /* selectionSortHelpOverlay.png in Resources */,
 				43CB4A241BD1D4C800AAB788 /* river_icon_boat.png in Resources */,
 				43CB4A221BD1D4C800AAB788 /* CloudsLoop.png in Resources */,
 				435B36671BA4043800B7EF68 /* ConwaysGameOfLife.txt in Resources */,
 				43CB49DC1BD1C31A00AAB788 /* AlbertonLessonBackground.gif in Resources */,
+				43BE64491BDEF382001C1E6F /* MMpuzzles2b.gif in Resources */,
 				43CB4A2B1BD1D4C800AAB788 /* river_icon_wolf.png in Resources */,
 				43CB4A641BD1E86A00AAB788 /* selectionSortLesson10.png in Resources */,
+				4304AEB41BDF1C7C007E3998 /* MMsorting3b.gif in Resources */,
 				43AAA3921B7048D900AF799F /* StackAttackBackground.png in Resources */,
 				430488561BA3E25A0038C2A4 /* sortcomp_b_play.gif in Resources */,
+				4304AEC41BE04C38007E3998 /* LessonTreesB.gif in Resources */,
 				43CB4A5F1BD1E86A00AAB788 /* selectionSortLesson5.png in Resources */,
+				4304AEBD1BDF4892007E3998 /* MMstructures2a.gif in Resources */,
+				43C105861BE06D6C0070541B /* treePOTLesson5.png in Resources */,
 				43CB49E91BD1C31A00AAB788 /* bubbleSortLessonIntro.png in Resources */,
 				43CB4A291BD1D4C800AAB788 /* river_icon_goat.png in Resources */,
 				43CB4A591BD1E86A00AAB788 /* insertionSortLesson10.png in Resources */,
+				43C104911BE06D510070541B /* sAndQlesson14.png in Resources */,
 				43FCC7471B940D22003682E7 /* SortingBackground.png in Resources */,
+				43C105881BE06D6C0070541B /* treePOTLesson7.png in Resources */,
+				43C104C61BE06D510070541B /* treePoOTLesson21.png in Resources */,
 				43CB4A081BD1C31A00AAB788 /* SortCompBackground04.png in Resources */,
 				43D100901BDC6B1C003AD9B1 /* MMschoolB.png in Resources */,
+				43C1055C1BE06D6C0070541B /* treeIOTLesson6.png in Resources */,
+				43C105471BE06D6C0070541B /* sAndQlesson10.png in Resources */,
+				43C1047A1BE06D510070541B /* conwaysLesson.txt in Resources */,
+				43C104AD1BE06D510070541B /* treeLesson1.png in Resources */,
+				43C104B91BE06D510070541B /* treePoOTLesson8.png in Resources */,
 				43CB4A571BD1E86A00AAB788 /* insertionSortLesson8.png in Resources */,
+				43C105631BE06D6C0070541B /* treeIOTLesson13.png in Resources */,
 				43CB4A611BD1E86A00AAB788 /* selectionSortLesson7.png in Resources */,
+				43C1053E1BE06D6C0070541B /* sAndQlesson5.1.png in Resources */,
 				43CB49E51BD1C31A00AAB788 /* bubbleSortLesson7.png in Resources */,
 				43D100921BDC6B1C003AD9B1 /* MMstructuresB.png in Resources */,
+				43C105401BE06D6C0070541B /* sAndQlesson5.png in Resources */,
+				43C105441BE06D6C0070541B /* sAndQlesson9.1.png in Resources */,
+				43C105681BE06D6C0070541B /* treeLesson2.png in Resources */,
+				43C1049B1BE06D510070541B /* sAndQlesson24.png in Resources */,
+				43C104B11BE06D510070541B /* treeLesson5.png in Resources */,
+				43C104971BE06D510070541B /* sAndQlesson20.png in Resources */,
+				43C105501BE06D6C0070541B /* sAndQlesson19.png in Resources */,
+				43C104A01BE06D510070541B /* treeIOTLesson4.png in Resources */,
+				43C1055B1BE06D6C0070541B /* treeIOTLesson5.png in Resources */,
+				43C1047F1BE06D510070541B /* sAndQlesson2.png in Resources */,
+				43C1053D1BE06D6C0070541B /* sAndQlesson4.png in Resources */,
+				43C1056D1BE06D6C0070541B /* treePoOTLesson1.png in Resources */,
+				43C1053F1BE06D6C0070541B /* sAndQlesson5.2.png in Resources */,
 				43C996771BA04BC100F37F5F /* map_fork1.txt in Resources */,
 				43CB4A511BD1E86A00AAB788 /* insertionSortLesson2.png in Resources */,
+				43C104CB1BE06D510070541B /* treePOTLesson4.png in Resources */,
 				43CB4A2C1BD1D4C800AAB788 /* river_icon_wolfR.png in Resources */,
+				43C104A91BE06D510070541B /* treeIOTLesson13.png in Resources */,
+				4304AEC91BE04CEC007E3998 /* LessonAbstractionA.gif in Resources */,
+				43C1048A1BE06D510070541B /* sAndQlesson9.1.png in Resources */,
+				43C104BF1BE06D510070541B /* treePoOTLesson14.png in Resources */,
+				43C105671BE06D6C0070541B /* treeLesson1.png in Resources */,
+				43C1048D1BE06D510070541B /* sAndQlesson10.png in Resources */,
 				43CB4A271BD1D4C800AAB788 /* river_icon_carrot.png in Resources */,
+				43C1049A1BE06D510070541B /* sAndQlesson23.png in Resources */,
 				43CB4A041BD1C31A00AAB788 /* sortcomp_b_selected.png in Resources */,
+				43C104B71BE06D510070541B /* treePoOTLesson5.png in Resources */,
+				43C104B31BE06D510070541B /* treePoOTLesson1.png in Resources */,
 				43CB49FC1BD1C31A00AAB788 /* sort_b_play.png in Resources */,
+				43C104B51BE06D510070541B /* treePoOTLesson3.png in Resources */,
+				43C105741BE06D6C0070541B /* treePoOTLesson9.png in Resources */,
+				43C1058A1BE06D6C0070541B /* treePOTLesson9.png in Resources */,
+				43C1056E1BE06D6C0070541B /* treePoOTLesson2.png in Resources */,
+				43C105381BE06D6C0070541B /* sAndQlesson1.png in Resources */,
+				43C1048C1BE06D510070541B /* sAndQlesson10.1.png in Resources */,
 				43CB4A681BD1E99A00AAB788 /* selectionSortLesson1.txt in Resources */,
 				43CB49E61BD1C31A00AAB788 /* bubbleSortLesson8.png in Resources */,
+				43C105451BE06D6C0070541B /* sAndQlesson9.png in Resources */,
+				43C104C31BE06D510070541B /* treePoOTLesson18.png in Resources */,
+				43C1047C1BE06D510070541B /* masterTreeLesson.txt in Resources */,
+				43C105591BE06D6C0070541B /* treeIOTLesson3.png in Resources */,
+				43C104BD1BE06D510070541B /* treePoOTLesson12.png in Resources */,
+				43C104B01BE06D510070541B /* treeLesson4.png in Resources */,
+				43C105711BE06D6C0070541B /* treePoOTLesson5.png in Resources */,
+				43C105851BE06D6C0070541B /* treePOTLesson4.png in Resources */,
+				43C105701BE06D6C0070541B /* treePoOTLesson4.png in Resources */,
 				43CB4A021BD1C31A00AAB788 /* sortcomp_b_pause.gif in Resources */,
+				43C104961BE06D510070541B /* sAndQlesson19.png in Resources */,
+				43C104CF1BE06D510070541B /* treePOTLesson8.png in Resources */,
+				43C1049F1BE06D510070541B /* treeIOTLesson3.png in Resources */,
+				43C105761BE06D6C0070541B /* treePoOTLesson11.png in Resources */,
+				43BE64481BDEF382001C1E6F /* MMpuzzles2a.gif in Resources */,
 				43CB49A91BD1C2B600AAB788 /* bubbleSortLesson1.txt in Resources */,
+				43C104841BE06D510070541B /* sAndQlesson5.1.png in Resources */,
 				43BE643D1BDE0B53001C1E6F /* conwaysLesson2.png in Resources */,
+				43C105371BE06D6C0070541B /* sAndQLesson.txt in Resources */,
+				43C1057C1BE06D6C0070541B /* treePoOTLesson17.png in Resources */,
+				43C1041C1BE068020070541B /* stackUp.gif in Resources */,
 				43CB4A541BD1E86A00AAB788 /* insertionSortLesson5.png in Resources */,
 				43BE643A1BDE0B53001C1E6F /* ConwayLesson in Resources */,
+				43C105661BE06D6C0070541B /* treeIOTLesson16.png in Resources */,
+				4304AEBB1BDF4892007E3998 /* MMstructures1a.gif in Resources */,
+				43C105791BE06D6C0070541B /* treePoOTLesson14.png in Resources */,
+				43C105871BE06D6C0070541B /* treePOTLesson6.png in Resources */,
 				43CB49F71BD1C31A00AAB788 /* Lesson.png in Resources */,
+				43C1058C1BE06D6C0070541B /* treePOTLesson11.png in Resources */,
+				43C1056C1BE06D6C0070541B /* treeLesson6.png in Resources */,
+				43C104D61BE06D510070541B /* treePOTLesson15.png in Resources */,
+				43C105561BE06D6C0070541B /* sAndQlessonIntro.png in Resources */,
+				43C104AB1BE06D510070541B /* treeIOTLesson15.png in Resources */,
+				43C105691BE06D6C0070541B /* treeLesson3.png in Resources */,
+				43C104D51BE06D510070541B /* treePOTLesson14.png in Resources */,
+				43C1057F1BE06D6C0070541B /* treePoOTLesson20.png in Resources */,
+				43C104941BE06D510070541B /* sAndQlesson17.png in Resources */,
 				43C996751BA04BC100F37F5F /* map_corridor2.txt in Resources */,
+				43C1058F1BE06D6C0070541B /* treePOTLesson14.png in Resources */,
+				43C104BB1BE06D510070541B /* treePoOTLesson10.png in Resources */,
+				43C105801BE06D6C0070541B /* treePoOTLesson21.png in Resources */,
+				43C104CE1BE06D510070541B /* treePOTLesson7.png in Resources */,
+				43C104121BE067CA0070541B /* playMenu.gif in Resources */,
+				43C1048F1BE06D510070541B /* sAndQlesson12.png in Resources */,
+				43C104D01BE06D510070541B /* treePOTLesson9.png in Resources */,
+				4304AEBF1BDF4892007E3998 /* MMstructures3a.gif in Resources */,
+				43C1054A1BE06D6C0070541B /* sAndQlesson13.png in Resources */,
+				4304AEB21BDF1C7C007E3998 /* MMsorting2b.gif in Resources */,
 				43CD40591BA3F2800098168E /* LessonCharacters.png in Resources */,
 				43CB49A11BD1C25100AAB788 /* insertionSortHelpOverlay.png in Resources */,
+				43C105351BE06D6C0070541B /* masterSortingLesson.txt in Resources */,
+				43C104981BE06D510070541B /* sAndQlesson21.png in Resources */,
 				43CB4A5C1BD1E86A00AAB788 /* selectionSortLesson2.png in Resources */,
 				43CB49E01BD1C31A00AAB788 /* bubbleSortLesson2.png in Resources */,
 				43D100A11BDC6E82003AD9B1 /* MMsortingA.png in Resources */,
@@ -735,78 +1486,201 @@
 				43C9967D1BA04BC100F37F5F /* TreeDungeonBackground.png in Resources */,
 				43CB49991BD1C11C00AAB788 /* sortButton3.png in Resources */,
 				43D100A21BDC6E82003AD9B1 /* MMstructuresA.png in Resources */,
+				43C104C21BE06D510070541B /* treePoOTLesson17.png in Resources */,
+				43C1053B1BE06D6C0070541B /* sAndQlesson4.1.png in Resources */,
+				43C104A31BE06D510070541B /* treeIOTLesson7.png in Resources */,
+				43C1055A1BE06D6C0070541B /* treeIOTLesson4.png in Resources */,
 				43CB4A0B1BD1C31A00AAB788 /* stackAttackBack1024.png in Resources */,
 				43CD40641BA3F88D0098168E /* SortingDemo.txt in Resources */,
 				435B36561BA3FE6A00B7EF68 /* StackAttack.txt in Resources */,
 				43CB4A281BD1D4C800AAB788 /* river_icon_carrotR.png in Resources */,
 				43CB4A071BD1C31A00AAB788 /* sortcomp_icon_sorted.gif in Resources */,
+				43C105891BE06D6C0070541B /* treePOTLesson8.png in Resources */,
+				43C104871BE06D510070541B /* sAndQlesson6.png in Resources */,
+				43C104C41BE06D510070541B /* treePoOTLesson19.png in Resources */,
 				43CB4A561BD1E86A00AAB788 /* insertionSortLesson7.png in Resources */,
+				43C105431BE06D6C0070541B /* sAndQlesson8.png in Resources */,
 				43CB4A2F1BD1D4C800AAB788 /* RiverCrossingTempBack.gif in Resources */,
+				43C1049D1BE06D510070541B /* treeIOTLesson1.png in Resources */,
+				4304AEBE1BDF4892007E3998 /* MMstructures2b.gif in Resources */,
 				43C9967B1BA04BC100F37F5F /* map_leaf2.txt in Resources */,
+				43C1054E1BE06D6C0070541B /* sAndQlesson17.png in Resources */,
 				43CB4A661BD1E86A00AAB788 /* selectionSortLessonIntro.png in Resources */,
+				43C105831BE06D6C0070541B /* treePOTLesson3.1.png in Resources */,
+				4304AECC1BE04CEC007E3998 /* LessonStacksB.gif in Resources */,
+				4304AECA1BE04CEC007E3998 /* LessonAbstractionB.gif in Resources */,
+				43C104D21BE06D510070541B /* treePOTLesson11.png in Resources */,
 				43CB4A581BD1E86A00AAB788 /* insertionSortLesson9.png in Resources */,
+				43C104A71BE06D510070541B /* treeIOTLesson11.png in Resources */,
 				43CB4A321BD1D5EB00AAB788 /* icon.png in Resources */,
+				43C105651BE06D6C0070541B /* treeIOTLesson15.png in Resources */,
+				43C105341BE06D6C0070541B /* conwaysLesson.txt in Resources */,
+				43C1053A1BE06D6C0070541B /* sAndQlesson3.png in Resources */,
+				43C104C51BE06D510070541B /* treePoOTLesson20.png in Resources */,
+				43C1056B1BE06D6C0070541B /* treeLesson5.png in Resources */,
+				4304AEBC1BDF4892007E3998 /* MMstructures1b.gif in Resources */,
 				43D100911BDC6B1C003AD9B1 /* MMsortingB.png in Resources */,
 				43CB499A1BD1C11C00AAB788 /* sortButton4.png in Resources */,
 				438CC97E1A7CBE4D00B41E4F /* sansation.ttf in Resources */,
 				43CB499B1BD1C11C00AAB788 /* sortButton5.png in Resources */,
+				43C1055E1BE06D6C0070541B /* treeIOTLesson8.png in Resources */,
+				4304AEC31BE04C38007E3998 /* LessonTreesA.gif in Resources */,
 				43C996721BA04BC100F37F5F /* DungeonTiles.png in Resources */,
 				43C996741BA04BC100F37F5F /* map_corridor1.txt in Resources */,
+				43C104951BE06D510070541B /* sAndQlesson18.png in Resources */,
+				43C104821BE06D510070541B /* sAndQlesson4.2.png in Resources */,
 				43CB49F31BD1C31A00AAB788 /* hologram.png in Resources */,
 				43CB49EF1BD1C31A00AAB788 /* gol_editMode.gif in Resources */,
 				435B365F1BA4005800B7EF68 /* gol_playMode.gif in Resources */,
+				43C105531BE06D6C0070541B /* sAndQlesson22.png in Resources */,
+				43C1057A1BE06D6C0070541B /* treePoOTLesson15.png in Resources */,
 				43CB4A5D1BD1E86A00AAB788 /* selectionSortLesson3.png in Resources */,
 				43CB49981BD1C11C00AAB788 /* sortButton2.png in Resources */,
+				43C105811BE06D6C0070541B /* treePOTLesson1.png in Resources */,
+				43C104C01BE06D510070541B /* treePoOTLesson15.png in Resources */,
 				43C996791BA04BC100F37F5F /* map_leaf0.txt in Resources */,
+				43C104AF1BE06D510070541B /* treeLesson3.png in Resources */,
 				43C996781BA04BC100F37F5F /* map_fork2.txt in Resources */,
 				435B36631BA4005800B7EF68 /* ConwaysBackground.png in Resources */,
+				43C105361BE06D6C0070541B /* masterTreeLesson.txt in Resources */,
+				43C104BE1BE06D510070541B /* treePoOTLesson13.png in Resources */,
+				43C104AC1BE06D510070541B /* treeIOTLesson16.png in Resources */,
+				43C104B41BE06D510070541B /* treePoOTLesson2.png in Resources */,
 				43CB49E11BD1C31A00AAB788 /* bubbleSortLesson3.png in Resources */,
+				43C104A41BE06D510070541B /* treeIOTLesson8.png in Resources */,
+				43C1054C1BE06D6C0070541B /* sAndQlesson15.png in Resources */,
+				43C104B81BE06D510070541B /* treePoOTLesson7.png in Resources */,
+				43C105421BE06D6C0070541B /* sAndQlesson7.png in Resources */,
+				43C104D31BE06D510070541B /* treePOTLesson12.png in Resources */,
+				43C104D41BE06D510070541B /* treePOTLesson13.png in Resources */,
 				43BE643B1BDE0B53001C1E6F /* conwaysIntro.png in Resources */,
+				43C105491BE06D6C0070541B /* sAndQlesson12.png in Resources */,
+				43C104931BE06D510070541B /* sAndQlesson16.png in Resources */,
+				4304AECB1BE04CEC007E3998 /* LessonStacksA.gif in Resources */,
+				43C1047D1BE06D510070541B /* sAndQLesson.txt in Resources */,
 				43D1008F1BDC6B1C003AD9B1 /* MMpuzzlesB.png in Resources */,
+				43C104831BE06D510070541B /* sAndQlesson4.png in Resources */,
 				43CB4A5B1BD1E86A00AAB788 /* selectionSortLesson1.png in Resources */,
+				43C105621BE06D6C0070541B /* treeIOTLesson12.png in Resources */,
+				43C105551BE06D6C0070541B /* sAndQlesson24.png in Resources */,
+				43C1055F1BE06D6C0070541B /* treeIOTLesson9.png in Resources */,
+				43C1048B1BE06D510070541B /* sAndQlesson9.png in Resources */,
+				43C104CD1BE06D510070541B /* treePOTLesson6.png in Resources */,
+				43BE64471BDEF382001C1E6F /* MMpuzzles1b.gif in Resources */,
+				43C104C81BE06D510070541B /* treePOTLesson2.png in Resources */,
+				43C105821BE06D6C0070541B /* treePOTLesson2.png in Resources */,
 				43CB49DE1BD1C31A00AAB788 /* bubbleSortLesson1.png in Resources */,
 				43CB4A2E1BD1D4C800AAB788 /* river_ttHighlight.png in Resources */,
+				43C1058E1BE06D6C0070541B /* treePOTLesson13.png in Resources */,
 				43CB4A231BD1D4C800AAB788 /* gameOver.jpg in Resources */,
 				43CB4A631BD1E86A00AAB788 /* selectionSortLesson9.png in Resources */,
+				43C105521BE06D6C0070541B /* sAndQlesson21.png in Resources */,
+				43C104A21BE06D510070541B /* treeIOTLesson6.png in Resources */,
+				43C105391BE06D6C0070541B /* sAndQlesson2.png in Resources */,
+				43C105731BE06D6C0070541B /* treePoOTLesson8.png in Resources */,
+				43C104BA1BE06D510070541B /* treePoOTLesson9.png in Resources */,
+				43C105581BE06D6C0070541B /* treeIOTLesson2.png in Resources */,
 				43CB498A1BD1C0BB00AAB788 /* sort_b_pause.png in Resources */,
+				43C104901BE06D510070541B /* sAndQlesson13.png in Resources */,
+				43C104A11BE06D510070541B /* treeIOTLesson5.png in Resources */,
+				43C1054F1BE06D6C0070541B /* sAndQlesson18.png in Resources */,
 				43CB4A341BD1D60200AAB788 /* river_boat.png in Resources */,
+				43C105841BE06D6C0070541B /* treePOTLesson4.1.png in Resources */,
 				43BE643C1BDE0B53001C1E6F /* conwaysLesson1.png in Resources */,
 				43C996761BA04BC100F37F5F /* map_fork0.txt in Resources */,
 				43CB49E31BD1C31A00AAB788 /* bubbleSortLesson5.png in Resources */,
+				43BE64461BDEF382001C1E6F /* MMpuzzles1a.gif in Resources */,
 				43CB49F51BD1C31A00AAB788 /* hologram3.png in Resources */,
+				43C105511BE06D6C0070541B /* sAndQlesson20.png in Resources */,
+				43C1049E1BE06D510070541B /* treeIOTLesson2.png in Resources */,
 				43D1009F1BDC6E82003AD9B1 /* MMpuzzlesA.png in Resources */,
 				43CB4A651BD1E86A00AAB788 /* selectionSortLesson11.png in Resources */,
 				43C996731BA04BC100F37F5F /* map_corridor0.txt in Resources */,
 				43CB4A261BD1D4C800AAB788 /* river_icon_boatRight.png in Resources */,
 				43CB4A551BD1E86A00AAB788 /* insertionSortLesson6.png in Resources */,
+				43C104CA1BE06D510070541B /* treePOTLesson4.1.png in Resources */,
+				43C104D11BE06D510070541B /* treePOTLesson10.png in Resources */,
 				43CB4A601BD1E86A00AAB788 /* selectionSortLesson6.png in Resources */,
+				43C1049C1BE06D510070541B /* sAndQlessonIntro.png in Resources */,
 				430488581BA3E25A0038C2A4 /* sortcomp_icon_reverse.gif in Resources */,
+				43C1057E1BE06D6C0070541B /* treePoOTLesson19.png in Resources */,
+				43BE64441BDEF382001C1E6F /* MMbackA.gif in Resources */,
+				4304AEC01BDF4892007E3998 /* MMstructures3b.gif in Resources */,
 				430488591BA3E25A0038C2A4 /* sortcomp_icon_shuffle.gif in Resources */,
 				43C9967A1BA04BC100F37F5F /* map_leaf1.txt in Resources */,
+				43C105781BE06D6C0070541B /* treePoOTLesson13.png in Resources */,
 				43CB4A6C1BD1EBC900AAB788 /* insertionSortLesson1.txt in Resources */,
+				43C105721BE06D6C0070541B /* treePoOTLesson7.png in Resources */,
+				43C105641BE06D6C0070541B /* treeIOTLesson14.png in Resources */,
+				43C105411BE06D6C0070541B /* sAndQlesson6.png in Resources */,
+				43C104851BE06D510070541B /* sAndQlesson5.2.png in Resources */,
 				43CB49E21BD1C31A00AAB788 /* bubbleSortLesson4.png in Resources */,
+				43C1055D1BE06D6C0070541B /* treeIOTLesson7.png in Resources */,
+				43C104891BE06D510070541B /* sAndQlesson8.png in Resources */,
+				43C104AE1BE06D510070541B /* treeLesson2.png in Resources */,
+				43C104161BE067F60070541B /* stackAttackBG.png in Resources */,
+				43C104A51BE06D510070541B /* treeIOTLesson9.png in Resources */,
+				43C105461BE06D6C0070541B /* sAndQlesson10.1.png in Resources */,
+				43C1053C1BE06D6C0070541B /* sAndQlesson4.2.png in Resources */,
+				43C1048E1BE06D510070541B /* sAndQlesson11.png in Resources */,
 				43CB49DD1BD1C31A00AAB788 /* bubbleSortHelpOverlay.png in Resources */,
+				4304AEB11BDF1C7C007E3998 /* MMsorting2a.gif in Resources */,
+				43C1047B1BE06D510070541B /* masterSortingLesson.txt in Resources */,
 				43CB4A2D1BD1D4C800AAB788 /* river_truthTable.png in Resources */,
 				43D100A01BDC6E82003AD9B1 /* MMschoolA.png in Resources */,
 				43CB4A4E1BD1E86A00AAB788 /* insertionSortIntro.png in Resources */,
 				43C9967C1BA04BC100F37F5F /* map_root.txt in Resources */,
+				43C104C11BE06D510070541B /* treePoOTLesson16.png in Resources */,
+				43C105771BE06D6C0070541B /* treePoOTLesson12.png in Resources */,
+				43C1054B1BE06D6C0070541B /* sAndQlesson14.png in Resources */,
+				43C104BC1BE06D510070541B /* treePoOTLesson11.png in Resources */,
 				43CB4A621BD1E86A00AAB788 /* selectionSortLesson8.png in Resources */,
 				43CB4A301BD1D4C800AAB788 /* states.jpg in Resources */,
+				43C1054D1BE06D6C0070541B /* sAndQlesson16.png in Resources */,
 				43CB49F91BD1C31A00AAB788 /* MMbackground.png in Resources */,
+				43C105611BE06D6C0070541B /* treeIOTLesson11.png in Resources */,
 				43CB4A521BD1E86A00AAB788 /* insertionSortLesson3.png in Resources */,
+				43C104B21BE06D510070541B /* treeLesson6.png in Resources */,
 				43CB4A5E1BD1E86A00AAB788 /* selectionSortLesson4.png in Resources */,
+				43C1057B1BE06D6C0070541B /* treePoOTLesson16.png in Resources */,
 				43CB49EE1BD1C31A00AAB788 /* gol_b_play.gif in Resources */,
+				43BE64451BDEF382001C1E6F /* MMbackB.gif in Resources */,
 				43CB49FD1BD1C31A00AAB788 /* sortButton1.png in Resources */,
+				4304AEB31BDF1C7C007E3998 /* MMsorting3a.gif in Resources */,
+				43C1058B1BE06D6C0070541B /* treePOTLesson10.png in Resources */,
+				43C1058D1BE06D6C0070541B /* treePOTLesson12.png in Resources */,
+				43C105541BE06D6C0070541B /* sAndQlesson23.png in Resources */,
+				43C1056A1BE06D6C0070541B /* treeLesson4.png in Resources */,
+				43C1041A1BE068020070541B /* stackBase.gif in Resources */,
+				43C104991BE06D510070541B /* sAndQlesson22.png in Resources */,
 				43CB4A2A1BD1D4C800AAB788 /* river_icon_goatR.png in Resources */,
 				43CB49F41BD1C31A00AAB788 /* hologram2.png in Resources */,
 				43CB49F21BD1C31A00AAB788 /* helpOverlay.png in Resources */,
+				43C104141BE067D40070541B /* SA_BG.png in Resources */,
 				43CB4A0F1BD1C3A300AAB788 /* LessonBackground.png in Resources */,
+				43C104A81BE06D510070541B /* treeIOTLesson12.png in Resources */,
 				43CB49E41BD1C31A00AAB788 /* bubbleSortLesson6.png in Resources */,
+				43C104A61BE06D510070541B /* treeIOTLesson10.png in Resources */,
+				43C1041B1BE068020070541B /* stackDown.gif in Resources */,
+				43C104801BE06D510070541B /* sAndQlesson3.png in Resources */,
+				43C104811BE06D510070541B /* sAndQlesson4.1.png in Resources */,
+				43C105751BE06D6C0070541B /* treePoOTLesson10.png in Resources */,
+				43C104921BE06D510070541B /* sAndQlesson15.png in Resources */,
 				43CB49E71BD1C31A00AAB788 /* bubbleSortLesson9.png in Resources */,
+				43C104861BE06D510070541B /* sAndQlesson5.png in Resources */,
+				43C1047E1BE06D510070541B /* sAndQlesson1.png in Resources */,
+				43C105571BE06D6C0070541B /* treeIOTLesson1.png in Resources */,
+				4304AEAF1BDF1C7C007E3998 /* MMsorting1a.gif in Resources */,
+				43C104101BE0675E0070541B /* editMenu.gif in Resources */,
+				43C105601BE06D6C0070541B /* treeIOTLesson10.png in Resources */,
 				43CB4A091BD1C31A00AAB788 /* SORTING.png in Resources */,
+				43C105481BE06D6C0070541B /* sAndQlesson11.png in Resources */,
 				43CB49E81BD1C31A00AAB788 /* bubbleSortLesson10.png in Resources */,
+				43C104B61BE06D510070541B /* treePoOTLesson4.png in Resources */,
 				43CB4A251BD1D4C800AAB788 /* river_icon_boatLeft.png in Resources */,
+				43C104881BE06D510070541B /* sAndQlesson7.png in Resources */,
 				43CD405B1BA3F2870098168E /* BinaryTreeDungeon.txt in Resources */,
+				43C104AA1BE06D510070541B /* treeIOTLesson14.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,12 +1728,14 @@
 				43C9965F1BA04B7000F37F5F /* TreeDungeonCharacter.cpp in Sources */,
 				430488631BA3E2740038C2A4 /* CompareBuildScreen.cpp in Sources */,
 				430488671BA3E2740038C2A4 /* CompareSorts.cpp in Sources */,
+				43C1040B1BE054890070541B /* scrollingBackground.cpp in Sources */,
 				438CC9931A7CBE9F00B41E4F /* MainMenu.cpp in Sources */,
 				43C996621BA04B7000F37F5F /* TreeDungeonInput.cpp in Sources */,
 				438CC9911A7CBE9F00B41E4F /* Main.cpp in Sources */,
 				43FCC7411B9408C5003682E7 /* SortScreenRender.cpp in Sources */,
 				43C9965E1BA04B7000F37F5F /* RunBinaryTreeDungeon.cpp in Sources */,
 				435B36581BA4004100B7EF68 /* ConwaysMain.cpp in Sources */,
+				43C1040E1BE066940070541B /* stackAttackGame.cpp in Sources */,
 				43C996611BA04B7000F37F5F /* TreeDungeonGraphics.cpp in Sources */,
 				43CD40611BA3F2AD0098168E /* AlbertonsLessonBuilder.cpp in Sources */,
 				43D6C8CF1B57387D00E147F0 /* SortingAndSearchingMenu.cpp in Sources */,

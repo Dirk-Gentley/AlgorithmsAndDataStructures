@@ -81,14 +81,6 @@ MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& renderWindow){
     menuItems.push_back(beginSchoolOfImplementationsButton);
 	//menuItems.push_back(exitButton);
     
-    //sf::Font font;
-    //if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-    //    exit(1);
-    //}
-    //sf::Text menuText("Menu", font, 80);
-    //menuText.setPosition(400, 50);
-    //menuText.setColor(sf::Color::White);
-    
     renderWindow.draw(puzzlesASprite);
     renderWindow.draw(schoolASprite);
     renderWindow.draw(sortingASprite);
@@ -117,6 +109,14 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
     window.clear();
 	sf::Event menuEvent;
     
+    sf::Font font;
+    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+        exit(1);
+    }
+    sf::Text menuText("Menu", font, 80);
+    menuText.setPosition(400, 50);
+    menuText.setColor(sf::Color::White);
+    
     // Load a sprite to use for scrolling background
     sf::Texture texture;
     texture.loadFromFile(resourcePath() + "scrollingBackgroundTile.gif");
@@ -125,8 +125,7 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
     scrollingBackground myBackground(backgroundSprite,(sf::Vector2f(-0.5, -0.5)));
     
     sf::Time elapsed = GLOBAL_CLOCK.restart();
-    myBackground.update(elapsed);
-    myBackground.draw(window);
+
     
     sf::Texture puzzlesATexture;
     puzzlesATexture.loadFromFile(resourcePath() + "MMpuzzlesA.png");
@@ -169,67 +168,70 @@ MainMenu::MenuResult MainMenu::GetMenuResponse(sf::RenderWindow& window){
     structuresBSprite.setPosition(522, 200);
     
     for(;;){
+        int draw;
+        
+        myBackground.update(elapsed);
+        myBackground.draw(window);
+        window.draw(puzzlesASprite);
+        window.draw(schoolASprite);
+        window.draw(sortingASprite);
+        window.draw(structuresASprite);
+        window.draw(menuText);
+
 		while(window.pollEvent(menuEvent)){
-            
-            myBackground.draw(window);
             
             sf::Vector2i position = sf::Mouse::getPosition(window);
             sf::Vector2i relativePosition = handleMouseClick(position.x, position.y, window);
             std::list<MenuItem>::iterator it;
+            
 			if(menuEvent.type == sf::Event::MouseButtonPressed){
                 sf::Vector2i click = handleMouseClick(menuEvent.mouseButton.x, menuEvent.mouseButton.y, window);
                 return HandleClick(click.x, click.y);
 			}
+            
             if(menuEvent.type == sf::Event::KeyPressed){
                 if(menuEvent.key.code == sf::Keyboard::Q){
                     return Exit;
                 }
             }
+            
             for ( it = menuItems.begin(); it != menuItems.end(); it++){
                 int x = relativePosition.x, y = relativePosition.y;
                 sf::Rect<int> menuItemRect = (*it).rect;
+                
                 if( x > menuItemRect.left
                    && x < menuItemRect.left + menuItemRect.width
                    && y > menuItemRect.top
                    && y < menuItemRect.height + menuItemRect.top){
                     if(std::distance(menuItems.begin(), it) == 0){
-                        
-                        window.draw(puzzlesASprite);
-                        window.draw(schoolASprite);
-                        window.draw(sortingASprite);
-                        window.draw(structuresASprite);
-                        window.draw(sortingBSprite);
-                        window.display();
+                        draw = 0;
                     }
                     if(std::distance(menuItems.begin(), it) == 1){
-                        
-                        window.draw(puzzlesASprite);
-                        window.draw(schoolASprite);
-                        window.draw(sortingASprite);
-                        window.draw(structuresASprite);
-                        window.draw(structuresBSprite);
-                        window.display();
+                        draw = 1;
                     }
                     if(std::distance(menuItems.begin(), it) == 2){
-                        
-                        window.draw(puzzlesASprite);
-                        window.draw(schoolASprite);
-                        window.draw(sortingASprite);
-                        window.draw(structuresASprite);
-                        window.draw(puzzlesBSprite);
-                        window.display();
+                        draw = 2;
                     }
                     if(std::distance(menuItems.begin(), it) == 3){
-                        
-                        window.draw(puzzlesASprite);
-                        window.draw(schoolASprite);
-                        window.draw(sortingASprite);
-                        window.draw(structuresASprite);
-                        window.draw(schoolBSprite);
-                        window.display();
+                        draw = 3;
                     }
                 }
             }
 		}
+        switch(draw){
+            case 0:
+                window.draw(sortingBSprite);
+                break;
+            case 1:
+                window.draw(structuresBSprite);
+                break;
+            case 2:
+                window.draw(puzzlesBSprite);
+                break;
+            case 3:
+                window.draw(schoolBSprite);
+                break;
+        }
+        window.display();
 	}
 }

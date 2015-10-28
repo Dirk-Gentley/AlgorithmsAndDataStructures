@@ -115,14 +115,7 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     menuItems.push_back(beginProblemSolvingButton);
     menuItems.push_back(backButton);
     
-//    sf::Font font;
-//    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-//        exit(1);
-//    }
-//    sf::Text menuText("School", font, 80);
-//    menuText.setPosition(400, 50);
-//    menuText.setColor(sf::Color::White);
-//    
+//
 //    sf::Text beginText("Placeholder Text", font, 40);
 //    beginText.setPosition(360, 200);
 //    beginText.setColor(sf::Color::White);
@@ -160,12 +153,23 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     window.clear();
     sf::Event menuEvent;
     
+    sf::Font font;
+    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+        exit(1);
+    }
+    sf::Text menuText("School", font, 80);
+    menuText.setPosition(380, 50);
+    menuText.setColor(sf::Color::White);
+
+    
     // Load a sprite to use for scrolling background
     sf::Texture texture;
     texture.loadFromFile(resourcePath() + "scrollingBackgroundTile.gif");
     sf::Sprite backgroundSprite(texture);
     
     scrollingBackground myBackground(backgroundSprite,(sf::Vector2f(-0.5, -0.5)));
+    
+    sf::Time elapsed = GLOBAL_CLOCK.restart();
     
     sf::Texture sorting1ATexture;
     sorting1ATexture.loadFromFile(resourcePath() + "MMsorting1a.gif");
@@ -218,11 +222,19 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
     backBSprite.setPosition(312, 600);
     
     for(;;){
+        
+        int draw;
+        
+        myBackground.update(elapsed);
+        myBackground.draw(window);
+        window.draw(sorting1ASprite);
+        window.draw(trees1ASprite);
+        window.draw(stacks1ASprite);
+        window.draw(abstraction1ASprite);
+        window.draw(backASprite);
+        window.draw(menuText);
+        
         while(window.pollEvent(menuEvent)){
-            
-            //sf::Time elapsed = GLOBAL_CLOCK.restart();
-            //myBackground.update(elapsed);
-            myBackground.draw(window);
             
             sf::Vector2i position = sf::Mouse::getPosition(window);
             sf::Vector2i relativePosition = handleMouseClick(position.x, position.y, window);
@@ -248,57 +260,40 @@ SchoolOfImplementationsMenu::SchoolOfImplementationsMenuResult SchoolOfImplement
                    && y > menuItemRect.top
                    && y < menuItemRect.height + menuItemRect.top){
                     if(std::distance(menuItems.begin(), it) == 0){
-                    
-                        window.draw(sorting1ASprite);
-                        window.draw(trees1ASprite);
-                        window.draw(stacks1ASprite);
-                        window.draw(abstraction1ASprite);
-                        window.draw(backASprite);
-                        window.draw(sorting1BSprite);
-                        window.display();
+                        draw = 0;
                     }
                     if(std::distance(menuItems.begin(), it) == 1){
-                        
-                        window.draw(sorting1ASprite);
-                        window.draw(trees1ASprite);
-                        window.draw(stacks1ASprite);
-                        window.draw(abstraction1ASprite);
-                        window.draw(backASprite);
-                        window.draw(trees1BSprite);
-                        window.display();
+                        draw = 1;
                     }
                     if(std::distance(menuItems.begin(), it) == 2){
-                        
-                        window.draw(sorting1ASprite);
-                        window.draw(trees1ASprite);
-                        window.draw(stacks1ASprite);
-                        window.draw(abstraction1ASprite);
-                        window.draw(backASprite);
-                        window.draw(stacks1BSprite);
-                        window.display();
+                        draw = 2;
                     }
                     if(std::distance(menuItems.begin(), it) == 3){
-                        
-                        window.draw(sorting1ASprite);
-                        window.draw(trees1ASprite);
-                        window.draw(stacks1ASprite);
-                        window.draw(abstraction1ASprite);
-                        window.draw(backASprite);
-                        window.draw(abstraction1BSprite);
-                        window.display();
+                        draw = 3;
                     }
                     if(std::distance(menuItems.begin(), it) == 4){
-                        
-                        window.draw(sorting1ASprite);
-                        window.draw(trees1ASprite);
-                        window.draw(stacks1ASprite);
-                        window.draw(abstraction1ASprite);
-                        window.draw(backASprite);
-                        window.draw(backBSprite);
-                        window.display();
+                        draw = 4;
                     }
                 }
             }
         }
+        switch(draw){
+            case 0:
+                window.draw(sorting1BSprite);
+                break;
+            case 1:
+                window.draw(trees1BSprite);
+                break;
+            case 2:
+                window.draw(stacks1BSprite);
+                break;
+            case 3:
+                window.draw(abstraction1BSprite);
+                break;
+            case 4:
+                window.draw(backBSprite);
+                break;
+        }
+        window.display();
     }
 }

@@ -118,6 +118,14 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     window.clear();
     sf::Event menuEvent;
     
+    sf::Font font;
+    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+        exit(1);
+    }
+    sf::Text menuText("Sorting", font, 80);
+    menuText.setPosition(390, 50);
+    menuText.setColor(sf::Color::White);
+    
     // Load a sprite to use for scrolling background
     sf::Texture texture;
     texture.loadFromFile(resourcePath() + "scrollingBackgroundTile.gif");
@@ -169,9 +177,18 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
     backBSprite.setPosition(312, 600);
     
     for(;;){
+        
+        int draw;
+        
+        myBackground.update(elapsed);
+        myBackground.draw(window);
+        window.draw(sorting2ASprite);
+        window.draw(sorting3ASprite);
+        window.draw(backASprite);
+        window.draw(backASprite);
+        window.draw(menuText);
+        
         while(window.pollEvent(menuEvent)){
-            
-            myBackground.draw(window);
             
             sf::Vector2i position = sf::Mouse::getPosition(window);
             sf::Vector2i relativePosition = handleMouseClick(position.x, position.y, window);
@@ -192,45 +209,31 @@ SortingAndSearchingMenu::SortingAndSearchingMenuResult SortingAndSearchingMenu::
                    && x < menuItemRect.left + menuItemRect.width
                    && y > menuItemRect.top
                    && y < menuItemRect.height + menuItemRect.top){
-                    //if(std::distance(menuItems.begin(), it) == 0){
-                        
-//                        window.draw(sorting1ASprite);
-//                        window.draw(sorting2ASprite);
-//                        window.draw(sorting3ASprite);
-//                        window.draw(backASprite);
-//                        window.draw(sorting1BSprite);
-//                        window.display();
-//                    }
+
                     if(std::distance(menuItems.begin(), it) == 0){
-                        
-                        //window.draw(sorting1ASprite);
-                        window.draw(sorting2ASprite);
-                        window.draw(sorting3ASprite);
-                        window.draw(backASprite);
-                        window.draw(sorting2BSprite);
-                        window.display();
+                        draw = 0;
                     }
                     if(std::distance(menuItems.begin(), it) == 1){
-                        
-                        //window.draw(sorting1ASprite);
-                        window.draw(sorting2ASprite);
-                        window.draw(sorting3ASprite);
-                        window.draw(backASprite);
-                        window.draw(sorting3BSprite);
-                        window.display();
+                        draw = 1;
                     }
                     if(std::distance(menuItems.begin(), it) == 2){
-                        
-                        //window.draw(sorting1ASprite);
-                        window.draw(sorting2ASprite);
-                        window.draw(sorting3ASprite);
-                        window.draw(backASprite);
-                        window.draw(backBSprite);
-                        window.display();
+                        draw = 2;
                     }
                 }
             }
         }
+        switch(draw){
+            case 0:
+                window.draw(sorting2BSprite);
+                break;
+            case 1:
+                window.draw(sorting3BSprite);
+                break;
+            case 2:
+                window.draw(backBSprite);
+                break;
+        }
+        window.display();
     }
 }
 

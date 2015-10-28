@@ -14,11 +14,8 @@ scrollingBackground::scrollingBackground(sf::Sprite s, sf::Vector2f m) {
     move = m;
     timer = sf::milliseconds(0);
     offset = sf::Vector2f(0, 0);
-    std::cout << "mySpriteW: " << mySprite.getGlobalBounds().width << std::endl;
-    std::cout << "mySpriteH: " << mySprite.getGlobalBounds().height << std::endl;
-    width = (1024/mySprite.getGlobalBounds().width) + 2;
-    height = (768/mySprite.getGlobalBounds().height) + 2;
-    std::cout << "W: " << width << ", H: " << height << std::endl;
+    width = (2048/mySprite.getGlobalBounds().width) + 2;
+    height = (2048/mySprite.getGlobalBounds().height) + 2;
 }
 
 void scrollingBackground::update(sf::Time elapsed) {

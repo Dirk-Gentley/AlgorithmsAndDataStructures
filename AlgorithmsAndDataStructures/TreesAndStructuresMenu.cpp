@@ -116,13 +116,7 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Sho
     menuItems.push_back(beginTreeDungeonButton);
     menuItems.push_back(backButton);
     
-//    sf::Font font;
-//    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-//        exit(1);
-//    }
-//    sf::Text menuText("Data Structures", font, 80);
-//    menuText.setPosition(250, 50);
-//    menuText.setColor(sf::Color::White);
+
 //    
 //    sf::Text beginStacksLessonText("Lesson on Structures", font, 40);
 //    beginStacksLessonText.setPosition(310, 200);
@@ -177,6 +171,14 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Get
     window.clear();
     sf::Event menuEvent;
     
+    sf::Font font;
+    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
+        exit(1);
+    }
+    sf::Text menuText("Data Structures", font, 80);
+    menuText.setPosition(250, 50);
+    menuText.setColor(sf::Color::White);
+    
     // Load a sprite to use for scrolling background
     sf::Texture texture;
     texture.loadFromFile(resourcePath() + "scrollingBackgroundTile.gif");
@@ -218,9 +220,17 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Get
     backBSprite.setPosition(312, 600);
     
     for(;;){
+        
+        int draw;
+        
+        myBackground.update(elapsed);
+        myBackground.draw(window);
+        window.draw(structures2ASprite);
+        window.draw(structures3ASprite);
+        window.draw(backASprite);
+        window.draw(menuText);
+        
         while(window.pollEvent(menuEvent)){
-            
-            myBackground.draw(window);
             
             sf::Vector2i position = sf::Mouse::getPosition(window);
             sf::Vector2i relativePosition = handleMouseClick(position.x, position.y, window);
@@ -245,35 +255,29 @@ TreesAndStructuresMenu::TreesAndStructuresMenuResult TreesAndStructuresMenu::Get
                    && y > menuItemRect.top
                    && y < menuItemRect.height + menuItemRect.top){
                     if(std::distance(menuItems.begin(), it) == 0){
-                        
-                        //window.draw(sorting1ASprite);
-                        window.draw(structures2ASprite);
-                        window.draw(structures3ASprite);
-                        window.draw(backASprite);
-                        window.draw(structures2BSprite);
-                        window.display();
+                        draw = 0;
                     }
                     if(std::distance(menuItems.begin(), it) == 1){
-                        
-                        //window.draw(sorting1ASprite);
-                        window.draw(structures2ASprite);
-                        window.draw(structures3ASprite);
-                        window.draw(backASprite);
-                        window.draw(structures3BSprite);
-                        window.display();
+                        draw = 1;
                     }
                     if(std::distance(menuItems.begin(), it) == 2){
-                        
-                        //window.draw(sorting1ASprite);
-                        window.draw(structures2ASprite);
-                        window.draw(structures3ASprite);
-                        window.draw(backASprite);
-                        window.draw(backBSprite);
-                        window.display();
+                        draw = 2;
                     }
                 }
             }
         }
+        switch(draw){
+            case 0:
+                window.draw(structures2BSprite);
+                break;
+            case 1:
+                window.draw(structures3BSprite);
+                break;
+            case 2:
+                window.draw(backBSprite);
+                break;
+        }
+        window.display();
     }
 }
 

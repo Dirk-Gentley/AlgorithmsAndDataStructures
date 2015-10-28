@@ -187,7 +187,25 @@ body {
 }
 
 #MainPageBody p {
-	font-size: 20px;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: "PressStart2P";
+	color: White;
+	text-align: justify;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+#MainPageBody ol {
+	font-size: 15px;
+	line-height: 30px;
+	font-family: "PressStart2P";
+	color: White;
+	text-align: justify;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+#MainPageBody li {
+	font-size: 15px;
 	line-height: 30px;
 	font-family: "PressStart2P";
 	color: White;
